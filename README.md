@@ -10,7 +10,7 @@ Proto abyste mohli začít pracovat budou potřeba 3 programy:
 ### Workflow
 
 
-1. Člověk kterému je přidělen úkol v Třello si přes Github klienta vytvoří z master branche novou branch **se jménem úkolu v Trellu**.
+1. Člověk kterému je přidělen úkol v Třello si přes Github klienta vytvoří z master branche novou branch
 
 <br>
 <img src="tutorial/Workflow_1.1.PNG" width="700"  />
@@ -25,7 +25,7 @@ Proto abyste mohli začít pracovat budou potřeba 3 programy:
 <img src="tutorial/Workflow_2.2.PNG" width="700" />
 
 <br>
-3. Až je všechno hotové, tak prosím vytvořte pull request a dejte mě jako reviewera. Dostanu tak notifikaci že je to udělané a můžu to začít lepit dohromady v master branchy. Commit je možné přidat také v Trellu https://trello.com/power-ups/55a5d916446f517774210004/github
+3. Až je všechno hotové, tak prosím vytvořte pull request a dejte mě jako reviewera. Dostanu tak notifikaci že je to udělané a můžu to začít lepit dohromady v master branchy.
 
 <br>
 <img src="tutorial/Workflow_3.1.PNG" width="700" />
@@ -35,8 +35,4 @@ Proto abyste mohli začít pracovat budou potřeba 3 programy:
 #### Upozornění!
 Na 1 větvi by měl vždycky pracovat jenom jeden člověk najednou. Pokud na ní pracují dva lidé je potřeba aby jste se domluvili, kdo bude pracovat v jakém pořadí. Další lidé si potom jenom pullnou změny ze serveru.
 
-
-##### Kdyby něco nebylo jasné, napiště mi prosím na Slack.
-
-Oldřich 
                               
