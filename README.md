@@ -10,7 +10,7 @@ Proto abyste mohli začít pracovat budou potřeba 3 programy:
 ### Workflow
 
 
-1. Člověk kterému je přidělen úkol v Třello si přes Github klienta vytvoří z master branche novou branch
+1. Člověk kterému je přidělen úkol si přes Github klienta vytvoří z master branche novou branch
 
 <br>
 <img src="tutorial/Workflow_1.1.PNG" width="700"  />
