@@ -33,6 +33,6 @@ Proto abyste mohli začít pracovat budou potřeba 3 programy:
 <br>
 
 #### Upozornění!
-Na 1 větvi by měl vždycky pracovat jenom jeden člověk najednou. Pokud na ní pracují dva lidé je potřeba aby jste se domluvili, kdo bude pracovat v jakém pořadí. Další lidé si potom jenom pullnou změny ze serveru.
+Na 1 větvi by měl vždycky pracovat jenom jeden člověk najednou. Pokud na ní pracují dva lidé a více je potřeba aby jste se domluvili kdo bude pracovat v jakém pořadí.  Další lidé si potom jenom pullnou změny ze serveru
 
                               
