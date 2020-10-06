@@ -1,7 +1,7 @@
 # manufacturing-company
 
 #### Programy ke stažení
-Proto abyste mohli začít pracovat budou potřeba 3 programy:
+Proto abyste mohli začít pracovat budou potřeba 4 programy:
 1. Modelio https://www.modelio.org/downloads/download-modelio.html
 2. ArchiMate modul pro Modelio https://www.modeliosoft.com/en/downloads/plugins/archimate.html
 3. Git https://git-scm.com/downloads
