@@ -1,4 +1,4 @@
-# manufacturing-company
+# Pet food manufacturing company
 
 #### Programy ke stažení
 Proto abyste mohli začít pracovat budou potřeba 4 programy:
