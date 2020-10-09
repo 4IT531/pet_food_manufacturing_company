@@ -1,0 +1,7 @@
+#
+#Sat Dec 01 16:37:00 CET 2018
+GATEWAY_SHOWLABEL=false
+stylename=New theme
+basestyle=Modelio 3.x
+theme=true
+provider=Modelio

@@ -1,0 +1,7 @@
+#
+#Sun Feb 10 16:11:01 CET 2019
+INSTANCE_REPRES_MODE=IMAGE
+stylename=PlatformDecomposition
+basestyle=default
+theme=true
+INFOFLOWLINK_ITEMS_SHOWGROUP=true

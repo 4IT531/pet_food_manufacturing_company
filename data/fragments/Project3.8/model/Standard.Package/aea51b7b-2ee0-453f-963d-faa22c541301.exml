@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Business Behavior" version="4">
+  <OBJECT>
+    <ID name="Business Behavior" mc="Standard.Package" uid="aea51b7b-2ee0-453f-963d-faa22c541301"/>
+    <PID name="Business Architecture" mc="Standard.Package" uid="1348615a-0018-40bc-bce2-b18d6be613dd"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Business Behavior]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="BusinessArchitecture" mc="Infrastructure.Stereotype" uid="56eadada-ab6d-11df-9861-0014224f9977"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="451f1764-bd98-4694-be7d-fa99e2c4d92d"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[In TOGAF, the Business Architecture defines the business strategy, governance, organization, and key business processes.
+All these elements are modeled under this domain, with predefined subdomains.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
