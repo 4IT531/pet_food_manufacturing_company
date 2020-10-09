@@ -5,7 +5,7 @@ Proto abyste mohli začít pracovat budou potřeba 4 programy:
 1. Modelio https://www.modelio.org/downloads/download-modelio.html
 2. ArchiMate modul pro Modelio https://www.modeliosoft.com/en/downloads/plugins/archimate.html
 3. Git https://git-scm.com/downloads
-4. Github dektop klient https://desktop.github.com/
+4. Github desktop klient https://desktop.github.com/
 
 ## Workflow
 
