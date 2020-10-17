@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Inventory management" version="4">
+  <OBJECT>
+    <ID name="Inventory management" mc="Standard.Package" uid="1f238be4-d0bf-489a-a3f8-07a940826578"/>
+    <PID name="Business Behavior" mc="Standard.Package" uid="aea51b7b-2ee0-453f-963d-faa22c541301"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Inventory management]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Supply management" mc="Standard.BpmnProcess" uid="0200fc30-7997-4f8b-9537-38bdb3006ebf"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Pet food mixture acquisition order arrived" mc="Standard.Signal" uid="68f90a1f-5f68-4082-8705-269d07b35fa9"/>
+        <COMPID name="Pet food mixture acquisition order completed" mc="Standard.Signal" uid="57a5fce7-f5c3-4f76-9ac7-3942149b95ad"/>
+        <COMPID name="Event" mc="Standard.Signal" uid="3e35d540-0bd9-44e7-a470-bb6e5b972545"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="BusinessOrganizationDomain" mc="Infrastructure.Stereotype" uid="b42187ca-ab75-11df-9861-0014224f9977"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

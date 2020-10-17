@@ -13,9 +13,35 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Packaging" mc="Standard.BpmnProcess" uid="7e4c3a5c-3132-466c-84db-f254105047f5"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Pet food sale" mc="Standard.Package" uid="58d2bc33-0488-4013-a02d-7d838aaaa7e4"/>
+        <COMPID name="Production management" mc="Standard.Package" uid="0c591f47-f11f-4097-bcea-a02f5eb2f9a3"/>
+        <COMPID name="Packaging" mc="Standard.Package" uid="d996efe9-fdd2-4e6e-8876-e35c30a58efb"/>
+        <COMPID name="Ingredients order" mc="Standard.Package" uid="a0951577-b4c1-4cb9-8f3a-cb0eea51de1b"/>
+        <COMPID name="Inventory management" mc="Standard.Package" uid="1f238be4-d0bf-489a-a3f8-07a940826578"/>
+        <COMPID name="Warranty process" mc="Standard.Package" uid="79d5b3a4-d318-4a32-b7a2-74a5d86e9ae7"/>
+        <COMPID name="Delivery" mc="Standard.Actor" uid="524fe6b0-78cc-4979-a7a7-98df1df63375"/>
+        <COMPID name="Marketing" mc="Standard.Actor" uid="cc50d0b6-64b7-4965-bcbf-10c72df0ef50"/>
+        <COMPID name="Bookkeeping" mc="Standard.Actor" uid="85f77c3f-de26-4383-845c-476a49236b06"/>
+        <COMPID name="HR" mc="Standard.Actor" uid="7e6d6b07-fe47-4e6a-ac0a-d5a94b0efd1e"/>
+        <COMPID name="Research of customer needs" mc="Standard.Actor" uid="9e12acfa-852c-492d-90ef-f8d6eaab567d"/>
+        <COMPID name="Customer" mc="Standard.Actor" uid="e2806ab7-4a5f-405e-a17f-b8d2541d574a"/>
+        <COMPID name="Delivery order arrived" mc="Standard.Signal" uid="3f7625cf-6a95-4026-8f53-c6d71d39f9dd"/>
+        <COMPID name="Delivery order completed" mc="Standard.Signal" uid="05b33296-e9de-400a-b5aa-ec05a2c0ab8e"/>
+        <COMPID name="Maintenance" mc="Standard.Actor" uid="b5b5b4d1-e3aa-4589-b7d3-23a3c56d337a"/>
+        <COMPID name="Maintanance request arrived" mc="Standard.Signal" uid="8d38c79c-6c9e-47e6-955b-d9b52aba555c"/>
+        <COMPID name="Maintanance request fulfilled" mc="Standard.Signal" uid="42245fe5-8042-431e-b76f-2c199de2dde5"/>
+        <COMPID name="Revenue Authority" mc="Standard.Actor" uid="33c497ae-7b3d-47b1-9537-d2b7da99e64e"/>
+      </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessArchitecture" mc="Infrastructure.Stereotype" uid="56eadada-ab6d-11df-9861-0014224f9977"/>
       </LINK>
+      <COMP relation="Product">
+        <COMPID name="Event diagram" mc="Standard.StaticDiagram" uid="396ae2d5-16bd-46d6-abdc-39fe4830851b"/>
+      </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
           <ID name="" mc="Infrastructure.Note" uid="451f1764-bd98-4694-be7d-fa99e2c4d92d"/>

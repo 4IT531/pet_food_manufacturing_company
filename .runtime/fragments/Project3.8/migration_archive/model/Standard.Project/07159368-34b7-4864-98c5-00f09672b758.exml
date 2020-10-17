@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Project" version="4">
+  <OBJECT>
+    <ID name="Project" mc="Standard.Project" uid="07159368-34b7-4864-98c5-00f09672b758"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[Project]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="project" mc="Standard.Package" uid="3182e411-ce17-4c4d-9c8b-52669d0874b3"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="Project3.8" mc="Infrastructure.DiagramSet" uid="35d44ad5-7490-47ee-bd26-26ae455c2d44"/>
+      </COMP>
+      <COMP relation="Tag">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.TaggedValue" uid="d9fe7135-0d28-4d44-a3cf-f23b6098674c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Actual">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TagParameter" uid="1df8584c-7bc3-4eef-b901-17591d99946d"/>
+                <ATTRIBUTES>
+                  <ATT name="Value"><![CDATA[4.0.00]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <LINK relation="Definition">
+              <FOREIGNID name="togaf.modelVersion" mc="Infrastructure.TagType" uid="8e820c6c-b121-4db6-a02b-6762820c3092"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

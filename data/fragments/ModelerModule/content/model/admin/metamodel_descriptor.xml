@@ -1,6 +1,588 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metamodel format="1" MetamodelDescriptor.format="1">
-  <fragment name="Infrastructure" version="2.1.02" provider="Modeliosoft" providerVersion="3.8.00">
+  <fragment name="Archimate" version="1.0.03" provider="Modeliosoft" providerVersion="3.7.00">
+    <dependencies>
+      <metamodel_fragment name="modelio.kernel" version="1.0.00"/>
+      <metamodel_fragment name="Infrastructure" version="2.1.00"/>
+    </dependencies>
+    <metaclasses>
+      <link_metaclass name="Access" version="0.0.00">
+        <parent fragment="Archimate" name="DependencyRelationship"/>
+        <attribute name="Mode" type="java.lang.Enum" enumType="org.modelio.archimate.metamodel.relationships.dependency.AccessMode"></attribute>
+        <sources>
+          <dep name="from"/>
+        </sources>
+        <targets>
+          <dep name="to"/>
+        </targets>
+      </link_metaclass>
+      <metaclass name="ActiveStructureElement" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="StructureElement"/>
+      </metaclass>
+      <link_metaclass name="Aggregation" version="0.0.00">
+        <parent fragment="Archimate" name="StructuralRelationship"/>
+        <sources>
+          <dep name="from"/>
+        </sources>
+        <targets>
+          <dep name="to"/>
+        </targets>
+      </link_metaclass>
+      <metaclass name="AndJunction" version="0.0.00">
+        <parent fragment="Archimate" name="Junction"/>
+      </metaclass>
+      <metaclass name="ApplicationCollaboration" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="ApplicationComponent"/>
+      </metaclass>
+      <metaclass name="ApplicationComponent" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="InternalActiveStructureElement"/>
+      </metaclass>
+      <metaclass name="ApplicationEvent" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="Event"/>
+      </metaclass>
+      <metaclass name="ApplicationFolder" version="1.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="Folder"/>
+        <dependency name="folder" min="0" max="-1" aggregation="Composition" navigate="true">
+          <target fragment="Archimate" name="ApplicationFolder"/>
+          <opposite name="ownerFolder"/>
+        </dependency>
+        <dependency name="ownerFolder" min="0" max="1" navigate="false">
+          <target fragment="Archimate" name="ApplicationFolder"/>
+          <opposite name="folder"/>
+        </dependency>
+      </metaclass>
+      <metaclass name="ApplicationFunction" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="ApplicationInternalBehaviorElement"/>
+      </metaclass>
+      <metaclass name="ApplicationInteraction" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="ApplicationInternalBehaviorElement"/>
+      </metaclass>
+      <metaclass name="ApplicationInterface" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="ExternalActiveStructureElement"/>
+      </metaclass>
+      <metaclass name="ApplicationInternalBehaviorElement" version="0.0.00" abstract="true" cmsNode="true">
+        <parent fragment="Archimate" name="InternalBehaviorElement"/>
+      </metaclass>
+      <metaclass name="ApplicationProcess" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="ApplicationInternalBehaviorElement"/>
+      </metaclass>
+      <metaclass name="ApplicationService" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="ExternalBehaviorElement"/>
+      </metaclass>
+      <metaclass name="ArchimateAbstractElement" version="0.0.00" abstract="true">
+        <parent fragment="Infrastructure" name="ModelElement"/>
+      </metaclass>
+      <metaclass name="ArchimateProject" version="0.0.00" cmsNode="true">
+        <parent fragment="Infrastructure" name="AbstractProject"/>
+        <dependency name="model" min="0" max="-1" aggregation="Composition" navigate="true">
+          <target fragment="Archimate" name="Model"/>
+          <opposite name="project"/>
+        </dependency>
+        <dependency name="viewPoints" min="0" max="-1" aggregation="Composition" navigate="true">
+          <target fragment="Archimate" name="ViewPoint"/>
+          <opposite name="project"/>
+        </dependency>
+      </metaclass>
+      <metaclass name="ArchimateView" version="0.0.00" cmsNode="true">
+        <parent fragment="Infrastructure" name="AbstractDiagram"/>
+        <dependency name="context" min="0" max="1" navigate="true">
+          <target fragment="Archimate" name="Model"/>
+          <opposite name="referencedByView"/>
+        </dependency>
+      </metaclass>
+      <metaclass name="Artifact" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="TechnologyObject"/>
+      </metaclass>
+      <metaclass name="Assessment" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="MotivationElement"/>
+      </metaclass>
+      <link_metaclass name="Assignment" version="0.0.00">
+        <parent fragment="Archimate" name="StructuralRelationship"/>
+        <sources>
+          <dep name="from"/>
+        </sources>
+        <targets>
+          <dep name="to"/>
+        </targets>
+      </link_metaclass>
+      <link_metaclass name="Association" version="0.0.00">
+        <parent fragment="Archimate" name="OtherRelationship"/>
+        <sources>
+          <dep name="from"/>
+        </sources>
+        <targets>
+          <dep name="to"/>
+        </targets>
+      </link_metaclass>
+      <metaclass name="BehaviorElement" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="Element"/>
+      </metaclass>
+      <metaclass name="BusinessActor" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="BusinessInternalActiveStructureElement"/>
+      </metaclass>
+      <metaclass name="BusinessCollaboration" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="BusinessInternalActiveStructureElement"/>
+      </metaclass>
+      <metaclass name="BusinessEvent" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="Event"/>
+      </metaclass>
+      <metaclass name="BusinessFolder" version="1.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="Folder"/>
+        <dependency name="ownerFolder" min="0" max="1" navigate="false">
+          <target fragment="Archimate" name="BusinessFolder"/>
+          <opposite name="folder"/>
+        </dependency>
+        <dependency name="folder" min="0" max="-1" aggregation="Composition" navigate="true">
+          <target fragment="Archimate" name="BusinessFolder"/>
+          <opposite name="ownerFolder"/>
+        </dependency>
+      </metaclass>
+      <metaclass name="BusinessFunction" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="BusinessInternalBehaviorElement"/>
+      </metaclass>
+      <metaclass name="BusinessInteraction" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="BusinessInternalBehaviorElement"/>
+      </metaclass>
+      <metaclass name="BusinessInterface" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="ExternalActiveStructureElement"/>
+      </metaclass>
+      <metaclass name="BusinessInternalActiveStructureElement" version="0.0.00" abstract="true" cmsNode="true">
+        <parent fragment="Archimate" name="InternalActiveStructureElement"/>
+      </metaclass>
+      <metaclass name="BusinessInternalBehaviorElement" version="0.0.00" abstract="true" cmsNode="true">
+        <parent fragment="Archimate" name="InternalBehaviorElement"/>
+      </metaclass>
+      <metaclass name="BusinessObject" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="BusinessPassiveStructureElement"/>
+      </metaclass>
+      <metaclass name="BusinessPassiveStructureElement" version="0.0.00" abstract="true" cmsNode="true">
+        <parent fragment="Archimate" name="PassiveStructureElement"/>
+      </metaclass>
+      <metaclass name="BusinessProcess" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="BusinessInternalBehaviorElement"/>
+      </metaclass>
+      <metaclass name="BusinessRole" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="BusinessInternalActiveStructureElement"/>
+      </metaclass>
+      <metaclass name="BusinessService" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="ExternalBehaviorElement"/>
+      </metaclass>
+      <metaclass name="Capability" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="BehaviorElement"/>
+      </metaclass>
+      <metaclass name="CommunicationNetwork" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="InternalActiveStructureElement"/>
+      </metaclass>
+      <metaclass name="CompositeElement" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="Element"/>
+      </metaclass>
+      <link_metaclass name="Composition" version="0.0.00">
+        <parent fragment="Archimate" name="StructuralRelationship"/>
+        <sources>
+          <dep name="from"/>
+        </sources>
+        <targets>
+          <dep name="to"/>
+        </targets>
+      </link_metaclass>
+      <metaclass name="Concept" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="ArchimateAbstractElement"/>
+        <dependency name="relatedFrom" min="0" max="-1" navigate="false" cascadeDelete="true">
+          <target fragment="Archimate" name="Relationship"/>
+          <opposite name="to"/>
+        </dependency>
+        <dependency name="relatedTo" min="0" max="-1" aggregation="Composition" navigate="true">
+          <target fragment="Archimate" name="Relationship"/>
+          <opposite name="from"/>
+        </dependency>
+        <dependency name="ownerFolder" min="1" max="1" navigate="false">
+          <target fragment="Archimate" name="Folder"/>
+          <opposite name="content"/>
+        </dependency>
+      </metaclass>
+      <metaclass name="Constraint" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="Requirement"/>
+      </metaclass>
+      <metaclass name="Contract" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="BusinessObject"/>
+      </metaclass>
+      <metaclass name="CourseOfAction" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="BehaviorElement"/>
+      </metaclass>
+      <metaclass name="DataObject" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="PassiveStructureElement"/>
+      </metaclass>
+      <metaclass name="Deliverable" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="PassiveStructureElement"/>
+      </metaclass>
+      <link_metaclass name="DependencyRelationship" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="Relationship"/>
+        <sources>
+          <dep name="from"/>
+        </sources>
+        <targets>
+          <dep name="to"/>
+        </targets>
+      </link_metaclass>
+      <metaclass name="Device" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="Node"/>
+      </metaclass>
+      <metaclass name="DistributionNetwork" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="InternalActiveStructureElement"/>
+      </metaclass>
+      <metaclass name="Driver" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="MotivationElement"/>
+      </metaclass>
+      <link_metaclass name="DynamicRelationship" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="Relationship"/>
+        <sources>
+          <dep name="from"/>
+        </sources>
+        <targets>
+          <dep name="to"/>
+        </targets>
+      </link_metaclass>
+      <metaclass name="Element" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="Concept"/>
+      </metaclass>
+      <metaclass name="Equipment" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="Node"/>
+      </metaclass>
+      <metaclass name="Event" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="BehaviorElement"/>
+        <attribute name="Time" type="java.lang.String"></attribute>
+      </metaclass>
+      <metaclass name="ExternalActiveStructureElement" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="ActiveStructureElement"/>
+      </metaclass>
+      <metaclass name="ExternalBehaviorElement" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="BehaviorElement"/>
+      </metaclass>
+      <metaclass name="Facility" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="Node"/>
+      </metaclass>
+      <link_metaclass name="Flow" version="0.0.00">
+        <parent fragment="Archimate" name="DynamicRelationship"/>
+        <sources>
+          <dep name="from"/>
+        </sources>
+        <targets>
+          <dep name="to"/>
+        </targets>
+      </link_metaclass>
+      <metaclass name="Folder" version="0.0.00" abstract="true" cmsNode="true">
+        <parent fragment="Archimate" name="ArchimateAbstractElement"/>
+        <dependency name="content" min="0" max="-1" aggregation="Composition" navigate="true">
+          <target fragment="Archimate" name="Concept"/>
+          <opposite name="ownerFolder"/>
+        </dependency>
+        <dependency name="owner" min="0" max="1" navigate="false">
+          <target fragment="Archimate" name="Model"/>
+          <opposite name="folder"/>
+        </dependency>
+      </metaclass>
+      <metaclass name="Gap" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="PassiveStructureElement"/>
+      </metaclass>
+      <metaclass name="Goal" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="MotivationElement"/>
+        <attribute name="EquivalentRef" type="java.lang.String"></attribute>
+      </metaclass>
+      <metaclass name="Grouping" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="CompositeElement"/>
+      </metaclass>
+      <metaclass name="ImplementationEvent" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="Event"/>
+      </metaclass>
+      <metaclass name="ImplementationFolder" version="1.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="Folder"/>
+        <dependency name="folder" min="0" max="-1" aggregation="Composition" navigate="true">
+          <target fragment="Archimate" name="ImplementationFolder"/>
+          <opposite name="ownerFolder"/>
+        </dependency>
+        <dependency name="ownerFolder" min="0" max="1" navigate="false">
+          <target fragment="Archimate" name="ImplementationFolder"/>
+          <opposite name="folder"/>
+        </dependency>
+      </metaclass>
+      <link_metaclass name="Influence" version="1.0.03">
+        <parent fragment="Archimate" name="DependencyRelationship"/>
+        <attribute name="Strength" type="java.lang.String"></attribute>
+        <sources>
+          <dep name="from"/>
+        </sources>
+        <targets>
+          <dep name="to"/>
+        </targets>
+      </link_metaclass>
+      <metaclass name="InternalActiveStructureElement" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="ActiveStructureElement"/>
+      </metaclass>
+      <metaclass name="InternalBehaviorElement" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="BehaviorElement"/>
+      </metaclass>
+      <metaclass name="Junction" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="RelationshipConnector"/>
+      </metaclass>
+      <metaclass name="Location" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="CompositeElement"/>
+      </metaclass>
+      <metaclass name="Material" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="TechnologyObject"/>
+      </metaclass>
+      <metaclass name="Meaning" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="MotivationElement"/>
+        <attribute name="EquivalentRef" type="java.lang.String"></attribute>
+      </metaclass>
+      <metaclass name="Model" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="Folder"/>
+        <dependency name="project" min="1" max="1" navigate="false">
+          <target fragment="Archimate" name="ArchimateProject"/>
+          <opposite name="model"/>
+        </dependency>
+        <dependency name="referencedBy" min="0" max="-1" navigate="false">
+          <target fragment="Archimate" name="ViewPoint"/>
+          <opposite name="context"/>
+        </dependency>
+        <dependency name="referencedByView" min="0" max="-1" navigate="false">
+          <target fragment="Archimate" name="ArchimateView"/>
+          <opposite name="context"/>
+        </dependency>
+        <dependency name="folder" min="0" max="-1" aggregation="Composition" navigate="true">
+          <target fragment="Archimate" name="Folder"/>
+          <opposite name="owner"/>
+        </dependency>
+      </metaclass>
+      <metaclass name="MotivationElement" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="Element"/>
+      </metaclass>
+      <metaclass name="MotivationFolder" version="1.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="Folder"/>
+        <dependency name="ownerFolder" min="0" max="1" navigate="false">
+          <target fragment="Archimate" name="MotivationFolder"/>
+          <opposite name="folder"/>
+        </dependency>
+        <dependency name="folder" min="0" max="-1" aggregation="Composition" navigate="true">
+          <target fragment="Archimate" name="MotivationFolder"/>
+          <opposite name="ownerFolder"/>
+        </dependency>
+      </metaclass>
+      <metaclass name="Node" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="ActiveStructureElement"/>
+      </metaclass>
+      <metaclass name="OrJunction" version="0.0.00">
+        <parent fragment="Archimate" name="Junction"/>
+      </metaclass>
+      <link_metaclass name="OtherRelationship" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="Relationship"/>
+        <sources>
+          <dep name="from"/>
+        </sources>
+        <targets>
+          <dep name="to"/>
+        </targets>
+      </link_metaclass>
+      <metaclass name="Outcome" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="MotivationElement"/>
+      </metaclass>
+      <metaclass name="PassiveStructureElement" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="StructureElement"/>
+      </metaclass>
+      <metaclass name="Path" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="InternalActiveStructureElement"/>
+      </metaclass>
+      <metaclass name="PhysicalFolder" version="1.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="Folder"/>
+        <dependency name="folder" min="0" max="-1" aggregation="Composition" navigate="true">
+          <target fragment="Archimate" name="PhysicalFolder"/>
+          <opposite name="ownerFolder"/>
+        </dependency>
+        <dependency name="ownerFolder" min="0" max="1" navigate="false">
+          <target fragment="Archimate" name="PhysicalFolder"/>
+          <opposite name="folder"/>
+        </dependency>
+      </metaclass>
+      <metaclass name="Plateau" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="CompositeElement"/>
+      </metaclass>
+      <metaclass name="Principle" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="MotivationElement"/>
+      </metaclass>
+      <metaclass name="Product" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="CompositeElement"/>
+      </metaclass>
+      <link_metaclass name="Realization" version="0.0.00">
+        <parent fragment="Archimate" name="StructuralRelationship"/>
+        <sources>
+          <dep name="from"/>
+        </sources>
+        <targets>
+          <dep name="to"/>
+        </targets>
+      </link_metaclass>
+      <link_metaclass name="Relationship" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="Concept"/>
+        <dependency name="to" min="0" max="1" navigate="true">
+          <target fragment="Archimate" name="Concept"/>
+          <opposite name="relatedFrom"/>
+        </dependency>
+        <dependency name="from" min="0" max="1" navigate="false">
+          <target fragment="Archimate" name="Concept"/>
+          <opposite name="relatedTo"/>
+        </dependency>
+        <sources>
+          <dep name="from"/>
+        </sources>
+        <targets>
+          <dep name="to"/>
+        </targets>
+      </link_metaclass>
+      <metaclass name="RelationshipConnector" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="Concept"/>
+      </metaclass>
+      <metaclass name="Representation" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="BusinessPassiveStructureElement"/>
+      </metaclass>
+      <metaclass name="Requirement" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="MotivationElement"/>
+        <attribute name="EquivalentRef" type="java.lang.String"></attribute>
+      </metaclass>
+      <metaclass name="Resource" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="StructureElement"/>
+      </metaclass>
+      <link_metaclass name="Serving" version="0.0.00">
+        <parent fragment="Archimate" name="DependencyRelationship"/>
+        <sources>
+          <dep name="from"/>
+        </sources>
+        <targets>
+          <dep name="to"/>
+        </targets>
+      </link_metaclass>
+      <link_metaclass name="Specialization" version="0.0.00">
+        <parent fragment="Archimate" name="OtherRelationship"/>
+        <sources>
+          <dep name="from"/>
+        </sources>
+        <targets>
+          <dep name="to"/>
+        </targets>
+      </link_metaclass>
+      <metaclass name="Stakeholder" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="ActiveStructureElement"/>
+      </metaclass>
+      <metaclass name="StrategyFolder" version="1.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="Folder"/>
+        <dependency name="ownerFolder" min="0" max="1" navigate="false">
+          <target fragment="Archimate" name="StrategyFolder"/>
+          <opposite name="folder"/>
+        </dependency>
+        <dependency name="folder" min="0" max="-1" aggregation="Composition" navigate="true">
+          <target fragment="Archimate" name="StrategyFolder"/>
+          <opposite name="ownerFolder"/>
+        </dependency>
+      </metaclass>
+      <link_metaclass name="StructuralRelationship" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="Relationship"/>
+        <sources>
+          <dep name="from"/>
+        </sources>
+        <targets>
+          <dep name="to"/>
+        </targets>
+      </link_metaclass>
+      <metaclass name="StructureElement" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="Element"/>
+      </metaclass>
+      <metaclass name="SystemSoftware" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="Node"/>
+      </metaclass>
+      <metaclass name="TechnologyCollaboration" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="Node"/>
+      </metaclass>
+      <metaclass name="TechnologyEvent" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="Event"/>
+      </metaclass>
+      <metaclass name="TechnologyFolder" version="1.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="Folder"/>
+        <dependency name="ownerFolder" min="0" max="1" navigate="false">
+          <target fragment="Archimate" name="TechnologyFolder"/>
+          <opposite name="folder"/>
+        </dependency>
+        <dependency name="folder" min="0" max="-1" aggregation="Composition" navigate="true">
+          <target fragment="Archimate" name="TechnologyFolder"/>
+          <opposite name="ownerFolder"/>
+        </dependency>
+      </metaclass>
+      <metaclass name="TechnologyFunction" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="TechnologyInternalBehaviorElement"/>
+      </metaclass>
+      <metaclass name="TechnologyInteraction" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="TechnologyInternalBehaviorElement"/>
+      </metaclass>
+      <metaclass name="TechnologyInterface" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="ExternalActiveStructureElement"/>
+      </metaclass>
+      <metaclass name="TechnologyInternalBehaviorElement" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="InternalBehaviorElement"/>
+      </metaclass>
+      <metaclass name="TechnologyObject" version="0.0.00" abstract="true">
+        <parent fragment="Archimate" name="PassiveStructureElement"/>
+      </metaclass>
+      <metaclass name="TechnologyProcess" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="TechnologyInternalBehaviorElement"/>
+      </metaclass>
+      <metaclass name="TechnologyService" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="ExternalBehaviorElement"/>
+      </metaclass>
+      <link_metaclass name="Triggering" version="0.0.00">
+        <parent fragment="Archimate" name="DynamicRelationship"/>
+        <sources>
+          <dep name="from"/>
+        </sources>
+        <targets>
+          <dep name="to"/>
+        </targets>
+      </link_metaclass>
+      <metaclass name="Value" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="MotivationElement"/>
+      </metaclass>
+      <metaclass name="ViewPoint" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="ArchimateAbstractElement"/>
+        <dependency name="child" min="0" max="-1" aggregation="Composition" navigate="true">
+          <target fragment="Archimate" name="ViewPoint"/>
+          <opposite name="parent"/>
+        </dependency>
+        <dependency name="project" min="0" max="1" navigate="false">
+          <target fragment="Archimate" name="ArchimateProject"/>
+          <opposite name="viewPoints"/>
+        </dependency>
+        <dependency name="parent" min="0" max="1" navigate="false">
+          <target fragment="Archimate" name="ViewPoint"/>
+          <opposite name="child"/>
+        </dependency>
+        <dependency name="context" min="1" max="1" navigate="true">
+          <target fragment="Archimate" name="Model"/>
+          <opposite name="referencedBy"/>
+        </dependency>
+      </metaclass>
+      <metaclass name="ViewPointDiagram" version="0.0.00" cmsNode="true">
+        <parent fragment="Infrastructure" name="AbstractDiagram"/>
+      </metaclass>
+      <metaclass name="WorkPackage" version="0.0.00" cmsNode="true">
+        <parent fragment="Archimate" name="BehaviorElement"/>
+      </metaclass>
+    </metaclasses>
+    <enumerations>
+      <enumeration name="org.modelio.archimate.metamodel.relationships.dependency.AccessMode">
+        <value name="UNDEFINED"/>
+        <value name="READ"/>
+        <value name="WRITE"/>
+        <value name="READWRITE"/>
+      </enumeration>
+    </enumerations>
+  </fragment>
+  <fragment name="Infrastructure" version="2.1.03" provider="Modeliosoft" providerVersion="3.8.01">
     <dependencies>
       <metamodel_fragment name="modelio.kernel" version="1.0.00"/>
     </dependencies>
@@ -9,6 +591,7 @@
         <parent fragment="Infrastructure" name="ModelElement"/>
         <attribute name="UiDataVersion" type="java.lang.Integer"></attribute>
         <attribute name="UiData" type="java.lang.String"></attribute>
+        <attribute name="PreviewData" type="java.lang.String"></attribute>
         <dependency name="Represented" min="0" max="-1" navigate="true" weakReference="true">
           <target fragment="Infrastructure" name="Element"/>
           <opposite name="DiagramElement"/>
@@ -109,6 +692,16 @@
         <dependency name="OccurenceConfigParam" min="0" max="-1" navigate="false">
           <target fragment="Infrastructure" name="ModuleParameter"/>
           <opposite name="EnumType"/>
+        </dependency>
+      </metaclass>
+      <metaclass name="ExternElement" version="0.0.00">
+        <parent fragment="Infrastructure" name="ModelElement"/>
+        <attribute name="Provider" type="java.lang.String"></attribute>
+        <attribute name="ExternId" type="java.lang.String"></attribute>
+        <attribute name="Location" type="java.lang.String"></attribute>
+        <dependency name="Owner" min="1" max="1" navigate="false">
+          <target fragment="Infrastructure" name="MethodologicalLink"/>
+          <opposite name="ExternElement"/>
         </dependency>
       </metaclass>
       <metaclass name="ExternProcessor" version="0.0.9054">
@@ -243,6 +836,10 @@
       </metaclass>
       <link_metaclass name="MethodologicalLink" version="2.1.01">
         <parent fragment="Infrastructure" name="Dependency"/>
+        <dependency name="ExternElement" min="0" max="1" aggregation="Composition" navigate="true">
+          <target fragment="Infrastructure" name="ExternElement"/>
+          <opposite name="Owner"/>
+        </dependency>
         <sources>
           <dep name="Impacted"/>
         </sources>
