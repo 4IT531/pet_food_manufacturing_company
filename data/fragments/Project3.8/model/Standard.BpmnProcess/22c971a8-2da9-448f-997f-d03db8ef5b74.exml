@@ -60,7 +60,19 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Bookkeeping" mc="Standard.Actor" uid="85f77c3f-de26-4383-845c-476a49236b06"/>
+              <ID name="Bookkeeping" mc="Standard.Package" uid="be17d6f1-b54b-4257-b7a6-bf30557b69e7"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="8c533fb1-2325-47bb-8a74-42482343dbc3"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Marketing strategy request arrived" mc="Standard.Signal" uid="f48f9395-f75b-4b57-a20f-a85609351b56"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

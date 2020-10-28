@@ -1,14 +1,14 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Packaging" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Warranty Resolution" version="4">
   <OBJECT>
-    <ID name="Packaging" mc="Standard.BpmnProcess" uid="7e4c3a5c-3132-466c-84db-f254105047f5"/>
-    <PID name="Production management" mc="Standard.Package" uid="0c591f47-f11f-4097-bcea-a02f5eb2f9a3"/>
+    <ID name="Warranty Resolution" mc="Standard.BpmnProcess" uid="6491468b-1456-4d0c-9caa-13255adfc445"/>
+    <PID name="Warranty process" mc="Standard.Package" uid="79d5b3a4-d318-4a32-b7a2-74a5d86e9ae7"/>
     <ATTRIBUTES>
       <ATT name="ProcessType">NoneProcess</ATT>
       <ATT name="IsClosed">false</ATT>
       <ATT name="IsExecutable">OUndefined</ATT>
       <ATT name="IsReentrant">false</ATT>
-      <ATT name="Name"><![CDATA[Packaging]]></ATT>
+      <ATT name="Name"><![CDATA[Warranty Resolution]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -17,20 +17,20 @@
       </LINK>
       <COMP relation="DependsOnDependency">
         <OBJECT>
-          <ID name="" mc="Infrastructure.Dependency" uid="2d69aa12-737c-4c21-8f98-e69872f55f7d"/>
+          <ID name="" mc="Infrastructure.Dependency" uid="4eeb3462-81b8-4bb8-b16d-be870d3f1997"/>
           <ATTRIBUTES>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Packaging request completed" mc="Standard.Signal" uid="0be04553-5a8f-40de-a932-35c48351b25f"/>
+              <ID name="warranty request resolved" mc="Standard.Signal" uid="d29aada1-50f4-43b1-b714-0569da6c5315"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
       <COMP relation="Product">
-        <COMPID name="Business Process" mc="Standard.BpmnProcessDesignDiagram" uid="6876e83f-557b-4eaa-b8bb-56e835506def"/>
+        <COMPID name="Business Process" mc="Standard.BpmnProcessDesignDiagram" uid="95ae9670-5336-4841-8ea3-97286efbe3b2"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

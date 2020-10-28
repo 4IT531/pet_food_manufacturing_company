@@ -13,6 +13,13 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Warranty Resolution" mc="Standard.BpmnProcess" uid="6491468b-1456-4d0c-9caa-13255adfc445"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="warranty request arrived" mc="Standard.Signal" uid="65300a32-15d9-4dab-868d-180d2227c516"/>
+        <COMPID name="warranty request resolved" mc="Standard.Signal" uid="d29aada1-50f4-43b1-b714-0569da6c5315"/>
+      </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessOrganizationDomain" mc="Infrastructure.Stereotype" uid="b42187ca-ab75-11df-9861-0014224f9977"/>
       </LINK>

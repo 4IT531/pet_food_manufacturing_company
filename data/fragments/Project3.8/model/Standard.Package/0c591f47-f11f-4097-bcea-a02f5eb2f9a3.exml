@@ -15,10 +15,13 @@
     <DEPENDENCIES>
       <COMP relation="OwnedBehavior">
         <COMPID name="Pet food mixture production" mc="Standard.BpmnProcess" uid="9b4e1670-b832-4af0-96ce-798192bef69c"/>
+        <COMPID name="Packaging" mc="Standard.BpmnProcess" uid="7e4c3a5c-3132-466c-84db-f254105047f5"/>
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="Pet food mixture production order arrived" mc="Standard.Signal" uid="4580bf42-1419-4546-817d-f75cc0d1faf7"/>
         <COMPID name="Pet food mixture production order completed" mc="Standard.Signal" uid="b37925ac-588d-4719-b77b-c4784008c6b8"/>
+        <COMPID name="Packaging request arrived" mc="Standard.Signal" uid="93d4d638-bd91-462d-9360-690e18a5a8df"/>
+        <COMPID name="Packaging request completed" mc="Standard.Signal" uid="0be04553-5a8f-40de-a932-35c48351b25f"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessOrganizationDomain" mc="Infrastructure.Stereotype" uid="b42187ca-ab75-11df-9861-0014224f9977"/>

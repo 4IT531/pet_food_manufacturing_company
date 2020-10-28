@@ -40,6 +40,18 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="c4d5a444-7898-4445-bea9-648678cbb76a"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Packaging request arrived" mc="Standard.Signal" uid="93d4d638-bd91-462d-9360-690e18a5a8df"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Business Process" mc="Standard.BpmnProcessDesignDiagram" uid="5a4bde3d-1c87-46bf-9b3f-cdab429eac90"/>

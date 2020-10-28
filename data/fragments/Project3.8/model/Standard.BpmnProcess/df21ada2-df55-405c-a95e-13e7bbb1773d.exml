@@ -1,14 +1,14 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Supply management" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Supply order" version="4">
   <OBJECT>
-    <ID name="Supply management" mc="Standard.BpmnProcess" uid="0200fc30-7997-4f8b-9537-38bdb3006ebf"/>
+    <ID name="Supply order" mc="Standard.BpmnProcess" uid="df21ada2-df55-405c-a95e-13e7bbb1773d"/>
     <PID name="Inventory management" mc="Standard.Package" uid="1f238be4-d0bf-489a-a3f8-07a940826578"/>
     <ATTRIBUTES>
       <ATT name="ProcessType">NoneProcess</ATT>
       <ATT name="IsClosed">false</ATT>
       <ATT name="IsExecutable">OUndefined</ATT>
       <ATT name="IsReentrant">false</ATT>
-      <ATT name="Name"><![CDATA[Supply management]]></ATT>
+      <ATT name="Name"><![CDATA[Supply order]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -17,44 +17,48 @@
       </LINK>
       <COMP relation="DependsOnDependency">
         <OBJECT>
-          <ID name="" mc="Infrastructure.Dependency" uid="cbbf0b99-ac68-4a9d-add9-e417cecdb9a9"/>
+          <ID name="" mc="Infrastructure.Dependency" uid="3ed9cf56-ea10-4807-aa53-edf7f0c5d5db"/>
           <ATTRIBUTES>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Pet food mixture acquisition order completed" mc="Standard.Signal" uid="57a5fce7-f5c3-4f76-9ac7-3942149b95ad"/>
+              <ID name="Supply order completed" mc="Standard.Signal" uid="fb13ae66-4c1a-44ef-98e0-896c0d295bc8"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Infrastructure.Dependency" uid="ecacf1f4-4a84-4cde-8607-fe833662830d"/>
+          <ID name="" mc="Infrastructure.Dependency" uid="2509b969-065d-4755-85fa-d9badfb64f34"/>
           <ATTRIBUTES>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Pet food mixture production order arrived" mc="Standard.Signal" uid="4580bf42-1419-4546-817d-f75cc0d1faf7"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="Infrastructure.Dependency" uid="6fcf4c33-b6d5-45f7-b0a9-76662f6df313"/>
-          <ATTRIBUTES>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="DependsOn">
-              <ID name="Supply order arrived" mc="Standard.Signal" uid="a1b555f5-aaf4-4957-bdef-c72da4434f33"/>
+              <ID name="Delivery order arrived" mc="Standard.Signal" uid="9634f39e-6187-478a-bda4-b20db0fced94"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
       <COMP relation="Product">
-        <COMPID name="Business Process" mc="Standard.BpmnProcessDesignDiagram" uid="9be6d859-9972-4ac6-9f27-2b5109e817e6"/>
+        <COMPID name="Business Process" mc="Standard.BpmnProcessDesignDiagram" uid="efa18b56-77ad-4a13-9bb5-25e9f17922b2"/>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="Note" mc="Infrastructure.Note" uid="f5b37423-3b52-4eb3-81ce-cd22db202379"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Ingredients, packages, basically any material  required for order fullfilment]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[Note]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
