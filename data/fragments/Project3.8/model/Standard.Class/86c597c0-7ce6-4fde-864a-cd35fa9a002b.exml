@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Pet food mixture order" version="4">
+  <OBJECT>
+    <ID name="Pet food mixture order" mc="Standard.Class" uid="86c597c0-7ce6-4fde-864a-cd35fa9a002b"/>
+    <PID name="Business Structure" mc="Standard.Package" uid="71880b7d-5775-451c-b062-046ccb55dea1"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Pet food mixture order]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedEnd">
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="1ec2012c-986b-45cd-8649-02c5c728fb44"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="915cff99-8125-4b4c-b177-4c8fe4d9eed4"/>
+        </REFOBJ>
+      </COMP>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="Generalization" mc="Standard.Generalization" uid="de1b4901-1121-48a7-8347-9768c2596cca"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="Order" mc="Standard.Class" uid="9d83336c-7907-4e3f-b3d1-0ac1eec7587f"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="BusinessEntity" mc="Infrastructure.Stereotype" uid="146eb72a-ab73-11df-9861-0014224f9977"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

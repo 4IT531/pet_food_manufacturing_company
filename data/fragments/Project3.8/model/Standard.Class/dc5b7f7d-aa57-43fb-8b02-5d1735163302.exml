@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Supply delivery" version="4">
+  <OBJECT>
+    <ID name="Supply delivery" mc="Standard.Class" uid="dc5b7f7d-aa57-43fb-8b02-5d1735163302"/>
+    <PID name="Business Structure" mc="Standard.Package" uid="71880b7d-5775-451c-b062-046ccb55dea1"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Supply delivery]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="Generalization" mc="Standard.Generalization" uid="b7f045f1-c9ff-44e7-9c47-a88a821a13df"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="Outsourced service" mc="Standard.Class" uid="3fa12fa3-8571-4bbd-b4d2-a2d3746701d0"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="BusinessEntity" mc="Infrastructure.Stereotype" uid="146eb72a-ab73-11df-9861-0014224f9977"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

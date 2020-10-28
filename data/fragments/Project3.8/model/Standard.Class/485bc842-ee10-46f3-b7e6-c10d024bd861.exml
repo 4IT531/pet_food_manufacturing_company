@@ -1,0 +1,28 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Ingredient" version="4">
+  <OBJECT>
+    <ID name="Ingredient" mc="Standard.Class" uid="485bc842-ee10-46f3-b7e6-c10d024bd861"/>
+    <PID name="Business Structure" mc="Standard.Package" uid="71880b7d-5775-451c-b062-046ccb55dea1"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Ingredient]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedEnd">
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="9000de4a-f232-487a-bf77-787d1820168b"/>
+        </REFOBJ>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="BusinessEntity" mc="Infrastructure.Stereotype" uid="146eb72a-ab73-11df-9861-0014224f9977"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Marketing strategy " version="4">
+  <OBJECT>
+    <ID name="Marketing strategy " mc="Standard.Class" uid="4efc5910-e8b6-4e75-b063-bda41be074b7"/>
+    <PID name="Business Structure" mc="Standard.Package" uid="71880b7d-5775-451c-b062-046ccb55dea1"/>
+    <ATTRIBUTES>
+      <ATT name="IsActive">false</ATT>
+      <ATT name="IsMain">false</ATT>
+      <ATT name="IsElementary">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Marketing strategy ]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Parent">
+        <OBJECT>
+          <ID name="Generalization" mc="Standard.Generalization" uid="4caa904b-c35b-4826-ad99-6256397e442a"/>
+          <ATTRIBUTES>
+            <ATT name="Discriminator"></ATT>
+            <ATT name="Name"><![CDATA[Generalization]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SuperType">
+              <ID name="Outsourced service" mc="Standard.Class" uid="3fa12fa3-8571-4bbd-b4d2-a2d3746701d0"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="BusinessEntity" mc="Infrastructure.Stereotype" uid="146eb72a-ab73-11df-9861-0014224f9977"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

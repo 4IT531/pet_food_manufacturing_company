@@ -13,9 +13,36 @@
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Pet food mixture" mc="Standard.Class" uid="ed840242-827c-4ca4-b51e-f9aa8b9065e2"/>
+        <COMPID name="Pet food mixture order" mc="Standard.Class" uid="86c597c0-7ce6-4fde-864a-cd35fa9a002b"/>
+        <COMPID name="warranty" mc="Standard.Class" uid="4c47d3fa-7497-498d-a16d-bcf851a93f53"/>
+        <COMPID name="Business Partner" mc="Standard.Class" uid="0641cf1c-e133-4a2e-a0c2-5782222f49a5"/>
+        <COMPID name="Address" mc="Standard.Class" uid="08076add-02fe-485f-8c76-2bd6bf1a45d6"/>
+        <COMPID name="Natural Person" mc="Standard.Class" uid="6453fa4f-456c-4005-81b4-b32bd9495553"/>
+        <COMPID name="Legal Person" mc="Standard.Class" uid="9b8e8e66-e262-43a2-8071-5f76f50bad23"/>
+        <COMPID name="Order" mc="Standard.Class" uid="9d83336c-7907-4e3f-b3d1-0ac1eec7587f"/>
+        <COMPID name="Supply" mc="Standard.Class" uid="2f1094dc-68c7-48dd-b851-e29dada10574"/>
+        <COMPID name="Pet food mixture production" mc="Standard.Class" uid="0f0b237a-5b68-4184-b932-5d516a6a4da1"/>
+        <COMPID name="Marketing strategy " mc="Standard.Class" uid="4efc5910-e8b6-4e75-b063-bda41be074b7"/>
+        <COMPID name="Pet food mixture acquisition" mc="Standard.Class" uid="e38165f5-c2ac-4f81-9166-0e2466662f57"/>
+        <COMPID name="Pet food delivery" mc="Standard.Class" uid="838aad57-0e6a-4da9-b36a-05342d4143f7"/>
+        <COMPID name="Supply delivery" mc="Standard.Class" uid="dc5b7f7d-aa57-43fb-8b02-5d1735163302"/>
+        <COMPID name="Outsourced service" mc="Standard.Class" uid="3fa12fa3-8571-4bbd-b4d2-a2d3746701d0"/>
+        <COMPID name="Warehouse" mc="Standard.Class" uid="4f5cc806-30f5-4961-8459-e710c7958779"/>
+        <COMPID name="Ingredient" mc="Standard.Class" uid="485bc842-ee10-46f3-b7e6-c10d024bd861"/>
+        <COMPID name="Material" mc="Standard.Class" uid="ebe05805-39a4-47d9-aff4-eeaf78da2497"/>
+        <COMPID name="Invoice" mc="Standard.Class" uid="944eaa2f-e361-4103-b159-2e8964f21105"/>
+        <COMPID name="Custom" mc="Standard.Class" uid="7371e29b-ddfa-4bce-9f01-f8916fbb31c5"/>
+        <COMPID name="General" mc="Standard.Class" uid="241a53f4-a535-4f3c-a7c2-80e756151f7a"/>
+        <COMPID name="Invoice item" mc="Standard.Class" uid="e5080adb-100b-4e8a-877c-431ac561152a"/>
+      </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessEntities" mc="Infrastructure.Stereotype" uid="1b78cab2-ab6d-11df-9861-0014224f9977"/>
       </LINK>
+      <COMP relation="Product">
+        <COMPID name="Class diagram" mc="Standard.StaticDiagram" uid="20b56a7b-a4e9-45e8-9063-194d32ddfda3"/>
+      </COMP>
       <COMP relation="Descriptor">
         <OBJECT>
           <ID name="" mc="Infrastructure.Note" uid="ffcdbb85-07ca-4730-89bd-3a0fa0920bab"/>
