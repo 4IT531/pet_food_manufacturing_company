@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Supply delivery" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Supply delivery order" version="4">
   <OBJECT>
-    <ID name="Supply delivery" mc="Standard.Class" uid="dc5b7f7d-aa57-43fb-8b02-5d1735163302"/>
+    <ID name="Supply delivery order" mc="Standard.Class" uid="dc5b7f7d-aa57-43fb-8b02-5d1735163302"/>
     <PID name="Business Structure" mc="Standard.Package" uid="71880b7d-5775-451c-b062-046ccb55dea1"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,10 +11,18 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Supply delivery]]></ATT>
+      <ATT name="Name"><![CDATA[Supply delivery order]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
+      <COMP relation="OwnedEnd">
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="7da71ea1-c2dc-4c6b-92d5-8c8a01104f03"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="delivery addess" mc="Standard.AssociationEnd" uid="d3dd3312-156e-4531-a00e-a5d2a7eeeebc"/>
+        </REFOBJ>
+      </COMP>
       <COMP relation="Parent">
         <OBJECT>
           <ID name="Generalization" mc="Standard.Generalization" uid="b7f045f1-c9ff-44e7-9c47-a88a821a13df"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Marketing strategy " version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Marketing strategy order" version="4">
   <OBJECT>
-    <ID name="Marketing strategy " mc="Standard.Class" uid="4efc5910-e8b6-4e75-b063-bda41be074b7"/>
+    <ID name="Marketing strategy order" mc="Standard.Class" uid="4efc5910-e8b6-4e75-b063-bda41be074b7"/>
     <PID name="Business Structure" mc="Standard.Package" uid="71880b7d-5775-451c-b062-046ccb55dea1"/>
     <ATTRIBUTES>
       <ATT name="IsActive">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Marketing strategy ]]></ATT>
+      <ATT name="Name"><![CDATA[Marketing strategy order]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

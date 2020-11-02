@@ -17,7 +17,7 @@
     <DEPENDENCIES>
       <COMP relation="OwnedEnd">
         <OBJECT>
-          <ID name="" mc="Standard.AssociationEnd" uid="6de9789c-5d44-4802-8f98-f4510a091065"/>
+          <ID name="service provider" mc="Standard.AssociationEnd" uid="6de9789c-5d44-4802-8f98-f4510a091065"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -25,12 +25,12 @@
             <ATT name="IsDerived">false</ATT>
             <ATT name="IsOrdered">false</ATT>
             <ATT name="IsUnique">false</ATT>
-            <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
+            <ATT name="MultiplicityMin"><![CDATA[1]]></ATT>
             <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
             <ATT name="Visibility">Public</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"></ATT>
+            <ATT name="Name"><![CDATA[service provider]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -44,8 +44,8 @@
                   <ATT name="IsDerived">false</ATT>
                   <ATT name="IsOrdered">false</ATT>
                   <ATT name="IsUnique">false</ATT>
-                  <ATT name="MultiplicityMin"><![CDATA[0]]></ATT>
-                  <ATT name="MultiplicityMax"><![CDATA[1]]></ATT>
+                  <ATT name="MultiplicityMin"></ATT>
+                  <ATT name="MultiplicityMax"><![CDATA[*]]></ATT>
                   <ATT name="Visibility">Public</ATT>
                   <ATT name="IsClass">false</ATT>
                   <ATT name="IsAbstract">false</ATT>
@@ -54,13 +54,13 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="" mc="Standard.AssociationEnd" uid="6de9789c-5d44-4802-8f98-f4510a091065"/>
+                    <COMPID name="service provider" mc="Standard.AssociationEnd" uid="6de9789c-5d44-4802-8f98-f4510a091065"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="service provider" mc="Standard.Association" uid="d3fbb6ff-670b-478c-8f64-831784886eb6"/>
+                      <ID name="" mc="Standard.Association" uid="d3fbb6ff-670b-478c-8f64-831784886eb6"/>
                       <ATTRIBUTES>
-                        <ATT name="Name"><![CDATA[service provider]]></ATT>
+                        <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES></DEPENDENCIES>
@@ -70,7 +70,7 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="service provider" mc="Standard.Association" uid="d3fbb6ff-670b-478c-8f64-831784886eb6"/>
+              <COMPID name="" mc="Standard.Association" uid="d3fbb6ff-670b-478c-8f64-831784886eb6"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
