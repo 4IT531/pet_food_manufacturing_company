@@ -22,9 +22,6 @@
         <REFOBJ>
           <ID name="customer" mc="Standard.AssociationEnd" uid="915cff99-8125-4b4c-b177-4c8fe4d9eed4"/>
         </REFOBJ>
-        <REFOBJ>
-          <ID name="" mc="Standard.AssociationEnd" uid="25e89d4d-0684-4f45-ad48-c83238febea0"/>
-        </REFOBJ>
         <OBJECT>
           <ID name="" mc="Standard.AssociationEnd" uid="36bf8dfd-558d-44ce-87af-9428ee4a6698"/>
           <ATTRIBUTES>
@@ -99,6 +96,9 @@
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="25e89d4d-0684-4f45-ad48-c83238febea0"/>
+        </REFOBJ>
       </COMP>
       <COMP relation="Parent">
         <OBJECT>
