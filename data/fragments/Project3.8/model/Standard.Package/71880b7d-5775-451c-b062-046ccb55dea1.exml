@@ -16,7 +16,7 @@
       <COMP relation="OwnedElement">
         <COMPID name="Pet food mixture" mc="Standard.Class" uid="ed840242-827c-4ca4-b51e-f9aa8b9065e2"/>
         <COMPID name="Pet food mixture order" mc="Standard.Class" uid="86c597c0-7ce6-4fde-864a-cd35fa9a002b"/>
-        <COMPID name="Warranty request" mc="Standard.Class" uid="4c47d3fa-7497-498d-a16d-bcf851a93f53"/>
+        <COMPID name="Warranty" mc="Standard.Class" uid="4c47d3fa-7497-498d-a16d-bcf851a93f53"/>
         <COMPID name="Business Partner" mc="Standard.Class" uid="0641cf1c-e133-4a2e-a0c2-5782222f49a5"/>
         <COMPID name="Address" mc="Standard.Class" uid="08076add-02fe-485f-8c76-2bd6bf1a45d6"/>
         <COMPID name="Natural Person" mc="Standard.Class" uid="6453fa4f-456c-4005-81b4-b32bd9495553"/>
@@ -24,7 +24,6 @@
         <COMPID name="Order" mc="Standard.Class" uid="9d83336c-7907-4e3f-b3d1-0ac1eec7587f"/>
         <COMPID name="Supply order" mc="Standard.Class" uid="2f1094dc-68c7-48dd-b851-e29dada10574"/>
         <COMPID name="Pet food mixture production order" mc="Standard.Class" uid="0f0b237a-5b68-4184-b932-5d516a6a4da1"/>
-        <COMPID name="Marketing strategy request" mc="Standard.Class" uid="4efc5910-e8b6-4e75-b063-bda41be074b7"/>
         <COMPID name="Pet food mixture acquisition order" mc="Standard.Class" uid="e38165f5-c2ac-4f81-9166-0e2466662f57"/>
         <COMPID name="Pet food delivery order" mc="Standard.Class" uid="838aad57-0e6a-4da9-b36a-05342d4143f7"/>
         <COMPID name="Supply delivery order" mc="Standard.Class" uid="dc5b7f7d-aa57-43fb-8b02-5d1735163302"/>
@@ -33,14 +32,12 @@
         <COMPID name="Ingredient" mc="Standard.Class" uid="485bc842-ee10-46f3-b7e6-c10d024bd861"/>
         <COMPID name="Material" mc="Standard.Class" uid="ebe05805-39a4-47d9-aff4-eeaf78da2497"/>
         <COMPID name="Invoice" mc="Standard.Class" uid="944eaa2f-e361-4103-b159-2e8964f21105"/>
-        <COMPID name="Custom" mc="Standard.Class" uid="7371e29b-ddfa-4bce-9f01-f8916fbb31c5"/>
-        <COMPID name="General" mc="Standard.Class" uid="241a53f4-a535-4f3c-a7c2-80e756151f7a"/>
-        <COMPID name="Ordered ingredient" mc="Standard.Class" uid="bb3ba730-3ba8-4c9d-893f-bf6b2594ce9c"/>
-        <COMPID name="Ordered material" mc="Standard.Class" uid="f44cc531-d3f6-4677-ade2-c1775a2a2e35"/>
         <COMPID name="Ingredient for production" mc="Standard.Class" uid="2cc99e8b-2331-4a45-bcce-3ea309dc3905"/>
         <COMPID name="Ordered pet food mixture" mc="Standard.Class" uid="8a5c9b3e-ccf2-452b-b8cf-08e8f181cffd"/>
         <COMPID name="Acquisitioned pet food mixture" mc="Standard.Class" uid="ef5775a2-a3d1-4a58-939a-785a17513a22"/>
         <COMPID name="Produced pet food mixture" mc="Standard.Class" uid="a38ebe8d-782a-41cc-9d57-d4536d0c9cd6"/>
+        <COMPID name="Ordered stuff" mc="Standard.Class" uid="b916e28d-2990-4169-911d-c44e374b3598"/>
+        <COMPID name="Recipe" mc="Standard.Class" uid="eb0ed52c-f22d-41ca-8591-be9d5059f622"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessEntities" mc="Infrastructure.Stereotype" uid="1b78cab2-ab6d-11df-9861-0014224f9977"/>

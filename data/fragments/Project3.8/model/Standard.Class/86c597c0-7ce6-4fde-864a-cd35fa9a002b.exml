@@ -44,7 +44,7 @@
               <OBJECT>
                 <ID name="" mc="Standard.AssociationEnd" uid="663470a4-db01-4692-a41d-a2b09006da80"/>
                 <ATTRIBUTES>
-                  <ATT name="Aggregation">KindIsAggregation</ATT>
+                  <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
                   <ATT name="Changeable">ReadWrite</ATT>
                   <ATT name="IsDerived">false</ATT>
@@ -98,6 +98,9 @@
         </OBJECT>
         <REFOBJ>
           <ID name="" mc="Standard.AssociationEnd" uid="25e89d4d-0684-4f45-ad48-c83238febea0"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="c6e6dc27-22b1-4264-8b3a-e2e84e686671"/>
         </REFOBJ>
       </COMP>
       <COMP relation="Parent">

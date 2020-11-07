@@ -75,10 +75,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <REFOBJ>
-          <ID name="" mc="Standard.AssociationEnd" uid="54cfbd32-717a-468d-b991-f6984e46297c"/>
-        </REFOBJ>
-        <REFOBJ>
-          <ID name="" mc="Standard.AssociationEnd" uid="f521bd3b-f22d-49d3-877e-cfd6bdc1e2bb"/>
+          <ID name="" mc="Standard.AssociationEnd" uid="d943e6af-82fd-48c2-8331-0c6302133e60"/>
         </REFOBJ>
       </COMP>
       <COMP relation="Parent">
