@@ -194,6 +194,9 @@
         <REFOBJ>
           <ID name="" mc="Standard.AssociationEnd" uid="c6e6dc27-22b1-4264-8b3a-e2e84e686671"/>
         </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="d91c1cba-498d-4fe7-b53b-6d2b08a34518"/>
+        </REFOBJ>
       </COMP>
       <COMP relation="Parent">
         <OBJECT>

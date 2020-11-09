@@ -1,4 +1,4 @@
-#Mon Nov 09 18:00:19 CET 2020
+#Mon Nov 09 20:46:38 CET 2020
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.com.modeliosoft.modelio.archimate.perspective.parentId=archimate.ui.partstack.bottom
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
 org.modelio.diagram.editor.OpenedDiagrams9='Sub-Process' {f253497c-02c9-4e6f-b724-faaa3adf3061} Standard.BpmnSubProcessDiagram
@@ -13,4 +13,5 @@ org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/U
 org.modelio.diagram.editor.OpenedDiagrams2='Business Process' {a1af4acc-0ca0-4b02-bc05-d4e5f1ece10d} Standard.BpmnProcessDesignDiagram
 org.modelio.diagram.editor.OpenedDiagrams1='Class diagram' {20b56a7b-a4e9-45e8-9063-194d32ddfda3} Standard.StaticDiagram
 org.modelio.diagram.editor.OpenedDiagrams0='Event diagram' {396ae2d5-16bd-46d6-abdc-39fe4830851b} Standard.StaticDiagram
+org.modelio.diagram.editor.OpenedDiagrams10='Lifecycle Data Lifecycle diagram' {0cd3ae30-82e8-4d60-903d-a22fbe2cddad} Standard.StateMachineDiagram
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts

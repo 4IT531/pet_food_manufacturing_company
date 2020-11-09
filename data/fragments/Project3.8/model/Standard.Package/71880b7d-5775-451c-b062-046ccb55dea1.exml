@@ -38,6 +38,7 @@
         <COMPID name="Produced pet food mixture" mc="Standard.Class" uid="a38ebe8d-782a-41cc-9d57-d4536d0c9cd6"/>
         <COMPID name="Ordered stuff" mc="Standard.Class" uid="b916e28d-2990-4169-911d-c44e374b3598"/>
         <COMPID name="Recipe" mc="Standard.Class" uid="eb0ed52c-f22d-41ca-8591-be9d5059f622"/>
+        <COMPID name="Pet food mixture order revision request" mc="Standard.Class" uid="0ac71840-d27f-4282-ae01-028cb594d910"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessEntities" mc="Infrastructure.Stereotype" uid="1b78cab2-ab6d-11df-9861-0014224f9977"/>
