@@ -247,6 +247,9 @@
           <ID name="" mc="Standard.AssociationEnd" uid="7e9ea754-16fd-4162-b37c-c4fa878b67cc"/>
         </REFOBJ>
       </COMP>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Lifecycle" mc="Standard.StateMachine" uid="0afbd3f6-c6ed-48c8-8ebc-73501784b2d5"/>
+      </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessEntity" mc="Infrastructure.Stereotype" uid="146eb72a-ab73-11df-9861-0014224f9977"/>
       </LINK>

@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Lifecycle" version="4">
+  <OBJECT>
+    <ID name="Lifecycle" mc="Standard.StateMachine" uid="4791823c-cf5f-4c94-9055-eab4f1342fc7"/>
+    <PID name="Pet food mixture acquisition order" mc="Standard.Class" uid="e38165f5-c2ac-4f81-9166-0e2466662f57"/>
+    <ATTRIBUTES>
+      <ATT name="Kind">Dynamic</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Lifecycle]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Top">
+        <OBJECT>
+          <ID name="" mc="Standard.Region" uid="ac42f37e-fe87-4f56-be7e-b7a356f3afbd"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Sub">
+              <OBJECT>
+                <ID name="Sent" mc="Standard.State" uid="4098ab8d-3828-44db-aef8-47d50dbb8a7e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Sent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
+      </LINK>
+      <COMP relation="Product">
+        <COMPID name="Lifecycle Data Lifecycle diagram" mc="Standard.StateMachineDiagram" uid="fa657dee-974a-4128-b4de-8a8a0da7b55d"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

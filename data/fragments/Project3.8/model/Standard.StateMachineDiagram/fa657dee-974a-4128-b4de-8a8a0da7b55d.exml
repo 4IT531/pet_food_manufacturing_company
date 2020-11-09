@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Lifecycle Data Lifecycle diagram" version="4">
+  <OBJECT>
+    <ID name="Lifecycle Data Lifecycle diagram" mc="Standard.StateMachineDiagram" uid="fa657dee-974a-4128-b4de-8a8a0da7b55d"/>
+    <PID name="Lifecycle" mc="Standard.StateMachine" uid="4791823c-cf5f-4c94-9055-eab4f1342fc7"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">9</ATT>
+      <ATT name="UiData"><![CDATA[eJztmG1P6jAUgP/Ksu+MoUMwIkbFECK+BLwm9xM5Ww+z2rWmLcL+/e0Y8wWuYwJyTS4fCGu38/6crl3jZBIx6wWlooIf2xXHta2TZuPGf8RAW5SYKdvS8TMe20KGTiQIMiocQiGUEDlIqBbSURo0OsgwQq5VOsweaUf9ZNhKh7YVwaOQg1eLrt1s3ErxjFLHFofIGGIQi5FugQZz7x7YCGce8BFjdrnZKGcCC6J9HTO0P/i/l+e/Sp5XTiAkOqlsAf/OQQVAkGTGLia6h8OCVq6NipmkhRPd8jvGx+llcnEnQhjOhVhOg8kLWyJLMm68mMvYVTJlvSQzSXKAE5DEmRbkCoIHyrO6WEM4qNYIYumw5kHJq+zVS75HsFSHOrgEan61SvJzz0DpSy7GvAs+sjlH+lpSHtrNLh1iEAcMraS+1ttwlqtGeSqVG6xg2OHnInoWimpTpE9MFVB1/kAZkZho6FKlP3CzvyL3GfBrkd4zXgAPE0hmxat67tGe6x5VzK/qfrkLvG/vgqQF0n7bCr6W5x7Wwa+T0n7dsOp5xC8BDs1VjVRd4vt1qOEGgO2byv4cKKtrQnkraQQyvjaSG+bTPVqZzYOibBpVk3htQL0doDmAXgHlCR5rglpbE9Q04q1vFurbRfFgh2IOig9ociYLKFQPYjygwYKiM2EsAX/NyhCYWhLnVNUTxmMhyQa0aQieBkqjRLFEm5ajIq6xv6S/gKpXsN6xfrh6i3a4CYkDu5PA0xKqthSj5+03bMXddezP6Vj9xsMq74/y7C+f28qqJ1IDbg/Dfwlr4bPoDtbvh1WmLGwG1DkJqu7NiAawwlq9qIoq6k8L+9XX0VvBlzm8eD5wZsTNmU2W/hDlq9lKgTdNJf8snTVpIKJIcGf6ikufmt0yjdvCIYyYvkpmL9LZ9beI87HMnwwKdHThc/Xu7PL9Hd2JIExPDv/JprGob+vuGosuH+uuGUvtdCl/UsWX4bOwJWFs2OhCbOx/bN38bynZokRSBcosS0ZFshK917idLcTXpH7Ex2A63whZj7baTvf090VvcHZ6ftnu3fy6bm14q/i5lvele6PoPRO5n6J2THw3E3c3t5uG4dNbfwDd/3Rl]]></ATT>
+      <ATT name="PreviewData"><![CDATA[data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABGCAIAAACIdsdYAAACo0lEQVR4nO3caW7aUBQFYG8N4dUUcLoTUELYBkKYpJtIUzWg9lfmBMw8z5hec82DZsLG5UaVz9H5kVgGwperhyN40ZaISLTP/gHCEkALBdBCAbRQAC0UQAsF0EIBtFAALZSg0Fpo8jnQ6uGr9/fc2sMDt/746PbpidqgPj+rNstlbqtScWtZbW61yu3Uatxuve620aD2mk2nrRa3325zB52O2253yO31uKN+nzseDNwOh9QJdTRSnY7H3Nlk4nY6nXNnM25Acd83s25v6cGsu7sqNzTQi/mcS0/fXiwOC82/UrIOMzQp7zHaPs52ibnhhub6svZ6Kt1p5eYG0NvQtm17t/Z0HhED+l1o2/5n0KwM6NfQ3od690lKGdBvQi+9WQMa0KGCprsoX18D+mNohgI0oAENaEADGtCABjSgAR0C6IuTyPpdo0iq5B/6m6FnSoDeBX2VJOaYSROdjdGj66lLX9C/0zrdCNC7oc0vzigb2RdLx4/0esz1458MfZ6g7xKnx9HV4Wim2BkUDPUW6tczQHuAduSS3xV0IU4H4mc0znnnKyOvoLUjkybaPHKOmphoX2t0djOWWqzgQOecI/HcaunIG+uhXkFHT68IupihsY6e/AK036sOM6aoc93LlK79nUReLR3nbUAHvbxbjbZz4bE90ZsXQ0AHgc46epFkUUHTRH+0RgN674m+SEbVErG5jn73quMF9LCU5nVGT5cAjb8MAQ1oQAMa0IAGNKABDWhAA/r/gSZlDR9yxKdJAQ1o/9DbqwegD7i1YonNQmKbhZbY/iaz/U1ZA/rgGzqVtYYtyofeosyxsOleYNP9tjUnPNDqKe+hvCe0Ck20FprQLAexwr/6EQqghQJooQBaKIAWCqCFAmihAFoogBYKoIXyB9bZ6KpwUFU4AAAAAElFTkSuQmCC]]></ATT>
+      <ATT name="Name"><![CDATA[Lifecycle Data Lifecycle diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <REFOBJ>
+          <ID name="Sent" mc="Standard.State" uid="4098ab8d-3828-44db-aef8-47d50dbb8a7e"/>
+        </REFOBJ>
+      </LINK>
+      <LINK relation="Extension">
+        <FOREIGNID name="TogafDataLifeCycleDiagram" mc="Infrastructure.Stereotype" uid="f4e0db8a-ab73-11df-9861-0014224f9977"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

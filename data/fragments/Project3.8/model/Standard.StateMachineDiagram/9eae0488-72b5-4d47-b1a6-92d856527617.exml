@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Lifecycle Data Lifecycle diagram" version="4">
+  <OBJECT>
+    <ID name="Lifecycle Data Lifecycle diagram" mc="Standard.StateMachineDiagram" uid="9eae0488-72b5-4d47-b1a6-92d856527617"/>
+    <PID name="Lifecycle" mc="Standard.StateMachine" uid="d83d5cbf-f24c-4c9f-ae76-85f1cf931d87"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">13</ATT>
+      <ATT name="UiData"><![CDATA[eJztmm1vmzAQx78K4j0EKAmJmnVak6qqlj4o7SbtVXXAkXo1dmWctXz7mZD0ga6UhoymGy+ixIDPZ/t3tu8fhp/vYqr9QpEQzj7ptmnp2ue94an/EwOpkVBd0jWZ3uAnnYuZGfMQKeFmSGAmIDYxJJILM5Eg0USKMTKZ5MXVI4fxeVYc50Vdi+EnF5f3LVr63vBM8BsUMtUYxKohCimfyzFIUPe+A53j0gM2p1Tv7A07qwrPqp7LlKL+xH+nzP8kez4xAy7QzOtW8G8ESQAhhqvGDu7kFKOKrZwoE8uaGt7JsX+kfFz8zH5c8BlEhS528s6UdVsgzUZceVEYsePskvYru5INDrAQRGguJuQYgivCVvOiDRDQcvt9w3P8ruGGrmf4NvSMgRP2u72u4/Vsr3zsKSTyK+O3bAI+0oIj51IQNtP3JiTCIA0oatn8ag/F5VgNO4tapZ3lFI/YiMc3PCFSTdILTVUwNboiNBSYWZiQRD7hZmdN7lfA1yJ9qrwANssgWU5e17J2bVd91HfXenMUuH89CrIQyOOtEXw133dd2+m5BniogB0EgdEPfMuI3L4XRE5XffobAHYkMPNte7js1uTyTJAYRHqiam4YUWt3bTx7VfFUpu7S2oy6LaPljB4DYRkhNVn1arKad7rxI0O/WRp7LY3lNF6hGjZRwWByxW8vSfDM0D5XLQG7H5gIaILlXV2Yusb0lotwA9YkBNeXiUSB/BVrUsyruEb/MAMVTN2z9Qj3wfpResRUlxjQCwEsn8LkUPD5TfMxa1tt0G5V0MoHJNbZRTrLr3J07XWzU8XuFGfvyWvlvLTltRFeRY7DZlgt1CDJd1UiAayxYj83RRLiL+b2rZvSw5y/5vDzXMFcQldoNtsAZijum7Ur7Dd2eWq9itOAxzFn5mKjy59a3lKxO8YI5lQeZ1cP8qv1z4rFvhSzhApBXTnNbvOYRoL6KIZZnkX8J6fHqr7VPT5WXUE2uWzUVT42rcg51u6Os7bkYVfWPD6MJBf2Is/fgcCIuugabtSLDLVweEbkueAP/H6I1itsVlsmgAVI6TaJcnZdpWMrVTm7YSHEbuqQ+oFB3ZAyZ9dI+t9TmnMaTvPt4rmmRbKV55qV55waGsf26HNOw3pHG7hbItE5Nf5If1+Jzmk4m2+RbVW67VHpnPJ0+wOrdE7Dbxu0aU0r1P3zQt2r7UwIu06qL8b7s7GAW8XGBFLV/tMALldbVktTmBtI1OKkTGTr0WOLzRwn3lZrK97jJMVAWMXo+NCcfPlxML3c/zL6ejg9/XYy3vCx8WUrj6fugaLHTJRqVS0Tf5uJi9OzTcPw4q3fpMReWw==]]></ATT>
+      <ATT name="PreviewData"><![CDATA[data:image/png;base64,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]]></ATT>
+      <ATT name="Name"><![CDATA[Lifecycle Data Lifecycle diagram]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Represented">
+        <REFOBJ>
+          <ID name="Created" mc="Standard.State" uid="bb441264-a7e5-49cc-8cb0-f487cf25cf28"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="Cancelled" mc="Standard.State" uid="d6f7b3ac-f5e4-4f6f-b447-f74ab9b8de0e"/>
+        </REFOBJ>
+      </LINK>
+      <LINK relation="Extension">
+        <FOREIGNID name="TogafDataLifeCycleDiagram" mc="Infrastructure.Stereotype" uid="f4e0db8a-ab73-11df-9861-0014224f9977"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
