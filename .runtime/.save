@@ -1,8 +1,17 @@
-#Tue Nov 03 18:43:31 CET 2020
-org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
-org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
-org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
-org.modelio.diagram.editor.OpenedDiagrams1='Class diagram' {20b56a7b-a4e9-45e8-9063-194d32ddfda3} Standard.StaticDiagram
-org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
-org.modelio.diagram.editor.OpenedDiagrams0='Event diagram' {396ae2d5-16bd-46d6-abdc-39fe4830851b} Standard.StaticDiagram
+#Mon Nov 09 20:46:38 CET 2020
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.com.modeliosoft.modelio.archimate.perspective.parentId=archimate.ui.partstack.bottom
+org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.diagram.editor.OpenedDiagrams9='Sub-Process' {f253497c-02c9-4e6f-b724-faaa3adf3061} Standard.BpmnSubProcessDiagram
+org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
+org.modelio.diagram.editor.OpenedDiagrams8='Lifecycle Data Lifecycle diagram' {9eae0488-72b5-4d47-b1a6-92d856527617} Standard.StateMachineDiagram
+org.modelio.diagram.editor.OpenedDiagrams7='Sub-Process' {ed0e23f0-47a6-493d-a7bf-b65145346b7f} Standard.BpmnSubProcessDiagram
+org.modelio.diagram.editor.OpenedDiagrams6='Lifecycle Data Lifecycle diagram' {fa657dee-974a-4128-b4de-8a8a0da7b55d} Standard.StateMachineDiagram
+org.modelio.diagram.editor.OpenedDiagrams5='Lifecycle Data Lifecycle diagram' {93da9d78-6402-44ef-a254-c276f72d7913} Standard.StateMachineDiagram
+org.modelio.diagram.editor.OpenedDiagrams4='Lifecycle Data Lifecycle diagram' {908ce0ad-f2a4-4014-87e4-8e34a29020de} Standard.StateMachineDiagram
+org.modelio.diagram.editor.OpenedDiagrams3='Sub-Process' {1f88caf8-b740-4671-836f-e5696941908a} Standard.BpmnSubProcessDiagram
+org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
+org.modelio.diagram.editor.OpenedDiagrams2='Business Process' {a1af4acc-0ca0-4b02-bc05-d4e5f1ece10d} Standard.BpmnProcessDesignDiagram
+org.modelio.diagram.editor.OpenedDiagrams1='Class diagram' {20b56a7b-a4e9-45e8-9063-194d32ddfda3} Standard.StaticDiagram
+org.modelio.diagram.editor.OpenedDiagrams0='Event diagram' {396ae2d5-16bd-46d6-abdc-39fe4830851b} Standard.StaticDiagram
+org.modelio.diagram.editor.OpenedDiagrams10='Lifecycle Data Lifecycle diagram' {0cd3ae30-82e8-4d60-903d-a22fbe2cddad} Standard.StateMachineDiagram
+org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts

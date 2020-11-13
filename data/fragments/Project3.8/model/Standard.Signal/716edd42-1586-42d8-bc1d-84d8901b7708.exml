@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Marketing strategy request arrived" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Revised order" version="4">
   <OBJECT>
-    <ID name="Marketing strategy request arrived" mc="Standard.Signal" uid="f48f9395-f75b-4b57-a20f-a85609351b56"/>
+    <ID name="Revised order" mc="Standard.Signal" uid="716edd42-1586-42d8-bc1d-84d8901b7708"/>
     <PID name="Business Behavior" mc="Standard.Package" uid="aea51b7b-2ee0-453f-963d-faa22c541301"/>
     <ATTRIBUTES>
       <ATT name="IsEvent">false</ATT>
@@ -11,23 +11,23 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Marketing strategy request arrived]]></ATT>
+      <ATT name="Name"><![CDATA[Revised order]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <LINK relation="Extension">
-        <FOREIGNID name="TogafEvent" mc="Infrastructure.Stereotype" uid="3f3991b2-ab74-11df-9861-0014224f9977"/>
+        <FOREIGNID name="TogafProduct" mc="Infrastructure.Stereotype" uid="409707ea-ab85-11df-9861-0014224f9977"/>
       </LINK>
       <COMP relation="DependsOnDependency">
         <OBJECT>
-          <ID name="" mc="Infrastructure.Dependency" uid="6e1b6fe0-9a46-45c0-ae4e-15ad4e294c3b"/>
+          <ID name="" mc="Infrastructure.Dependency" uid="f6100002-72df-48ae-b89f-c7639c2e70b9"/>
           <ATTRIBUTES>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Marketing" mc="Standard.Actor" uid="cc50d0b6-64b7-4965-bcbf-10c72df0ef50"/>
+              <ID name="Sale of pet food mixture" mc="Standard.BpmnProcess" uid="22c971a8-2da9-448f-997f-d03db8ef5b74"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
