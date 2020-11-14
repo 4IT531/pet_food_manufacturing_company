@@ -1,15 +1,15 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Delivery" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Ingredients delivery" version="4">
   <OBJECT>
-    <ID name="Delivery" mc="Standard.Actor" uid="4bd02676-f7b9-4f6d-a8d5-a8164fe0e6a2"/>
-    <PID name="Business Behavior" mc="Standard.Package" uid="aea51b7b-2ee0-453f-963d-faa22c541301"/>
+    <ID name="Ingredients delivery" mc="Standard.Actor" uid="4bd02676-f7b9-4f6d-a8d5-a8164fe0e6a2"/>
+    <PID name="Inventory management" mc="Standard.Package" uid="1f238be4-d0bf-489a-a3f8-07a940826578"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
       <ATT name="IsAbstract">false</ATT>
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Delivery]]></ATT>
+      <ATT name="Name"><![CDATA[Ingredients delivery]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -25,7 +25,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Delivery order completed" mc="Standard.Signal" uid="0bca1f96-0dd9-477f-901b-380bcda992f1"/>
+              <ID name="Ingredients sent by supplier" mc="Standard.Signal" uid="0bca1f96-0dd9-477f-901b-380bcda992f1"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

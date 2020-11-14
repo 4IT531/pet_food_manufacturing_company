@@ -4,9 +4,9 @@
     <ID name="Business Process" mc="Standard.BpmnProcessDesignDiagram" uid="95ae9670-5336-4841-8ea3-97286efbe3b2"/>
     <PID name="Warranty Resolution" mc="Standard.BpmnProcess" uid="6491468b-1456-4d0c-9caa-13255adfc445"/>
     <ATTRIBUTES>
-      <ATT name="UiDataVersion">0</ATT>
-      <ATT name="UiData"></ATT>
-      <ATT name="PreviewData"></ATT>
+      <ATT name="UiDataVersion">1</ATT>
+      <ATT name="UiData"><![CDATA[eJztVlFv2jAQ/itW3nGAAAWJUhVSIVRaKrq12lPl4CNz69iRbQr593NIqEbaRBRVbJr2FOt89913d5/t9C82EUevoDST4txp4LqDLgb9WfAMC4MYtSYHmSSGc0eqEEeSAmcSU0ZCRSIMlBmpcBBHAgOHCITRu02NYyUXoDUFzUKBx9HQut1lNn9r8zNPB0XkWaqnNxp1Z9C3jjEokyBBIpudk0SujE8MsXsPhK8gpyVWnDvuoO/uAt6F3puEg7NXVLOqKJ36a7yQCnAWewC/EdELQoHukl1tzByWB2a5tRB5JIKN8YOJ5bhdpoubLBJ5eFMo1M1KqipeAScGqOVS6NtNakKvqSVtERGUKIrLRoR6bQK9zlm91va8Tq3VbTVqXSBerXfW7HZgGYAXNKvHwIk210KuxZQEwAts7o1iIrRGd2utrEhymIiRjGKpmbHzOB5q9JNxqiBFmDJt9iTifVr3a6lellyurdIf8+Xpld06VNkWapMcLe9U29lB+tcVOVxpJmxylJP4QoXuxhJImhyjVjf/fNT+d1sFsCkTL7oCqeA+DH1F1pb1lCSg9iXXrjwpb69CFq8xTxHsGdkDPM05+VzU3yNURksU5I/x9PLH1fxpeDm6Hs9n32/9rxZSKcrv89Mf3aCd/7r447r4Nrs79c1S/p+H8zEWSE+EgTCddd65Rsmb8gtTjruC]]></ATT>
+      <ATT name="PreviewData"><![CDATA[data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAIAAAAmdTLBAAAAGElEQVR4nGP4TxlgGNU/qn9U/6j+EaofAB8cJiE1IQRUAAAAAElFTkSuQmCC]]></ATT>
       <ATT name="Name"><![CDATA[Business Process]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>

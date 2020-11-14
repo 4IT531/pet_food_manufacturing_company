@@ -14,14 +14,17 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedBehavior">
-        <COMPID name="Supply management" mc="Standard.BpmnProcess" uid="0200fc30-7997-4f8b-9537-38bdb3006ebf"/>
-        <COMPID name="Supply order" mc="Standard.BpmnProcess" uid="df21ada2-df55-405c-a95e-13e7bbb1773d"/>
+        <COMPID name="Supply management" mc="Standard.BpmnProcess" uid="9b4e1670-b832-4af0-96ce-798192bef69c"/>
       </COMP>
       <COMP relation="OwnedElement">
-        <COMPID name="Pet food mixture acquisition order arrived" mc="Standard.Signal" uid="68f90a1f-5f68-4082-8705-269d07b35fa9"/>
-        <COMPID name="Pet food mixture acquisition order completed" mc="Standard.Signal" uid="57a5fce7-f5c3-4f76-9ac7-3942149b95ad"/>
-        <COMPID name="Supply order arrived" mc="Standard.Signal" uid="a1b555f5-aaf4-4957-bdef-c72da4434f33"/>
-        <COMPID name="Supply order completed" mc="Standard.Signal" uid="fb13ae66-4c1a-44ef-98e0-896c0d295bc8"/>
+        <COMPID name="Pet food mixture order arrived" mc="Standard.Signal" uid="68f90a1f-5f68-4082-8705-269d07b35fa9"/>
+        <COMPID name="Pet food supply order completed" mc="Standard.Signal" uid="57a5fce7-f5c3-4f76-9ac7-3942149b95ad"/>
+        <COMPID name="Ingredients sent by supplier" mc="Standard.Signal" uid="0bca1f96-0dd9-477f-901b-380bcda992f1"/>
+        <COMPID name="Ingredients ordered" mc="Standard.Signal" uid="9634f39e-6187-478a-bda4-b20db0fced94"/>
+        <COMPID name="Ingredients delivery" mc="Standard.Actor" uid="4bd02676-f7b9-4f6d-a8d5-a8164fe0e6a2"/>
+        <COMPID name="Material delivery" mc="Standard.Actor" uid="8b21a108-ce01-4fec-9a9b-e140f8852865"/>
+        <COMPID name="Material sent by supplier" mc="Standard.Signal" uid="9cfd483a-a1e8-47ff-a6dc-6e0e59e3d78e"/>
+        <COMPID name="Material ordered" mc="Standard.Signal" uid="38873c46-c818-434c-93e0-6cb31b82a2e3"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessOrganizationDomain" mc="Infrastructure.Stereotype" uid="b42187ca-ab75-11df-9861-0014224f9977"/>

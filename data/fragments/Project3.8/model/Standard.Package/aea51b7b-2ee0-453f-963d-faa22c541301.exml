@@ -19,6 +19,7 @@
         <COMPID name="Inventory management" mc="Standard.Package" uid="1f238be4-d0bf-489a-a3f8-07a940826578"/>
         <COMPID name="Warranty process" mc="Standard.Package" uid="79d5b3a4-d318-4a32-b7a2-74a5d86e9ae7"/>
         <COMPID name="Delivery" mc="Standard.Actor" uid="524fe6b0-78cc-4979-a7a7-98df1df63375"/>
+        <COMPID name="Marketing" mc="Standard.Actor" uid="cc50d0b6-64b7-4965-bcbf-10c72df0ef50"/>
         <COMPID name="Customer" mc="Standard.Actor" uid="e2806ab7-4a5f-405e-a17f-b8d2541d574a"/>
         <COMPID name="Delivery order arrived" mc="Standard.Signal" uid="3f7625cf-6a95-4026-8f53-c6d71d39f9dd"/>
         <COMPID name="Delivery order completed" mc="Standard.Signal" uid="05b33296-e9de-400a-b5aa-ec05a2c0ab8e"/>
@@ -27,11 +28,8 @@
         <COMPID name="Maintanance request fulfilled" mc="Standard.Signal" uid="42245fe5-8042-431e-b76f-2c199de2dde5"/>
         <COMPID name="Revenue Authority" mc="Standard.Actor" uid="33c497ae-7b3d-47b1-9537-d2b7da99e64e"/>
         <COMPID name="Bookkeeping" mc="Standard.Package" uid="be17d6f1-b54b-4257-b7a6-bf30557b69e7"/>
-        <COMPID name="Delivery" mc="Standard.Actor" uid="4bd02676-f7b9-4f6d-a8d5-a8164fe0e6a2"/>
-        <COMPID name="Delivery order completed" mc="Standard.Signal" uid="0bca1f96-0dd9-477f-901b-380bcda992f1"/>
-        <COMPID name="Delivery order arrived" mc="Standard.Signal" uid="9634f39e-6187-478a-bda4-b20db0fced94"/>
-        <COMPID name="Pet food mixture order revision request arrived" mc="Standard.Signal" uid="53bfe22b-f439-4ba2-86d9-06f899c03daf"/>
-        <COMPID name="Revised order" mc="Standard.Signal" uid="716edd42-1586-42d8-bc1d-84d8901b7708"/>
+        <COMPID name="Marketing strategy request arrived" mc="Standard.Signal" uid="f48f9395-f75b-4b57-a20f-a85609351b56"/>
+        <COMPID name="Marketing strategy request completed" mc="Standard.Signal" uid="1523d08d-6fd7-494e-93b9-b75815d25cb1"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessArchitecture" mc="Infrastructure.Stereotype" uid="56eadada-ab6d-11df-9861-0014224f9977"/>

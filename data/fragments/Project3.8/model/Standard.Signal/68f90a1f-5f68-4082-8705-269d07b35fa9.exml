@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Pet food mixture acquisition order arrived" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Pet food mixture order arrived" version="4">
   <OBJECT>
-    <ID name="Pet food mixture acquisition order arrived" mc="Standard.Signal" uid="68f90a1f-5f68-4082-8705-269d07b35fa9"/>
+    <ID name="Pet food mixture order arrived" mc="Standard.Signal" uid="68f90a1f-5f68-4082-8705-269d07b35fa9"/>
     <PID name="Inventory management" mc="Standard.Package" uid="1f238be4-d0bf-489a-a3f8-07a940826578"/>
     <ATTRIBUTES>
       <ATT name="IsEvent">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Pet food mixture acquisition order arrived]]></ATT>
+      <ATT name="Name"><![CDATA[Pet food mixture order arrived]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -20,14 +20,14 @@
       </LINK>
       <COMP relation="DependsOnDependency">
         <OBJECT>
-          <ID name="" mc="Infrastructure.Dependency" uid="888e3c77-ca9e-420d-9f4d-cbaca8c19bd1"/>
+          <ID name="" mc="Infrastructure.Dependency" uid="7c4f1afc-20ff-4bf4-9949-de43f59e652d"/>
           <ATTRIBUTES>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Supply management" mc="Standard.BpmnProcess" uid="0200fc30-7997-4f8b-9537-38bdb3006ebf"/>
+              <ID name="Supply management" mc="Standard.BpmnProcess" uid="9b4e1670-b832-4af0-96ce-798192bef69c"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

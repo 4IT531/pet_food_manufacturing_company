@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Delivery order completed" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Ingredients sent by supplier" version="4">
   <OBJECT>
-    <ID name="Delivery order completed" mc="Standard.Signal" uid="0bca1f96-0dd9-477f-901b-380bcda992f1"/>
-    <PID name="Business Behavior" mc="Standard.Package" uid="aea51b7b-2ee0-453f-963d-faa22c541301"/>
+    <ID name="Ingredients sent by supplier" mc="Standard.Signal" uid="0bca1f96-0dd9-477f-901b-380bcda992f1"/>
+    <PID name="Inventory management" mc="Standard.Package" uid="1f238be4-d0bf-489a-a3f8-07a940826578"/>
     <ATTRIBUTES>
       <ATT name="IsEvent">false</ATT>
       <ATT name="IsException">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Delivery order completed]]></ATT>
+      <ATT name="Name"><![CDATA[Ingredients sent by supplier]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -27,7 +27,19 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Supply order" mc="Standard.BpmnProcess" uid="df21ada2-df55-405c-a95e-13e7bbb1773d"/>
+              <ID name="Supply management" mc="Standard.BpmnProcess" uid="9b4e1670-b832-4af0-96ce-798192bef69c"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="6c1aeb3c-7d98-4729-ace1-799ddb2d926a"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Pet food mixture production order arrived" mc="Standard.Signal" uid="4580bf42-1419-4546-817d-f75cc0d1faf7"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

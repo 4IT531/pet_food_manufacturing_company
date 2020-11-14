@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Warranty" version="4">
+  <OBJECT>
+    <ID name="Warranty" mc="Standard.BpmnProcessDesignDiagram" uid="55ba5f60-9ffb-453a-8cb0-9d7cf9549cdb"/>
+    <PID name="Warranty Resolution" mc="Standard.BpmnProcess" uid="934d881d-8725-407f-acad-2508a181e88f"/>
+    <ATTRIBUTES>
+      <ATT name="UiDataVersion">1</ATT>
+      <ATT name="UiData"><![CDATA[eJztVm1v2jAQ/itWvuPQQbohUapCKoRKS0X3on2qnPiSuXXsyDYl+fd1SKhG2kQUVWya9inO+e655+4eOxmeZwlHT6A0k+LMOcFdB52PhovgAUKDGLUmB5k8hTNHqhgnkgJnElNGYkUSDJQZqXCQJgIDhwSE0dtNjVMlQ9CagmaxwNNkbN1uS5u/sfmlp4MS8iDV/QuNrjMaWscUlMmRIInNzkkuV8Ynhti974SvoKIlVpw77mjobgNehd6ZnIOzU9SntqJ04a9xKBXgMnYPfhOiQ0KBbpNdZmYJ0Z5ZbixEFYkgM34wsxw3y2JxXUaiHs5qhbplSW3FK+DEALVcan27LkzoqbAULSKCEkVx04iQ5wXEi067nUEUBZ2+1yOdL2FgX+nnMBp4/UFIg/YxcKLNlZBrMScB8BqbO6OYiK3R3VhbK5IcZmIik1RqZuw8Doea/GKcKigQ5kybHYn03q37tVSPEZdrq/Qf1fL4yu7vq2wLleUHy7vQdnmQ/nVFjleaCZscVSQ+UKHbsQSS5oeo1a0eb7X/1VYNbM7Eo25BqrmPY1+RtWU9JzmoXcl5rSfl5atQxmvMCwR7RnYAj3NO3hf19wiV0QYF+VM8v/h5ubwfX0yupsvFtxv/o4XUiPL7/PRbN+jpf138cV18Xdwe+2Zp/s/D1RhrpGfCQFzMuurcScM35Rntzr/q]]></ATT>
+      <ATT name="PreviewData"><![CDATA[data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAIAAAAmdTLBAAAAGElEQVR4nGP4TxlgGNU/qn9U/6j+EaofAB8cJiE1IQRUAAAAAElFTkSuQmCC]]></ATT>
+      <ATT name="Name"><![CDATA[Warranty]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES></DEPENDENCIES>
+  </OBJECT>
+</EXT>

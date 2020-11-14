@@ -20,14 +20,14 @@
       </LINK>
       <COMP relation="DependsOnDependency">
         <OBJECT>
-          <ID name="" mc="Infrastructure.Dependency" uid="f6a6cb44-c772-4180-a68f-cead66bbe337"/>
+          <ID name="" mc="Infrastructure.Dependency" uid="a8aa5124-1fdc-4c1b-8108-de736f85f5f9"/>
           <ATTRIBUTES>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Pet food mixture production" mc="Standard.BpmnProcess" uid="14b16574-73c1-4721-ad48-7e086f6964e8"/>
+              <ID name="Pet food mixture production" mc="Standard.BpmnProcess" uid="6f300e02-610c-4521-a007-2dedb8c14f19"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

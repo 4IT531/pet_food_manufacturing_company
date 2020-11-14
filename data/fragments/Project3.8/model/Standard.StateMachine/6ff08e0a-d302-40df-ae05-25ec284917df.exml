@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Lifecycle" version="4">
+  <OBJECT>
+    <ID name="Lifecycle" mc="Standard.StateMachine" uid="6ff08e0a-d302-40df-ae05-25ec284917df"/>
+    <PID name="Business Partner" mc="Standard.Class" uid="0d62f693-6787-44a6-bf8f-c70d17f901eb"/>
+    <ATTRIBUTES>
+      <ATT name="Kind">Dynamic</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Lifecycle]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Top">
+        <OBJECT>
+          <ID name="" mc="Standard.Region" uid="305aa564-e531-4c65-8b65-9971962e9b62"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Sub">
+              <OBJECT>
+                <ID name="Valid" mc="Standard.State" uid="c07ce6aa-3a58-4b2b-9e9c-89b726fc7554"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Valid]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Invalid" mc="Standard.State" uid="6f7fc0da-facc-4797-9bb0-43c6dd1446d9"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Invalid]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
+      </LINK>
+      <COMP relation="Product">
+        <COMPID name="Lifecycle Data Lifecycle diagram" mc="Standard.StateMachineDiagram" uid="318bcbcb-916f-459f-9e71-d4ceb1139541"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

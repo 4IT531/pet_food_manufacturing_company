@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Business Structure" version="4">
+  <OBJECT>
+    <ID name="Business Structure" mc="Standard.Package" uid="ff06a18b-4933-4a2b-b576-c94592bf91a2"/>
+    <PID name="Business Architecture" mc="Standard.Package" uid="370d4bf9-87fb-4624-92ad-034d5f4c26af"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Business Structure]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Pet food mixture" mc="Standard.Class" uid="09058c00-e331-4475-ab85-380f07ee7a45"/>
+        <COMPID name="Pet food mixture order" mc="Standard.Class" uid="26d99f8d-3d7c-4c58-839c-e46b376842c4"/>
+        <COMPID name="Warranty" mc="Standard.Class" uid="b74c0b0c-ff5e-4778-8ed8-d3cb77aed84b"/>
+        <COMPID name="Business Partner" mc="Standard.Class" uid="0d62f693-6787-44a6-bf8f-c70d17f901eb"/>
+        <COMPID name="Address" mc="Standard.Class" uid="f41c221f-64e8-4347-bb3d-0dd2011c45d1"/>
+        <COMPID name="Natural Person" mc="Standard.Class" uid="a43e429a-24af-4b88-9c83-d9ab3c5c9449"/>
+        <COMPID name="Legal Person" mc="Standard.Class" uid="7c876eac-1d60-4389-b818-5ba84ca989cc"/>
+        <COMPID name="Order" mc="Standard.Class" uid="e2ff208c-a13f-49b5-b722-97b7ebf75292"/>
+        <COMPID name="Supply order" mc="Standard.Class" uid="37836540-8b6d-4615-a1ec-f111f3689335"/>
+        <COMPID name="Pet food mixture production order" mc="Standard.Class" uid="0c6882ed-f176-4bcf-88bd-af07d09a4a1c"/>
+        <COMPID name="Pet food mixture acquisition order" mc="Standard.Class" uid="81dbe974-df16-4881-b403-d2fc7d88c861"/>
+        <COMPID name="Pet food delivery order" mc="Standard.Class" uid="60b83135-2311-467f-af50-7c21ec05a44a"/>
+        <COMPID name="Supply delivery order" mc="Standard.Class" uid="163035cc-5e01-4300-a3d7-99e8a5189e4b"/>
+        <COMPID name="Outsourced service" mc="Standard.Class" uid="c438a1d8-b166-4e82-879e-27f269046d6e"/>
+        <COMPID name="Warehouse" mc="Standard.Class" uid="797cb81a-19fd-448d-b566-fe232eb451a1"/>
+        <COMPID name="Ingredient" mc="Standard.Class" uid="17e2a4c6-24b8-493b-bc91-74da734e8c79"/>
+        <COMPID name="Material" mc="Standard.Class" uid="31124c24-f6ea-47f8-9d7d-11543fac819d"/>
+        <COMPID name="Invoice" mc="Standard.Class" uid="210a15c7-c145-44f2-a3f5-1b731f8a1535"/>
+        <COMPID name="Ingredient for production" mc="Standard.Class" uid="a604892d-db28-4223-8e2b-310d85805c41"/>
+        <COMPID name="Ordered pet food mixture" mc="Standard.Class" uid="0fa6beec-5e2d-4d33-9ebf-0c58e5646dd0"/>
+        <COMPID name="Acquisitioned pet food mixture" mc="Standard.Class" uid="c7235431-d2d5-4cb7-8e79-0f4235936b0b"/>
+        <COMPID name="Produced pet food mixture" mc="Standard.Class" uid="5b55a08f-9ecf-4555-84a1-af42c74c23ca"/>
+        <COMPID name="Ordered stuff" mc="Standard.Class" uid="748626ef-6195-4330-9ce8-2f2267a33b92"/>
+        <COMPID name="Recipe" mc="Standard.Class" uid="2ca66e18-cc56-484f-9847-ef502a2ee51b"/>
+        <COMPID name="Pet food mixture order revision request" mc="Standard.Class" uid="364939f9-8eb5-4e1f-a98d-2114c27b4df8"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="BusinessEntities" mc="Infrastructure.Stereotype" uid="1b78cab2-ab6d-11df-9861-0014224f9977"/>
+      </LINK>
+      <COMP relation="Product">
+        <COMPID name="Class diagram" mc="Standard.StaticDiagram" uid="853c5745-31a5-4ee6-be8a-cac75700ca3b"/>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="ffbd5be3-c1b7-4b94-ad82-3874a87f300f"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Business Entities is related to TOGAF's Data Architecture. In this domain, data is modeled at a conceptual level. The focus is the notions that are handled in the business, their properties, associations lifecycles, etc. Information domains are structuring busines entities that are modeled using dedicated class diagrams.
+Persistency modeling is not the focus at this stage. You can use the "Togaf" menu to automatically generate a persistency model within the Application Architecture, and/or to generate application components from the modeled Business Entities.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

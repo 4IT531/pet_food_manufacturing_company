@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Business Architecture" version="4">
   <OBJECT>
     <ID name="Business Architecture" mc="Standard.Package" uid="1348615a-0018-40bc-bce2-b18d6be613dd"/>
-    <PID name="project" mc="Standard.Package" uid="3182e411-ce17-4c4d-9c8b-52669d0874b3"/>
+    <PID name="project3.8" mc="Standard.Package" uid="3182e411-ce17-4c4d-9c8b-52669d0874b3"/>
     <ATTRIBUTES>
       <ATT name="IsInstantiable">false</ATT>
       <ATT name="IsAbstract">false</ATT>
@@ -14,8 +14,8 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedElement">
-        <COMPID name="Business Behavior" mc="Standard.Package" uid="aea51b7b-2ee0-453f-963d-faa22c541301"/>
         <COMPID name="Business Structure" mc="Standard.Package" uid="71880b7d-5775-451c-b062-046ccb55dea1"/>
+        <COMPID name="Business Behavior" mc="Standard.Package" uid="aea51b7b-2ee0-453f-963d-faa22c541301"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessLayer" mc="Infrastructure.Stereotype" uid="e39a3e8a-ab6c-11df-9861-0014224f9977"/>

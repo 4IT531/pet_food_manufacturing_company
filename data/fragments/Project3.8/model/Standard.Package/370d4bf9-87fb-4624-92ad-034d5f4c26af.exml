@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Business Architecture" version="4">
+  <OBJECT>
+    <ID name="Business Architecture" mc="Standard.Package" uid="370d4bf9-87fb-4624-92ad-034d5f4c26af"/>
+    <PID name="project" mc="Standard.Package" uid="7b099629-1d56-4897-a0f4-aa9acf5b48c3"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Business Architecture]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Business Behavior" mc="Standard.Package" uid="cc910f4e-7327-4c1d-a0f9-a0b9de51f413"/>
+        <COMPID name="Business Structure" mc="Standard.Package" uid="ff06a18b-4933-4a2b-b576-c94592bf91a2"/>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="BusinessLayer" mc="Infrastructure.Stereotype" uid="e39a3e8a-ab6c-11df-9861-0014224f9977"/>
+      </LINK>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="4d492feb-a5fd-4d5f-b119-5e38a24cc79e"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[The Business Layer domain contains the TOGAF Business architecture and Business Entities.
+It is decomposed into the Business Architecture domain and the Business Entities domain, where the models are developped.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

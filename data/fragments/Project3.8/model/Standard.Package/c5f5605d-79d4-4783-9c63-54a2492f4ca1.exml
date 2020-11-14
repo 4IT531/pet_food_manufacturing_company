@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Application Architecture" version="4">
+  <OBJECT>
+    <ID name="Application Architecture" mc="Standard.Package" uid="c5f5605d-79d4-4783-9c63-54a2492f4ca1"/>
+    <PID name="Information System Architecture" mc="Standard.Package" uid="287a1762-6f5d-4539-a349-eb3d1da20e35"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Application Architecture]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="ApplicationArchitecture" mc="Infrastructure.Stereotype" uid="37051f82-ab6d-11df-9861-0014224f9977"/>
+      </LINK>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

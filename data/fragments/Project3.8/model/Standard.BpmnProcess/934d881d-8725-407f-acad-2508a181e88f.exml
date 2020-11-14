@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Warranty Resolution" version="4">
+  <OBJECT>
+    <ID name="Warranty Resolution" mc="Standard.BpmnProcess" uid="934d881d-8725-407f-acad-2508a181e88f"/>
+    <PID name="Warranty process" mc="Standard.Package" uid="c9258b4f-9351-49ff-b0af-2e2aff79a16f"/>
+    <ATTRIBUTES>
+      <ATT name="ProcessType">NoneProcess</ATT>
+      <ATT name="IsClosed">false</ATT>
+      <ATT name="IsExecutable">OUndefined</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Warranty Resolution]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <LINK relation="Extension">
+        <FOREIGNID name="TogafProcess" mc="Infrastructure.Stereotype" uid="b9d7cee1-8fe0-45ec-98fa-ea750d4ab42f"/>
+      </LINK>
+      <COMP relation="DependsOnDependency">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="f86fc570-f0e9-4f00-a7c0-4b3ea968c1cc"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="warranty request resolved" mc="Standard.Signal" uid="2704460b-ef54-4512-a6ff-7ba583045c37"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Business Process" mc="Standard.BpmnProcessDesignDiagram" uid="55ba5f60-9ffb-453a-8cb0-9d7cf9549cdb"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
