@@ -31,18 +31,6 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
-        <OBJECT>
-          <ID name="" mc="Infrastructure.Dependency" uid="5a500c4c-84f5-4121-9049-d6f0d3472d84"/>
-          <ATTRIBUTES>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="DependsOn">
-              <ID name="Pet food mixture production order arrived" mc="Standard.Signal" uid="72a0d346-0c12-40fc-9211-3912662b96fe"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

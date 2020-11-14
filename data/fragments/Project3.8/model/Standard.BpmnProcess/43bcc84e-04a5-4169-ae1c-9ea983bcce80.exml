@@ -2344,21 +2344,9 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
-        <OBJECT>
-          <ID name="" mc="Infrastructure.Dependency" uid="f1dbe4a5-b1b0-4304-b9c4-3628defb54b5"/>
-          <ATTRIBUTES>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="DependsOn">
-              <ID name="Pet food mixture order revision request arrived" mc="Standard.Signal" uid="bb644498-4502-47f0-a299-dfb73f892278"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
       </COMP>
       <COMP relation="Product">
-        <COMPID name="Business Process" mc="Standard.BpmnProcessDesignDiagram" uid="dc38b263-15b6-46c4-bbd4-b7a6991ca4a0"/>
+        <COMPID name="Pet food mixture sale" mc="Standard.BpmnProcessDesignDiagram" uid="dc38b263-15b6-46c4-bbd4-b7a6991ca4a0"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
