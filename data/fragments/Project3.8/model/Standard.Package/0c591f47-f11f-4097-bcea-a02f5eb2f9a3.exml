@@ -14,8 +14,8 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedBehavior">
-        <COMPID name="Pet food mixture production" mc="Standard.BpmnProcess" uid="9b4e1670-b832-4af0-96ce-798192bef69c"/>
-        <COMPID name="Packaging" mc="Standard.BpmnProcess" uid="7e4c3a5c-3132-466c-84db-f254105047f5"/>
+        <COMPID name="Packaging" mc="Standard.BpmnProcess" uid="7524c5ea-840a-4140-bc9a-22355b2ae288"/>
+        <COMPID name="Pet food mixture production" mc="Standard.BpmnProcess" uid="14b16574-73c1-4721-ad48-7e086f6964e8"/>
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="Pet food mixture production order arrived" mc="Standard.Signal" uid="4580bf42-1419-4546-817d-f75cc0d1faf7"/>

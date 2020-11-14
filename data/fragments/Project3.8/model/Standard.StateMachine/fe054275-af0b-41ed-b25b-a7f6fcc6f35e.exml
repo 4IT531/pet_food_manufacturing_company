@@ -1,0 +1,82 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Lifecycle" version="4">
+  <OBJECT>
+    <ID name="Lifecycle" mc="Standard.StateMachine" uid="fe054275-af0b-41ed-b25b-a7f6fcc6f35e"/>
+    <PID name="Packaging request" mc="Standard.Class" uid="c0b85c9f-506c-4f45-8a50-d862018e27c1"/>
+    <ATTRIBUTES>
+      <ATT name="Kind">Dynamic</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[Lifecycle]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Top">
+        <OBJECT>
+          <ID name="" mc="Standard.Region" uid="97bf93f9-61ed-42c1-9e41-387a1d3b3436"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Sub">
+              <OBJECT>
+                <ID name="Initial State" mc="Standard.InitialPseudoState" uid="b6e84cb3-68dd-4062-9956-135adf782841"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Initial State]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Stored" mc="Standard.State" uid="cc0fac95-a89e-40c7-93c4-a2c069d69849"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Stored]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Processed" mc="Standard.State" uid="1d2bc243-f6b7-4bc7-a5e1-f115d5087350"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Processed]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="OK" mc="Standard.State" uid="36df7db9-3786-41dc-a0cd-399ea2a7fed6"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[OK]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Not OK" mc="Standard.State" uid="0c465548-8357-4a18-9977-4dd689b9b1f5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Not OK]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Completed" mc="Standard.State" uid="8e342453-fe13-47a8-802a-af9b791e222f"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Completed]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
+      </LINK>
+      <COMP relation="Product">
+        <COMPID name="Lifecycle Data Lifecycle diagram" mc="Standard.StateMachineDiagram" uid="6fc13b94-99e6-4efe-b9ae-a874fd5b2ba5"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

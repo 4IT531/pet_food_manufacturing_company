@@ -27,7 +27,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Packaging" mc="Standard.BpmnProcess" uid="7e4c3a5c-3132-466c-84db-f254105047f5"/>
+              <ID name="Packaging" mc="Standard.BpmnProcess" uid="7524c5ea-840a-4140-bc9a-22355b2ae288"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
