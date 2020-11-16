@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Machines not OK" version="4">
   <OBJECT>
     <ID name="Machines not OK" mc="Standard.Signal" uid="814ac4d2-8474-4525-ac2e-066a0823a49f"/>
-    <PID name="Business Behavior" mc="Standard.Package" uid="cc910f4e-7327-4c1d-a0f9-a0b9de51f413"/>
+    <PID name="Production management" mc="Standard.Package" uid="5f870a92-4219-4c15-97d4-d15ed1c76986"/>
     <ATTRIBUTES>
       <ATT name="IsEvent">false</ATT>
       <ATT name="IsException">false</ATT>

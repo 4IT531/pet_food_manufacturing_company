@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Warranty Resolution" version="4">
   <OBJECT>
     <ID name="Warranty Resolution" mc="Standard.BpmnProcess" uid="934d881d-8725-407f-acad-2508a181e88f"/>
-    <PID name="Warranty process" mc="Standard.Package" uid="c9258b4f-9351-49ff-b0af-2e2aff79a16f"/>
+    <PID name="Pet food sale" mc="Standard.Package" uid="c4203ccc-f76a-47b9-8157-4ce96f556f1a"/>
     <ATTRIBUTES>
       <ATT name="ProcessType">NoneProcess</ATT>
       <ATT name="IsClosed">false</ATT>
@@ -30,7 +30,7 @@
         </OBJECT>
       </COMP>
       <COMP relation="Product">
-        <COMPID name="Business Process" mc="Standard.BpmnProcessDesignDiagram" uid="55ba5f60-9ffb-453a-8cb0-9d7cf9549cdb"/>
+        <COMPID name="Warranty" mc="Standard.BpmnProcessDesignDiagram" uid="55ba5f60-9ffb-453a-8cb0-9d7cf9549cdb"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

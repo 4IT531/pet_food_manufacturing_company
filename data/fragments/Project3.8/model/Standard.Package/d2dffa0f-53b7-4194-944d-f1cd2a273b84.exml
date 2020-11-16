@@ -19,6 +19,12 @@
       <COMP relation="OwnedElement">
         <COMPID name="Pet food mixture order arrived" mc="Standard.Signal" uid="743db1c8-0182-4fcb-b7d3-803ca6ae7857"/>
         <COMPID name="Pet food supply order completed" mc="Standard.Signal" uid="2cc25368-4692-4278-b4f7-017eaf142c92"/>
+        <COMPID name="Material delivery" mc="Standard.Actor" uid="5e71ec43-9429-422d-a20c-20796c3a5c4c"/>
+        <COMPID name="Material sent by supplier" mc="Standard.Signal" uid="522dd7c1-6b43-4155-a613-e5994de12efb"/>
+        <COMPID name="Material ordered" mc="Standard.Signal" uid="cec454ab-a474-4a2e-b690-aea1e7030f72"/>
+        <COMPID name="Ingredients sent by supplier" mc="Standard.Signal" uid="123d0b4b-6470-4065-9496-e65321cbdf56"/>
+        <COMPID name="Ingredients delivery" mc="Standard.Actor" uid="afd08799-981b-416a-9c27-966671bb1ad9"/>
+        <COMPID name="Ingredients ordered" mc="Standard.Signal" uid="584cd1e3-9813-46d9-9a97-914b16603619"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessOrganizationDomain" mc="Infrastructure.Stereotype" uid="b42187ca-ab75-11df-9861-0014224f9977"/>

@@ -2,7 +2,7 @@
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="warranty request resolved" version="4">
   <OBJECT>
     <ID name="warranty request resolved" mc="Standard.Signal" uid="2704460b-ef54-4512-a6ff-7ba583045c37"/>
-    <PID name="Warranty process" mc="Standard.Package" uid="c9258b4f-9351-49ff-b0af-2e2aff79a16f"/>
+    <PID name="Pet food sale" mc="Standard.Package" uid="c4203ccc-f76a-47b9-8157-4ce96f556f1a"/>
     <ATTRIBUTES>
       <ATT name="IsEvent">false</ATT>
       <ATT name="IsException">false</ATT>

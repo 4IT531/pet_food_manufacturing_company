@@ -15,10 +15,16 @@
     <DEPENDENCIES>
       <COMP relation="OwnedBehavior">
         <COMPID name="Sale of pet food mixture" mc="Standard.BpmnProcess" uid="43bcc84e-04a5-4169-ae1c-9ea983bcce80"/>
+        <COMPID name="Warranty Resolution" mc="Standard.BpmnProcess" uid="934d881d-8725-407f-acad-2508a181e88f"/>
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="Pet food mixture order arrived" mc="Standard.Signal" uid="85d1cab9-eee6-4cb7-ba37-6d048e432217"/>
         <COMPID name="Pet food mixture order completed" mc="Standard.Signal" uid="69a07f04-4a2c-415a-95fc-0795b8248fad"/>
+        <COMPID name="Delivery order completed" mc="Standard.Signal" uid="ec4f0b21-75cb-4a9b-8963-f43b0a85acb8"/>
+        <COMPID name="Delivery" mc="Standard.Actor" uid="0676860c-305c-4cbc-aa4a-68341808f93a"/>
+        <COMPID name="Delivery order arrived" mc="Standard.Signal" uid="ad8c6b1c-2c70-463e-8a9e-7ac7faf4173c"/>
+        <COMPID name="warranty request arrived" mc="Standard.Signal" uid="10471808-41b7-4e11-af51-9f9b72232f9f"/>
+        <COMPID name="warranty request resolved" mc="Standard.Signal" uid="2704460b-ef54-4512-a6ff-7ba583045c37"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessOrganizationDomain" mc="Infrastructure.Stereotype" uid="b42187ca-ab75-11df-9861-0014224f9977"/>

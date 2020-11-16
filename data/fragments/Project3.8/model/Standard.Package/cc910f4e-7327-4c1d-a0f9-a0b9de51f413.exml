@@ -17,22 +17,9 @@
         <COMPID name="Pet food sale" mc="Standard.Package" uid="c4203ccc-f76a-47b9-8157-4ce96f556f1a"/>
         <COMPID name="Production management" mc="Standard.Package" uid="5f870a92-4219-4c15-97d4-d15ed1c76986"/>
         <COMPID name="Inventory management" mc="Standard.Package" uid="d2dffa0f-53b7-4194-944d-f1cd2a273b84"/>
-        <COMPID name="Warranty process" mc="Standard.Package" uid="c9258b4f-9351-49ff-b0af-2e2aff79a16f"/>
-        <COMPID name="Delivery" mc="Standard.Actor" uid="0676860c-305c-4cbc-aa4a-68341808f93a"/>
         <COMPID name="Customer" mc="Standard.Actor" uid="edf6366d-d7b8-40de-9cfa-2f2c9c247ba9"/>
-        <COMPID name="Delivery order arrived" mc="Standard.Signal" uid="ad8c6b1c-2c70-463e-8a9e-7ac7faf4173c"/>
-        <COMPID name="Delivery order completed" mc="Standard.Signal" uid="ec4f0b21-75cb-4a9b-8963-f43b0a85acb8"/>
-        <COMPID name="Maintenance" mc="Standard.Actor" uid="7da59a05-3b4f-4186-a00d-3fb326d73a72"/>
-        <COMPID name="Machines not OK" mc="Standard.Signal" uid="814ac4d2-8474-4525-ac2e-066a0823a49f"/>
-        <COMPID name="Machines repared / replaced" mc="Standard.Signal" uid="1af9ef8e-46bc-4805-b1bc-36c4121946b0"/>
         <COMPID name="Revenue Authority" mc="Standard.Actor" uid="3048c4b1-59bf-44c2-ac11-f82d66f67d2a"/>
         <COMPID name="Bookkeeping" mc="Standard.Package" uid="2a1e21f9-4fd2-4d3f-a7bc-281b99d0c146"/>
-        <COMPID name="Ingredients ordered" mc="Standard.Signal" uid="584cd1e3-9813-46d9-9a97-914b16603619"/>
-        <COMPID name="Ingredients delivery" mc="Standard.Actor" uid="afd08799-981b-416a-9c27-966671bb1ad9"/>
-        <COMPID name="Material ordered" mc="Standard.Signal" uid="cec454ab-a474-4a2e-b690-aea1e7030f72"/>
-        <COMPID name="Material delivery" mc="Standard.Actor" uid="5e71ec43-9429-422d-a20c-20796c3a5c4c"/>
-        <COMPID name="Material sent by supplier" mc="Standard.Signal" uid="522dd7c1-6b43-4155-a613-e5994de12efb"/>
-        <COMPID name="Ingredients sent by supplier" mc="Standard.Signal" uid="123d0b4b-6470-4065-9496-e65321cbdf56"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessArchitecture" mc="Infrastructure.Stereotype" uid="56eadada-ab6d-11df-9861-0014224f9977"/>
