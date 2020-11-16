@@ -57,10 +57,10 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Pet food mixture production order completed" mc="Standard.BpmnEndEvent" uid="473e73c2-dbdc-4a07-9907-2c127aaf3c9a"/>
+                <ID name="Pet food mixture order completed" mc="Standard.BpmnEndEvent" uid="473e73c2-dbdc-4a07-9907-2c127aaf3c9a"/>
                 <ATTRIBUTES>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Pet food mixture production order completed]]></ATT>
+                  <ATT name="Name"><![CDATA[Pet food mixture order completed]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -200,7 +200,7 @@
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Pet food mixture production order completed" mc="Standard.BpmnEndEvent" uid="473e73c2-dbdc-4a07-9907-2c127aaf3c9a"/>
+                      <ID name="Packaging pick up" mc="Standard.BpmnTask" uid="6b58201d-c803-4164-9c1d-83d5702f3c58"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -403,32 +403,489 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
+              <OBJECT>
+                <ID name="Packaging pick up" mc="Standard.BpmnTask" uid="6b58201d-c803-4164-9c1d-83d5702f3c58"/>
+                <ATTRIBUTES>
+                  <ATT name="IsGlobal">false</ATT>
+                  <ATT name="IsForCompensation">false</ATT>
+                  <ATT name="StartQuantity">1</ATT>
+                  <ATT name="CompletionQuantity">1</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Packaging pick up]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="DataInputAssociation">
+                    <OBJECT>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="ff33e1a0-0c35-4020-ab6a-6e72f91a3d10"/>
+                      <ATTRIBUTES>
+                        <ATT name="Assignment"></ATT>
+                        <ATT name="Transfomation"></ATT>
+                        <ATT name="Language"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="TargetRef">
+                          <REFOBJ>
+                            <ID name="Packaging request (store-out)" mc="Standard.BpmnDataObject" uid="c2a88e98-0bb6-484b-9400-6edcbafe9bc5"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="d7dbadee-f5a4-4651-92b5-751edaf161ee"/>
+                      <ATTRIBUTES>
+                        <ATT name="Assignment"></ATT>
+                        <ATT name="Transfomation"></ATT>
+                        <ATT name="Language"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="TargetRef">
+                          <REFOBJ>
+                            <ID name="Packaging request (store-out)" mc="Standard.BpmnDataObject" uid="c2a88e98-0bb6-484b-9400-6edcbafe9bc5"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Packaging and expiration tagging" mc="Standard.BpmnTask" uid="86faa34e-4119-4e6d-b071-f3fcf9931b18"/>
+                <ATTRIBUTES>
+                  <ATT name="IsGlobal">false</ATT>
+                  <ATT name="IsForCompensation">false</ATT>
+                  <ATT name="StartQuantity">1</ATT>
+                  <ATT name="CompletionQuantity">1</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Packaging and expiration tagging]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="DataInputAssociation">
+                    <OBJECT>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="e7b3efc0-0450-4acd-91a1-c761c3931bc6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Assignment"></ATT>
+                        <ATT name="Transfomation"></ATT>
+                        <ATT name="Language"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="TargetRef">
+                          <REFOBJ>
+                            <ID name="Packaging request (processed)" mc="Standard.BpmnDataObject" uid="9a2cff02-18a5-4662-9dab-b562617aecfe"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="bd5399cd-38c0-4446-811d-1b9fb1efeaf8"/>
+                      <ATTRIBUTES>
+                        <ATT name="Assignment"></ATT>
+                        <ATT name="Transfomation"></ATT>
+                        <ATT name="Language"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="TargetRef">
+                          <REFOBJ>
+                            <ID name="Packaging request (processed)" mc="Standard.BpmnDataObject" uid="9a2cff02-18a5-4662-9dab-b562617aecfe"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Product storage" mc="Standard.BpmnTask" uid="4bf14c83-efb6-4db6-a94b-f8c8313ece2b"/>
+                <ATTRIBUTES>
+                  <ATT name="IsGlobal">false</ATT>
+                  <ATT name="IsForCompensation">false</ATT>
+                  <ATT name="StartQuantity">1</ATT>
+                  <ATT name="CompletionQuantity">1</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Product storage]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="DataInputAssociation">
+                    <OBJECT>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="e77b160f-2f6b-49a6-8ee5-524c1af2afc5"/>
+                      <ATTRIBUTES>
+                        <ATT name="Assignment"></ATT>
+                        <ATT name="Transfomation"></ATT>
+                        <ATT name="Language"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="TargetRef">
+                          <REFOBJ>
+                            <ID name="Packaging request (store-in)" mc="Standard.BpmnDataObject" uid="e1cffa17-b65f-4e06-b63b-8d01a026e62d"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="594729ff-1a03-4fe5-93dd-e130b540d7a9"/>
+                      <ATTRIBUTES>
+                        <ATT name="Assignment"></ATT>
+                        <ATT name="Transfomation"></ATT>
+                        <ATT name="Language"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="TargetRef">
+                          <REFOBJ>
+                            <ID name="Packaging request (store-in)" mc="Standard.BpmnDataObject" uid="e1cffa17-b65f-4e06-b63b-8d01a026e62d"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Packaging check" mc="Standard.BpmnTask" uid="2782bc6a-1056-4dd7-8016-522bed587936"/>
+                <ATTRIBUTES>
+                  <ATT name="IsGlobal">false</ATT>
+                  <ATT name="IsForCompensation">false</ATT>
+                  <ATT name="StartQuantity">1</ATT>
+                  <ATT name="CompletionQuantity">1</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Packaging check]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="DataInputAssociation">
+                    <OBJECT>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="55d4cd8d-b8b1-4df5-a8d1-b688e63eaaff"/>
+                      <ATTRIBUTES>
+                        <ATT name="Assignment"></ATT>
+                        <ATT name="Transfomation"></ATT>
+                        <ATT name="Language"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="TargetRef">
+                          <REFOBJ>
+                            <ID name="Packaging request (checked)" mc="Standard.BpmnDataObject" uid="155b3d8b-6b2c-4225-ab8e-96a71dfc6b28"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="2fb54bc7-e6d2-4630-a504-2c3faebc7b34"/>
+                      <ATTRIBUTES>
+                        <ATT name="Assignment"></ATT>
+                        <ATT name="Transfomation"></ATT>
+                        <ATT name="Language"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="TargetRef">
+                          <REFOBJ>
+                            <ID name="Packaging request (checked)" mc="Standard.BpmnDataObject" uid="155b3d8b-6b2c-4225-ab8e-96a71dfc6b28"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Packaging request (store-out)" mc="Standard.BpmnDataObject" uid="c2a88e98-0bb6-484b-9400-6edcbafe9bc5"/>
+                <ATTRIBUTES>
+                  <ATT name="IsCollection">false</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Packaging request (store-out)]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Packaging request (processed)" mc="Standard.BpmnDataObject" uid="9a2cff02-18a5-4662-9dab-b562617aecfe"/>
+                <ATTRIBUTES>
+                  <ATT name="IsCollection">false</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Packaging request (processed)]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Packaging request (store-in)" mc="Standard.BpmnDataObject" uid="e1cffa17-b65f-4e06-b63b-8d01a026e62d"/>
+                <ATTRIBUTES>
+                  <ATT name="IsCollection">false</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Packaging request (store-in)]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Packaging request (checked)" mc="Standard.BpmnDataObject" uid="155b3d8b-6b2c-4225-ab8e-96a71dfc6b28"/>
+                <ATTRIBUTES>
+                  <ATT name="IsCollection">false</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Packaging request (checked)]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Packaging request (repack)" mc="Standard.BpmnDataObject" uid="e118eebb-0cc1-43ef-bc05-c79c6c598b2c"/>
+                <ATTRIBUTES>
+                  <ATT name="IsCollection">false</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Packaging request (repack)]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="a0b71e86-7973-4ab1-8690-e76656d4d4d8"/>
+                <ATTRIBUTES>
+                  <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="f8" mc="Standard.BpmnSequenceFlow" uid="912a9c42-9492-410e-b654-f700337f5e4f"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[f8]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="Packaging pick up" mc="Standard.BpmnTask" uid="6b58201d-c803-4164-9c1d-83d5702f3c58"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="a0b71e86-7973-4ab1-8690-e76656d4d4d8"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="f9" mc="Standard.BpmnSequenceFlow" uid="35ad7a31-b579-4f93-9b94-47c5bbc4385e"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[f9]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="a0b71e86-7973-4ab1-8690-e76656d4d4d8"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="Packaging and expiration tagging" mc="Standard.BpmnTask" uid="86faa34e-4119-4e6d-b071-f3fcf9931b18"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="f10" mc="Standard.BpmnSequenceFlow" uid="e9cbb9b5-aa7a-4947-b010-24001325981f"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[f10]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="Packaging and expiration tagging" mc="Standard.BpmnTask" uid="86faa34e-4119-4e6d-b071-f3fcf9931b18"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="Packaging check" mc="Standard.BpmnTask" uid="2782bc6a-1056-4dd7-8016-522bed587936"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="aa8deceb-3476-4b00-9139-cdc22d7d18f9"/>
+                <ATTRIBUTES>
+                  <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="f11" mc="Standard.BpmnSequenceFlow" uid="f4a02b6d-5165-4c33-9810-4d4083d06f83"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[f11]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="Packaging check" mc="Standard.BpmnTask" uid="2782bc6a-1056-4dd7-8016-522bed587936"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="aa8deceb-3476-4b00-9139-cdc22d7d18f9"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="f12" mc="Standard.BpmnSequenceFlow" uid="bef31083-582a-4f0d-b674-ae92d2b9c9f9"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[f12]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="aa8deceb-3476-4b00-9139-cdc22d7d18f9"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="Product storage" mc="Standard.BpmnTask" uid="4bf14c83-efb6-4db6-a94b-f8c8313ece2b"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Unpacking" mc="Standard.BpmnTask" uid="fdb426c8-c2d4-41bc-9cf8-098f1769b0d5"/>
+                <ATTRIBUTES>
+                  <ATT name="IsGlobal">false</ATT>
+                  <ATT name="IsForCompensation">false</ATT>
+                  <ATT name="StartQuantity">1</ATT>
+                  <ATT name="CompletionQuantity">1</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Unpacking]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="DataInputAssociation">
+                    <OBJECT>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="a9f1e4e6-a2c9-4eb8-aacf-d51eac16bd85"/>
+                      <ATTRIBUTES>
+                        <ATT name="Assignment"></ATT>
+                        <ATT name="Transfomation"></ATT>
+                        <ATT name="Language"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="TargetRef">
+                          <REFOBJ>
+                            <ID name="Packaging request (repack)" mc="Standard.BpmnDataObject" uid="e118eebb-0cc1-43ef-bc05-c79c6c598b2c"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="f13" mc="Standard.BpmnSequenceFlow" uid="ad859d5f-2787-4746-9036-4a733d170dd3"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[f13]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="aa8deceb-3476-4b00-9139-cdc22d7d18f9"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="Unpacking" mc="Standard.BpmnTask" uid="fdb426c8-c2d4-41bc-9cf8-098f1769b0d5"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="f14" mc="Standard.BpmnSequenceFlow" uid="9d5b6f50-0768-49db-8fed-34fbee54bf00"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[f14]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="Unpacking" mc="Standard.BpmnTask" uid="fdb426c8-c2d4-41bc-9cf8-098f1769b0d5"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="a0b71e86-7973-4ab1-8690-e76656d4d4d8"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="f15" mc="Standard.BpmnSequenceFlow" uid="6babfeac-dad7-4cea-a3a5-db572ea268a4"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[f15]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="Product storage" mc="Standard.BpmnTask" uid="4bf14c83-efb6-4db6-a94b-f8c8313ece2b"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="Pet food mixture order completed" mc="Standard.BpmnEndEvent" uid="473e73c2-dbdc-4a07-9907-2c127aaf3c9a"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
             </COMP>
             <COMP relation="Product">
               <COMPID name="Mixture production" mc="Standard.BpmnSubProcessDiagram" uid="247d1877-e48e-404f-a9c0-4368ee643d09"/>
             </COMP>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="f1" mc="Standard.BpmnSequenceFlow" uid="86d9eb3f-32ab-469d-bc2d-2ff496daa9da"/>
-          <ATTRIBUTES>
-            <ATT name="IsImmediate">false</ATT>
-            <ATT name="ConditionExpression"></ATT>
-            <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[f1]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="SourceRef">
-              <REFOBJ>
-                <ID name="Production" mc="Standard.BpmnSubProcess" uid="73046fe6-152a-40ca-b6ac-d96b489c27b1"/>
-              </REFOBJ>
-            </LINK>
-            <LINK relation="TargetRef">
-              <REFOBJ>
-                <ID name="Pet food mixture production order completed" mc="Standard.BpmnEndEvent" uid="b42cf056-434b-4a3f-84cd-bb43474a894c"/>
-              </REFOBJ>
-            </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
@@ -1136,6 +1593,28 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="f1" mc="Standard.BpmnSequenceFlow" uid="207ca455-fd92-4e63-95fa-a0431ea47114"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f1]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Production" mc="Standard.BpmnSubProcess" uid="73046fe6-152a-40ca-b6ac-d96b489c27b1"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="Pet food mixture production order completed" mc="Standard.BpmnEndEvent" uid="b42cf056-434b-4a3f-84cd-bb43474a894c"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="TogafProcess" mc="Infrastructure.Stereotype" uid="b9d7cee1-8fe0-45ec-98fa-ea750d4ab42f"/>
@@ -1150,18 +1629,6 @@
           <DEPENDENCIES>
             <LINK relation="DependsOn">
               <ID name="Pet food mixture production order completed" mc="Standard.Signal" uid="00c3827a-d185-4eb1-8625-32324d51ba71"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="Infrastructure.Dependency" uid="5ef8a607-4b5e-44f9-bd2e-89d497255686"/>
-          <ATTRIBUTES>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="DependsOn">
-              <ID name="Packaging request arrived" mc="Standard.Signal" uid="31bc3960-dd00-48dd-a33d-e009cd555fa7"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

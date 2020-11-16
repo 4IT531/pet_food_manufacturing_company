@@ -1,14 +1,14 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Warranty Resolution" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="complaint resolution" version="4">
   <OBJECT>
-    <ID name="Warranty Resolution" mc="Standard.BpmnProcess" uid="934d881d-8725-407f-acad-2508a181e88f"/>
+    <ID name="complaint resolution" mc="Standard.BpmnProcess" uid="934d881d-8725-407f-acad-2508a181e88f"/>
     <PID name="Pet food sale" mc="Standard.Package" uid="c4203ccc-f76a-47b9-8157-4ce96f556f1a"/>
     <ATTRIBUTES>
       <ATT name="ProcessType">NoneProcess</ATT>
       <ATT name="IsClosed">false</ATT>
       <ATT name="IsExecutable">OUndefined</ATT>
       <ATT name="IsReentrant">false</ATT>
-      <ATT name="Name"><![CDATA[Warranty Resolution]]></ATT>
+      <ATT name="Name"><![CDATA[complaint resolution]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -24,13 +24,29 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="warranty request resolved" mc="Standard.Signal" uid="2704460b-ef54-4512-a6ff-7ba583045c37"/>
+              <ID name="complaint request completed" mc="Standard.Signal" uid="2704460b-ef54-4512-a6ff-7ba583045c37"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Warranty" mc="Standard.BpmnProcessDesignDiagram" uid="55ba5f60-9ffb-453a-8cb0-9d7cf9549cdb"/>
+      </COMP>
+      <COMP relation="Descriptor">
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Note" uid="f2851450-ba1c-49d2-8a60-3a316f644b14"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[Only pet food]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

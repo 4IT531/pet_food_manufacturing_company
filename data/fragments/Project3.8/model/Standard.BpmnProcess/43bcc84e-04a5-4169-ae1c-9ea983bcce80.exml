@@ -167,11 +167,11 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Pet food mixture acquisition order arrived" mc="Standard.BpmnParallelGateway" uid="aac6dbc4-d03d-422f-b0e7-84db9be319b3"/>
+          <ID name="" mc="Standard.BpmnParallelGateway" uid="aac6dbc4-d03d-422f-b0e7-84db9be319b3"/>
           <ATTRIBUTES>
             <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
             <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[Pet food mixture acquisition order arrived]]></ATT>
+            <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>
@@ -193,7 +193,7 @@
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="Pet food mixture acquisition order arrived" mc="Standard.BpmnParallelGateway" uid="aac6dbc4-d03d-422f-b0e7-84db9be319b3"/>
+                <ID name="" mc="Standard.BpmnParallelGateway" uid="aac6dbc4-d03d-422f-b0e7-84db9be319b3"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -322,10 +322,10 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Pet food mixture acquisition order sent" mc="Standard.BpmnEndEvent" uid="d6ff49be-41ca-4947-9d79-fa9a11a9cfe2"/>
+                <ID name="Pet food mixture acquisition order arrived" mc="Standard.BpmnEndEvent" uid="d6ff49be-41ca-4947-9d79-fa9a11a9cfe2"/>
                 <ATTRIBUTES>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Pet food mixture acquisition order sent]]></ATT>
+                  <ATT name="Name"><![CDATA[Pet food mixture acquisition order arrived]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -696,7 +696,7 @@
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Pet food mixture acquisition order sent" mc="Standard.BpmnEndEvent" uid="d6ff49be-41ca-4947-9d79-fa9a11a9cfe2"/>
+                      <ID name="Pet food mixture acquisition order arrived" mc="Standard.BpmnEndEvent" uid="d6ff49be-41ca-4947-9d79-fa9a11a9cfe2"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -1168,7 +1168,7 @@
           <ID name="f8" mc="Standard.BpmnSequenceFlow" uid="f3fc88fe-1e36-4de2-a59c-d645554132c4"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
-            <ATT name="ConditionExpression"><![CDATA[order executable]]></ATT>
+            <ATT name="ConditionExpression"><![CDATA[Pet food mixture acquisition order arrived]]></ATT>
             <ATT name="TriggeredByEvent">false</ATT>
             <ATT name="Name"><![CDATA[f8]]></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -1181,7 +1181,7 @@
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="Pet food mixture acquisition order arrived" mc="Standard.BpmnParallelGateway" uid="aac6dbc4-d03d-422f-b0e7-84db9be319b3"/>
+                <ID name="" mc="Standard.BpmnParallelGateway" uid="aac6dbc4-d03d-422f-b0e7-84db9be319b3"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -1548,7 +1548,7 @@
           <ID name="f9" mc="Standard.BpmnSequenceFlow" uid="bb58d760-8f70-4eb4-9857-3dd88e9bb8b0"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
-            <ATT name="ConditionExpression"><![CDATA[order inexecutable]]></ATT>
+            <ATT name="ConditionExpression"><![CDATA[Pet food mixture order revision sent]]></ATT>
             <ATT name="TriggeredByEvent">false</ATT>
             <ATT name="Name"><![CDATA[f9]]></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -1561,7 +1561,7 @@
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="Pet food mixture order revision request sent" mc="Standard.BpmnParallelGateway" uid="e2e3f015-ef68-429e-bf3d-a87a576a9f5b"/>
+                <ID name="" mc="Standard.BpmnParallelGateway" uid="e2e3f015-ef68-429e-bf3d-a87a576a9f5b"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -1751,7 +1751,7 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="Pet food mixture acquisition order arrived" mc="Standard.BpmnParallelGateway" uid="aac6dbc4-d03d-422f-b0e7-84db9be319b3"/>
+                <ID name="" mc="Standard.BpmnParallelGateway" uid="aac6dbc4-d03d-422f-b0e7-84db9be319b3"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
@@ -2029,11 +2029,11 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Pet food mixture order revision request sent" mc="Standard.BpmnParallelGateway" uid="e2e3f015-ef68-429e-bf3d-a87a576a9f5b"/>
+          <ID name="" mc="Standard.BpmnParallelGateway" uid="e2e3f015-ef68-429e-bf3d-a87a576a9f5b"/>
           <ATTRIBUTES>
             <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
             <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[Pet food mixture order revision request sent]]></ATT>
+            <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>
@@ -2188,7 +2188,7 @@
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="Pet food mixture order revision request sent" mc="Standard.BpmnParallelGateway" uid="e2e3f015-ef68-429e-bf3d-a87a576a9f5b"/>
+                <ID name="" mc="Standard.BpmnParallelGateway" uid="e2e3f015-ef68-429e-bf3d-a87a576a9f5b"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -2205,7 +2205,7 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="Pet food mixture order revision request sent" mc="Standard.BpmnParallelGateway" uid="e2e3f015-ef68-429e-bf3d-a87a576a9f5b"/>
+                <ID name="" mc="Standard.BpmnParallelGateway" uid="e2e3f015-ef68-429e-bf3d-a87a576a9f5b"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
@@ -2458,6 +2458,18 @@
           <DEPENDENCIES>
             <LINK relation="DependsOn">
               <ID name="Bookkeeping" mc="Standard.Package" uid="2a1e21f9-4fd2-4d3f-a7bc-281b99d0c146"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="f0fecbda-bcb7-4f5f-a32d-998ffcb2cdfe"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="complaint request arrived" mc="Standard.Signal" uid="10471808-41b7-4e11-af51-9f9b72232f9f"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

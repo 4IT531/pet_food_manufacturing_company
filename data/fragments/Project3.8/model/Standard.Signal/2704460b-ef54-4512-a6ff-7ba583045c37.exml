@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="warranty request resolved" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="complaint request completed" version="4">
   <OBJECT>
-    <ID name="warranty request resolved" mc="Standard.Signal" uid="2704460b-ef54-4512-a6ff-7ba583045c37"/>
+    <ID name="complaint request completed" mc="Standard.Signal" uid="2704460b-ef54-4512-a6ff-7ba583045c37"/>
     <PID name="Pet food sale" mc="Standard.Package" uid="c4203ccc-f76a-47b9-8157-4ce96f556f1a"/>
     <ATTRIBUTES>
       <ATT name="IsEvent">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[warranty request resolved]]></ATT>
+      <ATT name="Name"><![CDATA[complaint request completed]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -27,7 +27,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Customer" mc="Standard.Actor" uid="edf6366d-d7b8-40de-9cfa-2f2c9c247ba9"/>
+              <ID name="Sale of pet food mixture" mc="Standard.BpmnProcess" uid="43bcc84e-04a5-4169-ae1c-9ea983bcce80"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Maintenance" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="machine repair" version="4">
   <OBJECT>
-    <ID name="Maintenance" mc="Standard.Actor" uid="7da59a05-3b4f-4186-a00d-3fb326d73a72"/>
+    <ID name="machine repair" mc="Standard.Actor" uid="7da59a05-3b4f-4186-a00d-3fb326d73a72"/>
     <PID name="Production management" mc="Standard.Package" uid="5f870a92-4219-4c15-97d4-d15ed1c76986"/>
     <ATTRIBUTES>
       <ATT name="IsElementary">false</ATT>
@@ -9,7 +9,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Maintenance]]></ATT>
+      <ATT name="Name"><![CDATA[machine repair]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

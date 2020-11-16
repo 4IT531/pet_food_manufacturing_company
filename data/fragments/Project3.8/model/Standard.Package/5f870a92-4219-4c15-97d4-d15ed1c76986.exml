@@ -14,16 +14,13 @@
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="OwnedBehavior">
-        <COMPID name="Packaging" mc="Standard.BpmnProcess" uid="8bc9221e-1dd3-4b27-8588-9360b03f0975"/>
         <COMPID name="Pet food mixture production" mc="Standard.BpmnProcess" uid="a5f7830b-3478-4ff7-8942-27b9aaaaff20"/>
       </COMP>
       <COMP relation="OwnedElement">
         <COMPID name="Pet food mixture production order arrived" mc="Standard.Signal" uid="72a0d346-0c12-40fc-9211-3912662b96fe"/>
         <COMPID name="Pet food mixture production order completed" mc="Standard.Signal" uid="00c3827a-d185-4eb1-8625-32324d51ba71"/>
-        <COMPID name="Packaging request arrived" mc="Standard.Signal" uid="31bc3960-dd00-48dd-a33d-e009cd555fa7"/>
-        <COMPID name="Packaging request completed" mc="Standard.Signal" uid="00032dfe-ef1b-40f0-bc33-843ad8594a11"/>
         <COMPID name="Machines repared / replaced" mc="Standard.Signal" uid="1af9ef8e-46bc-4805-b1bc-36c4121946b0"/>
-        <COMPID name="Maintenance" mc="Standard.Actor" uid="7da59a05-3b4f-4186-a00d-3fb326d73a72"/>
+        <COMPID name="machine repair" mc="Standard.Actor" uid="7da59a05-3b4f-4186-a00d-3fb326d73a72"/>
         <COMPID name="Machines not OK" mc="Standard.Signal" uid="814ac4d2-8474-4525-ac2e-066a0823a49f"/>
       </COMP>
       <LINK relation="Extension">
