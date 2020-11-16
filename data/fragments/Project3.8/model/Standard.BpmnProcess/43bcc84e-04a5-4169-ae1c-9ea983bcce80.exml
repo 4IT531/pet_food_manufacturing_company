@@ -1810,7 +1810,7 @@
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="Delivery order sent" mc="Standard.BpmnParallelGateway" uid="78f1a5cc-c211-46e8-ac32-de06251224ce"/>
+                <ID name="Delivery order preparation" mc="Standard.BpmnSubProcess" uid="db03087a-d6c8-4c92-83e9-304e165a20f0"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -2287,6 +2287,123 @@
             <LINK relation="TargetRef">
               <REFOBJ>
                 <ID name="Pet food mixture ordered processing" mc="Standard.BpmnSubProcess" uid="e0c878ce-95f8-4068-8cb7-7018adec87bd"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Delivery order preparation" mc="Standard.BpmnSubProcess" uid="db03087a-d6c8-4c92-83e9-304e165a20f0"/>
+          <ATTRIBUTES>
+            <ATT name="IsForCompensation">false</ATT>
+            <ATT name="StartQuantity">1</ATT>
+            <ATT name="CompletionQuantity">1</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Delivery order preparation]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="FlowElement">
+              <OBJECT>
+                <ID name="Start" mc="Standard.BpmnStartEvent" uid="5914ac51-1afc-4687-b02d-6b4cc1e4bd7f"/>
+                <ATTRIBUTES>
+                  <ATT name="IsInterrupting">true</ATT>
+                  <ATT name="ParallelMultiple">false</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Start]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="End" mc="Standard.BpmnEndEvent" uid="1247d6cf-233e-4f1c-bb21-14cd0abccb68"/>
+                <ATTRIBUTES>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[End]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Task" mc="Standard.BpmnTask" uid="80c5ec54-7ec7-4d2b-a24a-43bc05fa34b9"/>
+                <ATTRIBUTES>
+                  <ATT name="IsGlobal">false</ATT>
+                  <ATT name="IsForCompensation">false</ATT>
+                  <ATT name="StartQuantity">1</ATT>
+                  <ATT name="CompletionQuantity">1</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Task]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Standard.BpmnSequenceFlow" uid="f28a299d-8b23-42ba-91a3-66c8861c9fd4"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="Start" mc="Standard.BpmnStartEvent" uid="5914ac51-1afc-4687-b02d-6b4cc1e4bd7f"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="Task" mc="Standard.BpmnTask" uid="80c5ec54-7ec7-4d2b-a24a-43bc05fa34b9"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Standard.BpmnSequenceFlow" uid="68aa1517-0c8a-4b5b-a37e-c047be843b66"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="Task" mc="Standard.BpmnTask" uid="80c5ec54-7ec7-4d2b-a24a-43bc05fa34b9"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="End" mc="Standard.BpmnEndEvent" uid="1247d6cf-233e-4f1c-bb21-14cd0abccb68"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Product">
+              <COMPID name="Sub-Process" mc="Standard.BpmnSubProcessDiagram" uid="3c186708-fde3-40f3-b7b8-f4805a2894d2"/>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f27" mc="Standard.BpmnSequenceFlow" uid="01fb4b39-8629-4af2-a5f1-f5262563f07c"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f27]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Delivery order preparation" mc="Standard.BpmnSubProcess" uid="db03087a-d6c8-4c92-83e9-304e165a20f0"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="Delivery order sent" mc="Standard.BpmnParallelGateway" uid="78f1a5cc-c211-46e8-ac32-de06251224ce"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>

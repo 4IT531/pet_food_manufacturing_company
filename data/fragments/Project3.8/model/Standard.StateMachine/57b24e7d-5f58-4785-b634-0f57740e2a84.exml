@@ -31,7 +31,7 @@
                       <ID name="Transition" mc="Standard.Transition" uid="041688ad-54fe-4471-86ae-4324f8841048"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[customer data valid]]></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[customer data invalid]]></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -55,7 +55,7 @@
                       <ID name="Transition1" mc="Standard.Transition" uid="d6e45e30-0add-42a2-ae7f-2ad0f8c31747"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[customer data invalid]]></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[customer data valid]]></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -288,7 +288,7 @@
         <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
       </LINK>
       <COMP relation="Product">
-        <COMPID name="Lifecycle Data Lifecycle diagram" mc="Standard.StateMachineDiagram" uid="3ee2c851-f63a-43d1-80e6-34621fadef4f"/>
+        <COMPID name="Pet food mixture order lifecycle diagram" mc="Standard.StateMachineDiagram" uid="3ee2c851-f63a-43d1-80e6-34621fadef4f"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
