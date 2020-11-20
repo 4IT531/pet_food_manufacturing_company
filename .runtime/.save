@@ -1,4 +1,4 @@
-#Mon Nov 16 16:42:35 CET 2020
+#Fri Nov 20 16:11:44 CET 2020
 org.modelio.diagram.editor.OpenedDiagrams9='Supply management' {d7cf506d-12a9-4c74-a0ab-093c8a2b78f5} Standard.BpmnProcessDesignDiagram
 org.modelio.diagram.editor.OpenedDiagrams8='Sub-Process' {140551e2-0b3c-4a17-897a-8130e0652705} Standard.BpmnSubProcessDiagram
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
@@ -13,6 +13,10 @@ org.modelio.diagram.editor.OpenedDiagrams2='Lifecycle Data Lifecycle diagram' {3
 org.modelio.diagram.editor.OpenedDiagrams1='Pet food mixture sale' {dc38b263-15b6-46c4-bbd4-b7a6991ca4a0} Standard.BpmnProcessDesignDiagram
 org.modelio.diagram.editor.OpenedDiagrams0='Event diagram' {020ce1b5-7150-4179-974b-93167eb87c8c} Standard.StaticDiagram
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
+org.modelio.diagram.editor.OpenedDiagrams18='Lifecycle Data Lifecycle diagram' {487a7118-56d7-4986-a8ce-55d8f3b1d8d2} Standard.StateMachineDiagram
+org.modelio.diagram.editor.OpenedDiagrams17='Sub-Process' {3c186708-fde3-40f3-b7b8-f4805a2894d2} Standard.BpmnSubProcessDiagram
+org.modelio.diagram.editor.OpenedDiagrams16='Lifecycle Data Lifecycle diagram' {3575b1a7-b26e-43f8-8025-a3d8d241bff6} Standard.StateMachineDiagram
+org.modelio.diagram.editor.OpenedDiagrams15='Class diagram' {853c5745-31a5-4ee6-be8a-cac75700ca3b} Standard.StaticDiagram
 org.modelio.diagram.editor.OpenedDiagrams14='Sub-Process' {ed960299-d236-4c68-8c4d-0e110b9d8fb5} Standard.BpmnSubProcessDiagram
 org.modelio.diagram.editor.OpenedDiagrams13='Preparation' {cc78a4fb-b265-48d1-b112-1458ee6d894b} Standard.BpmnSubProcessDiagram
 org.modelio.diagram.editor.OpenedDiagrams12='Mixture production' {247d1877-e48e-404f-a9c0-4368ee643d09} Standard.BpmnSubProcessDiagram

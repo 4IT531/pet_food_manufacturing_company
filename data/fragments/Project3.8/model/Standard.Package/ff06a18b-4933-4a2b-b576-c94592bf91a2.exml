@@ -39,6 +39,7 @@
         <COMPID name="Ordered stuff" mc="Standard.Class" uid="748626ef-6195-4330-9ce8-2f2267a33b92"/>
         <COMPID name="Recipe" mc="Standard.Class" uid="2ca66e18-cc56-484f-9847-ef502a2ee51b"/>
         <COMPID name="Pet food mixture order revision request" mc="Standard.Class" uid="364939f9-8eb5-4e1f-a98d-2114c27b4df8"/>
+        <COMPID name="Complaint request" mc="Standard.Class" uid="30b65711-2ce3-4c8f-9907-264dfe750cf7"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessEntities" mc="Infrastructure.Stereotype" uid="1b78cab2-ab6d-11df-9861-0014224f9977"/>
