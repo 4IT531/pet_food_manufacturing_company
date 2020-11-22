@@ -367,9 +367,6 @@
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
-        <REFOBJ>
-          <ID name="" mc="Standard.AssociationEnd" uid="0aae2034-5ee4-417d-a7a7-13441553b340"/>
-        </REFOBJ>
         <OBJECT>
           <ID name="" mc="Standard.AssociationEnd" uid="8d0be5ab-2704-4fd9-9f74-c23c12e7fd58"/>
           <ATTRIBUTES>
@@ -479,6 +476,12 @@
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="39fd3c32-f6f3-4920-a054-a3e8000dda71"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="0aae2034-5ee4-417d-a7a7-13441553b340"/>
+        </REFOBJ>
       </COMP>
       <COMP relation="Parent">
         <OBJECT>

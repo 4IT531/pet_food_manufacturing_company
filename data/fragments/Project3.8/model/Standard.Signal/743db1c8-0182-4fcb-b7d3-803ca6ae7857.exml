@@ -27,7 +27,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Supply management" mc="Standard.BpmnProcess" uid="95d6ba2d-2a45-402c-917d-2876bfbbb9ef"/>
+              <ID name="Supply management" mc="Standard.BpmnProcess" uid="eaa5379d-9ca4-410c-944c-87dac7c3a4ea"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
