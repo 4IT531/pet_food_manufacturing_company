@@ -308,7 +308,7 @@
                       <ID name="Transition1" mc="Standard.Transition" uid="eea69bd8-e4cd-42dc-b4d6-ddc691f6f0e1"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[Delivary order was not completed or  Pet food mixture acquisition order canceled]]></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Delivery order was not completed or  Pet food mixture acquisition order canceled]]></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -358,14 +358,30 @@
                       <DEPENDENCIES>
                         <LINK relation="Processed">
                           <REFOBJ>
-                            <ID name="Complete" mc="Standard.Operation" uid="d1c37c3c-212d-4dc9-9fcc-c21c12ddfb0d"/>
+                            <ID name="MarkAsResolvingComplaint" mc="Standard.Operation" uid="93ec6824-4e61-41c4-a254-85f76e4777ea"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Completed" mc="Standard.FinalState" uid="899abaaa-2926-443e-a1fb-d6e64396c230"/>
+                            <ID name="Resolving complaint" mc="Standard.State" uid="9744e0ee-a542-49f3-9bf4-5ba90b96a624"/>
                           </REFOBJ>
                         </LINK>
+                        <COMP relation="Descriptor">
+                          <OBJECT>
+                            <ID name="" mc="Infrastructure.Note" uid="106c83dc-ccbe-4508-8b61-366858d5f711"/>
+                            <ATTRIBUTES>
+                              <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                              <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <LINK relation="Model">
+                                <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                              </LINK>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
                       </DEPENDENCIES>
                     </OBJECT>
                   </COMP>
@@ -423,6 +439,124 @@
                         <LINK relation="Target">
                           <REFOBJ>
                             <ID name="Cancelled" mc="Standard.FinalState" uid="cbd67b8a-cd1c-4ee9-beaa-677e241cd3c7"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Resolving complaint" mc="Standard.State" uid="9744e0ee-a542-49f3-9bf4-5ba90b96a624"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Resolving complaint]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Transition" uid="8f73893a-f183-4143-99b4-767ecd3adab6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[complaint period in progress]]></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="MarkAsInProgress" mc="Standard.Operation" uid="3eb0c728-81d5-4008-b4c2-02663e0ca7a2"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Complaint period in progress" mc="Standard.State" uid="4b40d4ea-8a72-443f-b1f4-c272a9ba2f07"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="Standard.Transition" uid="7ab25975-4eb9-4b3c-a484-86db0bea8cc0"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[complaint period expired]]></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="Complete" mc="Standard.Operation" uid="d1c37c3c-212d-4dc9-9fcc-c21c12ddfb0d"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Completed" mc="Standard.FinalState" uid="899abaaa-2926-443e-a1fb-d6e64396c230"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Complaint period in progress" mc="Standard.State" uid="4b40d4ea-8a72-443f-b1f4-c272a9ba2f07"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Complaint period in progress]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="" mc="Standard.Transition" uid="b28c5f0a-8963-420b-9f51-4d1aef872631"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[remaining complaint period time passed]]></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="Complete" mc="Standard.Operation" uid="d1c37c3c-212d-4dc9-9fcc-c21c12ddfb0d"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Completed" mc="Standard.FinalState" uid="899abaaa-2926-443e-a1fb-d6e64396c230"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="Standard.Transition" uid="5e8321b3-595f-4d5a-a8a5-2a307305362b"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Complaint refused]]></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="MarkAsResolvingComplaint" mc="Standard.Operation" uid="93ec6824-4e61-41c4-a254-85f76e4777ea"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Resolving complaint" mc="Standard.State" uid="9744e0ee-a542-49f3-9bf4-5ba90b96a624"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
