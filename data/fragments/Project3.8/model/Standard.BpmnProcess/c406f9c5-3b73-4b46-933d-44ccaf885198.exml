@@ -468,7 +468,7 @@
                       <DEPENDENCIES>
                         <LINK relation="TargetRef">
                           <REFOBJ>
-                            <ID name="Packaging request (store-out)" mc="Standard.BpmnDataObject" uid="352fd4dd-19d1-4492-9192-f3efc78db3b6"/>
+                            <ID name="(store-out)" mc="Standard.BpmnDataObject" uid="352fd4dd-19d1-4492-9192-f3efc78db3b6"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -485,7 +485,7 @@
                       <DEPENDENCIES>
                         <LINK relation="TargetRef">
                           <REFOBJ>
-                            <ID name="Packaging request (store-out)" mc="Standard.BpmnDataObject" uid="352fd4dd-19d1-4492-9192-f3efc78db3b6"/>
+                            <ID name="(store-out)" mc="Standard.BpmnDataObject" uid="352fd4dd-19d1-4492-9192-f3efc78db3b6"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -644,14 +644,32 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Packaging request (store-out)" mc="Standard.BpmnDataObject" uid="352fd4dd-19d1-4492-9192-f3efc78db3b6"/>
+                <ID name="(store-out)" mc="Standard.BpmnDataObject" uid="352fd4dd-19d1-4492-9192-f3efc78db3b6"/>
                 <ATTRIBUTES>
                   <ATT name="IsCollection">false</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Packaging request (store-out)]]></ATT>
+                  <ATT name="Name"><![CDATA[(store-out)]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <COMP relation="DependsOnDependency">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="269b55d0-f7b9-4eb4-968c-51c3474a1eaf"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <ID name="Packaging order" mc="Standard.Class" uid="867a3e1f-7179-46fc-a5eb-e115ad659866"/>
+                        </LINK>
+                        <LINK relation="Extension">
+                          <FOREIGNID name="Represents" mc="Infrastructure.Stereotype" uid="f5d2927d-46d6-4d87-9cf2-adb4a47ca929"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="Packaging request (processed)" mc="Standard.BpmnDataObject" uid="a090b409-d89f-4d59-8be1-0d3b4cdcb7f9"/>
@@ -661,7 +679,25 @@
                   <ATT name="Name"><![CDATA[Packaging request (processed)]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <COMP relation="DependsOnDependency">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="e2fa5f4a-e3a4-406e-8b52-2dfc633cac35"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <ID name="Packaging order" mc="Standard.Class" uid="867a3e1f-7179-46fc-a5eb-e115ad659866"/>
+                        </LINK>
+                        <LINK relation="Extension">
+                          <FOREIGNID name="Represents" mc="Infrastructure.Stereotype" uid="f5d2927d-46d6-4d87-9cf2-adb4a47ca929"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="Packaging request (store-in)" mc="Standard.BpmnDataObject" uid="6ddd17dd-ab0e-456b-9cd8-c3de4099b6cd"/>

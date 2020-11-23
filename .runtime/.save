@@ -1,12 +1,12 @@
-#Mon Nov 23 13:30:58 CET 2020
+#Mon Nov 23 14:15:59 CET 2020
+org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.com.modeliosoft.modelio.archimate.perspective.parentId=archimate.ui.partstack.bottom
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
 org.modelio.diagram.editor.OpenedDiagrams5='Machine replacement' {8084415e-e7b4-4019-8a29-ef7b89fe3dae} Standard.BpmnSubProcessDiagram
-org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.com.modeliosoft.modelio.archimate.perspective.parentId=archimate.ui.partstack.bottom
 org.modelio.diagram.editor.OpenedDiagrams4='Preparation' {6f3d7955-3ea0-4e10-9e3c-39664ddf63d1} Standard.BpmnSubProcessDiagram
 org.modelio.diagram.editor.OpenedDiagrams3='Pet food mixture production' {78284e7b-5625-449f-8f81-8fcf821e295d} Standard.BpmnProcessDesignDiagram
+org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
 org.modelio.diagram.editor.OpenedDiagrams2='Mixture production' {e9f57a71-1b2d-4572-b27d-8e2266b64ef8} Standard.BpmnSubProcessDiagram
 org.modelio.diagram.editor.OpenedDiagrams1='Class diagram' {853c5745-31a5-4ee6-be8a-cac75700ca3b} Standard.StaticDiagram
 org.modelio.diagram.editor.OpenedDiagrams0='Event diagram' {020ce1b5-7150-4179-974b-93167eb87c8c} Standard.StaticDiagram
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
-org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right

@@ -1,0 +1,344 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="LC_packaging_order" version="4">
+  <OBJECT>
+    <ID name="LC_packaging_order" mc="Standard.StateMachine" uid="eca89571-107a-40f6-b744-acb162f0b297"/>
+    <PID name="Packaging order" mc="Standard.Class" uid="867a3e1f-7179-46fc-a5eb-e115ad659866"/>
+    <ATTRIBUTES>
+      <ATT name="Kind">Dynamic</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[LC_packaging_order]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Top">
+        <OBJECT>
+          <ID name="" mc="Standard.Region" uid="ee1b2a53-0456-4d5f-aaa5-2f6a1e5ca7bf"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Sub">
+              <OBJECT>
+                <ID name="Initial State" mc="Standard.InitialPseudoState" uid="ec595a39-0be6-4266-916d-707562f771d3"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Initial State]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Packaging pickup/PickupPackage()" mc="Standard.Transition" uid="fb225e2c-c133-4f5e-a6ab-48d599e3a495"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Packaging pickup/PickupPackage()]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Received" mc="Standard.State" uid="92c99baa-19af-4d9b-befb-cf6f29e89221"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Received" mc="Standard.State" uid="92c99baa-19af-4d9b-befb-cf6f29e89221"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Received]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="PackagingImpropriate/MarkAsInexecutable()" mc="Standard.Transition" uid="101e8729-51e4-402f-a965-4c40f2f6bc43"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[PackagingImpropriate/MarkAsInexecutable()]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Inexecutable" mc="Standard.State" uid="f46ffcd7-af23-4c14-aa10-b499b08c30a9"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="Packaging material availavble/MarkAsExecutable()" mc="Standard.Transition" uid="ca166e77-07a7-432f-a7b2-2aa7b586e2be"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Packaging material availavble/MarkAsExecutable()]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Executable" mc="Standard.State" uid="c1c80076-1fbf-4777-9195-fdf8789840c9"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Inexecutable" mc="Standard.State" uid="f46ffcd7-af23-4c14-aa10-b499b08c30a9"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Inexecutable]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="MaterialUnavailable/Order()" mc="Standard.Transition" uid="1e6ef24b-af40-4d76-9192-a104ca23e397"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[MaterialUnavailable/Order()]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Final State" mc="Standard.FinalState" uid="cd4146e9-0b42-47f6-8b48-784da479ddea"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Executable" mc="Standard.State" uid="c1c80076-1fbf-4777-9195-fdf8789840c9"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Executable]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Packaging and expiration tagging/PackagingTaging()" mc="Standard.Transition" uid="9dfab13f-8049-4dac-9c9c-2c51fda44879"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Packaging and expiration tagging/PackagingTaging()]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Packed,Tagged" mc="Standard.State" uid="3c6f7fef-b426-4611-8324-3dd26ff5a018"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Final State" mc="Standard.FinalState" uid="cd4146e9-0b42-47f6-8b48-784da479ddea"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Final State]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Packed,Tagged" mc="Standard.State" uid="3c6f7fef-b426-4611-8324-3dd26ff5a018"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Packed,Tagged]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Unsuccesfull Package Checking/MarkAsUnsuccesfullPackaging()" mc="Standard.Transition" uid="d1abe25b-302e-41ac-a241-6a3605e46b23"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Unsuccesfull Package Checking/MarkAsUnsuccesfullPackaging()]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Packing Error" mc="Standard.State" uid="d283c32e-a74d-4db7-8b82-7c33d57ee451"/>
+                          </REFOBJ>
+                        </LINK>
+                        <COMP relation="Descriptor">
+                          <OBJECT>
+                            <ID name="" mc="Infrastructure.Note" uid="aeba3676-ef50-4fef-9c6d-97add44d8e41"/>
+                            <ATTRIBUTES>
+                              <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                              <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                              <ATT name="Name"></ATT>
+                              <ATT name="status">1970354901745664</ATT>
+                            </ATTRIBUTES>
+                            <DEPENDENCIES>
+                              <LINK relation="Model">
+                                <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                              </LINK>
+                            </DEPENDENCIES>
+                          </OBJECT>
+                        </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="Succesfull Package Checking/MarkAsSuccesfullPackaging()" mc="Standard.Transition" uid="29435b5f-75ea-41ec-992d-bfe78d98bd4e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Succesfull Package Checking/MarkAsSuccesfullPackaging()]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Packing Succesfull" mc="Standard.State" uid="f5fafc05-50ba-4d0c-a89a-aa7f0edc98e5"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Final State1" mc="Standard.FinalState" uid="d1cd425f-8db1-4c2c-81d3-219db602b0b8"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Final State1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Packing Error" mc="Standard.State" uid="d283c32e-a74d-4db7-8b82-7c33d57ee451"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Packing Error]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Unpacking micture/Unpack()" mc="Standard.Transition" uid="1d4dcbfc-c3dd-435c-8d41-9957144cfac0"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Unpacking micture/Unpack()]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Unpacked" mc="Standard.State" uid="d3a7f148-f70d-4ddb-8b51-e678a9e3eb38"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Packing Succesfull" mc="Standard.State" uid="f5fafc05-50ba-4d0c-a89a-aa7f0edc98e5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Packing Succesfull]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Storage Packed Mixture/ProductStorage()" mc="Standard.Transition" uid="337d1870-973b-42dd-9ea7-069e05f465ff"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Storage Packed Mixture/ProductStorage()]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Final State1" mc="Standard.FinalState" uid="d1cd425f-8db1-4c2c-81d3-219db602b0b8"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Unpacked" mc="Standard.State" uid="d3a7f148-f70d-4ddb-8b51-e678a9e3eb38"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Unpacked]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="OutGoing">
+                    <OBJECT>
+                      <ID name="Sending for repacking/MarkAsExecutable()" mc="Standard.Transition" uid="f367229e-cac4-403c-8274-73009e459196"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Sending for repacking/MarkAsExecutable()]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Executable" mc="Standard.State" uid="c1c80076-1fbf-4777-9195-fdf8789840c9"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
+      </LINK>
+      <COMP relation="Product">
+        <COMPID name="Packaging request" mc="Standard.StateMachineDiagram" uid="973b1032-088a-4a30-9e47-f02b82893fde"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

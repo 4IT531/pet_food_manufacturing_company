@@ -40,6 +40,8 @@
         <COMPID name="Material" mc="Standard.Class" uid="0529dd29-4597-4a78-9bf3-bf5c710bc105"/>
         <COMPID name="Ingredient" mc="Standard.Class" uid="e7d7c9e9-838e-41c4-8ed7-d51899386221"/>
         <COMPID name="Pet food mixture production order" mc="Standard.Class" uid="b6d4a315-30ea-4d01-9bde-06763d40aa7a"/>
+        <COMPID name="Packaging order" mc="Standard.Class" uid="867a3e1f-7179-46fc-a5eb-e115ad659866"/>
+        <COMPID name="Material for packaging" mc="Standard.Class" uid="0dbc15a6-c9b9-4911-b076-8d241de99923"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessEntities" mc="Infrastructure.Stereotype" uid="1b78cab2-ab6d-11df-9861-0014224f9977"/>
