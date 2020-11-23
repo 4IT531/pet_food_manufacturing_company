@@ -27,7 +27,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Pet food mixture production" mc="Standard.BpmnProcess" uid="a5f7830b-3478-4ff7-8942-27b9aaaaff20"/>
+              <ID name="Pet food mixture production" mc="Standard.BpmnProcess" uid="c406f9c5-3b73-4b46-933d-44ccaf885198"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

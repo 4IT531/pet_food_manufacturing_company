@@ -22,7 +22,6 @@
         <COMPID name="Natural Person" mc="Standard.Class" uid="a43e429a-24af-4b88-9c83-d9ab3c5c9449"/>
         <COMPID name="Legal Person" mc="Standard.Class" uid="7c876eac-1d60-4389-b818-5ba84ca989cc"/>
         <COMPID name="Order" mc="Standard.Class" uid="e2ff208c-a13f-49b5-b722-97b7ebf75292"/>
-        <COMPID name="Pet food mixture production order" mc="Standard.Class" uid="0c6882ed-f176-4bcf-88bd-af07d09a4a1c"/>
         <COMPID name="Pet food mixture acquisition order" mc="Standard.Class" uid="81dbe974-df16-4881-b403-d2fc7d88c861"/>
         <COMPID name="Pet food delivery order" mc="Standard.Class" uid="60b83135-2311-467f-af50-7c21ec05a44a"/>
         <COMPID name="Supply delivery order" mc="Standard.Class" uid="163035cc-5e01-4300-a3d7-99e8a5189e4b"/>
@@ -40,6 +39,7 @@
         <COMPID name="Supply order" mc="Standard.Class" uid="5ae007da-93de-4840-9370-54fd9a21cf3d"/>
         <COMPID name="Material" mc="Standard.Class" uid="0529dd29-4597-4a78-9bf3-bf5c710bc105"/>
         <COMPID name="Ingredient" mc="Standard.Class" uid="e7d7c9e9-838e-41c4-8ed7-d51899386221"/>
+        <COMPID name="Pet food mixture production order" mc="Standard.Class" uid="b6d4a315-30ea-4d01-9bde-06763d40aa7a"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessEntities" mc="Infrastructure.Stereotype" uid="1b78cab2-ab6d-11df-9861-0014224f9977"/>

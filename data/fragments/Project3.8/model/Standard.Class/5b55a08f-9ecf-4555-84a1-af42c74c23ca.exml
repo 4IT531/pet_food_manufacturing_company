@@ -76,7 +76,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.AssociationEnd" uid="d754a7ca-b0d5-4d05-8503-ea2dd63595dd"/>
+          <ID name="" mc="Standard.AssociationEnd" uid="04aeea8d-17b6-48c4-91e5-ebf9f6b5fc25"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -95,16 +95,24 @@
           <DEPENDENCIES>
             <COMP relation="Opposite">
               <REFOBJ>
-                <ID name="" mc="Standard.AssociationEnd" uid="2f0a9f22-4a35-4b1a-9ad3-de003fe925b7"/>
+                <ID name="" mc="Standard.AssociationEnd" uid="7d4cf4f1-fb21-4cd1-ab7e-0782f1b8f4f2"/>
               </REFOBJ>
             </COMP>
             <COMP relation="Association">
-              <REFOBJ>
-                <ID name="" mc="Standard.Association" uid="1c048aee-559b-4d6a-b660-e1a978b467cc"/>
-              </REFOBJ>
+              <OBJECT>
+                <ID name="" mc="Standard.Association" uid="d8e7b496-0939-484a-a418-1d5899ad1c2b"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="d754a7ca-b0d5-4d05-8503-ea2dd63595dd"/>
+        </REFOBJ>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessEntity" mc="Infrastructure.Stereotype" uid="146eb72a-ab73-11df-9861-0014224f9977"/>

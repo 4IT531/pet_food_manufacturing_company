@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Pet food mixture production" version="4">
   <OBJECT>
-    <ID name="Pet food mixture production" mc="Standard.BpmnProcess" uid="a5f7830b-3478-4ff7-8942-27b9aaaaff20"/>
+    <ID name="Pet food mixture production" mc="Standard.BpmnProcess" uid="c406f9c5-3b73-4b46-933d-44ccaf885198"/>
     <PID name="Production management" mc="Standard.Package" uid="5f870a92-4219-4c15-97d4-d15ed1c76986"/>
     <ATTRIBUTES>
       <ATT name="ProcessType">NoneProcess</ATT>
@@ -14,7 +14,7 @@
     <DEPENDENCIES>
       <COMP relation="FlowElement">
         <OBJECT>
-          <ID name="Pet food mixture production order arrived" mc="Standard.BpmnStartEvent" uid="7e45361a-bd3b-42da-be84-a6e7ffe0d91b"/>
+          <ID name="Pet food mixture production order arrived" mc="Standard.BpmnStartEvent" uid="c33a5bcd-d105-444c-8048-0e4c7c61c407"/>
           <ATTRIBUTES>
             <ATT name="IsInterrupting">true</ATT>
             <ATT name="ParallelMultiple">false</ATT>
@@ -25,7 +25,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Pet food mixture production order completed" mc="Standard.BpmnEndEvent" uid="b42cf056-434b-4a3f-84cd-bb43474a894c"/>
+          <ID name="Pet food mixture production order completed" mc="Standard.BpmnEndEvent" uid="10fa9625-11df-4fb3-b59a-d9860ea717a7"/>
           <ATTRIBUTES>
             <ATT name="TriggeredByEvent">false</ATT>
             <ATT name="Name"><![CDATA[Pet food mixture production order completed]]></ATT>
@@ -34,7 +34,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Production" mc="Standard.BpmnSubProcess" uid="73046fe6-152a-40ca-b6ac-d96b489c27b1"/>
+          <ID name="Production" mc="Standard.BpmnSubProcess" uid="7d10b5a6-8c58-4aac-b2ce-ed2edc3f453a"/>
           <ATTRIBUTES>
             <ATT name="IsForCompensation">false</ATT>
             <ATT name="StartQuantity">1</ATT>
@@ -46,7 +46,7 @@
           <DEPENDENCIES>
             <COMP relation="FlowElement">
               <OBJECT>
-                <ID name="Pet food mixture production order arrived" mc="Standard.BpmnStartEvent" uid="17c5f02b-119d-4fca-b941-2cf5c1e0fffd"/>
+                <ID name="Pet food mixture production order arrived" mc="Standard.BpmnStartEvent" uid="34094d3e-2318-4cc9-a814-62a7cd6aa894"/>
                 <ATTRIBUTES>
                   <ATT name="IsInterrupting">true</ATT>
                   <ATT name="ParallelMultiple">false</ATT>
@@ -57,7 +57,7 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Pet food mixture order completed" mc="Standard.BpmnEndEvent" uid="473e73c2-dbdc-4a07-9907-2c127aaf3c9a"/>
+                <ID name="Pet food mixture order completed" mc="Standard.BpmnEndEvent" uid="347e4e91-7bd2-4d80-bbcf-de8fcc44e3b1"/>
                 <ATTRIBUTES>
                   <ATT name="TriggeredByEvent">false</ATT>
                   <ATT name="Name"><![CDATA[Pet food mixture order completed]]></ATT>
@@ -66,7 +66,7 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Recipe selection" mc="Standard.BpmnTask" uid="6cc8a7f6-4240-4f67-84b7-f475c25e8b43"/>
+                <ID name="Recipe selection" mc="Standard.BpmnTask" uid="e1d4a6a2-16e8-4f4e-919e-a9be89b4d5b1"/>
                 <ATTRIBUTES>
                   <ATT name="IsGlobal">false</ATT>
                   <ATT name="IsForCompensation">false</ATT>
@@ -76,30 +76,10 @@
                   <ATT name="Name"><![CDATA[Recipe selection]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <COMP relation="DataInputAssociation">
-                    <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="d5021f7e-8335-4fa7-9ffb-384e0bc12bd5"/>
-                      <ATTRIBUTES>
-                        <ATT name="Assignment"></ATT>
-                        <ATT name="Transfomation"></ATT>
-                        <ATT name="Language"></ATT>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="TargetRef">
-                          <REFOBJ>
-                            <ID name="Production order (recipe)" mc="Standard.BpmnDataObject" uid="8a153f08-1e8b-436c-aefe-c47c10e720c9"/>
-                          </REFOBJ>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
+                <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Mixing process and preservation" mc="Standard.BpmnTask" uid="793d824f-f5cb-46fe-8e33-d23a90e2459c"/>
+                <ID name="Mixing process and preservation" mc="Standard.BpmnTask" uid="d5aa510f-92d9-4376-b6a4-b1e76a4bb0a8"/>
                 <ATTRIBUTES>
                   <ATT name="IsGlobal">false</ATT>
                   <ATT name="IsForCompensation">false</ATT>
@@ -112,7 +92,7 @@
                 <DEPENDENCIES>
                   <COMP relation="DataInputAssociation">
                     <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="c64e9c90-7e73-463f-b14e-914e35175bb4"/>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="c8b3efe0-fc53-43d3-965c-d797bca7a03d"/>
                       <ATTRIBUTES>
                         <ATT name="Assignment"></ATT>
                         <ATT name="Transfomation"></ATT>
@@ -123,7 +103,7 @@
                       <DEPENDENCIES>
                         <LINK relation="TargetRef">
                           <REFOBJ>
-                            <ID name="Production order (completed)" mc="Standard.BpmnDataObject" uid="c9de485a-d783-4ca3-9546-8c1c71af09d1"/>
+                            <ID name="" mc="Standard.BpmnDataObject" uid="e54257bb-feeb-4db5-93e2-57ca49140e3c"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -132,7 +112,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f" mc="Standard.BpmnSequenceFlow" uid="b138014a-649c-4e5f-846e-7e04ab5091ff"/>
+                <ID name="f" mc="Standard.BpmnSequenceFlow" uid="3d31321a-33ab-4cbf-a8ce-5de57acee6c3"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -143,38 +123,63 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Recipe selection" mc="Standard.BpmnTask" uid="6cc8a7f6-4240-4f67-84b7-f475c25e8b43"/>
+                      <ID name="Recipe selection" mc="Standard.BpmnTask" uid="e1d4a6a2-16e8-4f4e-919e-a9be89b4d5b1"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Mixing process and preservation" mc="Standard.BpmnTask" uid="793d824f-f5cb-46fe-8e33-d23a90e2459c"/>
+                      <ID name="Mixing process and preservation" mc="Standard.BpmnTask" uid="d5aa510f-92d9-4376-b6a4-b1e76a4bb0a8"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Production order (recipe)" mc="Standard.BpmnDataObject" uid="8a153f08-1e8b-436c-aefe-c47c10e720c9"/>
+                <ID name="" mc="Standard.BpmnDataObject" uid="e54257bb-feeb-4db5-93e2-57ca49140e3c"/>
                 <ATTRIBUTES>
                   <ATT name="IsCollection">false</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Production order (recipe)]]></ATT>
+                  <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <COMP relation="DependsOnDependency">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="456fa275-588f-41cf-b3cd-5c2488c1bba1"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <ID name="Pet food mixture production order" mc="Standard.Class" uid="b6d4a315-30ea-4d01-9bde-06763d40aa7a"/>
+                        </LINK>
+                        <LINK relation="Extension">
+                          <FOREIGNID name="Represents" mc="Infrastructure.Stereotype" uid="f5d2927d-46d6-4d87-9cf2-adb4a47ca929"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="cfd74fdd-fda7-466d-b533-1e26da4a9521"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <REFOBJ>
+                            <ID name="Processed" mc="Standard.State" uid="12f73985-1766-4169-be16-512fc1a02d6d"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Extension">
+                          <FOREIGNID name="State" mc="Infrastructure.Stereotype" uid="c2d2a1ec-2c29-453c-a79c-19e4f2d27f13"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Production order (completed)" mc="Standard.BpmnDataObject" uid="c9de485a-d783-4ca3-9546-8c1c71af09d1"/>
-                <ATTRIBUTES>
-                  <ATT name="IsCollection">false</ATT>
-                  <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Production order (completed)]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="d60cec6c-9778-441d-904b-b9a6d47d0097"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="1089f754-cfad-42fc-9e3b-8b907671a433"/>
                 <ATTRIBUTES>
                   <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
@@ -184,7 +189,7 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f2" mc="Standard.BpmnSequenceFlow" uid="5ae48156-6d4a-459d-a082-d458a2998462"/>
+                <ID name="f2" mc="Standard.BpmnSequenceFlow" uid="c74e999d-309b-4c6f-9484-afe0c2c43f79"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"><![CDATA[Mixture OK]]></ATT>
@@ -195,18 +200,18 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="d60cec6c-9778-441d-904b-b9a6d47d0097"/>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="1089f754-cfad-42fc-9e3b-8b907671a433"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Packaging pick up" mc="Standard.BpmnTask" uid="6b58201d-c803-4164-9c1d-83d5702f3c58"/>
+                      <ID name="Packaging pick up" mc="Standard.BpmnTask" uid="34588c01-27f5-4ca0-8e9c-36a911c20b18"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Mixture quality control" mc="Standard.BpmnTask" uid="04555151-0ac1-4f33-ab0e-4db068811538"/>
+                <ID name="Mixture quality control" mc="Standard.BpmnTask" uid="7c53148b-bcc7-41db-9761-74f449d34b65"/>
                 <ATTRIBUTES>
                   <ATT name="IsGlobal">false</ATT>
                   <ATT name="IsForCompensation">false</ATT>
@@ -219,7 +224,7 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f1" mc="Standard.BpmnSequenceFlow" uid="33837a75-89e6-4a55-99c8-79259aee8112"/>
+                <ID name="f1" mc="Standard.BpmnSequenceFlow" uid="74a5aae1-0bdf-4cf3-8a4d-54d67a551fdf"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -230,18 +235,18 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Mixing process and preservation" mc="Standard.BpmnTask" uid="793d824f-f5cb-46fe-8e33-d23a90e2459c"/>
+                      <ID name="Mixing process and preservation" mc="Standard.BpmnTask" uid="d5aa510f-92d9-4376-b6a4-b1e76a4bb0a8"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Mixture quality control" mc="Standard.BpmnTask" uid="04555151-0ac1-4f33-ab0e-4db068811538"/>
+                      <ID name="Mixture quality control" mc="Standard.BpmnTask" uid="7c53148b-bcc7-41db-9761-74f449d34b65"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f3" mc="Standard.BpmnSequenceFlow" uid="1ff90364-7499-41d1-9eb4-4c58ba440c51"/>
+                <ID name="f3" mc="Standard.BpmnSequenceFlow" uid="65c72f9c-d4e8-49cf-9f6b-fa5880a29a14"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -252,18 +257,18 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Mixture quality control" mc="Standard.BpmnTask" uid="04555151-0ac1-4f33-ab0e-4db068811538"/>
+                      <ID name="Mixture quality control" mc="Standard.BpmnTask" uid="7c53148b-bcc7-41db-9761-74f449d34b65"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="d60cec6c-9778-441d-904b-b9a6d47d0097"/>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="1089f754-cfad-42fc-9e3b-8b907671a433"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Get rid of mixture" mc="Standard.BpmnTask" uid="f09a1ff9-e24e-4f11-8152-314e46b6aa27"/>
+                <ID name="Get rid of mixture" mc="Standard.BpmnTask" uid="3cecff99-0994-43c6-bfe3-bf789e5e44b3"/>
                 <ATTRIBUTES>
                   <ATT name="IsGlobal">false</ATT>
                   <ATT name="IsForCompensation">false</ATT>
@@ -276,7 +281,7 @@
                 <DEPENDENCIES>
                   <COMP relation="DataOutputAssociation">
                     <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="c353f67c-aff5-44b8-8045-dc03a7272f79"/>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="04ddbbc4-6f01-4612-acb5-e3aaee8d282f"/>
                       <ATTRIBUTES>
                         <ATT name="Assignment"></ATT>
                         <ATT name="Transfomation"></ATT>
@@ -287,7 +292,7 @@
                       <DEPENDENCIES>
                         <LINK relation="SourceRef">
                           <REFOBJ>
-                            <ID name="Production order (new)" mc="Standard.BpmnDataObject" uid="ff654f48-013c-459c-a1c8-1c987d7e3225"/>
+                            <ID name="" mc="Standard.BpmnDataObject" uid="838fa17b-5104-4132-a32b-2daeb86b8ade"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -296,7 +301,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f4" mc="Standard.BpmnSequenceFlow" uid="b6d97335-5619-499b-8b85-73b43244dd61"/>
+                <ID name="f4" mc="Standard.BpmnSequenceFlow" uid="1c54a147-d518-4308-a775-a6907e8445f3"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"><![CDATA[Mixture not OK]]></ATT>
@@ -307,18 +312,18 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="d60cec6c-9778-441d-904b-b9a6d47d0097"/>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="1089f754-cfad-42fc-9e3b-8b907671a433"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Get rid of mixture" mc="Standard.BpmnTask" uid="f09a1ff9-e24e-4f11-8152-314e46b6aa27"/>
+                      <ID name="Get rid of mixture" mc="Standard.BpmnTask" uid="3cecff99-0994-43c6-bfe3-bf789e5e44b3"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="90f7141b-0723-4193-a47b-6471f373498b"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="b135a831-315c-4926-92df-c07ce910485b"/>
                 <ATTRIBUTES>
                   <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
@@ -328,7 +333,7 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f5" mc="Standard.BpmnSequenceFlow" uid="030b7fe0-7927-46b4-bc5f-a22010fffb89"/>
+                <ID name="f5" mc="Standard.BpmnSequenceFlow" uid="1b90218d-baa8-4893-b2d0-01efbb3408c7"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -339,18 +344,18 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Pet food mixture production order arrived" mc="Standard.BpmnStartEvent" uid="17c5f02b-119d-4fca-b941-2cf5c1e0fffd"/>
+                      <ID name="Pet food mixture production order arrived" mc="Standard.BpmnStartEvent" uid="34094d3e-2318-4cc9-a814-62a7cd6aa894"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="90f7141b-0723-4193-a47b-6471f373498b"/>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="b135a831-315c-4926-92df-c07ce910485b"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f6" mc="Standard.BpmnSequenceFlow" uid="ff78c130-f975-447f-8875-05cae22eb474"/>
+                <ID name="f6" mc="Standard.BpmnSequenceFlow" uid="e37e2833-853e-492a-bfc3-8b1533e37199"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -361,18 +366,18 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="90f7141b-0723-4193-a47b-6471f373498b"/>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="b135a831-315c-4926-92df-c07ce910485b"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Recipe selection" mc="Standard.BpmnTask" uid="6cc8a7f6-4240-4f67-84b7-f475c25e8b43"/>
+                      <ID name="Recipe selection" mc="Standard.BpmnTask" uid="e1d4a6a2-16e8-4f4e-919e-a9be89b4d5b1"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f7" mc="Standard.BpmnSequenceFlow" uid="f4109452-2523-4779-afca-87a7bbfb650c"/>
+                <ID name="f7" mc="Standard.BpmnSequenceFlow" uid="5a7881bb-930e-44db-9381-0975c45c3ee5"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -383,28 +388,63 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Get rid of mixture" mc="Standard.BpmnTask" uid="f09a1ff9-e24e-4f11-8152-314e46b6aa27"/>
+                      <ID name="Get rid of mixture" mc="Standard.BpmnTask" uid="3cecff99-0994-43c6-bfe3-bf789e5e44b3"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="90f7141b-0723-4193-a47b-6471f373498b"/>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="b135a831-315c-4926-92df-c07ce910485b"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Production order (new)" mc="Standard.BpmnDataObject" uid="ff654f48-013c-459c-a1c8-1c987d7e3225"/>
+                <ID name="" mc="Standard.BpmnDataObject" uid="838fa17b-5104-4132-a32b-2daeb86b8ade"/>
                 <ATTRIBUTES>
                   <ATT name="IsCollection">false</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Production order (new)]]></ATT>
+                  <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <COMP relation="DependsOnDependency">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="8ebaec1a-0bdc-46f2-acf9-2ec117014e2d"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <ID name="Pet food mixture production order" mc="Standard.Class" uid="b6d4a315-30ea-4d01-9bde-06763d40aa7a"/>
+                        </LINK>
+                        <LINK relation="Extension">
+                          <FOREIGNID name="Represents" mc="Infrastructure.Stereotype" uid="f5d2927d-46d6-4d87-9cf2-adb4a47ca929"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="bf21ecc0-6529-4457-9d2d-f5feccb48f18"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <REFOBJ>
+                            <ID name="New" mc="Standard.State" uid="b8783288-8e78-4837-8daa-453a90cce33c"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Extension">
+                          <FOREIGNID name="State" mc="Infrastructure.Stereotype" uid="c2d2a1ec-2c29-453c-a79c-19e4f2d27f13"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Packaging pick up" mc="Standard.BpmnTask" uid="6b58201d-c803-4164-9c1d-83d5702f3c58"/>
+                <ID name="Packaging pick up" mc="Standard.BpmnTask" uid="34588c01-27f5-4ca0-8e9c-36a911c20b18"/>
                 <ATTRIBUTES>
                   <ATT name="IsGlobal">false</ATT>
                   <ATT name="IsForCompensation">false</ATT>
@@ -417,7 +457,7 @@
                 <DEPENDENCIES>
                   <COMP relation="DataInputAssociation">
                     <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="ff33e1a0-0c35-4020-ab6a-6e72f91a3d10"/>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="dac5fcd1-6ff8-4ff7-9f09-f45773b65f93"/>
                       <ATTRIBUTES>
                         <ATT name="Assignment"></ATT>
                         <ATT name="Transfomation"></ATT>
@@ -428,13 +468,13 @@
                       <DEPENDENCIES>
                         <LINK relation="TargetRef">
                           <REFOBJ>
-                            <ID name="Packaging request (store-out)" mc="Standard.BpmnDataObject" uid="c2a88e98-0bb6-484b-9400-6edcbafe9bc5"/>
+                            <ID name="Packaging request (store-out)" mc="Standard.BpmnDataObject" uid="352fd4dd-19d1-4492-9192-f3efc78db3b6"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="d7dbadee-f5a4-4651-92b5-751edaf161ee"/>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="11f8dc24-bcb1-4040-9e5c-24b41294bd8b"/>
                       <ATTRIBUTES>
                         <ATT name="Assignment"></ATT>
                         <ATT name="Transfomation"></ATT>
@@ -445,7 +485,7 @@
                       <DEPENDENCIES>
                         <LINK relation="TargetRef">
                           <REFOBJ>
-                            <ID name="Packaging request (store-out)" mc="Standard.BpmnDataObject" uid="c2a88e98-0bb6-484b-9400-6edcbafe9bc5"/>
+                            <ID name="Packaging request (store-out)" mc="Standard.BpmnDataObject" uid="352fd4dd-19d1-4492-9192-f3efc78db3b6"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -454,7 +494,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Packaging and expiration tagging" mc="Standard.BpmnTask" uid="86faa34e-4119-4e6d-b071-f3fcf9931b18"/>
+                <ID name="Packaging and expiration tagging" mc="Standard.BpmnTask" uid="7c083c11-52f0-41be-acec-22fcb8abcc7c"/>
                 <ATTRIBUTES>
                   <ATT name="IsGlobal">false</ATT>
                   <ATT name="IsForCompensation">false</ATT>
@@ -467,7 +507,7 @@
                 <DEPENDENCIES>
                   <COMP relation="DataInputAssociation">
                     <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="e7b3efc0-0450-4acd-91a1-c761c3931bc6"/>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="d485c51a-4722-4b69-ad30-3473951e8b93"/>
                       <ATTRIBUTES>
                         <ATT name="Assignment"></ATT>
                         <ATT name="Transfomation"></ATT>
@@ -478,13 +518,13 @@
                       <DEPENDENCIES>
                         <LINK relation="TargetRef">
                           <REFOBJ>
-                            <ID name="Packaging request (processed)" mc="Standard.BpmnDataObject" uid="9a2cff02-18a5-4662-9dab-b562617aecfe"/>
+                            <ID name="Packaging request (processed)" mc="Standard.BpmnDataObject" uid="a090b409-d89f-4d59-8be1-0d3b4cdcb7f9"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="bd5399cd-38c0-4446-811d-1b9fb1efeaf8"/>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="c02da803-2237-4730-b770-7c448b3cabd0"/>
                       <ATTRIBUTES>
                         <ATT name="Assignment"></ATT>
                         <ATT name="Transfomation"></ATT>
@@ -495,7 +535,7 @@
                       <DEPENDENCIES>
                         <LINK relation="TargetRef">
                           <REFOBJ>
-                            <ID name="Packaging request (processed)" mc="Standard.BpmnDataObject" uid="9a2cff02-18a5-4662-9dab-b562617aecfe"/>
+                            <ID name="Packaging request (processed)" mc="Standard.BpmnDataObject" uid="a090b409-d89f-4d59-8be1-0d3b4cdcb7f9"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -504,7 +544,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Product storage" mc="Standard.BpmnTask" uid="4bf14c83-efb6-4db6-a94b-f8c8313ece2b"/>
+                <ID name="Product storage" mc="Standard.BpmnTask" uid="c0e80846-cdee-48bb-9bbb-b0cb261ba28f"/>
                 <ATTRIBUTES>
                   <ATT name="IsGlobal">false</ATT>
                   <ATT name="IsForCompensation">false</ATT>
@@ -517,7 +557,7 @@
                 <DEPENDENCIES>
                   <COMP relation="DataInputAssociation">
                     <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="e77b160f-2f6b-49a6-8ee5-524c1af2afc5"/>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="3ed9b59d-2f38-479a-b06e-14c12dd87773"/>
                       <ATTRIBUTES>
                         <ATT name="Assignment"></ATT>
                         <ATT name="Transfomation"></ATT>
@@ -528,13 +568,13 @@
                       <DEPENDENCIES>
                         <LINK relation="TargetRef">
                           <REFOBJ>
-                            <ID name="Packaging request (store-in)" mc="Standard.BpmnDataObject" uid="e1cffa17-b65f-4e06-b63b-8d01a026e62d"/>
+                            <ID name="Packaging request (store-in)" mc="Standard.BpmnDataObject" uid="6ddd17dd-ab0e-456b-9cd8-c3de4099b6cd"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="594729ff-1a03-4fe5-93dd-e130b540d7a9"/>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="dddaccf0-5a39-4604-a382-2737108083d2"/>
                       <ATTRIBUTES>
                         <ATT name="Assignment"></ATT>
                         <ATT name="Transfomation"></ATT>
@@ -545,7 +585,7 @@
                       <DEPENDENCIES>
                         <LINK relation="TargetRef">
                           <REFOBJ>
-                            <ID name="Packaging request (store-in)" mc="Standard.BpmnDataObject" uid="e1cffa17-b65f-4e06-b63b-8d01a026e62d"/>
+                            <ID name="Packaging request (store-in)" mc="Standard.BpmnDataObject" uid="6ddd17dd-ab0e-456b-9cd8-c3de4099b6cd"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -554,7 +594,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Packaging check" mc="Standard.BpmnTask" uid="2782bc6a-1056-4dd7-8016-522bed587936"/>
+                <ID name="Packaging check" mc="Standard.BpmnTask" uid="260e4222-7a88-4613-8379-7c0e191dd8ea"/>
                 <ATTRIBUTES>
                   <ATT name="IsGlobal">false</ATT>
                   <ATT name="IsForCompensation">false</ATT>
@@ -567,7 +607,7 @@
                 <DEPENDENCIES>
                   <COMP relation="DataInputAssociation">
                     <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="55d4cd8d-b8b1-4df5-a8d1-b688e63eaaff"/>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="8fcbce68-e73a-4741-945b-f833f390f2da"/>
                       <ATTRIBUTES>
                         <ATT name="Assignment"></ATT>
                         <ATT name="Transfomation"></ATT>
@@ -578,13 +618,13 @@
                       <DEPENDENCIES>
                         <LINK relation="TargetRef">
                           <REFOBJ>
-                            <ID name="Packaging request (checked)" mc="Standard.BpmnDataObject" uid="155b3d8b-6b2c-4225-ab8e-96a71dfc6b28"/>
+                            <ID name="Packaging request (checked)" mc="Standard.BpmnDataObject" uid="c4ca94b6-e2bb-4097-baf3-ff9c0a62f532"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="2fb54bc7-e6d2-4630-a504-2c3faebc7b34"/>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="3ab942fc-ba0a-4ea0-b1f9-06c023b8e33b"/>
                       <ATTRIBUTES>
                         <ATT name="Assignment"></ATT>
                         <ATT name="Transfomation"></ATT>
@@ -595,7 +635,7 @@
                       <DEPENDENCIES>
                         <LINK relation="TargetRef">
                           <REFOBJ>
-                            <ID name="Packaging request (checked)" mc="Standard.BpmnDataObject" uid="155b3d8b-6b2c-4225-ab8e-96a71dfc6b28"/>
+                            <ID name="Packaging request (checked)" mc="Standard.BpmnDataObject" uid="c4ca94b6-e2bb-4097-baf3-ff9c0a62f532"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -604,7 +644,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Packaging request (store-out)" mc="Standard.BpmnDataObject" uid="c2a88e98-0bb6-484b-9400-6edcbafe9bc5"/>
+                <ID name="Packaging request (store-out)" mc="Standard.BpmnDataObject" uid="352fd4dd-19d1-4492-9192-f3efc78db3b6"/>
                 <ATTRIBUTES>
                   <ATT name="IsCollection">false</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
@@ -614,7 +654,7 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Packaging request (processed)" mc="Standard.BpmnDataObject" uid="9a2cff02-18a5-4662-9dab-b562617aecfe"/>
+                <ID name="Packaging request (processed)" mc="Standard.BpmnDataObject" uid="a090b409-d89f-4d59-8be1-0d3b4cdcb7f9"/>
                 <ATTRIBUTES>
                   <ATT name="IsCollection">false</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
@@ -624,7 +664,7 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Packaging request (store-in)" mc="Standard.BpmnDataObject" uid="e1cffa17-b65f-4e06-b63b-8d01a026e62d"/>
+                <ID name="Packaging request (store-in)" mc="Standard.BpmnDataObject" uid="6ddd17dd-ab0e-456b-9cd8-c3de4099b6cd"/>
                 <ATTRIBUTES>
                   <ATT name="IsCollection">false</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
@@ -634,7 +674,7 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Packaging request (checked)" mc="Standard.BpmnDataObject" uid="155b3d8b-6b2c-4225-ab8e-96a71dfc6b28"/>
+                <ID name="Packaging request (checked)" mc="Standard.BpmnDataObject" uid="c4ca94b6-e2bb-4097-baf3-ff9c0a62f532"/>
                 <ATTRIBUTES>
                   <ATT name="IsCollection">false</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
@@ -644,7 +684,7 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Packaging request (repack)" mc="Standard.BpmnDataObject" uid="e118eebb-0cc1-43ef-bc05-c79c6c598b2c"/>
+                <ID name="Packaging request (repack)" mc="Standard.BpmnDataObject" uid="2400286a-357e-4e58-8212-a17c69345906"/>
                 <ATTRIBUTES>
                   <ATT name="IsCollection">false</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
@@ -654,7 +694,7 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="a0b71e86-7973-4ab1-8690-e76656d4d4d8"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="b40f8049-f334-4d3e-9df1-8e4105044361"/>
                 <ATTRIBUTES>
                   <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
@@ -664,7 +704,7 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f8" mc="Standard.BpmnSequenceFlow" uid="912a9c42-9492-410e-b654-f700337f5e4f"/>
+                <ID name="f8" mc="Standard.BpmnSequenceFlow" uid="7c62b64d-cf01-45fa-a402-21d5cdcbc69c"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -675,18 +715,18 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Packaging pick up" mc="Standard.BpmnTask" uid="6b58201d-c803-4164-9c1d-83d5702f3c58"/>
+                      <ID name="Packaging pick up" mc="Standard.BpmnTask" uid="34588c01-27f5-4ca0-8e9c-36a911c20b18"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="a0b71e86-7973-4ab1-8690-e76656d4d4d8"/>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="b40f8049-f334-4d3e-9df1-8e4105044361"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f9" mc="Standard.BpmnSequenceFlow" uid="35ad7a31-b579-4f93-9b94-47c5bbc4385e"/>
+                <ID name="f9" mc="Standard.BpmnSequenceFlow" uid="9b1c8076-b15b-4032-af18-8a40b066bcf0"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -697,18 +737,18 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="a0b71e86-7973-4ab1-8690-e76656d4d4d8"/>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="b40f8049-f334-4d3e-9df1-8e4105044361"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Packaging and expiration tagging" mc="Standard.BpmnTask" uid="86faa34e-4119-4e6d-b071-f3fcf9931b18"/>
+                      <ID name="Packaging and expiration tagging" mc="Standard.BpmnTask" uid="7c083c11-52f0-41be-acec-22fcb8abcc7c"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f10" mc="Standard.BpmnSequenceFlow" uid="e9cbb9b5-aa7a-4947-b010-24001325981f"/>
+                <ID name="f10" mc="Standard.BpmnSequenceFlow" uid="6cbe298f-f6e1-45b2-93ea-3bd9f2b8c9fe"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -719,18 +759,18 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Packaging and expiration tagging" mc="Standard.BpmnTask" uid="86faa34e-4119-4e6d-b071-f3fcf9931b18"/>
+                      <ID name="Packaging and expiration tagging" mc="Standard.BpmnTask" uid="7c083c11-52f0-41be-acec-22fcb8abcc7c"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Packaging check" mc="Standard.BpmnTask" uid="2782bc6a-1056-4dd7-8016-522bed587936"/>
+                      <ID name="Packaging check" mc="Standard.BpmnTask" uid="260e4222-7a88-4613-8379-7c0e191dd8ea"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="aa8deceb-3476-4b00-9139-cdc22d7d18f9"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="42228920-98e8-4f35-8018-13a1a202726e"/>
                 <ATTRIBUTES>
                   <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
@@ -740,7 +780,7 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f11" mc="Standard.BpmnSequenceFlow" uid="f4a02b6d-5165-4c33-9810-4d4083d06f83"/>
+                <ID name="f11" mc="Standard.BpmnSequenceFlow" uid="57bb4949-f9ff-48b2-89d9-8ed8c2a25da9"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -751,18 +791,18 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Packaging check" mc="Standard.BpmnTask" uid="2782bc6a-1056-4dd7-8016-522bed587936"/>
+                      <ID name="Packaging check" mc="Standard.BpmnTask" uid="260e4222-7a88-4613-8379-7c0e191dd8ea"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="aa8deceb-3476-4b00-9139-cdc22d7d18f9"/>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="42228920-98e8-4f35-8018-13a1a202726e"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f12" mc="Standard.BpmnSequenceFlow" uid="bef31083-582a-4f0d-b674-ae92d2b9c9f9"/>
+                <ID name="f12" mc="Standard.BpmnSequenceFlow" uid="1bc824d1-2a25-4374-8e77-42d631615789"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -773,18 +813,18 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="aa8deceb-3476-4b00-9139-cdc22d7d18f9"/>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="42228920-98e8-4f35-8018-13a1a202726e"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Product storage" mc="Standard.BpmnTask" uid="4bf14c83-efb6-4db6-a94b-f8c8313ece2b"/>
+                      <ID name="Product storage" mc="Standard.BpmnTask" uid="c0e80846-cdee-48bb-9bbb-b0cb261ba28f"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Unpacking" mc="Standard.BpmnTask" uid="fdb426c8-c2d4-41bc-9cf8-098f1769b0d5"/>
+                <ID name="Unpacking" mc="Standard.BpmnTask" uid="3c54bbf9-9542-4f0a-a792-f0cf8b3841c0"/>
                 <ATTRIBUTES>
                   <ATT name="IsGlobal">false</ATT>
                   <ATT name="IsForCompensation">false</ATT>
@@ -797,7 +837,7 @@
                 <DEPENDENCIES>
                   <COMP relation="DataInputAssociation">
                     <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="a9f1e4e6-a2c9-4eb8-aacf-d51eac16bd85"/>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="2a25c9e1-b167-4a4e-9da4-f2a409dde270"/>
                       <ATTRIBUTES>
                         <ATT name="Assignment"></ATT>
                         <ATT name="Transfomation"></ATT>
@@ -808,7 +848,7 @@
                       <DEPENDENCIES>
                         <LINK relation="TargetRef">
                           <REFOBJ>
-                            <ID name="Packaging request (repack)" mc="Standard.BpmnDataObject" uid="e118eebb-0cc1-43ef-bc05-c79c6c598b2c"/>
+                            <ID name="Packaging request (repack)" mc="Standard.BpmnDataObject" uid="2400286a-357e-4e58-8212-a17c69345906"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -817,7 +857,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f13" mc="Standard.BpmnSequenceFlow" uid="ad859d5f-2787-4746-9036-4a733d170dd3"/>
+                <ID name="f13" mc="Standard.BpmnSequenceFlow" uid="03047881-22e0-45dc-8e29-2edb49ca6f6a"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -828,18 +868,18 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="aa8deceb-3476-4b00-9139-cdc22d7d18f9"/>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="42228920-98e8-4f35-8018-13a1a202726e"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Unpacking" mc="Standard.BpmnTask" uid="fdb426c8-c2d4-41bc-9cf8-098f1769b0d5"/>
+                      <ID name="Unpacking" mc="Standard.BpmnTask" uid="3c54bbf9-9542-4f0a-a792-f0cf8b3841c0"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f14" mc="Standard.BpmnSequenceFlow" uid="9d5b6f50-0768-49db-8fed-34fbee54bf00"/>
+                <ID name="f14" mc="Standard.BpmnSequenceFlow" uid="f129e4e1-f382-4987-9de5-fc35669a8f03"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -850,18 +890,18 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Unpacking" mc="Standard.BpmnTask" uid="fdb426c8-c2d4-41bc-9cf8-098f1769b0d5"/>
+                      <ID name="Unpacking" mc="Standard.BpmnTask" uid="3c54bbf9-9542-4f0a-a792-f0cf8b3841c0"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="a0b71e86-7973-4ab1-8690-e76656d4d4d8"/>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="b40f8049-f334-4d3e-9df1-8e4105044361"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f15" mc="Standard.BpmnSequenceFlow" uid="6babfeac-dad7-4cea-a3a5-db572ea268a4"/>
+                <ID name="f15" mc="Standard.BpmnSequenceFlow" uid="bbd9a23f-932c-4e6f-a061-2c61ceaedffb"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -872,24 +912,24 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Product storage" mc="Standard.BpmnTask" uid="4bf14c83-efb6-4db6-a94b-f8c8313ece2b"/>
+                      <ID name="Product storage" mc="Standard.BpmnTask" uid="c0e80846-cdee-48bb-9bbb-b0cb261ba28f"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Pet food mixture order completed" mc="Standard.BpmnEndEvent" uid="473e73c2-dbdc-4a07-9907-2c127aaf3c9a"/>
+                      <ID name="Pet food mixture order completed" mc="Standard.BpmnEndEvent" uid="347e4e91-7bd2-4d80-bbcf-de8fcc44e3b1"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>
             <COMP relation="Product">
-              <COMPID name="Mixture production" mc="Standard.BpmnSubProcessDiagram" uid="247d1877-e48e-404f-a9c0-4368ee643d09"/>
+              <COMPID name="Mixture production" mc="Standard.BpmnSubProcessDiagram" uid="e9f57a71-1b2d-4572-b27d-8e2266b64ef8"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Preparation" mc="Standard.BpmnSubProcess" uid="7c66cd23-d9d5-49c6-8bd2-a980f3f62537"/>
+          <ID name="Preparation" mc="Standard.BpmnSubProcess" uid="5b5ee94f-12f9-433d-96c8-a343ae283c77"/>
           <ATTRIBUTES>
             <ATT name="IsForCompensation">false</ATT>
             <ATT name="StartQuantity">1</ATT>
@@ -901,7 +941,7 @@
           <DEPENDENCIES>
             <COMP relation="FlowElement">
               <OBJECT>
-                <ID name="Pet food mixture production order arrived" mc="Standard.BpmnStartEvent" uid="70ecf19e-d0e8-441e-9f18-1c6e76d8d43e"/>
+                <ID name="Pet food mixture production order arrived" mc="Standard.BpmnStartEvent" uid="69c4c850-86ec-4f49-9095-9091bf3a19d9"/>
                 <ATTRIBUTES>
                   <ATT name="IsInterrupting">true</ATT>
                   <ATT name="ParallelMultiple">false</ATT>
@@ -912,7 +952,7 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Machines OK" mc="Standard.BpmnEndEvent" uid="8f24a464-3bd8-4c5c-9d1c-6daab7f49a9e"/>
+                <ID name="Machines OK" mc="Standard.BpmnEndEvent" uid="ee870be0-5753-4cc7-a33e-6e877add105e"/>
                 <ATTRIBUTES>
                   <ATT name="TriggeredByEvent">false</ATT>
                   <ATT name="Name"><![CDATA[Machines OK]]></ATT>
@@ -921,7 +961,7 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Machine check" mc="Standard.BpmnTask" uid="7299c685-94d1-4793-8105-9fc7df79e2bd"/>
+                <ID name="Machine check" mc="Standard.BpmnTask" uid="d34b4d48-c1c0-4fea-a89e-a14cbe91e3c9"/>
                 <ATTRIBUTES>
                   <ATT name="IsGlobal">false</ATT>
                   <ATT name="IsForCompensation">false</ATT>
@@ -934,7 +974,7 @@
                 <DEPENDENCIES>
                   <COMP relation="DataInputAssociation">
                     <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="630d0389-59e9-4270-b049-0267476ec191"/>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="21c77255-3f2c-42e1-96d0-b3134a03e81c"/>
                       <ATTRIBUTES>
                         <ATT name="Assignment"></ATT>
                         <ATT name="Transfomation"></ATT>
@@ -945,7 +985,7 @@
                       <DEPENDENCIES>
                         <LINK relation="TargetRef">
                           <REFOBJ>
-                            <ID name="Machine state request " mc="Standard.BpmnDataObject" uid="d9c825fc-758b-4256-96cc-8bd8408ba784"/>
+                            <ID name="Machine state request " mc="Standard.BpmnDataObject" uid="38b9a2be-1842-49b3-8b87-18d603a479f3"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -954,7 +994,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="" mc="Standard.BpmnSequenceFlow" uid="a8be832d-3c63-4957-a166-631d00825737"/>
+                <ID name="" mc="Standard.BpmnSequenceFlow" uid="ed525381-e390-459d-a818-f2de42b5d7b8"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -965,18 +1005,18 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Pet food mixture production order arrived" mc="Standard.BpmnStartEvent" uid="70ecf19e-d0e8-441e-9f18-1c6e76d8d43e"/>
+                      <ID name="Pet food mixture production order arrived" mc="Standard.BpmnStartEvent" uid="69c4c850-86ec-4f49-9095-9091bf3a19d9"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Machine check" mc="Standard.BpmnTask" uid="7299c685-94d1-4793-8105-9fc7df79e2bd"/>
+                      <ID name="Machine check" mc="Standard.BpmnTask" uid="d34b4d48-c1c0-4fea-a89e-a14cbe91e3c9"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="13ebfa45-9a9b-4316-85f2-f906ed1fcf75"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="cd00a9f7-7428-4e98-a4db-5b26a96c49c8"/>
                 <ATTRIBUTES>
                   <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
@@ -986,7 +1026,7 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f" mc="Standard.BpmnSequenceFlow" uid="56091ba1-6f29-467b-a856-68ab373336cc"/>
+                <ID name="f" mc="Standard.BpmnSequenceFlow" uid="716ae3e2-533f-4d52-9c58-2e63d03d5cad"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -997,18 +1037,18 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Machine check" mc="Standard.BpmnTask" uid="7299c685-94d1-4793-8105-9fc7df79e2bd"/>
+                      <ID name="Machine check" mc="Standard.BpmnTask" uid="d34b4d48-c1c0-4fea-a89e-a14cbe91e3c9"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="13ebfa45-9a9b-4316-85f2-f906ed1fcf75"/>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="cd00a9f7-7428-4e98-a4db-5b26a96c49c8"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Machines not OK" mc="Standard.BpmnEndEvent" uid="f5e46a09-a180-4aaa-94d0-9587885dcf47"/>
+                <ID name="Machines not OK" mc="Standard.BpmnEndEvent" uid="e2af94de-321f-4fe6-b951-580e4a0f0209"/>
                 <ATTRIBUTES>
                   <ATT name="TriggeredByEvent">false</ATT>
                   <ATT name="Name"><![CDATA[Machines not OK]]></ATT>
@@ -1017,7 +1057,7 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f1" mc="Standard.BpmnSequenceFlow" uid="22c57be3-c301-46a6-93d4-65575b2a21df"/>
+                <ID name="f1" mc="Standard.BpmnSequenceFlow" uid="e9444e9b-9534-4026-b075-91150f74c579"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -1028,18 +1068,18 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="13ebfa45-9a9b-4316-85f2-f906ed1fcf75"/>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="cd00a9f7-7428-4e98-a4db-5b26a96c49c8"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Machines OK" mc="Standard.BpmnEndEvent" uid="8f24a464-3bd8-4c5c-9d1c-6daab7f49a9e"/>
+                      <ID name="Machines OK" mc="Standard.BpmnEndEvent" uid="ee870be0-5753-4cc7-a33e-6e877add105e"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f2" mc="Standard.BpmnSequenceFlow" uid="bf0c6750-f615-4e78-8e1d-3505914bed20"/>
+                <ID name="f2" mc="Standard.BpmnSequenceFlow" uid="35969098-876e-4c98-b7ad-8bd7776ef87b"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -1050,18 +1090,18 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="13ebfa45-9a9b-4316-85f2-f906ed1fcf75"/>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="cd00a9f7-7428-4e98-a4db-5b26a96c49c8"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Machines not OK" mc="Standard.BpmnEndEvent" uid="f5e46a09-a180-4aaa-94d0-9587885dcf47"/>
+                      <ID name="Machines not OK" mc="Standard.BpmnEndEvent" uid="e2af94de-321f-4fe6-b951-580e4a0f0209"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Machine state request " mc="Standard.BpmnDataObject" uid="d9c825fc-758b-4256-96cc-8bd8408ba784"/>
+                <ID name="Machine state request " mc="Standard.BpmnDataObject" uid="38b9a2be-1842-49b3-8b87-18d603a479f3"/>
                 <ATTRIBUTES>
                   <ATT name="IsCollection">false</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
@@ -1072,12 +1112,12 @@
               </OBJECT>
             </COMP>
             <COMP relation="Product">
-              <COMPID name="Preparation" mc="Standard.BpmnSubProcessDiagram" uid="cc78a4fb-b265-48d1-b112-1458ee6d894b"/>
+              <COMPID name="Preparation" mc="Standard.BpmnSubProcessDiagram" uid="6f3d7955-3ea0-4e10-9e3c-39664ddf63d1"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="f" mc="Standard.BpmnSequenceFlow" uid="0ec7f679-f9f3-4d7a-9bdd-c03cbdf56a1d"/>
+          <ID name="f" mc="Standard.BpmnSequenceFlow" uid="1d5124d6-7067-4af1-b4e8-25ffbf3d8910"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
             <ATT name="ConditionExpression"></ATT>
@@ -1088,18 +1128,18 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="Pet food mixture production order arrived" mc="Standard.BpmnStartEvent" uid="7e45361a-bd3b-42da-be84-a6e7ffe0d91b"/>
+                <ID name="Pet food mixture production order arrived" mc="Standard.BpmnStartEvent" uid="c33a5bcd-d105-444c-8048-0e4c7c61c407"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="Preparation" mc="Standard.BpmnSubProcess" uid="7c66cd23-d9d5-49c6-8bd2-a980f3f62537"/>
+                <ID name="Preparation" mc="Standard.BpmnSubProcess" uid="5b5ee94f-12f9-433d-96c8-a343ae283c77"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.BpmnExclusiveGateway" uid="334f7a85-6932-4903-9e7d-1a3d0d581508"/>
+          <ID name="" mc="Standard.BpmnExclusiveGateway" uid="fb0fa7a8-57d9-4e14-ad6b-ad2d2e0d328e"/>
           <ATTRIBUTES>
             <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
             <ATT name="TriggeredByEvent">false</ATT>
@@ -1109,7 +1149,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="f2" mc="Standard.BpmnSequenceFlow" uid="5532789f-9d84-40a0-ba3b-3a98f88e10a2"/>
+          <ID name="f2" mc="Standard.BpmnSequenceFlow" uid="e4984900-ab11-4b53-ae0e-7821350b5910"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
             <ATT name="ConditionExpression"></ATT>
@@ -1120,18 +1160,18 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="Preparation" mc="Standard.BpmnSubProcess" uid="7c66cd23-d9d5-49c6-8bd2-a980f3f62537"/>
+                <ID name="Preparation" mc="Standard.BpmnSubProcess" uid="5b5ee94f-12f9-433d-96c8-a343ae283c77"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="334f7a85-6932-4903-9e7d-1a3d0d581508"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="fb0fa7a8-57d9-4e14-ad6b-ad2d2e0d328e"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="f3" mc="Standard.BpmnSequenceFlow" uid="e8d42382-04f5-4c8a-ada2-9ed3ebb6d55a"/>
+          <ID name="f3" mc="Standard.BpmnSequenceFlow" uid="1c3881ae-831c-43ad-b448-749da2165e62"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
             <ATT name="ConditionExpression"><![CDATA[Machines OK]]></ATT>
@@ -1142,18 +1182,18 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="334f7a85-6932-4903-9e7d-1a3d0d581508"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="fb0fa7a8-57d9-4e14-ad6b-ad2d2e0d328e"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="770e6f5e-e662-4065-be54-e541b127f8e6"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="e76c84f3-53c7-444d-ab6e-35b9cbea211b"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Maintance" mc="Standard.BpmnParallelGateway" uid="8d8e3c0a-f1a2-45dc-a0f9-34c14aba9979"/>
+          <ID name="Maintance" mc="Standard.BpmnParallelGateway" uid="9476b32a-11ca-4ee3-ab6d-86d3457a6ff3"/>
           <ATTRIBUTES>
             <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
             <ATT name="TriggeredByEvent">false</ATT>
@@ -1163,7 +1203,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="f4" mc="Standard.BpmnSequenceFlow" uid="cde874c8-bab4-413d-a771-5f78f19a6b3a"/>
+          <ID name="f4" mc="Standard.BpmnSequenceFlow" uid="87e62e7a-60e8-491b-903c-76325b45a9ad"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
             <ATT name="ConditionExpression"><![CDATA[Machines not OK]]></ATT>
@@ -1174,18 +1214,18 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="334f7a85-6932-4903-9e7d-1a3d0d581508"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="fb0fa7a8-57d9-4e14-ad6b-ad2d2e0d328e"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="Maintance" mc="Standard.BpmnParallelGateway" uid="8d8e3c0a-f1a2-45dc-a0f9-34c14aba9979"/>
+                <ID name="Maintance" mc="Standard.BpmnParallelGateway" uid="9476b32a-11ca-4ee3-ab6d-86d3457a6ff3"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.BpmnExclusiveGateway" uid="c653093e-e88f-4597-9878-5d2ba4d55d8a"/>
+          <ID name="" mc="Standard.BpmnExclusiveGateway" uid="e01b2ca1-d75a-48f7-abe6-554c09cc928d"/>
           <ATTRIBUTES>
             <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
             <ATT name="TriggeredByEvent">false</ATT>
@@ -1195,7 +1235,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="f5" mc="Standard.BpmnSequenceFlow" uid="931dfabf-8cf9-4266-8955-339c6973e0f9"/>
+          <ID name="f5" mc="Standard.BpmnSequenceFlow" uid="29b802c2-52a1-4729-b822-d990907e682c"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
             <ATT name="ConditionExpression"></ATT>
@@ -1206,18 +1246,18 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="Maintance" mc="Standard.BpmnParallelGateway" uid="8d8e3c0a-f1a2-45dc-a0f9-34c14aba9979"/>
+                <ID name="Maintance" mc="Standard.BpmnParallelGateway" uid="9476b32a-11ca-4ee3-ab6d-86d3457a6ff3"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="c653093e-e88f-4597-9878-5d2ba4d55d8a"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="e01b2ca1-d75a-48f7-abe6-554c09cc928d"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="1 week" mc="Standard.BpmnStartEvent" uid="136ed346-c5e5-406e-b031-5fff3c90ee38"/>
+          <ID name="1 week" mc="Standard.BpmnStartEvent" uid="8a8f216f-3ed7-4ef2-b486-b7b80da79f04"/>
           <ATTRIBUTES>
             <ATT name="IsInterrupting">true</ATT>
             <ATT name="ParallelMultiple">false</ATT>
@@ -1228,7 +1268,7 @@
           <DEPENDENCIES>
             <COMP relation="EventDefinitions">
               <OBJECT>
-                <ID name="" mc="Standard.BpmnTimerEventDefinition" uid="34f7d659-cc95-4c99-a6e2-272a76a551ec"/>
+                <ID name="" mc="Standard.BpmnTimerEventDefinition" uid="5a42194a-48c0-4a18-85ab-0a8e678afab8"/>
                 <ATTRIBUTES>
                   <ATT name="TimeCycle"></ATT>
                   <ATT name="TimeDate"></ATT>
@@ -1242,7 +1282,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Machines repaired / replaced" mc="Standard.BpmnStartEvent" uid="3009b19d-8b64-41e4-99aa-2cc1c8241feb"/>
+          <ID name="Machines repaired / replaced" mc="Standard.BpmnStartEvent" uid="1bf84d59-4226-438f-8186-9eb130f87b52"/>
           <ATTRIBUTES>
             <ATT name="IsInterrupting">true</ATT>
             <ATT name="ParallelMultiple">false</ATT>
@@ -1253,7 +1293,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Machines not repaired / replaced" mc="Standard.BpmnStartEvent" uid="0c741456-b3ff-4cfa-84af-0494c2e121eb"/>
+          <ID name="Machines not repaired / replaced" mc="Standard.BpmnStartEvent" uid="87340f0b-79a9-4aaf-87a4-ee6228e0260c"/>
           <ATTRIBUTES>
             <ATT name="IsInterrupting">true</ATT>
             <ATT name="ParallelMultiple">false</ATT>
@@ -1264,7 +1304,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="f6" mc="Standard.BpmnSequenceFlow" uid="f14178f8-6bf8-4bb4-89fb-065e50232106"/>
+          <ID name="f6" mc="Standard.BpmnSequenceFlow" uid="7a8ba7df-cf16-49cd-ab4e-4d3a80db778a"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
             <ATT name="ConditionExpression"></ATT>
@@ -1275,18 +1315,18 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="Machines repaired / replaced" mc="Standard.BpmnStartEvent" uid="3009b19d-8b64-41e4-99aa-2cc1c8241feb"/>
+                <ID name="Machines repaired / replaced" mc="Standard.BpmnStartEvent" uid="1bf84d59-4226-438f-8186-9eb130f87b52"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="c653093e-e88f-4597-9878-5d2ba4d55d8a"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="e01b2ca1-d75a-48f7-abe6-554c09cc928d"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="f7" mc="Standard.BpmnSequenceFlow" uid="6a8009dd-3d03-481b-baa7-fa8bd06c269f"/>
+          <ID name="f7" mc="Standard.BpmnSequenceFlow" uid="e8da2077-e155-4eda-98f3-eeb8ddef51d5"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
             <ATT name="ConditionExpression"></ATT>
@@ -1297,18 +1337,18 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="1 week" mc="Standard.BpmnStartEvent" uid="136ed346-c5e5-406e-b031-5fff3c90ee38"/>
+                <ID name="1 week" mc="Standard.BpmnStartEvent" uid="8a8f216f-3ed7-4ef2-b486-b7b80da79f04"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="c653093e-e88f-4597-9878-5d2ba4d55d8a"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="e01b2ca1-d75a-48f7-abe6-554c09cc928d"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="f8" mc="Standard.BpmnSequenceFlow" uid="9933d4e4-b1d4-4f7c-8a64-18383189117a"/>
+          <ID name="f8" mc="Standard.BpmnSequenceFlow" uid="889ee328-c122-4c62-81e8-9451c3a1dee1"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
             <ATT name="ConditionExpression"></ATT>
@@ -1319,18 +1359,18 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="Machines not repaired / replaced" mc="Standard.BpmnStartEvent" uid="0c741456-b3ff-4cfa-84af-0494c2e121eb"/>
+                <ID name="Machines not repaired / replaced" mc="Standard.BpmnStartEvent" uid="87340f0b-79a9-4aaf-87a4-ee6228e0260c"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="c653093e-e88f-4597-9878-5d2ba4d55d8a"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="e01b2ca1-d75a-48f7-abe6-554c09cc928d"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.BpmnExclusiveGateway" uid="b6d2164e-7612-4a67-8198-f4ae3ccc3c39"/>
+          <ID name="" mc="Standard.BpmnExclusiveGateway" uid="44186e4d-2d12-4992-9160-4237c4f2825f"/>
           <ATTRIBUTES>
             <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
             <ATT name="TriggeredByEvent">false</ATT>
@@ -1340,7 +1380,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="f9" mc="Standard.BpmnSequenceFlow" uid="a5d9b69a-5bf6-42cd-89e0-86ca1f83c420"/>
+          <ID name="f9" mc="Standard.BpmnSequenceFlow" uid="f9a4d190-9ccf-4b81-abbb-caf1b5191609"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
             <ATT name="ConditionExpression"></ATT>
@@ -1351,18 +1391,18 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="Maintance" mc="Standard.BpmnParallelGateway" uid="8d8e3c0a-f1a2-45dc-a0f9-34c14aba9979"/>
+                <ID name="Maintance" mc="Standard.BpmnParallelGateway" uid="9476b32a-11ca-4ee3-ab6d-86d3457a6ff3"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="b6d2164e-7612-4a67-8198-f4ae3ccc3c39"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="44186e4d-2d12-4992-9160-4237c4f2825f"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="f10" mc="Standard.BpmnSequenceFlow" uid="a784bafe-d5bd-4aea-9752-a1bd833dbbac"/>
+          <ID name="f10" mc="Standard.BpmnSequenceFlow" uid="c3478427-8bac-4ac8-8f74-11be11f62eb0"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
             <ATT name="ConditionExpression"><![CDATA[Machines repaired]]></ATT>
@@ -1373,18 +1413,18 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="b6d2164e-7612-4a67-8198-f4ae3ccc3c39"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="44186e4d-2d12-4992-9160-4237c4f2825f"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="770e6f5e-e662-4065-be54-e541b127f8e6"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="e76c84f3-53c7-444d-ab6e-35b9cbea211b"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.BpmnExclusiveGateway" uid="770e6f5e-e662-4065-be54-e541b127f8e6"/>
+          <ID name="" mc="Standard.BpmnExclusiveGateway" uid="e76c84f3-53c7-444d-ab6e-35b9cbea211b"/>
           <ATTRIBUTES>
             <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
             <ATT name="TriggeredByEvent">false</ATT>
@@ -1394,7 +1434,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="f11" mc="Standard.BpmnSequenceFlow" uid="ee618367-6a58-44e0-863b-bfc0d7df09b5"/>
+          <ID name="f11" mc="Standard.BpmnSequenceFlow" uid="c477088d-db6a-440f-8f83-3c6f92faeb70"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
             <ATT name="ConditionExpression"></ATT>
@@ -1405,18 +1445,18 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="770e6f5e-e662-4065-be54-e541b127f8e6"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="e76c84f3-53c7-444d-ab6e-35b9cbea211b"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="Production" mc="Standard.BpmnSubProcess" uid="73046fe6-152a-40ca-b6ac-d96b489c27b1"/>
+                <ID name="Production" mc="Standard.BpmnSubProcess" uid="7d10b5a6-8c58-4aac-b2ce-ed2edc3f453a"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Order cancelation" mc="Standard.BpmnSubProcess" uid="c0e03971-74b8-4990-8555-5ca02f7acaff"/>
+          <ID name="Order cancelation" mc="Standard.BpmnSubProcess" uid="d1727e48-071c-4ba4-b952-fd6f36b1729e"/>
           <ATTRIBUTES>
             <ATT name="IsForCompensation">false</ATT>
             <ATT name="StartQuantity">1</ATT>
@@ -1428,7 +1468,7 @@
           <DEPENDENCIES>
             <COMP relation="FlowElement">
               <OBJECT>
-                <ID name="Machines not repaired" mc="Standard.BpmnStartEvent" uid="5299266a-70a0-4dc0-aaef-863897af83df"/>
+                <ID name="Machines not repaired" mc="Standard.BpmnStartEvent" uid="3e5771df-13d5-470b-9212-c731d8c403ae"/>
                 <ATTRIBUTES>
                   <ATT name="IsInterrupting">true</ATT>
                   <ATT name="ParallelMultiple">false</ATT>
@@ -1439,29 +1479,29 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Order canceled" mc="Standard.BpmnEndEvent" uid="3ea83841-1874-45c5-a63a-c4b67ee6bc28"/>
+                <ID name="Pet food mixture production order canceled" mc="Standard.BpmnEndEvent" uid="1216e87d-d819-4ecb-9f31-b209b4fc5efb"/>
                 <ATTRIBUTES>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Order canceled]]></ATT>
+                  <ATT name="Name"><![CDATA[Pet food mixture production order canceled]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Order cancelation" mc="Standard.BpmnTask" uid="fd03f0c0-d1ab-427b-8db1-de86c029ecea"/>
+                <ID name="Pet food mixture production order cancelation" mc="Standard.BpmnTask" uid="052ea7e5-9228-410d-acaf-72376b62e51b"/>
                 <ATTRIBUTES>
                   <ATT name="IsGlobal">false</ATT>
                   <ATT name="IsForCompensation">false</ATT>
                   <ATT name="StartQuantity">1</ATT>
                   <ATT name="CompletionQuantity">1</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Order cancelation]]></ATT>
+                  <ATT name="Name"><![CDATA[Pet food mixture production order cancelation]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="DataInputAssociation">
                     <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="ab17bef4-fcbb-4135-922e-1f2b0dab6284"/>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="01b66a11-93f3-432f-ae68-f097df37b8b3"/>
                       <ATTRIBUTES>
                         <ATT name="Assignment"></ATT>
                         <ATT name="Transfomation"></ATT>
@@ -1472,7 +1512,7 @@
                       <DEPENDENCIES>
                         <LINK relation="TargetRef">
                           <REFOBJ>
-                            <ID name="Order (canceled)" mc="Standard.BpmnDataObject" uid="cfc1bf7e-af0c-4f39-bb35-5daa19d1f028"/>
+                            <ID name="" mc="Standard.BpmnDataObject" uid="7102a1a7-66f4-458b-841b-d47d8b91e7a6"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -1481,7 +1521,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="" mc="Standard.BpmnSequenceFlow" uid="9e366c7f-0f37-4373-b6ed-197bfdda50fa"/>
+                <ID name="" mc="Standard.BpmnSequenceFlow" uid="1ec21ffb-1fdf-4b32-a292-39a9072d504e"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -1492,18 +1532,18 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Machines not repaired" mc="Standard.BpmnStartEvent" uid="5299266a-70a0-4dc0-aaef-863897af83df"/>
+                      <ID name="Machines not repaired" mc="Standard.BpmnStartEvent" uid="3e5771df-13d5-470b-9212-c731d8c403ae"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Order cancelation" mc="Standard.BpmnTask" uid="fd03f0c0-d1ab-427b-8db1-de86c029ecea"/>
+                      <ID name="Pet food mixture production order cancelation" mc="Standard.BpmnTask" uid="052ea7e5-9228-410d-acaf-72376b62e51b"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="" mc="Standard.BpmnSequenceFlow" uid="8ff8b3b1-2836-4f46-87bd-f50a87672a02"/>
+                <ID name="" mc="Standard.BpmnSequenceFlow" uid="a5cb5bac-cde0-4891-bedc-06685f5ecb25"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -1514,34 +1554,69 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Order cancelation" mc="Standard.BpmnTask" uid="fd03f0c0-d1ab-427b-8db1-de86c029ecea"/>
+                      <ID name="Pet food mixture production order cancelation" mc="Standard.BpmnTask" uid="052ea7e5-9228-410d-acaf-72376b62e51b"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Order canceled" mc="Standard.BpmnEndEvent" uid="3ea83841-1874-45c5-a63a-c4b67ee6bc28"/>
+                      <ID name="Pet food mixture production order canceled" mc="Standard.BpmnEndEvent" uid="1216e87d-d819-4ecb-9f31-b209b4fc5efb"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Order (canceled)" mc="Standard.BpmnDataObject" uid="cfc1bf7e-af0c-4f39-bb35-5daa19d1f028"/>
+                <ID name="" mc="Standard.BpmnDataObject" uid="7102a1a7-66f4-458b-841b-d47d8b91e7a6"/>
                 <ATTRIBUTES>
                   <ATT name="IsCollection">false</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Order (canceled)]]></ATT>
+                  <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <COMP relation="DependsOnDependency">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="f91aa3fe-25c4-4346-b5ee-84b9f5a462e0"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <ID name="Pet food mixture production order" mc="Standard.Class" uid="b6d4a315-30ea-4d01-9bde-06763d40aa7a"/>
+                        </LINK>
+                        <LINK relation="Extension">
+                          <FOREIGNID name="Represents" mc="Infrastructure.Stereotype" uid="f5d2927d-46d6-4d87-9cf2-adb4a47ca929"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="ebc184da-cb0f-413f-b8d4-4990819d6f73"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <REFOBJ>
+                            <ID name="Cancelled" mc="Standard.FinalState" uid="60372102-cdcb-420b-a87f-17767d07b77b"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Extension">
+                          <FOREIGNID name="State" mc="Infrastructure.Stereotype" uid="c2d2a1ec-2c29-453c-a79c-19e4f2d27f13"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
               </OBJECT>
             </COMP>
             <COMP relation="Product">
-              <COMPID name="Machine replacement" mc="Standard.BpmnSubProcessDiagram" uid="85714892-4546-4e3c-9546-3660121ce4ec"/>
+              <COMPID name="Machine replacement" mc="Standard.BpmnSubProcessDiagram" uid="8084415e-e7b4-4019-8a29-ef7b89fe3dae"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="f12" mc="Standard.BpmnSequenceFlow" uid="2bed6f7f-da79-479a-b739-cd1bbd854b83"/>
+          <ID name="f12" mc="Standard.BpmnSequenceFlow" uid="d834009f-40ed-4b24-943f-9800d5758b46"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
             <ATT name="ConditionExpression"><![CDATA[Machines not repaired / 1 week]]></ATT>
@@ -1552,18 +1627,18 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="b6d2164e-7612-4a67-8198-f4ae3ccc3c39"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="44186e4d-2d12-4992-9160-4237c4f2825f"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="Order cancelation" mc="Standard.BpmnSubProcess" uid="c0e03971-74b8-4990-8555-5ca02f7acaff"/>
+                <ID name="Order cancelation" mc="Standard.BpmnSubProcess" uid="d1727e48-071c-4ba4-b952-fd6f36b1729e"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Order canceled" mc="Standard.BpmnEndEvent" uid="eecd7323-c668-4ecd-b1b7-2a04b21ed2e8"/>
+          <ID name="Order canceled" mc="Standard.BpmnEndEvent" uid="0349e837-5ff6-42f2-8c7c-168f09a329c4"/>
           <ATTRIBUTES>
             <ATT name="TriggeredByEvent">false</ATT>
             <ATT name="Name"><![CDATA[Order canceled]]></ATT>
@@ -1572,7 +1647,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="f13" mc="Standard.BpmnSequenceFlow" uid="46732119-10c5-40da-bbae-298c74d79283"/>
+          <ID name="f13" mc="Standard.BpmnSequenceFlow" uid="2ec875b2-58f8-4124-820f-b530e5546792"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
             <ATT name="ConditionExpression"></ATT>
@@ -1583,18 +1658,18 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="Order cancelation" mc="Standard.BpmnSubProcess" uid="c0e03971-74b8-4990-8555-5ca02f7acaff"/>
+                <ID name="Order cancelation" mc="Standard.BpmnSubProcess" uid="d1727e48-071c-4ba4-b952-fd6f36b1729e"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="Order canceled" mc="Standard.BpmnEndEvent" uid="eecd7323-c668-4ecd-b1b7-2a04b21ed2e8"/>
+                <ID name="Order canceled" mc="Standard.BpmnEndEvent" uid="0349e837-5ff6-42f2-8c7c-168f09a329c4"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="f1" mc="Standard.BpmnSequenceFlow" uid="207ca455-fd92-4e63-95fa-a0431ea47114"/>
+          <ID name="f1" mc="Standard.BpmnSequenceFlow" uid="91270cd8-dcb1-4adf-8e00-75af7091fd75"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
             <ATT name="ConditionExpression"></ATT>
@@ -1605,12 +1680,12 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="Production" mc="Standard.BpmnSubProcess" uid="73046fe6-152a-40ca-b6ac-d96b489c27b1"/>
+                <ID name="Production" mc="Standard.BpmnSubProcess" uid="7d10b5a6-8c58-4aac-b2ce-ed2edc3f453a"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="Pet food mixture production order completed" mc="Standard.BpmnEndEvent" uid="b42cf056-434b-4a3f-84cd-bb43474a894c"/>
+                <ID name="Pet food mixture production order completed" mc="Standard.BpmnEndEvent" uid="10fa9625-11df-4fb3-b59a-d9860ea717a7"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -1621,7 +1696,7 @@
       </LINK>
       <COMP relation="DependsOnDependency">
         <OBJECT>
-          <ID name="" mc="Infrastructure.Dependency" uid="fd863466-3560-4a2d-9fc7-2090eb5ceb29"/>
+          <ID name="" mc="Infrastructure.Dependency" uid="b2516c61-4916-4447-946b-6babee56e3d6"/>
           <ATTRIBUTES>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -1629,6 +1704,18 @@
           <DEPENDENCIES>
             <LINK relation="DependsOn">
               <ID name="Pet food mixture production order completed" mc="Standard.Signal" uid="00c3827a-d185-4eb1-8625-32324d51ba71"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="be9a27d4-1e90-4b1d-8c85-fcad7ca4563c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Machines not OK" mc="Standard.Signal" uid="814ac4d2-8474-4525-ac2e-066a0823a49f"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -1644,9 +1731,21 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="fd863466-3560-4a2d-9fc7-2090eb5ceb29"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Pet food mixture production order completed" mc="Standard.Signal" uid="00c3827a-d185-4eb1-8625-32324d51ba71"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <COMP relation="Product">
-        <COMPID name="Pet food mixture production" mc="Standard.BpmnProcessDesignDiagram" uid="508f19d9-31bb-4285-97e7-6dcf4bcb3221"/>
+        <COMPID name="Pet food mixture production" mc="Standard.BpmnProcessDesignDiagram" uid="78284e7b-5625-449f-8f81-8fcf821e295d"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

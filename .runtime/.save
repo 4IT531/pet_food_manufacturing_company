@@ -1,30 +1,12 @@
-#Sun Nov 22 16:32:31 CET 2020
-org.modelio.diagram.editor.OpenedDiagrams23='Ingredients' {c9a0bfac-b196-41cc-8b96-e102bfc91862} Standard.StateMachineDiagram
-org.modelio.diagram.editor.OpenedDiagrams22='Ingredients order' {8020b5dd-a440-44d7-84ee-1213e95ff5ce} Standard.BpmnSubProcessDiagram
-org.modelio.diagram.editor.OpenedDiagrams21='Material order' {5d1eb6cf-2c3d-4cb2-a2e0-c2020fc9ac87} Standard.BpmnSubProcessDiagram
-org.modelio.diagram.editor.OpenedDiagrams20='Order cancelation' {e71d457c-c06e-45cf-b23a-23d63c466bf4} Standard.BpmnSubProcessDiagram
-org.modelio.diagram.editor.OpenedDiagrams9='Sub-Process' {ed960299-d236-4c68-8c4d-0e110b9d8fb5} Standard.BpmnSubProcessDiagram
-org.modelio.diagram.editor.OpenedDiagrams8='Preparation' {cc78a4fb-b265-48d1-b112-1458ee6d894b} Standard.BpmnSubProcessDiagram
+#Mon Nov 23 13:30:58 CET 2020
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
-org.modelio.diagram.editor.OpenedDiagrams7='Mixture production' {247d1877-e48e-404f-a9c0-4368ee643d09} Standard.BpmnSubProcessDiagram
-org.modelio.diagram.editor.OpenedDiagrams6='Pet food mixture production' {508f19d9-31bb-4285-97e7-6dcf4bcb3221} Standard.BpmnProcessDesignDiagram
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
-org.modelio.diagram.editor.OpenedDiagrams5='Sub-Process' {140551e2-0b3c-4a17-897a-8130e0652705} Standard.BpmnSubProcessDiagram
+org.modelio.diagram.editor.OpenedDiagrams5='Machine replacement' {8084415e-e7b4-4019-8a29-ef7b89fe3dae} Standard.BpmnSubProcessDiagram
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.com.modeliosoft.modelio.archimate.perspective.parentId=archimate.ui.partstack.bottom
-org.modelio.diagram.editor.OpenedDiagrams4='Sub-Process' {bf78160a-57b5-4729-8cc9-a352720c4b61} Standard.BpmnSubProcessDiagram
-org.modelio.diagram.editor.OpenedDiagrams3='Sub-Process' {5fa18b24-0694-47a2-8201-30b87d33368a} Standard.BpmnSubProcessDiagram
-org.modelio.diagram.editor.OpenedDiagrams2='Pet food mixture order lifecycle diagram' {3ee2c851-f63a-43d1-80e6-34621fadef4f} Standard.StateMachineDiagram
-org.modelio.diagram.editor.OpenedDiagrams1='Pet food mixture sale' {dc38b263-15b6-46c4-bbd4-b7a6991ca4a0} Standard.BpmnProcessDesignDiagram
+org.modelio.diagram.editor.OpenedDiagrams4='Preparation' {6f3d7955-3ea0-4e10-9e3c-39664ddf63d1} Standard.BpmnSubProcessDiagram
+org.modelio.diagram.editor.OpenedDiagrams3='Pet food mixture production' {78284e7b-5625-449f-8f81-8fcf821e295d} Standard.BpmnProcessDesignDiagram
+org.modelio.diagram.editor.OpenedDiagrams2='Mixture production' {e9f57a71-1b2d-4572-b27d-8e2266b64ef8} Standard.BpmnSubProcessDiagram
+org.modelio.diagram.editor.OpenedDiagrams1='Class diagram' {853c5745-31a5-4ee6-be8a-cac75700ca3b} Standard.StaticDiagram
 org.modelio.diagram.editor.OpenedDiagrams0='Event diagram' {020ce1b5-7150-4179-974b-93167eb87c8c} Standard.StaticDiagram
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
-org.modelio.diagram.editor.OpenedDiagrams19='Material Storage' {a1e045ba-d168-47ae-86fd-b339434028cb} Standard.BpmnSubProcessDiagram
-org.modelio.diagram.editor.OpenedDiagrams18='Ingredients storage' {56a5ace7-4067-4334-b531-2c932bfcbac9} Standard.BpmnSubProcessDiagram
-org.modelio.diagram.editor.OpenedDiagrams17='Material' {cac1e2b9-4bc9-4115-a1ae-c79f476b6bb1} Standard.StateMachineDiagram
-org.modelio.diagram.editor.OpenedDiagrams16='Pet food mixture stuff check' {c0570a65-7ba5-46d6-b8c7-94da3b50a4bf} Standard.BpmnSubProcessDiagram
-org.modelio.diagram.editor.OpenedDiagrams15='Supply management' {045e214e-ba77-4af6-a024-0ad96bde89d4} Standard.BpmnProcessDesignDiagram
-org.modelio.diagram.editor.OpenedDiagrams14='LC_Business Partner' {5c598135-fb61-4ee0-a09c-acb5c0c0543c} Standard.StateMachineDiagram
-org.modelio.diagram.editor.OpenedDiagrams13='LC_Pet Food Mixture Acquisition Order' {0a43fab6-921a-43b0-b2e3-42594e03135c} Standard.StateMachineDiagram
-org.modelio.diagram.editor.OpenedDiagrams12='Sub-Process' {3c186708-fde3-40f3-b7b8-f4805a2894d2} Standard.BpmnSubProcessDiagram
-org.modelio.diagram.editor.OpenedDiagrams11='Lifecycle Data Lifecycle diagram' {3575b1a7-b26e-43f8-8025-a3d8d241bff6} Standard.StateMachineDiagram
-org.modelio.diagram.editor.OpenedDiagrams10='Class diagram' {853c5745-31a5-4ee6-be8a-cac75700ca3b} Standard.StaticDiagram
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right
