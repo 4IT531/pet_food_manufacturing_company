@@ -1,4 +1,5 @@
-#Mon Nov 23 17:33:49 CET 2020
+#Fri Nov 27 17:24:51 CET 2020
+org.modelio.diagram.editor.OpenedDiagrams20='Supply order' {d25e7037-29bf-4458-84df-29960ba36953} Standard.StateMachineDiagram
 org.modelio.diagram.editor.OpenedDiagrams9='LC_Pet Food Delivery Order' {1c1feb4d-a518-48db-af10-6621068d53ee} Standard.StateMachineDiagram
 org.modelio.diagram.editor.OpenedDiagrams8='LC_Business Partner' {5c598135-fb61-4ee0-a09c-acb5c0c0543c} Standard.StateMachineDiagram
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
@@ -13,11 +14,13 @@ org.modelio.diagram.editor.OpenedDiagrams2='Mixture production' {e9f57a71-1b2d-4
 org.modelio.diagram.editor.OpenedDiagrams1='Class diagram' {853c5745-31a5-4ee6-be8a-cac75700ca3b} Standard.StaticDiagram
 org.modelio.diagram.editor.OpenedDiagrams0='Event diagram' {020ce1b5-7150-4179-974b-93167eb87c8c} Standard.StaticDiagram
 org.modelio.module.propertytab.TogafArchitect\ v3.8.01\ GModule\ @file\:///C\:/Users/Tennessee/.modelio/3.8/modules/TogafArchitect_3.8.01/TogafArchitect_3.8.01.jmdac\ runtime\ module_TogafPropertyPage.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
+org.modelio.diagram.editor.OpenedDiagrams19='LC_Invoice' {1fc3e93c-5087-44c2-98ba-36e84362a5d0} Standard.StateMachineDiagram
+org.modelio.diagram.editor.OpenedDiagrams18='Ingredients' {c9a0bfac-b196-41cc-8b96-e102bfc91862} Standard.StateMachineDiagram
 org.modelio.diagram.editor.OpenedDiagrams17='Sub-Process1' {98ddcb42-42bc-40d3-a13e-2e0140a58f4c} Standard.BpmnSubProcessDiagram
 org.modelio.diagram.editor.OpenedDiagrams16='Sub-Process' {ed960299-d236-4c68-8c4d-0e110b9d8fb5} Standard.BpmnSubProcessDiagram
 org.modelio.diagram.editor.OpenedDiagrams15='Pet food mixture sale' {dc38b263-15b6-46c4-bbd4-b7a6991ca4a0} Standard.BpmnProcessDesignDiagram
 org.modelio.diagram.editor.OpenedDiagrams14='Material' {cac1e2b9-4bc9-4115-a1ae-c79f476b6bb1} Standard.StateMachineDiagram
-org.modelio.diagram.editor.OpenedDiagrams13='Lifecycle Data Lifecycle diagram' {3575b1a7-b26e-43f8-8025-a3d8d241bff6} Standard.StateMachineDiagram
+org.modelio.diagram.editor.OpenedDiagrams13='LC_complaint_request' {3575b1a7-b26e-43f8-8025-a3d8d241bff6} Standard.StateMachineDiagram
 org.modelio.diagram.editor.OpenedDiagrams12='LC_Pet food mixture production order' {894425b9-e4cb-43bb-b3a4-95becde93960} Standard.StateMachineDiagram
 org.modelio.diagram.editor.OpenedDiagrams11='LC_Pet Food Mixture Order Revision Request' {b2d0f276-2e6e-4d91-bd08-d64c41303609} Standard.StateMachineDiagram
 org.modelio.diagram.editor.OpenedDiagrams10='LC_Pet Food Mixture Acquisition Order' {0a43fab6-921a-43b0-b2e3-42594e03135c} Standard.StateMachineDiagram
