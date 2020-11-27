@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Lifecycle" version="4">
   <OBJECT>
-    <ID name="Lifecycle" mc="Standard.StateMachine" uid="1cd8278d-6f6c-4b91-9f31-305b0f0018e0"/>
-    <PID name="Supply order" mc="Standard.Class" uid="5ae007da-93de-4840-9370-54fd9a21cf3d"/>
+    <ID name="Lifecycle" mc="Standard.StateMachine" uid="a5cc6bd8-f9c1-4d60-9892-325d48a2a884"/>
+    <PID name="Supply order" mc="Standard.Class" uid="d36ed0a5-6c10-4d44-8ca3-6380d823948d"/>
     <ATTRIBUTES>
       <ATT name="Kind">Dynamic</ATT>
       <ATT name="IsReentrant">false</ATT>
@@ -12,7 +12,7 @@
     <DEPENDENCIES>
       <COMP relation="Top">
         <OBJECT>
-          <ID name="" mc="Standard.Region" uid="9b8fc05c-71a8-4fc8-954d-09f774789768"/>
+          <ID name="" mc="Standard.Region" uid="f43e9445-3510-438d-97fb-6eba63246ea5"/>
           <ATTRIBUTES>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -20,7 +20,7 @@
           <DEPENDENCIES>
             <COMP relation="Sub">
               <OBJECT>
-                <ID name="Initial State" mc="Standard.InitialPseudoState" uid="084a4735-7fe1-4840-a066-03eafb3ce3ce"/>
+                <ID name="Initial State" mc="Standard.InitialPseudoState" uid="e57c2172-2dc2-4e22-9f83-bc4e48b9ca8b"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[Initial State]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -28,25 +28,20 @@
                 <DEPENDENCIES>
                   <COMP relation="OutGoing">
                     <OBJECT>
-                      <ID name="Transition" mc="Standard.Transition" uid="020f7e20-0c70-47fd-9e35-b9ef71fa7dcb"/>
+                      <ID name="Transition" mc="Standard.Transition" uid="a863d409-f33a-45fe-aabc-f1137e85abf5"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"><![CDATA[Ingredients not in warehouse / order()]]></ATT>
+                        <ATT name="Guard"><![CDATA[Supplies not in warehouse / order()]]></ATT>
                         <ATT name="PostCondition"></ATT>
                         <ATT name="Name"><![CDATA[Transition]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
-                        <LINK relation="Processed">
-                          <REFOBJ>
-                            <ID name="Order" mc="Standard.Operation" uid="18ec649f-4495-438b-9164-fac3475c0987"/>
-                          </REFOBJ>
-                        </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="New" mc="Standard.State" uid="1a4df03c-0325-477b-8955-3d9d116375b3"/>
+                            <ID name="New" mc="Standard.State" uid="b4138e30-1bde-4e75-b3fe-10ee8c83cca9"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -55,42 +50,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Initial State1" mc="Standard.InitialPseudoState" uid="b3e85d23-0bbc-40cd-92b4-ebf3c938ea54"/>
-                <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Initial State1]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <COMP relation="OutGoing">
-                    <OBJECT>
-                      <ID name="Transition" mc="Standard.Transition" uid="3f880f88-9c4a-427e-b824-ae53732ad3d6"/>
-                      <ATTRIBUTES>
-                        <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"></ATT>
-                        <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"><![CDATA[Material not in warehouse / order()]]></ATT>
-                        <ATT name="PostCondition"></ATT>
-                        <ATT name="Name"><![CDATA[Transition]]></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="Processed">
-                          <REFOBJ>
-                            <ID name="Order" mc="Standard.Operation" uid="65715407-4bd9-456a-a71b-cd1ead628c8d"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Target">
-                          <REFOBJ>
-                            <ID name="New" mc="Standard.State" uid="1a4df03c-0325-477b-8955-3d9d116375b3"/>
-                          </REFOBJ>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="New" mc="Standard.State" uid="1a4df03c-0325-477b-8955-3d9d116375b3"/>
+                <ID name="New" mc="Standard.State" uid="b4138e30-1bde-4e75-b3fe-10ee8c83cca9"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[New]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -98,12 +58,12 @@
                 <DEPENDENCIES>
                   <COMP relation="OutGoing">
                     <OBJECT>
-                      <ID name="Transition1" mc="Standard.Transition" uid="52676297-1169-45a5-a832-695811ca6a26"/>
+                      <ID name="Transition1" mc="Standard.Transition" uid="88c650bb-b769-4ff7-af5b-ea7c520e3846"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"><![CDATA[Ingrediants/Material unavailable / cancel]]></ATT>
+                        <ATT name="Guard"><![CDATA[Supplies unavailable / cancel]]></ATT>
                         <ATT name="PostCondition"></ATT>
                         <ATT name="Name"><![CDATA[Transition1]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -111,18 +71,18 @@
                       <DEPENDENCIES>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Canceled" mc="Standard.FinalState" uid="26ec4c2e-38cc-48fc-8c24-b0f243c25fc3"/>
+                            <ID name="Canceled" mc="Standard.FinalState" uid="a5704258-153a-4997-8a36-ff548932eb05"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="Transition" mc="Standard.Transition" uid="44535575-c302-4866-af89-8183ff7e7bca"/>
+                      <ID name="Transition" mc="Standard.Transition" uid="95093589-c802-4da6-860c-a68484aa5616"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"><![CDATA[Material / Ingredients received / process()]]></ATT>
+                        <ATT name="Guard"><![CDATA[Supplies received / process()]]></ATT>
                         <ATT name="PostCondition"></ATT>
                         <ATT name="Name"><![CDATA[Transition]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -130,7 +90,7 @@
                       <DEPENDENCIES>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Processed" mc="Standard.FinalState" uid="77ced45a-2ad5-4a11-9233-2808bd3aa6c1"/>
+                            <ID name="Completed" mc="Standard.FinalState" uid="cf23c449-36df-4089-b2b1-0188b0b931f4"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -139,7 +99,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Canceled" mc="Standard.FinalState" uid="26ec4c2e-38cc-48fc-8c24-b0f243c25fc3"/>
+                <ID name="Canceled" mc="Standard.FinalState" uid="a5704258-153a-4997-8a36-ff548932eb05"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[Canceled]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -147,9 +107,9 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Processed" mc="Standard.FinalState" uid="77ced45a-2ad5-4a11-9233-2808bd3aa6c1"/>
+                <ID name="Completed" mc="Standard.FinalState" uid="cf23c449-36df-4089-b2b1-0188b0b931f4"/>
                 <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Processed]]></ATT>
+                  <ATT name="Name"><![CDATA[Completed]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -162,7 +122,7 @@
         <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
       </LINK>
       <COMP relation="Product">
-        <COMPID name="Supply order" mc="Standard.StateMachineDiagram" uid="d25e7037-29bf-4458-84df-29960ba36953"/>
+        <COMPID name="Supply order" mc="Standard.StateMachineDiagram" uid="1fe5df3c-e835-424d-9f29-a17701c96d33"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

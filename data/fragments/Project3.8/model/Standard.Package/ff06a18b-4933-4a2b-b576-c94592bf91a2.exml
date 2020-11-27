@@ -32,16 +32,16 @@
         <COMPID name="Ordered pet food mixture" mc="Standard.Class" uid="0fa6beec-5e2d-4d33-9ebf-0c58e5646dd0"/>
         <COMPID name="Acquisitioned pet food mixture" mc="Standard.Class" uid="c7235431-d2d5-4cb7-8e79-0f4235936b0b"/>
         <COMPID name="Produced pet food mixture" mc="Standard.Class" uid="5b55a08f-9ecf-4555-84a1-af42c74c23ca"/>
-        <COMPID name="Ordered stuff" mc="Standard.Class" uid="748626ef-6195-4330-9ce8-2f2267a33b92"/>
         <COMPID name="Pet food mixture order revision request" mc="Standard.Class" uid="364939f9-8eb5-4e1f-a98d-2114c27b4df8"/>
         <COMPID name="Complaint request" mc="Standard.Class" uid="30b65711-2ce3-4c8f-9907-264dfe750cf7"/>
-        <COMPID name="Recipe" mc="Standard.Class" uid="dbf38b45-fd10-4d7a-aafe-9d84581c3c20"/>
-        <COMPID name="Supply order" mc="Standard.Class" uid="5ae007da-93de-4840-9370-54fd9a21cf3d"/>
         <COMPID name="Material" mc="Standard.Class" uid="0529dd29-4597-4a78-9bf3-bf5c710bc105"/>
         <COMPID name="Ingredient" mc="Standard.Class" uid="e7d7c9e9-838e-41c4-8ed7-d51899386221"/>
         <COMPID name="Pet food mixture production order" mc="Standard.Class" uid="b6d4a315-30ea-4d01-9bde-06763d40aa7a"/>
         <COMPID name="Packaging order" mc="Standard.Class" uid="867a3e1f-7179-46fc-a5eb-e115ad659866"/>
         <COMPID name="Material for packaging" mc="Standard.Class" uid="0dbc15a6-c9b9-4911-b076-8d241de99923"/>
+        <COMPID name="Supplies" mc="Standard.Class" uid="85e488bd-1d28-43c8-8d25-dfc882aeb0ff"/>
+        <COMPID name="Supply order" mc="Standard.Class" uid="d36ed0a5-6c10-4d44-8ca3-6380d823948d"/>
+        <COMPID name="Recipe" mc="Standard.Class" uid="062dccc1-bf66-4a09-8b77-374a39b943dd"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessEntities" mc="Infrastructure.Stereotype" uid="1b78cab2-ab6d-11df-9861-0014224f9977"/>

@@ -1,8 +1,8 @@
 <?xml version="1.0" ?>
 <!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Lifecycle" version="4">
   <OBJECT>
-    <ID name="Lifecycle" mc="Standard.StateMachine" uid="0148620d-f2a6-45cd-a7b4-307e29af00f3"/>
-    <PID name="Recipe" mc="Standard.Class" uid="dbf38b45-fd10-4d7a-aafe-9d84581c3c20"/>
+    <ID name="Lifecycle" mc="Standard.StateMachine" uid="22f050aa-d0a8-4964-9827-9babc5657369"/>
+    <PID name="Recipe" mc="Standard.Class" uid="062dccc1-bf66-4a09-8b77-374a39b943dd"/>
     <ATTRIBUTES>
       <ATT name="Kind">Dynamic</ATT>
       <ATT name="IsReentrant">false</ATT>
@@ -12,7 +12,7 @@
     <DEPENDENCIES>
       <COMP relation="Top">
         <OBJECT>
-          <ID name="" mc="Standard.Region" uid="34752a16-39d7-4927-8b8e-6b20c6d7b205"/>
+          <ID name="" mc="Standard.Region" uid="a9faaedf-9a82-44b4-ad4a-0eacb1605be6"/>
           <ATTRIBUTES>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -20,7 +20,7 @@
           <DEPENDENCIES>
             <COMP relation="Sub">
               <OBJECT>
-                <ID name="Initial State" mc="Standard.InitialPseudoState" uid="0d20a209-7373-4504-ad92-8064257a9d89"/>
+                <ID name="Initial State" mc="Standard.InitialPseudoState" uid="8c27e810-0708-4dd9-ac6f-f5456dea5566"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[Initial State]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -28,7 +28,7 @@
                 <DEPENDENCIES>
                   <COMP relation="OutGoing">
                     <OBJECT>
-                      <ID name="Transition" mc="Standard.Transition" uid="d6809c32-c1c6-40e9-a8e4-719cc0ba754e"/>
+                      <ID name="Transition" mc="Standard.Transition" uid="c1106be6-7ef6-4c11-a80c-3c40e84cddac"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
@@ -41,7 +41,7 @@
                       <DEPENDENCIES>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Requested" mc="Standard.State" uid="be86bf05-89e5-4a96-b4d0-94c5954513a5"/>
+                            <ID name="Requested" mc="Standard.State" uid="b723722c-73d3-466d-bf7a-b18f7a205846"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -50,7 +50,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Requested" mc="Standard.State" uid="be86bf05-89e5-4a96-b4d0-94c5954513a5"/>
+                <ID name="Requested" mc="Standard.State" uid="b723722c-73d3-466d-bf7a-b18f7a205846"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[Requested]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -58,7 +58,7 @@
                 <DEPENDENCIES>
                   <COMP relation="OutGoing">
                     <OBJECT>
-                      <ID name="Transition" mc="Standard.Transition" uid="d0a20afd-d5e5-4e0f-a074-4f1e19bdd5b0"/>
+                      <ID name="Transition" mc="Standard.Transition" uid="4469abb2-bf9f-4aab-93e4-5ccbe42a74b6"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
@@ -71,18 +71,18 @@
                       <DEPENDENCIES>
                         <LINK relation="Processed">
                           <REFOBJ>
-                            <ID name="Select" mc="Standard.Operation" uid="a157b9f2-49d0-41ef-b536-6601150942a7"/>
+                            <ID name="Select" mc="Standard.Operation" uid="6e97b378-b47c-442b-af6a-ade145442f41"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Selected" mc="Standard.FinalState" uid="2fcd7b08-8f62-464d-b116-5d3fc94761c1"/>
+                            <ID name="Selected" mc="Standard.FinalState" uid="73d281af-ebcc-424d-bb3c-15741fff3307"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="Transition1" mc="Standard.Transition" uid="91c182a6-7238-487e-88d1-2b57c271a654"/>
+                      <ID name="Transition1" mc="Standard.Transition" uid="a90b394e-d5ac-4d8b-a975-77d36bd00d3b"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"><![CDATA[Not Found]]></ATT>
@@ -95,12 +95,12 @@
                       <DEPENDENCIES>
                         <LINK relation="Processed">
                           <REFOBJ>
-                            <ID name="Invent" mc="Standard.Operation" uid="48a404b1-44e0-41b8-bd64-3256e322a39c"/>
+                            <ID name="Invent" mc="Standard.Operation" uid="4e228230-b4e7-4107-9867-28de5aa588ae"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="New" mc="Standard.FinalState" uid="06a98f43-65f1-4a77-b74c-63a01b80c31a"/>
+                            <ID name="New" mc="Standard.FinalState" uid="f821c875-7184-4301-84e2-ebf2e47c86f1"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -109,7 +109,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Selected" mc="Standard.FinalState" uid="2fcd7b08-8f62-464d-b116-5d3fc94761c1"/>
+                <ID name="Selected" mc="Standard.FinalState" uid="73d281af-ebcc-424d-bb3c-15741fff3307"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[Selected]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -117,7 +117,7 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="New" mc="Standard.FinalState" uid="06a98f43-65f1-4a77-b74c-63a01b80c31a"/>
+                <ID name="New" mc="Standard.FinalState" uid="f821c875-7184-4301-84e2-ebf2e47c86f1"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[New]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -132,7 +132,7 @@
         <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
       </LINK>
       <COMP relation="Product">
-        <COMPID name="Recipe" mc="Standard.StateMachineDiagram" uid="6edf4bbc-3711-471b-ade3-4dfc8ab8fb19"/>
+        <COMPID name="Recipe" mc="Standard.StateMachineDiagram" uid="00acb8c7-21f2-433f-8431-585e65f23d07"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
