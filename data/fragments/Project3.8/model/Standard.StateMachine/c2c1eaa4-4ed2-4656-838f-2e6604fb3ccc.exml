@@ -1,18 +1,18 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="LC_pet_food_mixture_production_order" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Lifecycle" version="4">
   <OBJECT>
-    <ID name="LC_pet_food_mixture_production_order" mc="Standard.StateMachine" uid="fec8ca63-ce83-428f-83da-c8628f108bcd"/>
-    <PID name="Pet food mixture production order" mc="Standard.Class" uid="b6d4a315-30ea-4d01-9bde-06763d40aa7a"/>
+    <ID name="Lifecycle" mc="Standard.StateMachine" uid="c2c1eaa4-4ed2-4656-838f-2e6604fb3ccc"/>
+    <PID name="Pet food mixture production order" mc="Standard.Class" uid="afc7c515-e9ef-4c80-9e58-3c9d465c9181"/>
     <ATTRIBUTES>
       <ATT name="Kind">Dynamic</ATT>
       <ATT name="IsReentrant">false</ATT>
-      <ATT name="Name"><![CDATA[LC_pet_food_mixture_production_order]]></ATT>
+      <ATT name="Name"><![CDATA[Lifecycle]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
       <COMP relation="Top">
         <OBJECT>
-          <ID name="" mc="Standard.Region" uid="461a38d1-e314-4c7e-bf97-9735dfe2a888"/>
+          <ID name="" mc="Standard.Region" uid="01c4f045-0454-401d-aaf7-f050ed0163ce"/>
           <ATTRIBUTES>
             <ATT name="Name"></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -20,7 +20,7 @@
           <DEPENDENCIES>
             <COMP relation="Sub">
               <OBJECT>
-                <ID name="Initial State" mc="Standard.InitialPseudoState" uid="65d17eed-8585-46dd-baa2-3adbec3ef4a4"/>
+                <ID name="Initial State" mc="Standard.InitialPseudoState" uid="2ee695f4-53a9-4b2b-b01a-696b30460755"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[Initial State]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -28,7 +28,7 @@
                 <DEPENDENCIES>
                   <COMP relation="OutGoing">
                     <OBJECT>
-                      <ID name="Transition" mc="Standard.Transition" uid="75b21425-3a07-4913-a7eb-fda5864acbd9"/>
+                      <ID name="Transition" mc="Standard.Transition" uid="e7e015b6-d9af-49a8-8a00-66c677894bfc"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
@@ -41,17 +41,17 @@
                       <DEPENDENCIES>
                         <LINK relation="Processed">
                           <REFOBJ>
-                            <ID name="registerAsNew" mc="Standard.Operation" uid="71f944e7-0f0e-467c-9656-6d3296ee4da8"/>
+                            <ID name="registerAsNew" mc="Standard.Operation" uid="e6681279-a1ca-4dd1-aa9e-859f233bd747"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Trigger">
                           <REFOBJ>
-                            <ID name="Arrived production order registered" mc="Standard.Event" uid="2af48c6f-d0dd-4f43-a54f-3f9a747234cb"/>
+                            <ID name="Arrived production order registered" mc="Standard.Event" uid="f74268d0-b6d3-449c-9ca4-16c195e3fe9c"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="New" mc="Standard.State" uid="b8783288-8e78-4837-8daa-453a90cce33c"/>
+                            <ID name="New" mc="Standard.State" uid="10a415a6-73f3-46be-a277-8f51b25819aa"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -60,7 +60,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="New" mc="Standard.State" uid="b8783288-8e78-4837-8daa-453a90cce33c"/>
+                <ID name="New" mc="Standard.State" uid="10a415a6-73f3-46be-a277-8f51b25819aa"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[New]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -68,7 +68,7 @@
                 <DEPENDENCIES>
                   <COMP relation="OutGoing">
                     <OBJECT>
-                      <ID name="Transition" mc="Standard.Transition" uid="c6ed8547-8a2e-4b5c-b317-28ecf5d7569f"/>
+                      <ID name="Transition" mc="Standard.Transition" uid="d621e8bf-015e-4e5e-9aad-3f72eb76b1d5"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
@@ -81,23 +81,23 @@
                       <DEPENDENCIES>
                         <LINK relation="Processed">
                           <REFOBJ>
-                            <ID name="process" mc="Standard.Operation" uid="3992af7c-8e30-4fba-8aaf-0fa9d265ce82"/>
+                            <ID name="process" mc="Standard.Operation" uid="16fc5583-2d11-49ab-86ac-e01bb8939d17"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Trigger">
                           <REFOBJ>
-                            <ID name="Production order processed" mc="Standard.Event" uid="8ce1d5bb-2f3f-4c2d-b1ac-7dad296d2c62"/>
+                            <ID name="Production order processed" mc="Standard.Event" uid="9e8d4b52-0dcd-4559-9f98-52d40294ded7"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Processed" mc="Standard.State" uid="12f73985-1766-4169-be16-512fc1a02d6d"/>
+                            <ID name="Processed" mc="Standard.State" uid="521402c0-89a2-4428-b385-ddfffffbca54"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="Transition1" mc="Standard.Transition" uid="432689ee-03a1-4ce2-82d6-d8a477c46fc6"/>
+                      <ID name="Transition1" mc="Standard.Transition" uid="daa7f118-ef61-4b0f-a444-609430f4404e"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
@@ -110,17 +110,17 @@
                       <DEPENDENCIES>
                         <LINK relation="Processed">
                           <REFOBJ>
-                            <ID name="cancel" mc="Standard.Operation" uid="4b16c3f9-083b-4eb4-9ede-f025b9db218c"/>
+                            <ID name="cancel" mc="Standard.Operation" uid="ec6ed64e-ff84-42b3-8cf7-f1142750ffdd"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Trigger">
                           <REFOBJ>
-                            <ID name="Machines were not repaired" mc="Standard.Event" uid="cc0bbcde-ed35-44fb-b497-891bcdd30716"/>
+                            <ID name="Machines were not repaired" mc="Standard.Event" uid="ca077bff-3c55-4d97-9b17-0967375be3e9"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Cancelled" mc="Standard.FinalState" uid="60372102-cdcb-420b-a87f-17767d07b77b"/>
+                            <ID name="Cancelled" mc="Standard.FinalState" uid="2391eed4-04d0-4be0-a5ef-c0854e529a09"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -129,7 +129,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Processed" mc="Standard.State" uid="12f73985-1766-4169-be16-512fc1a02d6d"/>
+                <ID name="Processed" mc="Standard.State" uid="521402c0-89a2-4428-b385-ddfffffbca54"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[Processed]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -137,7 +137,7 @@
                 <DEPENDENCIES>
                   <COMP relation="OutGoing">
                     <OBJECT>
-                      <ID name="Transition" mc="Standard.Transition" uid="a7105592-e441-4483-a12a-8fe556deefac"/>
+                      <ID name="Transition" mc="Standard.Transition" uid="94896937-b040-49f9-9e20-66c51ff5788f"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
@@ -150,23 +150,23 @@
                       <DEPENDENCIES>
                         <LINK relation="Processed">
                           <REFOBJ>
-                            <ID name="markAsCompleted" mc="Standard.Operation" uid="174e5275-e8c6-4249-94cd-bacc826342e5"/>
+                            <ID name="markAsCompleted" mc="Standard.Operation" uid="ae786bc0-e75d-4050-b3b0-56ce62ed4e5d"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Trigger">
                           <REFOBJ>
-                            <ID name="Pet food mixture was produced" mc="Standard.Event" uid="e1c7dac8-0893-4c83-bd38-1143bb7582cb"/>
+                            <ID name="Pet food mixture was produced" mc="Standard.Event" uid="7843b80d-ff94-4076-a2bb-13e9dff592ef"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Completed" mc="Standard.FinalState" uid="a63d75b0-9c6f-47ea-9a1b-894b042f4741"/>
+                            <ID name="Completed" mc="Standard.FinalState" uid="d39e5e54-9c49-41e4-9543-c67eab7138c3"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="Transition1" mc="Standard.Transition" uid="36efd69c-9dff-496b-bc37-adc5855393ac"/>
+                      <ID name="Transition1" mc="Standard.Transition" uid="4d757c07-45cb-4fb0-bff7-5e56cfb28a86"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
@@ -179,17 +179,17 @@
                       <DEPENDENCIES>
                         <LINK relation="Processed">
                           <REFOBJ>
-                            <ID name="registerAsNew" mc="Standard.Operation" uid="71f944e7-0f0e-467c-9656-6d3296ee4da8"/>
+                            <ID name="registerAsNew" mc="Standard.Operation" uid="e6681279-a1ca-4dd1-aa9e-859f233bd747"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Trigger">
                           <REFOBJ>
-                            <ID name="Quality of the mixture was not OK" mc="Standard.Event" uid="3ae7e678-aff3-4124-945e-80a8b435f523"/>
+                            <ID name="Quality of the mixture was not OK" mc="Standard.Event" uid="15ae7aee-4c25-44f6-a69f-7d763e143090"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="New" mc="Standard.State" uid="b8783288-8e78-4837-8daa-453a90cce33c"/>
+                            <ID name="New" mc="Standard.State" uid="10a415a6-73f3-46be-a277-8f51b25819aa"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -198,7 +198,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Completed" mc="Standard.FinalState" uid="a63d75b0-9c6f-47ea-9a1b-894b042f4741"/>
+                <ID name="Completed" mc="Standard.FinalState" uid="d39e5e54-9c49-41e4-9543-c67eab7138c3"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[Completed]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -206,7 +206,7 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Cancelled" mc="Standard.FinalState" uid="60372102-cdcb-420b-a87f-17767d07b77b"/>
+                <ID name="Cancelled" mc="Standard.FinalState" uid="2391eed4-04d0-4be0-a5ef-c0854e529a09"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[Cancelled]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -219,7 +219,7 @@
       </COMP>
       <COMP relation="EComponent">
         <OBJECT>
-          <ID name="Arrived production order registered" mc="Standard.Event" uid="2af48c6f-d0dd-4f43-a54f-3f9a747234cb"/>
+          <ID name="Arrived production order registered" mc="Standard.Event" uid="f74268d0-b6d3-449c-9ca4-16c195e3fe9c"/>
           <ATTRIBUTES>
             <ATT name="Expression"></ATT>
             <ATT name="Kind">SignalEvent</ATT>
@@ -229,7 +229,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Production order processed" mc="Standard.Event" uid="8ce1d5bb-2f3f-4c2d-b1ac-7dad296d2c62"/>
+          <ID name="Production order processed" mc="Standard.Event" uid="9e8d4b52-0dcd-4559-9f98-52d40294ded7"/>
           <ATTRIBUTES>
             <ATT name="Expression"></ATT>
             <ATT name="Kind">SignalEvent</ATT>
@@ -239,7 +239,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Quality of the mixture was not OK" mc="Standard.Event" uid="3ae7e678-aff3-4124-945e-80a8b435f523"/>
+          <ID name="Quality of the mixture was not OK" mc="Standard.Event" uid="15ae7aee-4c25-44f6-a69f-7d763e143090"/>
           <ATTRIBUTES>
             <ATT name="Expression"></ATT>
             <ATT name="Kind">SignalEvent</ATT>
@@ -249,7 +249,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Pet food mixture was produced" mc="Standard.Event" uid="e1c7dac8-0893-4c83-bd38-1143bb7582cb"/>
+          <ID name="Pet food mixture was produced" mc="Standard.Event" uid="7843b80d-ff94-4076-a2bb-13e9dff592ef"/>
           <ATTRIBUTES>
             <ATT name="Expression"></ATT>
             <ATT name="Kind">SignalEvent</ATT>
@@ -259,7 +259,7 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Machines were not repaired" mc="Standard.Event" uid="cc0bbcde-ed35-44fb-b497-891bcdd30716"/>
+          <ID name="Machines were not repaired" mc="Standard.Event" uid="ca077bff-3c55-4d97-9b17-0967375be3e9"/>
           <ATTRIBUTES>
             <ATT name="Expression"></ATT>
             <ATT name="Kind">SignalEvent</ATT>
@@ -272,32 +272,8 @@
       <LINK relation="Extension">
         <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
       </LINK>
-      <COMP relation="Tag">
-        <OBJECT>
-          <ID name="" mc="Infrastructure.TaggedValue" uid="ced44fff-dae6-43cd-b280-e3205296dbea"/>
-          <ATTRIBUTES>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <COMP relation="Actual">
-              <OBJECT>
-                <ID name="" mc="Infrastructure.TagParameter" uid="e378d356-25a6-492d-95fa-bd4ac7cc1009"/>
-                <ATTRIBUTES>
-                  <ATT name="Value"></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-            <LINK relation="Definition">
-              <FOREIGNID name="TogafElement_reference" mc="Infrastructure.TagType" uid="fe3d304a-ab94-11df-9861-0014224f9977"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-      </COMP>
       <COMP relation="Product">
-        <COMPID name="LC_Pet food mixture production order" mc="Standard.StateMachineDiagram" uid="894425b9-e4cb-43bb-b3a4-95becde93960"/>
+        <COMPID name="LC_Pet food mixture production order" mc="Standard.StateMachineDiagram" uid="36290cb7-0b4c-43e6-be2e-77b4caa68895"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

@@ -51,8 +51,11 @@
         <REFOBJ>
           <ID name="" mc="Standard.AssociationEnd" uid="87d2fcfa-2317-4421-90db-5bf65a823a9d"/>
         </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="e37b5c38-2eb3-4020-a96d-f544876d6613"/>
+        </REFOBJ>
         <OBJECT>
-          <ID name="" mc="Standard.AssociationEnd" uid="1aa3cff2-cc5d-4930-92f5-c8c01985552c"/>
+          <ID name="" mc="Standard.AssociationEnd" uid="a2f62533-576f-4f92-8d8a-cb789343a404"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -71,7 +74,7 @@
           <DEPENDENCIES>
             <COMP relation="Opposite">
               <OBJECT>
-                <ID name="" mc="Standard.AssociationEnd" uid="0553763f-58b5-47eb-8f90-09191a0e1074"/>
+                <ID name="" mc="Standard.AssociationEnd" uid="6ae01501-7eb4-4082-a0b9-d78bbbf2f6d1"/>
                 <ATTRIBUTES>
                   <ATT name="Aggregation">KindIsAssociation</ATT>
                   <ATT name="IsChangeable">true</ATT>
@@ -89,11 +92,11 @@
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="Opposite">
-                    <COMPID name="" mc="Standard.AssociationEnd" uid="1aa3cff2-cc5d-4930-92f5-c8c01985552c"/>
+                    <COMPID name="" mc="Standard.AssociationEnd" uid="a2f62533-576f-4f92-8d8a-cb789343a404"/>
                   </COMP>
                   <COMP relation="Association">
                     <OBJECT>
-                      <ID name="" mc="Standard.Association" uid="8c964441-434e-4e3c-830c-1dccba3ae199"/>
+                      <ID name="" mc="Standard.Association" uid="60b3acca-bdfe-433d-9694-8fecfd95665f"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -105,15 +108,12 @@
               </OBJECT>
             </COMP>
             <COMP relation="Association">
-              <COMPID name="" mc="Standard.Association" uid="8c964441-434e-4e3c-830c-1dccba3ae199"/>
+              <COMPID name="" mc="Standard.Association" uid="60b3acca-bdfe-433d-9694-8fecfd95665f"/>
             </COMP>
           </DEPENDENCIES>
         </OBJECT>
         <REFOBJ>
           <ID name="" mc="Standard.AssociationEnd" uid="e93e1d62-344b-4532-95f4-0ce9ef46d546"/>
-        </REFOBJ>
-        <REFOBJ>
-          <ID name="" mc="Standard.AssociationEnd" uid="e37b5c38-2eb3-4020-a96d-f544876d6613"/>
         </REFOBJ>
       </COMP>
       <LINK relation="Extension">

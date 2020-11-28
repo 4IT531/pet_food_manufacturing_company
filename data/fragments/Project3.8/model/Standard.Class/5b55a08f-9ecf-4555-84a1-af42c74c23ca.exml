@@ -76,7 +76,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Standard.AssociationEnd" uid="04aeea8d-17b6-48c4-91e5-ebf9f6b5fc25"/>
+          <ID name="" mc="Standard.AssociationEnd" uid="8b074065-90c3-44b8-bc0a-9a7428f42c7d"/>
           <ATTRIBUTES>
             <ATT name="Aggregation">KindIsAssociation</ATT>
             <ATT name="IsChangeable">true</ATT>
@@ -95,12 +95,12 @@
           <DEPENDENCIES>
             <COMP relation="Opposite">
               <REFOBJ>
-                <ID name="" mc="Standard.AssociationEnd" uid="7d4cf4f1-fb21-4cd1-ab7e-0782f1b8f4f2"/>
+                <ID name="" mc="Standard.AssociationEnd" uid="652869a1-aa31-49f5-9346-71699651b9be"/>
               </REFOBJ>
             </COMP>
             <COMP relation="Association">
               <OBJECT>
-                <ID name="" mc="Standard.Association" uid="d8e7b496-0939-484a-a418-1d5899ad1c2b"/>
+                <ID name="" mc="Standard.Association" uid="18b56a26-bb03-46b6-856b-604ae049fc0f"/>
                 <ATTRIBUTES>
                   <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
