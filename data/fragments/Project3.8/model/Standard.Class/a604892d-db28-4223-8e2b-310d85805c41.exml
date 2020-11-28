@@ -51,9 +51,6 @@
         <REFOBJ>
           <ID name="" mc="Standard.AssociationEnd" uid="87d2fcfa-2317-4421-90db-5bf65a823a9d"/>
         </REFOBJ>
-        <REFOBJ>
-          <ID name="" mc="Standard.AssociationEnd" uid="e37b5c38-2eb3-4020-a96d-f544876d6613"/>
-        </REFOBJ>
         <OBJECT>
           <ID name="" mc="Standard.AssociationEnd" uid="a2f62533-576f-4f92-8d8a-cb789343a404"/>
           <ATTRIBUTES>
@@ -114,6 +111,9 @@
         </OBJECT>
         <REFOBJ>
           <ID name="" mc="Standard.AssociationEnd" uid="e93e1d62-344b-4532-95f4-0ce9ef46d546"/>
+        </REFOBJ>
+        <REFOBJ>
+          <ID name="" mc="Standard.AssociationEnd" uid="c62ca081-c0b9-4ecd-930d-fe07d901def5"/>
         </REFOBJ>
       </COMP>
       <LINK relation="Extension">
