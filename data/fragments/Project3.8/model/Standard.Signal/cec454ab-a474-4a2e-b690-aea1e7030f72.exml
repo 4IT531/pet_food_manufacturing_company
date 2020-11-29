@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Material ordered" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Supplies not in warehouse" version="4">
   <OBJECT>
-    <ID name="Material ordered" mc="Standard.Signal" uid="cec454ab-a474-4a2e-b690-aea1e7030f72"/>
+    <ID name="Supplies not in warehouse" mc="Standard.Signal" uid="cec454ab-a474-4a2e-b690-aea1e7030f72"/>
     <PID name="Inventory management" mc="Standard.Package" uid="d2dffa0f-53b7-4194-944d-f1cd2a273b84"/>
     <ATTRIBUTES>
       <ATT name="IsEvent">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Material ordered]]></ATT>
+      <ATT name="Name"><![CDATA[Supplies not in warehouse]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -27,7 +27,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Material delivery" mc="Standard.Actor" uid="5e71ec43-9429-422d-a20c-20796c3a5c4c"/>
+              <ID name="Supply order" mc="Standard.Actor" uid="5e71ec43-9429-422d-a20c-20796c3a5c4c"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
