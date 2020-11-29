@@ -77,10 +77,8 @@
                         </LINK>
                       </DEPENDENCIES>
                     </OBJECT>
-                  </COMP>
-                  <COMP relation="DataOutputAssociation">
                     <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="185bb51e-80af-4fec-88ee-753ee219bf81"/>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="1c08d95a-2bb6-4130-b2b6-c02cc1a5cb94"/>
                       <ATTRIBUTES>
                         <ATT name="Assignment"></ATT>
                         <ATT name="Transfomation"></ATT>
@@ -89,7 +87,7 @@
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
-                        <LINK relation="SourceRef">
+                        <LINK relation="TargetRef">
                           <REFOBJ>
                             <ID name="" mc="Standard.BpmnDataObject" uid="11745976-6aa4-459e-8b85-2e733fe440d0"/>
                           </REFOBJ>
@@ -672,9 +670,9 @@
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
-                  <COMP relation="DataOutputAssociation">
+                  <COMP relation="DataInputAssociation">
                     <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="716143ab-5c61-43bf-b58d-c068334fe77c"/>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="8f902c69-366b-4cb4-8a31-5d90ea6a4fdc"/>
                       <ATTRIBUTES>
                         <ATT name="Assignment"></ATT>
                         <ATT name="Transfomation"></ATT>
@@ -683,7 +681,7 @@
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
-                        <LINK relation="SourceRef">
+                        <LINK relation="TargetRef">
                           <REFOBJ>
                             <ID name="" mc="Standard.BpmnDataObject" uid="f11f2388-0a24-4b46-8822-fed30c53a7e3"/>
                           </REFOBJ>
@@ -986,6 +984,23 @@
                         </LINK>
                       </DEPENDENCIES>
                     </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="202f58b9-ce8c-484b-af0d-9a1ff120c306"/>
+                      <ATTRIBUTES>
+                        <ATT name="Assignment"></ATT>
+                        <ATT name="Transfomation"></ATT>
+                        <ATT name="Language"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="TargetRef">
+                          <REFOBJ>
+                            <ID name="" mc="Standard.BpmnDataObject" uid="d341255c-14de-487b-8cdb-201559f9c0f7"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
                   </COMP>
                 </DEPENDENCIES>
               </OBJECT>
@@ -1095,7 +1110,115 @@
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="84ad020f-eb11-4716-8cd8-404fc23273bc"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Standard.BpmnDataObject" uid="d341255c-14de-487b-8cdb-201559f9c0f7"/>
+                <ATTRIBUTES>
+                  <ATT name="IsCollection">false</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="DependsOnDependency">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="ba1ab694-a3a4-4ee3-bc45-f4b497937f54"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <ID name="Supplies" mc="Standard.Class" uid="85e488bd-1d28-43c8-8d25-dfc882aeb0ff"/>
+                        </LINK>
+                        <LINK relation="Extension">
+                          <FOREIGNID name="Represents" mc="Infrastructure.Stereotype" uid="f5d2927d-46d6-4d87-9cf2-adb4a47ca929"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="e7eee8f5-8d70-47b6-b51f-b0368e92ecc0"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <REFOBJ>
+                            <ID name="Inaccessible" mc="Standard.FinalState" uid="e60167cb-c0cb-4b18-9e17-44988bf3c966"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Extension">
+                          <FOREIGNID name="State" mc="Infrastructure.Stereotype" uid="c2d2a1ec-2c29-453c-a79c-19e4f2d27f13"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="84ad020f-eb11-4716-8cd8-404fc23273bc"/>
+                <ATTRIBUTES>
+                  <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="f3" mc="Standard.BpmnSequenceFlow" uid="9e9c002a-05b6-47cf-a20d-b8a5a65a1ea0"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[f3]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="84ad020f-eb11-4716-8cd8-404fc23273bc"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
                       <ID name="Supplies ordered" mc="Standard.BpmnEndEvent" uid="37360f95-9684-4d78-a042-a09807f8d10b"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Supplies unorderable" mc="Standard.BpmnEndEvent" uid="b9b03127-9263-4412-9957-1663dd20ba39"/>
+                <ATTRIBUTES>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Supplies unorderable]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="f4" mc="Standard.BpmnSequenceFlow" uid="00501587-b872-4f63-8bb5-5b5a88ea8333"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[f4]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="84ad020f-eb11-4716-8cd8-404fc23273bc"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="Supplies unorderable" mc="Standard.BpmnEndEvent" uid="b9b03127-9263-4412-9957-1663dd20ba39"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -1173,16 +1296,6 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Supply order" mc="Standard.BpmnParallelGateway" uid="30ef7748-b552-4b7d-b142-29a2bdcd0864"/>
-          <ATTRIBUTES>
-            <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
-            <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[Supply order]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
           <ID name="f5" mc="Standard.BpmnSequenceFlow" uid="75408ffd-83f2-4159-92d8-7e5095a88cce"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
@@ -1199,20 +1312,10 @@
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="Supply order" mc="Standard.BpmnParallelGateway" uid="30ef7748-b552-4b7d-b142-29a2bdcd0864"/>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="c8431a50-1540-4b25-bcf0-71a9610422a9"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="" mc="Standard.BpmnExclusiveGateway" uid="18b2bf1c-77d1-45d2-a513-c581967e8d6a"/>
-          <ATTRIBUTES>
-            <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
-            <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
           <ID name="f6" mc="Standard.BpmnSequenceFlow" uid="12635253-ec0b-4545-883f-7b2e2b20da20"/>
@@ -1234,53 +1337,6 @@
                 <ID name="Supply order" mc="Standard.BpmnParallelGateway" uid="30ef7748-b552-4b7d-b142-29a2bdcd0864"/>
               </REFOBJ>
             </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Supplies received" mc="Standard.BpmnStartEvent" uid="33cd0c1b-6fcc-4190-8bf5-4ad47c67eac5"/>
-          <ATTRIBUTES>
-            <ATT name="IsInterrupting">true</ATT>
-            <ATT name="ParallelMultiple">false</ATT>
-            <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[Supplies received]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Supplies not available" mc="Standard.BpmnStartEvent" uid="1d8fa11e-bd1d-4854-91a0-5e7d5583d1f5"/>
-          <ATTRIBUTES>
-            <ATT name="IsInterrupting">true</ATT>
-            <ATT name="ParallelMultiple">false</ATT>
-            <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[Supplies not available]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="1 week" mc="Standard.BpmnStartEvent" uid="596bcbf2-94ef-4b81-a535-3aa39983f6a0"/>
-          <ATTRIBUTES>
-            <ATT name="IsInterrupting">true</ATT>
-            <ATT name="ParallelMultiple">false</ATT>
-            <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[1 week]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <COMP relation="EventDefinitions">
-              <OBJECT>
-                <ID name="" mc="Standard.BpmnTimerEventDefinition" uid="1ba50d64-296e-4a9f-9bca-bad74ea0d3d1"/>
-                <ATTRIBUTES>
-                  <ATT name="TimeCycle"></ATT>
-                  <ATT name="TimeDate"></ATT>
-                  <ATT name="TimeDuration"></ATT>
-                  <ATT name="Name"></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-            </COMP>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
@@ -1339,7 +1395,7 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="Supplies not available" mc="Standard.BpmnStartEvent" uid="1d8fa11e-bd1d-4854-91a0-5e7d5583d1f5"/>
+                <ID name="Supplies not received" mc="Standard.BpmnStartEvent" uid="1d8fa11e-bd1d-4854-91a0-5e7d5583d1f5"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
@@ -1435,15 +1491,6 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name=" Supply order canceled" mc="Standard.BpmnEndEvent" uid="db748446-7544-4486-bf53-75b30b1002fb"/>
-          <ATTRIBUTES>
-            <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[ Supply order canceled]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
           <ID name="f21" mc="Standard.BpmnSequenceFlow" uid="5e13016f-26ad-4b40-a08f-efa3f14cfca2"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
@@ -1463,266 +1510,6 @@
                 <ID name=" Supply order canceled" mc="Standard.BpmnEndEvent" uid="db748446-7544-4486-bf53-75b30b1002fb"/>
               </REFOBJ>
             </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Supply order cancelation" mc="Standard.BpmnSubProcess" uid="45ba33b9-bd50-41a9-8a34-cc1b99c9be3f"/>
-          <ATTRIBUTES>
-            <ATT name="IsForCompensation">false</ATT>
-            <ATT name="StartQuantity">1</ATT>
-            <ATT name="CompletionQuantity">1</ATT>
-            <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[Supply order cancelation]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <COMP relation="FlowElement">
-              <OBJECT>
-                <ID name="Supply order canceled" mc="Standard.BpmnEndEvent" uid="934fde84-1b74-4c8e-998f-c403f50fa737"/>
-                <ATTRIBUTES>
-                  <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Supply order canceled]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Supply order cancelation" mc="Standard.BpmnTask" uid="3521e021-9c9c-4a98-8e53-575afa3fe0b5"/>
-                <ATTRIBUTES>
-                  <ATT name="IsGlobal">false</ATT>
-                  <ATT name="IsForCompensation">false</ATT>
-                  <ATT name="StartQuantity">1</ATT>
-                  <ATT name="CompletionQuantity">1</ATT>
-                  <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Supply order cancelation]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <COMP relation="DataInputAssociation">
-                    <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="90b1d107-1500-4ecb-89d1-99df02246a54"/>
-                      <ATTRIBUTES>
-                        <ATT name="Assignment"></ATT>
-                        <ATT name="Transfomation"></ATT>
-                        <ATT name="Language"></ATT>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="TargetRef">
-                          <REFOBJ>
-                            <ID name="" mc="Standard.BpmnDataObject" uid="cefe441f-39f9-43a9-9cc3-86a64d8cfd7f"/>
-                          </REFOBJ>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="" mc="Standard.BpmnSequenceFlow" uid="24d899f6-22d2-444b-8322-dde7cacd32f9"/>
-                <ATTRIBUTES>
-                  <ATT name="IsImmediate">false</ATT>
-                  <ATT name="ConditionExpression"></ATT>
-                  <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="SourceRef">
-                    <REFOBJ>
-                      <ID name="Supply order cancelation" mc="Standard.BpmnTask" uid="3521e021-9c9c-4a98-8e53-575afa3fe0b5"/>
-                    </REFOBJ>
-                  </LINK>
-                  <LINK relation="TargetRef">
-                    <REFOBJ>
-                      <ID name="Supply order canceled" mc="Standard.BpmnEndEvent" uid="934fde84-1b74-4c8e-998f-c403f50fa737"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Supplies unavailable" mc="Standard.BpmnStartEvent" uid="9058b83f-ee43-488c-b62e-1da70cb10619"/>
-                <ATTRIBUTES>
-                  <ATT name="IsInterrupting">true</ATT>
-                  <ATT name="ParallelMultiple">false</ATT>
-                  <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Supplies unavailable]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="" mc="Standard.BpmnDataObject" uid="cefe441f-39f9-43a9-9cc3-86a64d8cfd7f"/>
-                <ATTRIBUTES>
-                  <ATT name="IsCollection">false</ATT>
-                  <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <COMP relation="DependsOnDependency">
-                    <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="ee751d4a-6926-4ba3-a5f8-3e6fe4f482ab"/>
-                      <ATTRIBUTES>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="DependsOn">
-                          <ID name="Supply order" mc="Standard.Class" uid="d36ed0a5-6c10-4d44-8ca3-6380d823948d"/>
-                        </LINK>
-                        <LINK relation="Extension">
-                          <FOREIGNID name="Represents" mc="Infrastructure.Stereotype" uid="f5d2927d-46d6-4d87-9cf2-adb4a47ca929"/>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                    <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="e2275070-69d1-4e21-b965-1a0811d72bef"/>
-                      <ATTRIBUTES>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="DependsOn">
-                          <REFOBJ>
-                            <ID name="Canceled" mc="Standard.FinalState" uid="a5704258-153a-4997-8a36-ff548932eb05"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Extension">
-                          <FOREIGNID name="State" mc="Infrastructure.Stereotype" uid="c2d2a1ec-2c29-453c-a79c-19e4f2d27f13"/>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Supplies unavailability report" mc="Standard.BpmnTask" uid="047e19b3-a780-439d-a76c-b3cdfc409382"/>
-                <ATTRIBUTES>
-                  <ATT name="IsGlobal">false</ATT>
-                  <ATT name="IsForCompensation">false</ATT>
-                  <ATT name="StartQuantity">1</ATT>
-                  <ATT name="CompletionQuantity">1</ATT>
-                  <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Supplies unavailability report]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <COMP relation="DataInputAssociation">
-                    <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="d4b551a4-0372-4881-87f2-4ec7b9b3c15e"/>
-                      <ATTRIBUTES>
-                        <ATT name="Assignment"></ATT>
-                        <ATT name="Transfomation"></ATT>
-                        <ATT name="Language"></ATT>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="TargetRef">
-                          <REFOBJ>
-                            <ID name="" mc="Standard.BpmnDataObject" uid="0279c4ef-7aef-4399-86ad-576659b4e837"/>
-                          </REFOBJ>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="f3" mc="Standard.BpmnSequenceFlow" uid="18f60856-bd2e-4c76-bd44-8fc043b9550d"/>
-                <ATTRIBUTES>
-                  <ATT name="IsImmediate">false</ATT>
-                  <ATT name="ConditionExpression"></ATT>
-                  <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[f3]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="SourceRef">
-                    <REFOBJ>
-                      <ID name="Supplies unavailability report" mc="Standard.BpmnTask" uid="047e19b3-a780-439d-a76c-b3cdfc409382"/>
-                    </REFOBJ>
-                  </LINK>
-                  <LINK relation="TargetRef">
-                    <REFOBJ>
-                      <ID name="Supply order cancelation" mc="Standard.BpmnTask" uid="3521e021-9c9c-4a98-8e53-575afa3fe0b5"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="f" mc="Standard.BpmnSequenceFlow" uid="20dfa127-514a-490d-8c79-c4d355b4820c"/>
-                <ATTRIBUTES>
-                  <ATT name="IsImmediate">false</ATT>
-                  <ATT name="ConditionExpression"></ATT>
-                  <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[f]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="SourceRef">
-                    <REFOBJ>
-                      <ID name="Supplies unavailable" mc="Standard.BpmnStartEvent" uid="9058b83f-ee43-488c-b62e-1da70cb10619"/>
-                    </REFOBJ>
-                  </LINK>
-                  <LINK relation="TargetRef">
-                    <REFOBJ>
-                      <ID name="Supplies unavailability report" mc="Standard.BpmnTask" uid="047e19b3-a780-439d-a76c-b3cdfc409382"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="" mc="Standard.BpmnDataObject" uid="0279c4ef-7aef-4399-86ad-576659b4e837"/>
-                <ATTRIBUTES>
-                  <ATT name="IsCollection">false</ATT>
-                  <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <COMP relation="DependsOnDependency">
-                    <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="d4dda9fd-92dd-4f01-9026-10cacd73cbbb"/>
-                      <ATTRIBUTES>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="DependsOn">
-                          <ID name="Supplies" mc="Standard.Class" uid="85e488bd-1d28-43c8-8d25-dfc882aeb0ff"/>
-                        </LINK>
-                        <LINK relation="Extension">
-                          <FOREIGNID name="Represents" mc="Infrastructure.Stereotype" uid="f5d2927d-46d6-4d87-9cf2-adb4a47ca929"/>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                    <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="508447e4-b239-43c5-9868-7b15cf73f926"/>
-                      <ATTRIBUTES>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="DependsOn">
-                          <REFOBJ>
-                            <ID name="Undelivered" mc="Standard.FinalState" uid="e60167cb-c0cb-4b18-9e17-44988bf3c966"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Extension">
-                          <FOREIGNID name="State" mc="Infrastructure.Stereotype" uid="c2d2a1ec-2c29-453c-a79c-19e4f2d27f13"/>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-            </COMP>
-            <COMP relation="Product">
-              <COMPID name="Supply order cancelation" mc="Standard.BpmnSubProcessDiagram" uid="4eb57d11-b8ff-4dbe-bc84-7283db7f3031"/>
-            </COMP>
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
@@ -2007,6 +1794,461 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="Supply order" mc="Standard.BpmnParallelGateway" uid="30ef7748-b552-4b7d-b142-29a2bdcd0864"/>
+          <ATTRIBUTES>
+            <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Supply order]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Supplies received" mc="Standard.BpmnStartEvent" uid="33cd0c1b-6fcc-4190-8bf5-4ad47c67eac5"/>
+          <ATTRIBUTES>
+            <ATT name="IsInterrupting">true</ATT>
+            <ATT name="ParallelMultiple">false</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Supplies received]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="1 week" mc="Standard.BpmnStartEvent" uid="596bcbf2-94ef-4b81-a535-3aa39983f6a0"/>
+          <ATTRIBUTES>
+            <ATT name="IsInterrupting">true</ATT>
+            <ATT name="ParallelMultiple">false</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[1 week]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="EventDefinitions">
+              <OBJECT>
+                <ID name="" mc="Standard.BpmnTimerEventDefinition" uid="1ba50d64-296e-4a9f-9bca-bad74ea0d3d1"/>
+                <ATTRIBUTES>
+                  <ATT name="TimeCycle"></ATT>
+                  <ATT name="TimeDate"></ATT>
+                  <ATT name="TimeDuration"></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name=" Supply order canceled" mc="Standard.BpmnEndEvent" uid="db748446-7544-4486-bf53-75b30b1002fb"/>
+          <ATTRIBUTES>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[ Supply order canceled]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Supply order cancelation" mc="Standard.BpmnSubProcess" uid="45ba33b9-bd50-41a9-8a34-cc1b99c9be3f"/>
+          <ATTRIBUTES>
+            <ATT name="IsForCompensation">false</ATT>
+            <ATT name="StartQuantity">1</ATT>
+            <ATT name="CompletionQuantity">1</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Supply order cancelation]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="FlowElement">
+              <OBJECT>
+                <ID name="Supply order canceled" mc="Standard.BpmnEndEvent" uid="934fde84-1b74-4c8e-998f-c403f50fa737"/>
+                <ATTRIBUTES>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Supply order canceled]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Supply order cancelation" mc="Standard.BpmnTask" uid="3521e021-9c9c-4a98-8e53-575afa3fe0b5"/>
+                <ATTRIBUTES>
+                  <ATT name="IsGlobal">false</ATT>
+                  <ATT name="IsForCompensation">false</ATT>
+                  <ATT name="StartQuantity">1</ATT>
+                  <ATT name="CompletionQuantity">1</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Supply order cancelation]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="DataInputAssociation">
+                    <OBJECT>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="90b1d107-1500-4ecb-89d1-99df02246a54"/>
+                      <ATTRIBUTES>
+                        <ATT name="Assignment"></ATT>
+                        <ATT name="Transfomation"></ATT>
+                        <ATT name="Language"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="TargetRef">
+                          <REFOBJ>
+                            <ID name="" mc="Standard.BpmnDataObject" uid="cefe441f-39f9-43a9-9cc3-86a64d8cfd7f"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Standard.BpmnSequenceFlow" uid="24d899f6-22d2-444b-8322-dde7cacd32f9"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="Supply order cancelation" mc="Standard.BpmnTask" uid="3521e021-9c9c-4a98-8e53-575afa3fe0b5"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="Supply order canceled" mc="Standard.BpmnEndEvent" uid="934fde84-1b74-4c8e-998f-c403f50fa737"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Supplies not received" mc="Standard.BpmnStartEvent" uid="9058b83f-ee43-488c-b62e-1da70cb10619"/>
+                <ATTRIBUTES>
+                  <ATT name="IsInterrupting">true</ATT>
+                  <ATT name="ParallelMultiple">false</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Supplies not received]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Standard.BpmnDataObject" uid="cefe441f-39f9-43a9-9cc3-86a64d8cfd7f"/>
+                <ATTRIBUTES>
+                  <ATT name="IsCollection">false</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="DependsOnDependency">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="ee751d4a-6926-4ba3-a5f8-3e6fe4f482ab"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <ID name="Supply order" mc="Standard.Class" uid="d36ed0a5-6c10-4d44-8ca3-6380d823948d"/>
+                        </LINK>
+                        <LINK relation="Extension">
+                          <FOREIGNID name="Represents" mc="Infrastructure.Stereotype" uid="f5d2927d-46d6-4d87-9cf2-adb4a47ca929"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="e2275070-69d1-4e21-b965-1a0811d72bef"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <REFOBJ>
+                            <ID name="Canceled" mc="Standard.FinalState" uid="a5704258-153a-4997-8a36-ff548932eb05"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Extension">
+                          <FOREIGNID name="State" mc="Infrastructure.Stereotype" uid="c2d2a1ec-2c29-453c-a79c-19e4f2d27f13"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Supplies unavailability report" mc="Standard.BpmnTask" uid="047e19b3-a780-439d-a76c-b3cdfc409382"/>
+                <ATTRIBUTES>
+                  <ATT name="IsGlobal">false</ATT>
+                  <ATT name="IsForCompensation">false</ATT>
+                  <ATT name="StartQuantity">1</ATT>
+                  <ATT name="CompletionQuantity">1</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Supplies unavailability report]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="DataInputAssociation">
+                    <OBJECT>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="d4b551a4-0372-4881-87f2-4ec7b9b3c15e"/>
+                      <ATTRIBUTES>
+                        <ATT name="Assignment"></ATT>
+                        <ATT name="Transfomation"></ATT>
+                        <ATT name="Language"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="TargetRef">
+                          <REFOBJ>
+                            <ID name="" mc="Standard.BpmnDataObject" uid="0279c4ef-7aef-4399-86ad-576659b4e837"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="f3" mc="Standard.BpmnSequenceFlow" uid="18f60856-bd2e-4c76-bd44-8fc043b9550d"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[f3]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="Supplies unavailability report" mc="Standard.BpmnTask" uid="047e19b3-a780-439d-a76c-b3cdfc409382"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="Supply order cancelation" mc="Standard.BpmnTask" uid="3521e021-9c9c-4a98-8e53-575afa3fe0b5"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="f" mc="Standard.BpmnSequenceFlow" uid="20dfa127-514a-490d-8c79-c4d355b4820c"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[f]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="Supplies not received" mc="Standard.BpmnStartEvent" uid="9058b83f-ee43-488c-b62e-1da70cb10619"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="2439e184-97e8-49f7-b3ab-fdd22ccf5764"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Standard.BpmnDataObject" uid="0279c4ef-7aef-4399-86ad-576659b4e837"/>
+                <ATTRIBUTES>
+                  <ATT name="IsCollection">false</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="DependsOnDependency">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="d4dda9fd-92dd-4f01-9026-10cacd73cbbb"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <ID name="Supplies" mc="Standard.Class" uid="85e488bd-1d28-43c8-8d25-dfc882aeb0ff"/>
+                        </LINK>
+                        <LINK relation="Extension">
+                          <FOREIGNID name="Represents" mc="Infrastructure.Stereotype" uid="f5d2927d-46d6-4d87-9cf2-adb4a47ca929"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="508447e4-b239-43c5-9868-7b15cf73f926"/>
+                      <ATTRIBUTES>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="DependsOn">
+                          <REFOBJ>
+                            <ID name="Inaccessible" mc="Standard.FinalState" uid="e60167cb-c0cb-4b18-9e17-44988bf3c966"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Extension">
+                          <FOREIGNID name="State" mc="Infrastructure.Stereotype" uid="c2d2a1ec-2c29-453c-a79c-19e4f2d27f13"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="2439e184-97e8-49f7-b3ab-fdd22ccf5764"/>
+                <ATTRIBUTES>
+                  <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="f1" mc="Standard.BpmnSequenceFlow" uid="9f7195db-85ec-4add-b40c-ddddc179dfa7"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[f1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="2439e184-97e8-49f7-b3ab-fdd22ccf5764"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="Supplies unavailability report" mc="Standard.BpmnTask" uid="047e19b3-a780-439d-a76c-b3cdfc409382"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Supplies unorderable" mc="Standard.BpmnStartEvent" uid="f25a4b15-c47c-4fd7-9160-5049663c3486"/>
+                <ATTRIBUTES>
+                  <ATT name="IsInterrupting">true</ATT>
+                  <ATT name="ParallelMultiple">false</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Supplies unorderable]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="f2" mc="Standard.BpmnSequenceFlow" uid="c0875965-cf9f-4b25-90a6-ffe4b95abc37"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[f2]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="Supplies unorderable" mc="Standard.BpmnStartEvent" uid="f25a4b15-c47c-4fd7-9160-5049663c3486"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="2439e184-97e8-49f7-b3ab-fdd22ccf5764"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+            <COMP relation="Product">
+              <COMPID name="Supply order cancelation" mc="Standard.BpmnSubProcessDiagram" uid="4eb57d11-b8ff-4dbe-bc84-7283db7f3031"/>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Supplies not received" mc="Standard.BpmnStartEvent" uid="1d8fa11e-bd1d-4854-91a0-5e7d5583d1f5"/>
+          <ATTRIBUTES>
+            <ATT name="IsInterrupting">true</ATT>
+            <ATT name="ParallelMultiple">false</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Supplies not received]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.BpmnExclusiveGateway" uid="18b2bf1c-77d1-45d2-a513-c581967e8d6a"/>
+          <ATTRIBUTES>
+            <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.BpmnExclusiveGateway" uid="c8431a50-1540-4b25-bcf0-71a9610422a9"/>
+          <ATTRIBUTES>
+            <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f3" mc="Standard.BpmnSequenceFlow" uid="af9027b0-8b97-4dad-9045-8ca0d1912abd"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"><![CDATA[Supplies ordered]]></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f3]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="c8431a50-1540-4b25-bcf0-71a9610422a9"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="Supply order" mc="Standard.BpmnParallelGateway" uid="30ef7748-b552-4b7d-b142-29a2bdcd0864"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f10" mc="Standard.BpmnSequenceFlow" uid="3afe75d8-6c3f-4e77-9e56-9f3639e4b2f2"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"><![CDATA[Supplies unorderable]]></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f10]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="c8431a50-1540-4b25-bcf0-71a9610422a9"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="Supply order cancelation" mc="Standard.BpmnSubProcess" uid="45ba33b9-bd50-41a9-8a34-cc1b99c9be3f"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="TogafProcess" mc="Infrastructure.Stereotype" uid="b9d7cee1-8fe0-45ec-98fa-ea750d4ab42f"/>
@@ -2025,18 +2267,6 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Infrastructure.Dependency" uid="0a21d8a2-11cb-483f-8b35-6b06097fe8b8"/>
-          <ATTRIBUTES>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="DependsOn">
-              <ID name="Ingredients ordered" mc="Standard.Signal" uid="584cd1e3-9813-46d9-9a97-914b16603619"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
           <ID name="" mc="Infrastructure.Dependency" uid="a73b2afe-a73c-41ab-a06d-f12229c67099"/>
           <ATTRIBUTES>
             <ATT name="Name"></ATT>
@@ -2044,7 +2274,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Material ordered" mc="Standard.Signal" uid="cec454ab-a474-4a2e-b690-aea1e7030f72"/>
+              <ID name="Supplies not in warehouse" mc="Standard.Signal" uid="cec454ab-a474-4a2e-b690-aea1e7030f72"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
@@ -2073,18 +2303,6 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="" mc="Infrastructure.Dependency" uid="8c058e9b-5767-4937-a2d9-8222270ef3ea"/>
-          <ATTRIBUTES>
-            <ATT name="Name"></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="DependsOn">
-              <ID name="Ingredients ordered" mc="Standard.Signal" uid="584cd1e3-9813-46d9-9a97-914b16603619"/>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
           <ID name="" mc="Infrastructure.Dependency" uid="b517ccdf-1d14-4f16-b18c-c4f3c6791d2c"/>
           <ATTRIBUTES>
             <ATT name="Name"></ATT>
@@ -2092,7 +2310,7 @@
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="DependsOn">
-              <ID name="Material ordered" mc="Standard.Signal" uid="cec454ab-a474-4a2e-b690-aea1e7030f72"/>
+              <ID name="Supplies not in warehouse" mc="Standard.Signal" uid="cec454ab-a474-4a2e-b690-aea1e7030f72"/>
             </LINK>
           </DEPENDENCIES>
         </OBJECT>

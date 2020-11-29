@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Material sent by supplier" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Supplies received" version="4">
   <OBJECT>
-    <ID name="Material sent by supplier" mc="Standard.Signal" uid="522dd7c1-6b43-4155-a613-e5994de12efb"/>
+    <ID name="Supplies received" mc="Standard.Signal" uid="522dd7c1-6b43-4155-a613-e5994de12efb"/>
     <PID name="Inventory management" mc="Standard.Package" uid="d2dffa0f-53b7-4194-944d-f1cd2a273b84"/>
     <ATTRIBUTES>
       <ATT name="IsEvent">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Material sent by supplier]]></ATT>
+      <ATT name="Name"><![CDATA[Supplies received]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

@@ -133,6 +133,25 @@
                         </LINK>
                       </DEPENDENCIES>
                     </OBJECT>
+                    <OBJECT>
+                      <ID name="Transition1" mc="Standard.Transition" uid="151bc286-2330-4ff7-a234-27131800782d"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"><![CDATA[Supplies unorderable / Mark as inaccessible]]></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"><![CDATA[Transition1]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Inaccessible" mc="Standard.FinalState" uid="e60167cb-c0cb-4b18-9e17-44988bf3c966"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
                   </COMP>
                 </DEPENDENCIES>
               </OBJECT>
@@ -150,7 +169,7 @@
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"><![CDATA[Supplies not received / Mark undelivered()]]></ATT>
+                        <ATT name="Guard"><![CDATA[Supplies not received / Mark inaccessible()]]></ATT>
                         <ATT name="PostCondition"></ATT>
                         <ATT name="Name"><![CDATA[Transition]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -158,7 +177,7 @@
                       <DEPENDENCIES>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Undelivered" mc="Standard.FinalState" uid="e60167cb-c0cb-4b18-9e17-44988bf3c966"/>
+                            <ID name="Inaccessible" mc="Standard.FinalState" uid="e60167cb-c0cb-4b18-9e17-44988bf3c966"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -186,9 +205,9 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Undelivered" mc="Standard.FinalState" uid="e60167cb-c0cb-4b18-9e17-44988bf3c966"/>
+                <ID name="Inaccessible" mc="Standard.FinalState" uid="e60167cb-c0cb-4b18-9e17-44988bf3c966"/>
                 <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Undelivered]]></ATT>
+                  <ATT name="Name"><![CDATA[Inaccessible]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
