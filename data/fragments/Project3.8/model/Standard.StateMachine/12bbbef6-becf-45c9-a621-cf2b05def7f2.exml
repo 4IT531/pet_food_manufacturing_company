@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="LC machine" version="4">
+  <OBJECT>
+    <ID name="LC machine" mc="Standard.StateMachine" uid="12bbbef6-becf-45c9-a621-cf2b05def7f2"/>
+    <PID name="Machine" mc="Standard.Class" uid="432dcbe4-99bb-40a8-b2de-aa0b8e5a1f80"/>
+    <ATTRIBUTES>
+      <ATT name="Kind">Dynamic</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[LC machine]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Top">
+        <OBJECT>
+          <ID name="" mc="Standard.Region" uid="2e234b2e-37c5-43fe-af7f-494848d1fc14"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Sub">
+              <OBJECT>
+                <ID name="OK" mc="Standard.State" uid="7bb318fe-bfb1-4af4-8e3c-18614c8ed08e"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[OK]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="NOT OK" mc="Standard.State" uid="e510f26f-e650-45b6-ac19-58fa40cbbcad"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[NOT OK]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
+      </LINK>
+      <COMP relation="Product">
+        <COMPID name="LC_Machine" mc="Standard.StateMachineDiagram" uid="29cc19c5-4979-410f-9096-c97fb7679de4"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

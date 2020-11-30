@@ -114,7 +114,7 @@
                       <ID name="" mc="Standard.Transition" uid="a016234f-f227-4215-876a-16993475b91f"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[order is does not comply with ordered goods]]></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[order does not comply with ordered goods]]></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -348,7 +348,7 @@
                       <ID name="Transition" mc="Standard.Transition" uid="dc428944-ceea-4676-aa76-7e0f57d7aa19"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[Delivery order completed]]></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Delivery order completed or complaint refused or Complaint period prolongated]]></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -358,12 +358,12 @@
                       <DEPENDENCIES>
                         <LINK relation="Processed">
                           <REFOBJ>
-                            <ID name="MarkAsResolvingComplaint" mc="Standard.Operation" uid="93ec6824-4e61-41c4-a254-85f76e4777ea"/>
+                            <ID name="MarkAsComplaintPeriodExpired" mc="Standard.Operation" uid="93ec6824-4e61-41c4-a254-85f76e4777ea"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Resolving complaint" mc="Standard.State" uid="9744e0ee-a542-49f3-9bf4-5ba90b96a624"/>
+                            <ID name="Complaint period expired" mc="Standard.State" uid="9744e0ee-a542-49f3-9bf4-5ba90b96a624"/>
                           </REFOBJ>
                         </LINK>
                         <COMP relation="Descriptor">
@@ -382,6 +382,30 @@
                             </DEPENDENCIES>
                           </OBJECT>
                         </COMP>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="Standard.Transition" uid="8f73893a-f183-4143-99b4-767ecd3adab6"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Delivery order completed or complaint refused or Complaint period prolongated]]></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="MarkAsComplaintPeriodInProgress" mc="Standard.Operation" uid="3eb0c728-81d5-4008-b4c2-02663e0ca7a2"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Complaint period in progress" mc="Standard.State" uid="4b40d4ea-8a72-443f-b1f4-c272a9ba2f07"/>
+                          </REFOBJ>
+                        </LINK>
                       </DEPENDENCIES>
                     </OBJECT>
                   </COMP>
@@ -447,37 +471,13 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Resolving complaint" mc="Standard.State" uid="9744e0ee-a542-49f3-9bf4-5ba90b96a624"/>
+                <ID name="Complaint period expired" mc="Standard.State" uid="9744e0ee-a542-49f3-9bf4-5ba90b96a624"/>
                 <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Resolving complaint]]></ATT>
+                  <ATT name="Name"><![CDATA[Complaint period expired]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
                   <COMP relation="OutGoing">
-                    <OBJECT>
-                      <ID name="" mc="Standard.Transition" uid="8f73893a-f183-4143-99b4-767ecd3adab6"/>
-                      <ATTRIBUTES>
-                        <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[complaint period in progress]]></ATT>
-                        <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"></ATT>
-                        <ATT name="PostCondition"></ATT>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="Processed">
-                          <REFOBJ>
-                            <ID name="MarkAsInProgress" mc="Standard.Operation" uid="3eb0c728-81d5-4008-b4c2-02663e0ca7a2"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Target">
-                          <REFOBJ>
-                            <ID name="Complaint period in progress" mc="Standard.State" uid="4b40d4ea-8a72-443f-b1f4-c272a9ba2f07"/>
-                          </REFOBJ>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
                     <OBJECT>
                       <ID name="" mc="Standard.Transition" uid="7ab25975-4eb9-4b3c-a484-86db0bea8cc0"/>
                       <ATTRIBUTES>
@@ -498,6 +498,30 @@
                         <LINK relation="Target">
                           <REFOBJ>
                             <ID name="Completed" mc="Standard.FinalState" uid="899abaaa-2926-443e-a1fb-d6e64396c230"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="Standard.Transition" uid="e1992766-3577-4688-86b9-70f8244742ac"/>
+                      <ATTRIBUTES>
+                        <ATT name="Effect"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Complaint period prolongated]]></ATT>
+                        <ATT name="SentEvents"></ATT>
+                        <ATT name="Guard"></ATT>
+                        <ATT name="PostCondition"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="MarkAsComplaintPeriodInProgress" mc="Standard.Operation" uid="3eb0c728-81d5-4008-b4c2-02663e0ca7a2"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Target">
+                          <REFOBJ>
+                            <ID name="Complaint period in progress" mc="Standard.State" uid="4b40d4ea-8a72-443f-b1f4-c272a9ba2f07"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -551,12 +575,12 @@
                       <DEPENDENCIES>
                         <LINK relation="Processed">
                           <REFOBJ>
-                            <ID name="MarkAsResolvingComplaint" mc="Standard.Operation" uid="93ec6824-4e61-41c4-a254-85f76e4777ea"/>
+                            <ID name="MarkAsComplaintPeriodExpired" mc="Standard.Operation" uid="93ec6824-4e61-41c4-a254-85f76e4777ea"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Resolving complaint" mc="Standard.State" uid="9744e0ee-a542-49f3-9bf4-5ba90b96a624"/>
+                            <ID name="Complaint period expired" mc="Standard.State" uid="9744e0ee-a542-49f3-9bf4-5ba90b96a624"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>

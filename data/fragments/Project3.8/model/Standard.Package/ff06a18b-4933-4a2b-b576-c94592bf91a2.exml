@@ -42,6 +42,8 @@
         <COMPID name="Recipe" mc="Standard.Class" uid="062dccc1-bf66-4a09-8b77-374a39b943dd"/>
         <COMPID name="Pet food mixture production order" mc="Standard.Class" uid="afc7c515-e9ef-4c80-9e58-3c9d465c9181"/>
         <COMPID name="Packaging order" mc="Standard.Class" uid="f8ac417a-c689-4dcc-907f-3698d4940430"/>
+        <COMPID name="Magine state request" mc="Standard.Class" uid="2165a8ae-9bfd-4536-aca4-60f74aca6ac2"/>
+        <COMPID name="Machine" mc="Standard.Class" uid="432dcbe4-99bb-40a8-b2de-aa0b8e5a1f80"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessEntities" mc="Infrastructure.Stereotype" uid="1b78cab2-ab6d-11df-9861-0014224f9977"/>

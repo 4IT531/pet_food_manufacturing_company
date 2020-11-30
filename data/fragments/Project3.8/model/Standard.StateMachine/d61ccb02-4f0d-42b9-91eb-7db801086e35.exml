@@ -20,46 +20,6 @@
           <DEPENDENCIES>
             <COMP relation="Sub">
               <OBJECT>
-                <ID name="Valid" mc="Standard.State" uid="26976ea9-c928-48c2-aab3-2a4f8c3c701e"/>
-                <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Valid]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <COMP relation="OutGoing">
-                    <OBJECT>
-                      <ID name="Transition" mc="Standard.Transition" uid="ae311123-0802-4dd5-a7b7-dda74425af4b"/>
-                      <ATTRIBUTES>
-                        <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"></ATT>
-                        <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"></ATT>
-                        <ATT name="PostCondition"></ATT>
-                        <ATT name="Name"><![CDATA[Transition]]></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="Processed">
-                          <REFOBJ>
-                            <ID name="Archive" mc="Standard.Operation" uid="8e22c8c0-ed28-4322-b8ed-b9b1a7adba76"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Trigger">
-                          <REFOBJ>
-                            <ID name="Business partner data used" mc="Standard.Event" uid="aa227666-26f5-4812-a74f-46017844f473"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Target">
-                          <REFOBJ>
-                            <ID name="Archived" mc="Standard.FinalState" uid="07e2a23d-73de-45c0-b2cb-f2a73fa71339"/>
-                          </REFOBJ>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
                 <ID name="Invalid" mc="Standard.State" uid="7b9ccd15-c578-4484-80d6-0ec3ee4c65c1"/>
                 <ATTRIBUTES>
                   <ATT name="Name"><![CDATA[Invalid]]></ATT>
@@ -120,7 +80,7 @@
                         </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Discarded" mc="Standard.FinalState" uid="182eeaf7-1551-44ac-b14f-4d727544f615"/>
+                            <ID name="Invalid" mc="Standard.FinalState" uid="182eeaf7-1551-44ac-b14f-4d727544f615"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -200,7 +160,7 @@
                         </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Valid" mc="Standard.State" uid="26976ea9-c928-48c2-aab3-2a4f8c3c701e"/>
+                            <ID name="Valid" mc="Standard.FinalState" uid="07e2a23d-73de-45c0-b2cb-f2a73fa71339"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -238,17 +198,34 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Archived" mc="Standard.FinalState" uid="07e2a23d-73de-45c0-b2cb-f2a73fa71339"/>
+                <ID name="Valid" mc="Standard.FinalState" uid="07e2a23d-73de-45c0-b2cb-f2a73fa71339"/>
                 <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Archived]]></ATT>
+                  <ATT name="Name"><![CDATA[Valid]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.Note" uid="77c9546b-41de-429b-acc5-da2ca3795789"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                        <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Discarded" mc="Standard.FinalState" uid="182eeaf7-1551-44ac-b14f-4d727544f615"/>
+                <ID name="Invalid" mc="Standard.FinalState" uid="182eeaf7-1551-44ac-b14f-4d727544f615"/>
                 <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Discarded]]></ATT>
+                  <ATT name="Name"><![CDATA[Invalid]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>

@@ -125,7 +125,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="MarkAsResolvingComplaint" mc="Standard.Operation" uid="93ec6824-4e61-41c4-a254-85f76e4777ea"/>
+          <ID name="MarkAsComplaintPeriodExpired" mc="Standard.Operation" uid="93ec6824-4e61-41c4-a254-85f76e4777ea"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -133,7 +133,7 @@
             <ATT name="Visibility">VisibilityUndefined</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[MarkAsResolvingComplaint]]></ATT>
+            <ATT name="Name"><![CDATA[MarkAsComplaintPeriodExpired]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -143,7 +143,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="MarkAsInProgress" mc="Standard.Operation" uid="3eb0c728-81d5-4008-b4c2-02663e0ca7a2"/>
+          <ID name="MarkAsComplaintPeriodInProgress" mc="Standard.Operation" uid="3eb0c728-81d5-4008-b4c2-02663e0ca7a2"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -151,13 +151,37 @@
             <ATT name="Visibility">VisibilityUndefined</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[MarkAsInProgress]]></ATT>
+            <ATT name="Name"><![CDATA[MarkAsComplaintPeriodInProgress]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
             <LINK relation="Extension">
               <FOREIGNID name="BusinessOperation" mc="Infrastructure.Stereotype" uid="33be3eda-ab73-11df-9861-0014224f9977"/>
             </LINK>
+            <COMP relation="Tag">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.TaggedValue" uid="1f43ec30-cf15-4349-b9cb-b7b30296b57b"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <COMP relation="Actual">
+                    <OBJECT>
+                      <ID name="" mc="Infrastructure.TagParameter" uid="3a0360ef-67a4-40e6-8bc0-0eca17b518c3"/>
+                      <ATTRIBUTES>
+                        <ATT name="Value"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES></DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                  <LINK relation="Definition">
+                    <FOREIGNID name="TogafElement_reference" mc="Infrastructure.TagType" uid="fe3d304a-ab94-11df-9861-0014224f9977"/>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
           </DEPENDENCIES>
         </OBJECT>
       </COMP>

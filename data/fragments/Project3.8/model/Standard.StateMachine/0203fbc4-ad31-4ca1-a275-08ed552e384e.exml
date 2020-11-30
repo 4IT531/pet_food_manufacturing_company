@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="LC_Machine repair request" version="4">
+  <OBJECT>
+    <ID name="LC_Machine repair request" mc="Standard.StateMachine" uid="0203fbc4-ad31-4ca1-a275-08ed552e384e"/>
+    <PID name="Machine repair request" mc="Standard.Class" uid="2165a8ae-9bfd-4536-aca4-60f74aca6ac2"/>
+    <ATTRIBUTES>
+      <ATT name="Kind">Dynamic</ATT>
+      <ATT name="IsReentrant">false</ATT>
+      <ATT name="Name"><![CDATA[LC_Machine repair request]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Top">
+        <OBJECT>
+          <ID name="" mc="Standard.Region" uid="52a50bb4-0019-4ecc-ade5-6f305e9fcfaa"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Sub">
+              <OBJECT>
+                <ID name="Sent" mc="Standard.State" uid="96c69a5d-1a93-4048-afc4-d4cffb22b38c"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"><![CDATA[Sent]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <LINK relation="Extension">
+        <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
+      </LINK>
+      <COMP relation="Product">
+        <COMPID name="LC_Machine state request" mc="Standard.StateMachineDiagram" uid="99382e22-e02c-4894-8167-0915f880b13a"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

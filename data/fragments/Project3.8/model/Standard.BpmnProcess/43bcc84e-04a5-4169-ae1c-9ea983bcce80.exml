@@ -91,23 +91,23 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Pet food mixture acquisition order completed" mc="Standard.BpmnStartEvent" uid="39a58a55-e096-46df-82f2-8250724ff947"/>
+          <ID name="Pet food mixture order completed" mc="Standard.BpmnStartEvent" uid="39a58a55-e096-46df-82f2-8250724ff947"/>
           <ATTRIBUTES>
             <ATT name="IsInterrupting">true</ATT>
             <ATT name="ParallelMultiple">false</ATT>
             <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[Pet food mixture acquisition order completed]]></ATT>
+            <ATT name="Name"><![CDATA[Pet food mixture order completed]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Pet food mixture acquisition order canceled" mc="Standard.BpmnStartEvent" uid="2849d9f0-f8a1-44a7-b389-74f8d9fa6a57"/>
+          <ID name="Pet food mixture order canceled" mc="Standard.BpmnStartEvent" uid="2849d9f0-f8a1-44a7-b389-74f8d9fa6a57"/>
           <ATTRIBUTES>
             <ATT name="IsInterrupting">true</ATT>
             <ATT name="ParallelMultiple">false</ATT>
             <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[Pet food mixture acquisition order canceled]]></ATT>
+            <ATT name="Name"><![CDATA[Pet food mixture order canceled]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>
@@ -134,7 +134,7 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="Pet food mixture acquisition order canceled" mc="Standard.BpmnStartEvent" uid="2849d9f0-f8a1-44a7-b389-74f8d9fa6a57"/>
+                <ID name="Pet food mixture order canceled" mc="Standard.BpmnStartEvent" uid="2849d9f0-f8a1-44a7-b389-74f8d9fa6a57"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
@@ -156,7 +156,7 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="Pet food mixture acquisition order completed" mc="Standard.BpmnStartEvent" uid="39a58a55-e096-46df-82f2-8250724ff947"/>
+                <ID name="Pet food mixture order completed" mc="Standard.BpmnStartEvent" uid="39a58a55-e096-46df-82f2-8250724ff947"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
@@ -428,7 +428,7 @@
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="63e63c35-0393-4788-9743-af8e106b465d"/>
+                      <ID name="" mc="Infrastructure.MethodologicalLink" uid="6a276183-ead5-4ef8-8b84-0291ec6a7783"/>
                       <ATTRIBUTES>
                         <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -436,7 +436,7 @@
                       <DEPENDENCIES>
                         <LINK relation="DependsOn">
                           <REFOBJ>
-                            <ID name="Valid" mc="Standard.State" uid="26976ea9-c928-48c2-aab3-2a4f8c3c701e"/>
+                            <ID name="Valid" mc="Standard.FinalState" uid="07e2a23d-73de-45c0-b2cb-f2a73fa71339"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Extension">
@@ -1168,7 +1168,7 @@
           <ID name="f8" mc="Standard.BpmnSequenceFlow" uid="f3fc88fe-1e36-4de2-a59c-d645554132c4"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
-            <ATT name="ConditionExpression"><![CDATA[Pet food mixture acquisition order arrived]]></ATT>
+            <ATT name="ConditionExpression"><![CDATA[Pet food mixture order arrived]]></ATT>
             <ATT name="TriggeredByEvent">false</ATT>
             <ATT name="Name"><![CDATA[f8]]></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -2825,12 +2825,12 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Delivery order completed" mc="Standard.BpmnStartEvent" uid="132f7418-4dd8-4b18-9b5d-16291e881414"/>
+                <ID name="customer came with complaint" mc="Standard.BpmnStartEvent" uid="132f7418-4dd8-4b18-9b5d-16291e881414"/>
                 <ATTRIBUTES>
                   <ATT name="IsInterrupting">true</ATT>
                   <ATT name="ParallelMultiple">false</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Delivery order completed]]></ATT>
+                  <ATT name="Name"><![CDATA[customer came with complaint]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -2899,14 +2899,14 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Checking " mc="Standard.BpmnTask" uid="2b576639-fcb3-496f-a0fa-50321bf8b3c4"/>
+                <ID name="Creating complaint request based on customers complaint" mc="Standard.BpmnTask" uid="2b576639-fcb3-496f-a0fa-50321bf8b3c4"/>
                 <ATTRIBUTES>
                   <ATT name="IsGlobal">false</ATT>
                   <ATT name="IsForCompensation">false</ATT>
                   <ATT name="StartQuantity">1</ATT>
                   <ATT name="CompletionQuantity">1</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Checking ]]></ATT>
+                  <ATT name="Name"><![CDATA[Creating complaint request based on customers complaint]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -2943,12 +2943,12 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Delivery order completed" mc="Standard.BpmnStartEvent" uid="132f7418-4dd8-4b18-9b5d-16291e881414"/>
+                      <ID name="customer came with complaint" mc="Standard.BpmnStartEvent" uid="132f7418-4dd8-4b18-9b5d-16291e881414"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Checking " mc="Standard.BpmnTask" uid="2b576639-fcb3-496f-a0fa-50321bf8b3c4"/>
+                      <ID name="Creating complaint request based on customers complaint" mc="Standard.BpmnTask" uid="2b576639-fcb3-496f-a0fa-50321bf8b3c4"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -2975,7 +2975,7 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Checking " mc="Standard.BpmnTask" uid="2b576639-fcb3-496f-a0fa-50321bf8b3c4"/>
+                      <ID name="Creating complaint request based on customers complaint" mc="Standard.BpmnTask" uid="2b576639-fcb3-496f-a0fa-50321bf8b3c4"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
@@ -3869,28 +3869,6 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="f54" mc="Standard.BpmnSequenceFlow" uid="dfadaeca-eaa1-49f5-a331-b75f31ea6c78"/>
-          <ATTRIBUTES>
-            <ATT name="IsImmediate">false</ATT>
-            <ATT name="ConditionExpression"><![CDATA[complaint period expired]]></ATT>
-            <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[f54]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="SourceRef">
-              <REFOBJ>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="67363dfb-d33e-4d5a-9e3d-a6d7eb3eda96"/>
-              </REFOBJ>
-            </LINK>
-            <LINK relation="TargetRef">
-              <REFOBJ>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="223be863-8e66-43ee-90e7-73eb32d04c0f"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
           <ID name="Complaint entitelment resolution" mc="Standard.BpmnSubProcess" uid="4646f662-1a21-420c-97fc-1d2c12aebf8d"/>
           <ATTRIBUTES>
             <ATT name="IsForCompensation">false</ATT>
@@ -3921,39 +3899,6 @@
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Marking as complaint period in progress" mc="Standard.BpmnTask" uid="021bde9d-5cfe-4122-a2b4-24b9cc515383"/>
-                <ATTRIBUTES>
-                  <ATT name="IsGlobal">false</ATT>
-                  <ATT name="IsForCompensation">false</ATT>
-                  <ATT name="StartQuantity">1</ATT>
-                  <ATT name="CompletionQuantity">1</ATT>
-                  <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Marking as complaint period in progress]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <COMP relation="DataInputAssociation">
-                    <OBJECT>
-                      <ID name="" mc="Standard.BpmnDataAssociation" uid="335fbd78-b0d0-44a8-abe4-caf11a3dd9a3"/>
-                      <ATTRIBUTES>
-                        <ATT name="Assignment"></ATT>
-                        <ATT name="Transfomation"></ATT>
-                        <ATT name="Language"></ATT>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="TargetRef">
-                          <REFOBJ>
-                            <ID name="" mc="Standard.BpmnDataObject" uid="9e5ce0f9-a096-4c0e-a5df-707d07660d42"/>
-                          </REFOBJ>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="complaint period expired" mc="Standard.BpmnEndEvent" uid="c15d884b-1c0c-44f7-a8f7-a87456b867ca"/>
@@ -4123,20 +4068,20 @@
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Marking complaint as delivered" mc="Standard.BpmnTask" uid="9f84c081-217a-44bd-a646-4796f0b74a1b"/>
+                      <ID name="Checking complaint entitelement" mc="Standard.BpmnTask" uid="9f84c081-217a-44bd-a646-4796f0b74a1b"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Marking complaint as delivered" mc="Standard.BpmnTask" uid="9f84c081-217a-44bd-a646-4796f0b74a1b"/>
+                <ID name="Checking complaint entitelement" mc="Standard.BpmnTask" uid="9f84c081-217a-44bd-a646-4796f0b74a1b"/>
                 <ATTRIBUTES>
                   <ATT name="IsGlobal">false</ATT>
                   <ATT name="IsForCompensation">false</ATT>
                   <ATT name="StartQuantity">1</ATT>
                   <ATT name="CompletionQuantity">1</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Marking complaint as delivered]]></ATT>
+                  <ATT name="Name"><![CDATA[Checking complaint entitelement]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -4154,6 +4099,23 @@
                         <LINK relation="TargetRef">
                           <REFOBJ>
                             <ID name="" mc="Standard.BpmnDataObject" uid="612706fc-862a-4127-8bfd-66a02ffd0a37"/>
+                          </REFOBJ>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                    <OBJECT>
+                      <ID name="" mc="Standard.BpmnDataAssociation" uid="335fbd78-b0d0-44a8-abe4-caf11a3dd9a3"/>
+                      <ATTRIBUTES>
+                        <ATT name="Assignment"></ATT>
+                        <ATT name="Transfomation"></ATT>
+                        <ATT name="Language"></ATT>
+                        <ATT name="Name"></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="TargetRef">
+                          <REFOBJ>
+                            <ID name="" mc="Standard.BpmnDataObject" uid="9e5ce0f9-a096-4c0e-a5df-707d07660d42"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -4195,7 +4157,7 @@
                       <DEPENDENCIES>
                         <LINK relation="DependsOn">
                           <REFOBJ>
-                            <ID name="Delivered" mc="Standard.State" uid="9744e0ee-a542-49f3-9bf4-5ba90b96a624"/>
+                            <ID name="Complaint period expired" mc="Standard.State" uid="9744e0ee-a542-49f3-9bf4-5ba90b96a624"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Extension">
@@ -4218,7 +4180,7 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Marking complaint as delivered" mc="Standard.BpmnTask" uid="9f84c081-217a-44bd-a646-4796f0b74a1b"/>
+                      <ID name="Checking complaint entitelement" mc="Standard.BpmnTask" uid="9f84c081-217a-44bd-a646-4796f0b74a1b"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
@@ -4245,13 +4207,24 @@
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Marking as complaint period in progress" mc="Standard.BpmnTask" uid="021bde9d-5cfe-4122-a2b4-24b9cc515383"/>
+                      <ID name="Complaint period in progress" mc="Standard.BpmnEndEvent" uid="a875ba8a-1b29-402e-aced-a9b3683f5436"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="f3" mc="Standard.BpmnSequenceFlow" uid="3bcf0dcf-f740-48af-8ffe-bb1d17c7dff1"/>
+                <ID name="Complaint period prolongated" mc="Standard.BpmnStartEvent" uid="414be52a-42bd-496f-ad7b-6b424423ef2c"/>
+                <ATTRIBUTES>
+                  <ATT name="IsInterrupting">true</ATT>
+                  <ATT name="ParallelMultiple">false</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Complaint period prolongated]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="f3" mc="Standard.BpmnSequenceFlow" uid="1570bccf-3f3b-4352-8503-9992f9ff7542"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -4262,12 +4235,12 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Marking as complaint period in progress" mc="Standard.BpmnTask" uid="021bde9d-5cfe-4122-a2b4-24b9cc515383"/>
+                      <ID name="Complaint period prolongated" mc="Standard.BpmnStartEvent" uid="414be52a-42bd-496f-ad7b-6b424423ef2c"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Complaint period in progress" mc="Standard.BpmnEndEvent" uid="a875ba8a-1b29-402e-aced-a9b3683f5436"/>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="2217d7df-ba03-4c56-928a-de61aabb66b5"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -4394,6 +4367,212 @@
             <LINK relation="TargetRef">
               <REFOBJ>
                 <ID name="complaint request completed" mc="Standard.BpmnParallelGateway" uid="2a3b2b9a-af53-4f21-b3a5-7638b8fa821e"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Complaint period prolongated" mc="Standard.BpmnStartEvent" uid="c2bb6e48-5d11-450d-91a0-4158c45f6307"/>
+          <ATTRIBUTES>
+            <ATT name="IsInterrupting">true</ATT>
+            <ATT name="ParallelMultiple">false</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Complaint period prolongated]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Complaint period was not prolongated" mc="Standard.BpmnStartEvent" uid="c45b56ef-3e87-47c9-b3d4-483deac3cba3"/>
+          <ATTRIBUTES>
+            <ATT name="IsInterrupting">true</ATT>
+            <ATT name="ParallelMultiple">false</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Complaint period was not prolongated]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.BpmnExclusiveGateway" uid="83d8e831-4682-4675-8079-7bd90cc4fd8d"/>
+          <ATTRIBUTES>
+            <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Standard.BpmnExclusiveGateway" uid="8721267c-4b63-48e2-9fab-93a37d86d7a4"/>
+          <ATTRIBUTES>
+            <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f35" mc="Standard.BpmnSequenceFlow" uid="cfb733bf-7d38-4068-b0f9-9da35a755c62"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"><![CDATA[Complaint period prolongated]]></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f35]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="8721267c-4b63-48e2-9fab-93a37d86d7a4"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="ed05359b-322e-48bb-aa90-9edd6490047a"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f57" mc="Standard.BpmnSequenceFlow" uid="1ef5e1e9-6726-41eb-b7e2-06fdde455f53"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"><![CDATA[Complaint period was not prolongated]]></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f57]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="8721267c-4b63-48e2-9fab-93a37d86d7a4"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="223be863-8e66-43ee-90e7-73eb32d04c0f"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f58" mc="Standard.BpmnSequenceFlow" uid="2a55eb56-687d-4092-a2fd-288af714445b"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f58]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="83d8e831-4682-4675-8079-7bd90cc4fd8d"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="complaint period expired" mc="Standard.BpmnParallelGateway" uid="11ae2696-867d-4bfe-80b1-de80c8588e28"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f59" mc="Standard.BpmnSequenceFlow" uid="95e83d30-b63c-4f0f-8c57-976efdfd68a0"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f59]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Complaint period prolongated" mc="Standard.BpmnStartEvent" uid="c2bb6e48-5d11-450d-91a0-4158c45f6307"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="83d8e831-4682-4675-8079-7bd90cc4fd8d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f60" mc="Standard.BpmnSequenceFlow" uid="de787f0b-ee6c-4ee3-a0b0-d6a83ccabaf0"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f60]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="Complaint period was not prolongated" mc="Standard.BpmnStartEvent" uid="c45b56ef-3e87-47c9-b3d4-483deac3cba3"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="83d8e831-4682-4675-8079-7bd90cc4fd8d"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="complaint period expired" mc="Standard.BpmnParallelGateway" uid="11ae2696-867d-4bfe-80b1-de80c8588e28"/>
+          <ATTRIBUTES>
+            <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[complaint period expired]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f34" mc="Standard.BpmnSequenceFlow" uid="3448dd11-1902-4829-9d3c-fd586849e6fe"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f34]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="complaint period expired" mc="Standard.BpmnParallelGateway" uid="11ae2696-867d-4bfe-80b1-de80c8588e28"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="8721267c-4b63-48e2-9fab-93a37d86d7a4"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="f54" mc="Standard.BpmnSequenceFlow" uid="dc3a3416-dfdd-451f-92f5-7dedd454812c"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f54]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="67363dfb-d33e-4d5a-9e3d-a6d7eb3eda96"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="complaint period expired" mc="Standard.BpmnParallelGateway" uid="11ae2696-867d-4bfe-80b1-de80c8588e28"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
