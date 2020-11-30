@@ -87,17 +87,22 @@
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="Transition1" mc="Standard.Transition" uid="bf4b41bc-263b-4998-b55e-15a978563d01"/>
+                      <ID name="" mc="Standard.Transition" uid="bf4b41bc-263b-4998-b55e-15a978563d01"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"></ATT>
-                        <ATT name="SentEvents"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Pet food mixture production order arrived]]></ATT>
+                        <ATT name="SentEvents"><![CDATA[MarkAsReceived]]></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
-                        <ATT name="Name"><![CDATA[Transition1]]></ATT>
+                        <ATT name="Name"></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="MarkAsReceived" mc="Standard.Operation" uid="636e6938-49fd-4b1d-b2a2-838a51fad53d"/>
+                          </REFOBJ>
+                        </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
                             <ID name="Received" mc="Standard.State" uid="64be1d0b-95dc-4110-b3ee-494a975d8372"/>
@@ -120,7 +125,7 @@
                       <ID name="Transition" mc="Standard.Transition" uid="94896937-b040-49f9-9e20-66c51ff5788f"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Packaging sucessful]]></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -131,11 +136,6 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="markAsCompleted" mc="Standard.Operation" uid="ae786bc0-e75d-4050-b3b0-56ce62ed4e5d"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Trigger">
-                          <REFOBJ>
-                            <ID name="Pet food mixture was produced" mc="Standard.Event" uid="7843b80d-ff94-4076-a2bb-13e9dff592ef"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -149,7 +149,7 @@
                       <ID name="Transition1" mc="Standard.Transition" uid="4d757c07-45cb-4fb0-bff7-5e56cfb28a86"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Pet food mixture order was not completed ]]></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -160,11 +160,6 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="registerAsNew" mc="Standard.Operation" uid="e6681279-a1ca-4dd1-aa9e-859f233bd747"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Trigger">
-                          <REFOBJ>
-                            <ID name="Quality of the mixture was not OK" mc="Standard.Event" uid="15ae7aee-4c25-44f6-a69f-7d763e143090"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -205,7 +200,7 @@
                       <ID name="Transition1" mc="Standard.Transition" uid="daa7f118-ef61-4b0f-a444-609430f4404e"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Machines not repaired or 1 week passed]]></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -216,11 +211,6 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="cancel" mc="Standard.Operation" uid="ec6ed64e-ff84-42b3-8cf7-f1142750ffdd"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Trigger">
-                          <REFOBJ>
-                            <ID name="Machines were not repaired" mc="Standard.Event" uid="ca077bff-3c55-4d97-9b17-0967375be3e9"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -234,7 +224,7 @@
                       <ID name="Transition" mc="Standard.Transition" uid="d621e8bf-015e-4e5e-9aad-3f72eb76b1d5"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Machines repaired or Machines OK]]></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -245,11 +235,6 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="process" mc="Standard.Operation" uid="16fc5583-2d11-49ab-86ac-e01bb8939d17"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Trigger">
-                          <REFOBJ>
-                            <ID name="Production order processed" mc="Standard.Event" uid="9e8d4b52-0dcd-4559-9f98-52d40294ded7"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">

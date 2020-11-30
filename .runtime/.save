@@ -1,4 +1,6 @@
-#Mon Nov 30 17:11:07 CET 2020
+#Mon Nov 30 18:28:25 CET 2020
+org.modelio.diagram.editor.OpenedDiagrams28='LC_Invoice' {1fc3e93c-5087-44c2-98ba-36e84362a5d0} Standard.StateMachineDiagram
+org.modelio.diagram.editor.OpenedDiagrams27='LC_Pet food mixture production order' {36290cb7-0b4c-43e6-be2e-77b4caa68895} Standard.StateMachineDiagram
 org.modelio.diagram.editor.OpenedDiagrams26='Sub-Process' {c95d193e-8933-4f5b-848c-95f822158923} Standard.BpmnSubProcessDiagram
 org.modelio.diagram.editor.OpenedDiagrams25='Pet food mixture order lifecycle diagram' {3ee2c851-f63a-43d1-80e6-34621fadef4f} Standard.StateMachineDiagram
 org.modelio.diagram.editor.OpenedDiagrams24='LC_Machine' {29cc19c5-4979-410f-9096-c97fb7679de4} Standard.StateMachineDiagram
