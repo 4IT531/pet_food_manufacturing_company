@@ -33,12 +33,22 @@
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"><![CDATA[Found || Not found / Check]]></ATT>
+                        <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
                         <ATT name="Name"><![CDATA[Transition]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="Check" mc="Standard.Operation" uid="598aeb6f-5f69-4eba-8515-80cb90566ac4"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Found || Not found" mc="Standard.Event" uid="cf9792bf-b7a5-4085-8122-1c95e07039b6"/>
+                          </REFOBJ>
+                        </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
                             <ID name="Checked" mc="Standard.State" uid="1de79afe-69b9-4b24-9bbd-8a0fbe32abaa"/>
@@ -63,12 +73,22 @@
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"><![CDATA[Supplies available / Mark as available]]></ATT>
+                        <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
                         <ATT name="Name"><![CDATA[Transition]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="Mark as available" mc="Standard.Operation" uid="bd864bd7-52f6-4896-8e59-494dba30b5a7"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Supplies available" mc="Standard.Event" uid="95f99c55-5f1a-448c-85d4-f19141bf6a80"/>
+                          </REFOBJ>
+                        </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
                             <ID name="Available" mc="Standard.FinalState" uid="ba50a23c-7590-4c8f-a40b-fcc41d2ceb91"/>
@@ -82,12 +102,22 @@
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"><![CDATA[Supplies unavailable / Mark as unavailable]]></ATT>
+                        <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
                         <ATT name="Name"><![CDATA[Transition1]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="Mark as unavailable" mc="Standard.Operation" uid="a1dd44c7-5fa1-469a-b0ee-145af022b799"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Supplies unavailable " mc="Standard.Event" uid="4916ffd3-e11d-4703-b9d9-83dc1194d4c4"/>
+                          </REFOBJ>
+                        </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
                             <ID name="Unavailable" mc="Standard.State" uid="2b371b33-e1a5-4019-a5d3-da3ec058c2a9"/>
@@ -120,12 +150,22 @@
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"><![CDATA[Supplies not in warehouse / order()]]></ATT>
+                        <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
                         <ATT name="Name"><![CDATA[Transition]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="Order" mc="Standard.Operation" uid="3067a587-7963-493b-b931-0bf4d265553b"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Supplies not in warehouse" mc="Standard.Event" uid="5c4c584b-c953-47ce-8a16-d4e1c4c82457"/>
+                          </REFOBJ>
+                        </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
                             <ID name="Ordered" mc="Standard.State" uid="c3130d02-58bd-419f-937b-1a82641161c9"/>
@@ -139,12 +179,22 @@
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"><![CDATA[Supplies unorderable / Mark as inaccessible]]></ATT>
+                        <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
                         <ATT name="Name"><![CDATA[Transition1]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="Mark as inaccessible" mc="Standard.Operation" uid="f34c94f2-e33e-4e8d-80b2-f4dd0b55660e"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Supplies unorderable " mc="Standard.Event" uid="140b6eac-380f-4f7f-9a0f-2d74cccd4b86"/>
+                          </REFOBJ>
+                        </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
                             <ID name="Inaccessible" mc="Standard.FinalState" uid="e60167cb-c0cb-4b18-9e17-44988bf3c966"/>
@@ -169,12 +219,22 @@
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"><![CDATA[Supplies not received / Mark inaccessible()]]></ATT>
+                        <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
                         <ATT name="Name"><![CDATA[Transition]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="Mark as inaccessible" mc="Standard.Operation" uid="f34c94f2-e33e-4e8d-80b2-f4dd0b55660e"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Supplies not received" mc="Standard.Event" uid="d5a234b3-d8cd-4fd8-8640-c535b70fb331"/>
+                          </REFOBJ>
+                        </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
                             <ID name="Inaccessible" mc="Standard.FinalState" uid="e60167cb-c0cb-4b18-9e17-44988bf3c966"/>
@@ -188,12 +248,22 @@
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"><![CDATA[Supplies received / store ()]]></ATT>
+                        <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
                         <ATT name="Name"><![CDATA[Transition1]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="Store" mc="Standard.Operation" uid="f25591f6-61f6-4d08-a249-8c4a93fe974e"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Supplies received " mc="Standard.Event" uid="b31c87e0-d823-4db3-a17f-1d40c99ad287"/>
+                          </REFOBJ>
+                        </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
                             <ID name="Available" mc="Standard.FinalState" uid="ba50a23c-7590-4c8f-a40b-fcc41d2ceb91"/>
@@ -216,11 +286,83 @@
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
+      <COMP relation="EComponent">
+        <OBJECT>
+          <ID name="Found || Not found" mc="Standard.Event" uid="cf9792bf-b7a5-4085-8122-1c95e07039b6"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Found || Not found]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Supplies unavailable " mc="Standard.Event" uid="4916ffd3-e11d-4703-b9d9-83dc1194d4c4"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Supplies unavailable ]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Supplies available" mc="Standard.Event" uid="95f99c55-5f1a-448c-85d4-f19141bf6a80"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Supplies available]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Supplies received " mc="Standard.Event" uid="b31c87e0-d823-4db3-a17f-1d40c99ad287"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Supplies received ]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Supplies unorderable " mc="Standard.Event" uid="140b6eac-380f-4f7f-9a0f-2d74cccd4b86"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Supplies unorderable ]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Supplies not in warehouse" mc="Standard.Event" uid="5c4c584b-c953-47ce-8a16-d4e1c4c82457"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Supplies not in warehouse]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Supplies not received" mc="Standard.Event" uid="d5a234b3-d8cd-4fd8-8640-c535b70fb331"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Supplies not received]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
       </LINK>
       <COMP relation="Product">
-        <COMPID name="Supplies" mc="Standard.StateMachineDiagram" uid="24e10ea8-245b-4062-9a20-dde725cf8b83"/>
+        <COMPID name="Supplies lifecycle diagram" mc="Standard.StateMachineDiagram" uid="24e10ea8-245b-4062-9a20-dde725cf8b83"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

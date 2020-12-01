@@ -33,12 +33,22 @@
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"><![CDATA[Pet-food mixture order arrived / Request()]]></ATT>
+                        <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
                         <ATT name="Name"><![CDATA[Transition]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
                       </ATTRIBUTES>
                       <DEPENDENCIES>
+                        <LINK relation="Processed">
+                          <REFOBJ>
+                            <ID name="Request" mc="Standard.Operation" uid="5c5e4976-05f4-4dc4-b1ec-e64b5336fcd8"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Pet-food mixture order arrived" mc="Standard.Event" uid="aa81dfc5-5402-49d3-80a1-5bf19ad658ab"/>
+                          </REFOBJ>
+                        </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
                             <ID name="Requested" mc="Standard.State" uid="b723722c-73d3-466d-bf7a-b18f7a205846"/>
@@ -63,7 +73,7 @@
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"><![CDATA[Found / Select()]]></ATT>
+                        <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
                         <ATT name="Name"><![CDATA[Transition]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -72,6 +82,11 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="Select" mc="Standard.Operation" uid="6e97b378-b47c-442b-af6a-ade145442f41"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Found" mc="Standard.Event" uid="064dd5b8-d3c8-49e6-a1ab-2abe7a17ad8a"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -85,9 +100,9 @@
                       <ID name="Transition1" mc="Standard.Transition" uid="a90b394e-d5ac-4d8b-a975-77d36bd00d3b"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[Not Found]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"><![CDATA[Not Found / Invent()]]></ATT>
+                        <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
                         <ATT name="Name"><![CDATA[Transition1]]></ATT>
                         <ATT name="status">1970354901745664</ATT>
@@ -96,6 +111,11 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="Invent" mc="Standard.Operation" uid="4e228230-b4e7-4107-9867-28de5aa588ae"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Not Found" mc="Standard.Event" uid="39626f3a-e549-48e0-817d-92f3c6b8a05a"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -128,11 +148,43 @@
           </DEPENDENCIES>
         </OBJECT>
       </COMP>
+      <COMP relation="EComponent">
+        <OBJECT>
+          <ID name="Pet-food mixture order arrived" mc="Standard.Event" uid="aa81dfc5-5402-49d3-80a1-5bf19ad658ab"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Pet-food mixture order arrived]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Found" mc="Standard.Event" uid="064dd5b8-d3c8-49e6-a1ab-2abe7a17ad8a"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Found]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Not Found" mc="Standard.Event" uid="39626f3a-e549-48e0-817d-92f3c6b8a05a"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Not Found]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+      </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
       </LINK>
       <COMP relation="Product">
-        <COMPID name="Recipe" mc="Standard.StateMachineDiagram" uid="00acb8c7-21f2-433f-8431-585e65f23d07"/>
+        <COMPID name="Recipe lifecycle diagram" mc="Standard.StateMachineDiagram" uid="00acb8c7-21f2-433f-8431-585e65f23d07"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

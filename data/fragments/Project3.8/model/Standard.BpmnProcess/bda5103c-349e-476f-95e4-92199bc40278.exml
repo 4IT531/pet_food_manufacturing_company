@@ -1174,7 +1174,7 @@
                 <ID name="f3" mc="Standard.BpmnSequenceFlow" uid="9e9c002a-05b6-47cf-a20d-b8a5a65a1ea0"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
-                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="ConditionExpression"><![CDATA[Supplies ordered]]></ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
                   <ATT name="Name"><![CDATA[f3]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -1205,7 +1205,7 @@
                 <ID name="f4" mc="Standard.BpmnSequenceFlow" uid="00501587-b872-4f63-8bb5-5b5a88ea8333"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
-                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="ConditionExpression"><![CDATA[Supplies Inaccessible]]></ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
                   <ATT name="Name"><![CDATA[f4]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -2015,12 +2015,12 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Supplies not received" mc="Standard.BpmnStartEvent" uid="9058b83f-ee43-488c-b62e-1da70cb10619"/>
+                <ID name="Pet food supply order was not completed" mc="Standard.BpmnStartEvent" uid="9058b83f-ee43-488c-b62e-1da70cb10619"/>
                 <ATTRIBUTES>
                   <ATT name="IsInterrupting">true</ATT>
                   <ATT name="ParallelMultiple">false</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Supplies not received]]></ATT>
+                  <ATT name="Name"><![CDATA[Pet food supply order was not completed]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -2137,7 +2137,7 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Supplies not received" mc="Standard.BpmnStartEvent" uid="9058b83f-ee43-488c-b62e-1da70cb10619"/>
+                      <ID name="Pet food supply order was not completed" mc="Standard.BpmnStartEvent" uid="9058b83f-ee43-488c-b62e-1da70cb10619"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
@@ -2248,6 +2248,39 @@
                   <LINK relation="SourceRef">
                     <REFOBJ>
                       <ID name="Supplies unorderable" mc="Standard.BpmnStartEvent" uid="f25a4b15-c47c-4fd7-9160-5049663c3486"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="2439e184-97e8-49f7-b3ab-fdd22ccf5764"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="Supplies unavailable / 1 week" mc="Standard.BpmnStartEvent" uid="798acf08-dc33-4de6-84d5-ee26d4bdba47"/>
+                <ATTRIBUTES>
+                  <ATT name="IsInterrupting">true</ATT>
+                  <ATT name="ParallelMultiple">false</ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[Supplies unavailable / 1 week]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES></DEPENDENCIES>
+              </OBJECT>
+              <OBJECT>
+                <ID name="f4" mc="Standard.BpmnSequenceFlow" uid="f81c5414-2234-4ac6-9903-69616edfe75b"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[f4]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="Supplies unavailable / 1 week" mc="Standard.BpmnStartEvent" uid="798acf08-dc33-4de6-84d5-ee26d4bdba47"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">

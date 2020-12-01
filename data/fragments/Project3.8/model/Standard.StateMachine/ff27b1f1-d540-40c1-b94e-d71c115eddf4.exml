@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="LC_Pet Food Mixture Acquisition Order" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Pet Food Mixture Acquisition Order lifecycle diagram" version="4">
   <OBJECT>
-    <ID name="LC_Pet Food Mixture Acquisition Order" mc="Standard.StateMachine" uid="ff27b1f1-d540-40c1-b94e-d71c115eddf4"/>
+    <ID name="Pet Food Mixture Acquisition Order lifecycle diagram" mc="Standard.StateMachine" uid="ff27b1f1-d540-40c1-b94e-d71c115eddf4"/>
     <PID name="Pet food mixture acquisition order" mc="Standard.Class" uid="81dbe974-df16-4881-b403-d2fc7d88c861"/>
     <ATTRIBUTES>
       <ATT name="Kind">Dynamic</ATT>
       <ATT name="IsReentrant">false</ATT>
-      <ATT name="Name"><![CDATA[LC_Pet Food Mixture Acquisition Order]]></ATT>
+      <ATT name="Name"><![CDATA[Pet Food Mixture Acquisition Order lifecycle diagram]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

@@ -25,7 +25,24 @@
                   <ATT name="Name"><![CDATA[OK]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
+                <DEPENDENCIES>
+                  <COMP relation="Descriptor">
+                    <OBJECT>
+                      <ID name="Note" mc="Infrastructure.Note" uid="f877e7b5-edf7-4929-bac7-c01eb9cb3646"/>
+                      <ATTRIBUTES>
+                        <ATT name="Content"><![CDATA[The lifecycle of this object is not important for our business so we will not model it.]]></ATT>
+                        <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                        <ATT name="Name"><![CDATA[Note]]></ATT>
+                        <ATT name="status">1970354901745664</ATT>
+                      </ATTRIBUTES>
+                      <DEPENDENCIES>
+                        <LINK relation="Model">
+                          <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                        </LINK>
+                      </DEPENDENCIES>
+                    </OBJECT>
+                  </COMP>
+                </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
                 <ID name="NOT OK" mc="Standard.State" uid="e510f26f-e650-45b6-ac19-58fa40cbbcad"/>
