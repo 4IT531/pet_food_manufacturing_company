@@ -53,7 +53,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Close" mc="Standard.Operation" uid="f2dc1fab-e9cf-4a4e-a94f-108e4e69f8bd"/>
+          <ID name="Complete" mc="Standard.Operation" uid="f2dc1fab-e9cf-4a4e-a94f-108e4e69f8bd"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -61,7 +61,7 @@
             <ATT name="Visibility">VisibilityUndefined</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[Close]]></ATT>
+            <ATT name="Name"><![CDATA[Complete]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>
@@ -140,7 +140,7 @@
         </OBJECT>
       </COMP>
       <COMP relation="OwnedBehavior">
-        <COMPID name="LC_Pet Food Mixture Acquisition Order" mc="Standard.StateMachine" uid="ff27b1f1-d540-40c1-b94e-d71c115eddf4"/>
+        <COMPID name="Pet Food Mixture Acquisition Order lifecycle diagram" mc="Standard.StateMachine" uid="ff27b1f1-d540-40c1-b94e-d71c115eddf4"/>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="BusinessEntity" mc="Infrastructure.Stereotype" uid="146eb72a-ab73-11df-9861-0014224f9977"/>

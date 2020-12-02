@@ -1,12 +1,12 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="LC_Pet Food Mixture Acquisition Order" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Pet Food Mixture Acquisition Order lifecycle diagram" version="4">
   <OBJECT>
-    <ID name="LC_Pet Food Mixture Acquisition Order" mc="Standard.StateMachine" uid="ff27b1f1-d540-40c1-b94e-d71c115eddf4"/>
+    <ID name="Pet Food Mixture Acquisition Order lifecycle diagram" mc="Standard.StateMachine" uid="ff27b1f1-d540-40c1-b94e-d71c115eddf4"/>
     <PID name="Pet food mixture acquisition order" mc="Standard.Class" uid="81dbe974-df16-4881-b403-d2fc7d88c861"/>
     <ATTRIBUTES>
       <ATT name="Kind">Dynamic</ATT>
       <ATT name="IsReentrant">false</ATT>
-      <ATT name="Name"><![CDATA[LC_Pet Food Mixture Acquisition Order]]></ATT>
+      <ATT name="Name"><![CDATA[Pet Food Mixture Acquisition Order lifecycle diagram]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>
@@ -70,17 +70,17 @@
                       <DEPENDENCIES>
                         <LINK relation="Processed">
                           <REFOBJ>
-                            <ID name="Close" mc="Standard.Operation" uid="f2dc1fab-e9cf-4a4e-a94f-108e4e69f8bd"/>
+                            <ID name="Complete" mc="Standard.Operation" uid="f2dc1fab-e9cf-4a4e-a94f-108e4e69f8bd"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Trigger">
                           <REFOBJ>
-                            <ID name="Pet food mixture acquisition order accepted" mc="Standard.Event" uid="d8811b8c-d407-4263-9bd7-e6ff4a4c3cdb"/>
+                            <ID name="Pet food supply order completed" mc="Standard.Event" uid="d8811b8c-d407-4263-9bd7-e6ff4a4c3cdb"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Closed" mc="Standard.FinalState" uid="247bbf28-2fb4-4cae-a9ea-52fb67860349"/>
+                            <ID name="Completed" mc="Standard.FinalState" uid="247bbf28-2fb4-4cae-a9ea-52fb67860349"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -124,9 +124,9 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Closed" mc="Standard.FinalState" uid="247bbf28-2fb4-4cae-a9ea-52fb67860349"/>
+                <ID name="Completed" mc="Standard.FinalState" uid="247bbf28-2fb4-4cae-a9ea-52fb67860349"/>
                 <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Closed]]></ATT>
+                  <ATT name="Name"><![CDATA[Completed]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -155,11 +155,11 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Pet food mixture acquisition order accepted" mc="Standard.Event" uid="d8811b8c-d407-4263-9bd7-e6ff4a4c3cdb"/>
+          <ID name="Pet food supply order completed" mc="Standard.Event" uid="d8811b8c-d407-4263-9bd7-e6ff4a4c3cdb"/>
           <ATTRIBUTES>
             <ATT name="Expression"></ATT>
             <ATT name="Kind">SignalEvent</ATT>
-            <ATT name="Name"><![CDATA[Pet food mixture acquisition order accepted]]></ATT>
+            <ATT name="Name"><![CDATA[Pet food supply order completed]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>
@@ -169,7 +169,7 @@
         <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
       </LINK>
       <COMP relation="Product">
-        <COMPID name="LC_Pet Food Mixture Acquisition Order" mc="Standard.StateMachineDiagram" uid="0a43fab6-921a-43b0-b2e3-42594e03135c"/>
+        <COMPID name="Pet food mixture acquisition order lifecycle diagram" mc="Standard.StateMachineDiagram" uid="0a43fab6-921a-43b0-b2e3-42594e03135c"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

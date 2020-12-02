@@ -306,7 +306,6 @@
         </OBJECT>
       </COMP>
       <COMP relation="OwnedBehavior">
-        <COMPID name="Lifecycle" mc="Standard.StateMachine" uid="16451f14-d82d-4ed0-bafe-68d84ce65365"/>
         <COMPID name="Lifecycle" mc="Standard.StateMachine" uid="a5cc6bd8-f9c1-4d60-9892-325d48a2a884"/>
       </COMP>
       <LINK relation="Extension">

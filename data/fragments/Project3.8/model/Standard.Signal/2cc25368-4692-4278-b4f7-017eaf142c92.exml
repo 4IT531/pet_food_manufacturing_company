@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Pet food supply order completed" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Pet food mixture acquisition order completed" version="4">
   <OBJECT>
-    <ID name="Pet food supply order completed" mc="Standard.Signal" uid="2cc25368-4692-4278-b4f7-017eaf142c92"/>
+    <ID name="Pet food mixture acquisition order completed" mc="Standard.Signal" uid="2cc25368-4692-4278-b4f7-017eaf142c92"/>
     <PID name="Inventory management" mc="Standard.Package" uid="d2dffa0f-53b7-4194-944d-f1cd2a273b84"/>
     <ATTRIBUTES>
       <ATT name="IsEvent">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Pet food supply order completed]]></ATT>
+      <ATT name="Name"><![CDATA[Pet food mixture acquisition order completed]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

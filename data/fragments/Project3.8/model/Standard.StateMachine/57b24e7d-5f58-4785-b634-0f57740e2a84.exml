@@ -31,7 +31,7 @@
                       <ID name="Transition" mc="Standard.Transition" uid="041688ad-54fe-4471-86ae-4324f8841048"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[customer data invalid]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -42,6 +42,11 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="MarkAsInexecutable" mc="Standard.Operation" uid="c65316c2-fea1-4512-873b-9b7ab876b54f"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Customer data invalid" mc="Standard.Event" uid="b2948734-1d2d-425c-b3ed-01209061b0f1"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -55,7 +60,7 @@
                       <ID name="Transition1" mc="Standard.Transition" uid="d6e45e30-0add-42a2-ae7f-2ad0f8c31747"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[customer data valid]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -66,6 +71,11 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="MarkAsExecutable" mc="Standard.Operation" uid="c0693da9-cfe8-44b6-8d93-d6bd6a14c702"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Customer data valid " mc="Standard.Event" uid="98d3fc20-2d22-42df-875c-19ccc6144559"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -90,7 +100,7 @@
                       <ID name="" mc="Standard.Transition" uid="15cea4a4-6131-414a-8e20-e400c1b9cfee"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[order is does comply with ordered goods]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -101,6 +111,11 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="MarkReadyForDelivery" mc="Standard.Operation" uid="787993bc-b0ab-4cd9-a34c-d06dd5738138"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Order is does comply with ordered goods" mc="Standard.Event" uid="de335a7b-3351-477d-8309-4456f8bb4e0b"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -114,7 +129,7 @@
                       <ID name="" mc="Standard.Transition" uid="a016234f-f227-4215-876a-16993475b91f"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[order does not comply with ordered goods]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -125,6 +140,11 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="MarkAsInexecutable" mc="Standard.Operation" uid="c65316c2-fea1-4512-873b-9b7ab876b54f"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Order does not comply with ordered goods" mc="Standard.Event" uid="20a8ed38-0321-4f3c-a87a-db77f5bb4a99"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -165,7 +185,7 @@
                       <ID name="Transition" mc="Standard.Transition" uid="f9f40f55-b2b1-4afe-954a-004478e15d6f"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[Revision request refused or 5 days passed]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -176,6 +196,11 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="Cancel" mc="Standard.Operation" uid="6cdac0a0-0fd0-40bf-b66a-37511feff4a9"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Revision request refused or 5 days passed" mc="Standard.Event" uid="bcd82497-6d30-4cab-89b8-f16d5968d462"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -205,7 +230,7 @@
                       <ID name="Transition1" mc="Standard.Transition" uid="d6651a2e-eed7-44b0-b68e-be1d90d41bf9"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[Revised pet food mixture order  arrived]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -216,6 +241,11 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="Receive" mc="Standard.Operation" uid="75c10c4f-9461-4634-a4d6-a4173bb5fa52"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Revised pet food mixture order arrived" mc="Standard.Event" uid="bdb990b6-b5c7-4f4d-a5b2-8d42c971d582"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -273,7 +303,7 @@
                       <ID name="Transition" mc="Standard.Transition" uid="d8bb7b3b-5f62-4d3e-a21c-b9d17754fb6d"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[Pet food mixture order arrived]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -284,6 +314,11 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="Receive" mc="Standard.Operation" uid="75c10c4f-9461-4634-a4d6-a4173bb5fa52"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Pet food mixture order arrived" mc="Standard.Event" uid="493efdaf-38f2-462d-8119-2178b5392550"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -308,7 +343,7 @@
                       <ID name="Transition1" mc="Standard.Transition" uid="eea69bd8-e4cd-42dc-b4d6-ddc691f6f0e1"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[Delivery order was not completed or  Pet food mixture acquisition order canceled]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -319,6 +354,11 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="Cancel" mc="Standard.Operation" uid="6cdac0a0-0fd0-40bf-b66a-37511feff4a9"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Delivery order was not completed or  Pet food mixture acquisition order canceled" mc="Standard.Event" uid="5f609597-d84a-4234-b6d8-0af137efec90"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -348,7 +388,7 @@
                       <ID name="Transition" mc="Standard.Transition" uid="dc428944-ceea-4676-aa76-7e0f57d7aa19"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[Delivery order completed or complaint refused or Complaint period prolongated]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -359,6 +399,11 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="MarkAsComplaintPeriodExpired" mc="Standard.Operation" uid="93ec6824-4e61-41c4-a254-85f76e4777ea"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Delivery order completed or complaint refused or Complaint period prolongated" mc="Standard.Event" uid="4b4bd1e6-7a13-4d52-aaef-53321fe758ae"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -388,7 +433,7 @@
                       <ID name="" mc="Standard.Transition" uid="8f73893a-f183-4143-99b4-767ecd3adab6"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[Delivery order completed or complaint refused or Complaint period prolongated]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -399,6 +444,11 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="MarkAsComplaintPeriodInProgress" mc="Standard.Operation" uid="3eb0c728-81d5-4008-b4c2-02663e0ca7a2"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Delivery order completed or complaint refused or Complaint period prolongated" mc="Standard.Event" uid="fc43426e-8d71-4b38-b37f-55c135ae7cba"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -423,7 +473,7 @@
                       <ID name="" mc="Standard.Transition" uid="6eb49c7a-f5c9-4fe1-8842-36c7d2f70ae9"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[Revised pet food mixture order  arrived]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -434,6 +484,11 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="MarkReadyForDelivery" mc="Standard.Operation" uid="787993bc-b0ab-4cd9-a34c-d06dd5738138"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Revised pet food mixture order  arrived" mc="Standard.Event" uid="4bec7fa2-9548-492e-91a5-d756bb3c1b36"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -447,7 +502,7 @@
                       <ID name="" mc="Standard.Transition" uid="18f3fbb5-01b3-43eb-9a18-f277b097abec"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[Revision request refused]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -458,6 +513,11 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="Cancel" mc="Standard.Operation" uid="6cdac0a0-0fd0-40bf-b66a-37511feff4a9"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Revision request refused" mc="Standard.Event" uid="928410c9-bb3e-42a7-b3ae-2ed7e42a65c4"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -482,7 +542,7 @@
                       <ID name="" mc="Standard.Transition" uid="7ab25975-4eb9-4b3c-a484-86db0bea8cc0"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[complaint period expired]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -493,6 +553,11 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="Complete" mc="Standard.Operation" uid="d1c37c3c-212d-4dc9-9fcc-c21c12ddfb0d"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Complaint period expired" mc="Standard.Event" uid="6b2dbce0-793b-41f7-99fc-9a5d7e6bfa5f"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -506,7 +571,7 @@
                       <ID name="" mc="Standard.Transition" uid="e1992766-3577-4688-86b9-70f8244742ac"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[Complaint period prolongated]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -517,6 +582,11 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="MarkAsComplaintPeriodInProgress" mc="Standard.Operation" uid="3eb0c728-81d5-4008-b4c2-02663e0ca7a2"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Complaint period prolongated" mc="Standard.Event" uid="9e35491d-503a-48da-996f-3ea84f1851fd"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -541,7 +611,7 @@
                       <ID name="" mc="Standard.Transition" uid="b28c5f0a-8963-420b-9f51-4d1aef872631"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[remaining complaint period time passed]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -552,6 +622,11 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="Complete" mc="Standard.Operation" uid="d1c37c3c-212d-4dc9-9fcc-c21c12ddfb0d"/>
+                          </REFOBJ>
+                        </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Remaining complaint period time passed" mc="Standard.Event" uid="0d6c08f4-d1d0-4ffd-a857-073517348867"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -565,7 +640,7 @@
                       <ID name="" mc="Standard.Transition" uid="5e8321b3-595f-4d5a-a8a5-2a307305362b"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[Complaint refused]]></ATT>
+                        <ATT name="ReceivedEvents"></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -578,6 +653,11 @@
                             <ID name="MarkAsComplaintPeriodExpired" mc="Standard.Operation" uid="93ec6824-4e61-41c4-a254-85f76e4777ea"/>
                           </REFOBJ>
                         </LINK>
+                        <LINK relation="Trigger">
+                          <REFOBJ>
+                            <ID name="Complaint refused" mc="Standard.Event" uid="e5fddefb-a323-4e6d-94d7-7b028da42912"/>
+                          </REFOBJ>
+                        </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
                             <ID name="Complaint period expired" mc="Standard.State" uid="9744e0ee-a542-49f3-9bf4-5ba90b96a624"/>
@@ -586,6 +666,185 @@
                       </DEPENDENCIES>
                     </OBJECT>
                   </COMP>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+      </COMP>
+      <COMP relation="EComponent">
+        <OBJECT>
+          <ID name="Pet food mixture order arrived" mc="Standard.Event" uid="493efdaf-38f2-462d-8119-2178b5392550"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Pet food mixture order arrived]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Revised pet food mixture order arrived" mc="Standard.Event" uid="bdb990b6-b5c7-4f4d-a5b2-8d42c971d582"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Revised pet food mixture order arrived]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Customer data invalid" mc="Standard.Event" uid="b2948734-1d2d-425c-b3ed-01209061b0f1"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Customer data invalid]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Customer data valid " mc="Standard.Event" uid="98d3fc20-2d22-42df-875c-19ccc6144559"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Customer data valid ]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Order does not comply with ordered goods" mc="Standard.Event" uid="20a8ed38-0321-4f3c-a87a-db77f5bb4a99"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Order does not comply with ordered goods]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Revision request refused or 5 days passed" mc="Standard.Event" uid="bcd82497-6d30-4cab-89b8-f16d5968d462"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Revision request refused or 5 days passed]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Order is does comply with ordered goods" mc="Standard.Event" uid="de335a7b-3351-477d-8309-4456f8bb4e0b"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Order is does comply with ordered goods]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Revised pet food mixture order  arrived" mc="Standard.Event" uid="4bec7fa2-9548-492e-91a5-d756bb3c1b36"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Revised pet food mixture order  arrived]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Revision request refused" mc="Standard.Event" uid="928410c9-bb3e-42a7-b3ae-2ed7e42a65c4"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Revision request refused]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Delivery order was not completed or  Pet food mixture acquisition order canceled" mc="Standard.Event" uid="5f609597-d84a-4234-b6d8-0af137efec90"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Delivery order was not completed or  Pet food mixture acquisition order canceled]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Delivery order completed or complaint refused or Complaint period prolongated" mc="Standard.Event" uid="fc43426e-8d71-4b38-b37f-55c135ae7cba"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Delivery order completed or complaint refused or Complaint period prolongated]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Complaint period prolongated" mc="Standard.Event" uid="9e35491d-503a-48da-996f-3ea84f1851fd"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Complaint period prolongated]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Remaining complaint period time passed" mc="Standard.Event" uid="0d6c08f4-d1d0-4ffd-a857-073517348867"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Remaining complaint period time passed]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Delivery order completed or complaint refused or Complaint period prolongated" mc="Standard.Event" uid="4b4bd1e6-7a13-4d52-aaef-53321fe758ae"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Delivery order completed or complaint refused or Complaint period prolongated]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Complaint refused" mc="Standard.Event" uid="e5fddefb-a323-4e6d-94d7-7b028da42912"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Complaint refused]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Complaint period expired" mc="Standard.Event" uid="6b2dbce0-793b-41f7-99fc-9a5d7e6bfa5f"/>
+          <ATTRIBUTES>
+            <ATT name="Expression"></ATT>
+            <ATT name="Kind">SignalEvent</ATT>
+            <ATT name="Name"><![CDATA[Complaint period expired]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <COMP relation="Descriptor">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Note" uid="a6d49262-33b4-4cf7-b069-df0a15cde8c2"/>
+                <ATTRIBUTES>
+                  <ATT name="Content"><![CDATA[<Enter note text here>]]></ATT>
+                  <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="Model">
+                    <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+                  </LINK>
                 </DEPENDENCIES>
               </OBJECT>
             </COMP>

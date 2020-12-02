@@ -57,10 +57,10 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Packaging was sucessful" mc="Standard.BpmnEndEvent" uid="f6f13254-5c81-4f6e-a0b3-3104c64a76c3"/>
+                <ID name="Packaging was sucecssful" mc="Standard.BpmnEndEvent" uid="f6f13254-5c81-4f6e-a0b3-3104c64a76c3"/>
                 <ATTRIBUTES>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Packaging was sucessful]]></ATT>
+                  <ATT name="Name"><![CDATA[Packaging was sucecssful]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -504,16 +504,6 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="ef15f82e-73bc-49d0-8511-ddbf5de697cc"/>
-                <ATTRIBUTES>
-                  <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
-                  <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
                 <ID name="f8" mc="Standard.BpmnSequenceFlow" uid="23bd1dfe-d040-4f48-b063-33fd4dd346c0"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
@@ -526,28 +516,6 @@
                   <LINK relation="SourceRef">
                     <REFOBJ>
                       <ID name="Packaging pick up" mc="Standard.BpmnTask" uid="0735fc3f-fd49-41db-b5a1-322615c5d1a2"/>
-                    </REFOBJ>
-                  </LINK>
-                  <LINK relation="TargetRef">
-                    <REFOBJ>
-                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="ef15f82e-73bc-49d0-8511-ddbf5de697cc"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="f9" mc="Standard.BpmnSequenceFlow" uid="19c1f43c-3067-4c71-8f2a-33db6ce3e176"/>
-                <ATTRIBUTES>
-                  <ATT name="IsImmediate">false</ATT>
-                  <ATT name="ConditionExpression"></ATT>
-                  <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[f9]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="SourceRef">
-                    <REFOBJ>
-                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="ef15f82e-73bc-49d0-8511-ddbf5de697cc"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
@@ -571,7 +539,7 @@
                 <ID name="f13" mc="Standard.BpmnSequenceFlow" uid="68ab171f-73a1-45fe-82c2-360c729e30c7"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
-                  <ATT name="ConditionExpression"><![CDATA[Packaging was unsucesful]]></ATT>
+                  <ATT name="ConditionExpression"><![CDATA[Packaging was unsuccessful]]></ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
                   <ATT name="Name"><![CDATA[f13]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -607,28 +575,6 @@
                   <LINK relation="TargetRef">
                     <REFOBJ>
                       <ID name="" mc="Standard.BpmnExclusiveGateway" uid="240342ed-24ef-484b-86ec-462fc4588e9a"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="f10" mc="Standard.BpmnSequenceFlow" uid="a1d5f467-b724-4feb-952c-cf9d1a2b0d07"/>
-                <ATTRIBUTES>
-                  <ATT name="IsImmediate">false</ATT>
-                  <ATT name="ConditionExpression"></ATT>
-                  <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[f10]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="SourceRef">
-                    <REFOBJ>
-                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="240342ed-24ef-484b-86ec-462fc4588e9a"/>
-                    </REFOBJ>
-                  </LINK>
-                  <LINK relation="TargetRef">
-                    <REFOBJ>
-                      <ID name="Packaging was sucessful" mc="Standard.BpmnEndEvent" uid="f6f13254-5c81-4f6e-a0b3-3104c64a76c3"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -697,6 +643,28 @@
                   </LINK>
                 </DEPENDENCIES>
               </OBJECT>
+              <OBJECT>
+                <ID name="f1" mc="Standard.BpmnSequenceFlow" uid="503a7d25-c9a9-46f1-8516-0f293972df37"/>
+                <ATTRIBUTES>
+                  <ATT name="IsImmediate">false</ATT>
+                  <ATT name="ConditionExpression"><![CDATA[Packaging order store out]]></ATT>
+                  <ATT name="TriggeredByEvent">false</ATT>
+                  <ATT name="Name"><![CDATA[f1]]></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="SourceRef">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="240342ed-24ef-484b-86ec-462fc4588e9a"/>
+                    </REFOBJ>
+                  </LINK>
+                  <LINK relation="TargetRef">
+                    <REFOBJ>
+                      <ID name="Packaging was sucecssful" mc="Standard.BpmnEndEvent" uid="f6f13254-5c81-4f6e-a0b3-3104c64a76c3"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
             </COMP>
             <COMP relation="Product">
               <COMPID name="Mixture production" mc="Standard.BpmnSubProcessDiagram" uid="6bc3b96e-5428-444c-a06f-4352f638ce19"/>
@@ -727,10 +695,10 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Machines OK" mc="Standard.BpmnEndEvent" uid="c5cbed9e-bfda-4cce-8b5a-32a20ec15935"/>
+                <ID name="Machinea OK" mc="Standard.BpmnEndEvent" uid="c5cbed9e-bfda-4cce-8b5a-32a20ec15935"/>
                 <ATTRIBUTES>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Machines OK]]></ATT>
+                  <ATT name="Name"><![CDATA[Machinea OK]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -852,7 +820,7 @@
                 <ID name="f1" mc="Standard.BpmnSequenceFlow" uid="5fcb858f-bb28-4c74-836e-a95f38218c5e"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
-                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="ConditionExpression"><![CDATA[Machine OK]]></ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
                   <ATT name="Name"><![CDATA[f1]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -865,7 +833,7 @@
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Machines OK" mc="Standard.BpmnEndEvent" uid="c5cbed9e-bfda-4cce-8b5a-32a20ec15935"/>
+                      <ID name="Machinea OK" mc="Standard.BpmnEndEvent" uid="c5cbed9e-bfda-4cce-8b5a-32a20ec15935"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -874,7 +842,7 @@
                 <ID name="f2" mc="Standard.BpmnSequenceFlow" uid="403f1333-6038-4d27-bc54-e51d2d08ae80"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
-                  <ATT name="ConditionExpression"></ATT>
+                  <ATT name="ConditionExpression"><![CDATA[Machine NOK]]></ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
                   <ATT name="Name"><![CDATA[f2]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -1265,11 +1233,11 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Maintance" mc="Standard.BpmnParallelGateway" uid="00fbf452-35a7-468b-8559-f7d4561fa9aa"/>
+          <ID name="Maintenance" mc="Standard.BpmnParallelGateway" uid="00fbf452-35a7-468b-8559-f7d4561fa9aa"/>
           <ATTRIBUTES>
             <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
             <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[Maintance]]></ATT>
+            <ATT name="Name"><![CDATA[Maintenance]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES></DEPENDENCIES>
@@ -1291,7 +1259,7 @@
             </LINK>
             <LINK relation="TargetRef">
               <REFOBJ>
-                <ID name="Maintance" mc="Standard.BpmnParallelGateway" uid="00fbf452-35a7-468b-8559-f7d4561fa9aa"/>
+                <ID name="Maintenance" mc="Standard.BpmnParallelGateway" uid="00fbf452-35a7-468b-8559-f7d4561fa9aa"/>
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
@@ -1318,7 +1286,7 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="Maintance" mc="Standard.BpmnParallelGateway" uid="00fbf452-35a7-468b-8559-f7d4561fa9aa"/>
+                <ID name="Maintenance" mc="Standard.BpmnParallelGateway" uid="00fbf452-35a7-468b-8559-f7d4561fa9aa"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
@@ -1463,7 +1431,7 @@
           <DEPENDENCIES>
             <LINK relation="SourceRef">
               <REFOBJ>
-                <ID name="Maintance" mc="Standard.BpmnParallelGateway" uid="00fbf452-35a7-468b-8559-f7d4561fa9aa"/>
+                <ID name="Maintenance" mc="Standard.BpmnParallelGateway" uid="00fbf452-35a7-468b-8559-f7d4561fa9aa"/>
               </REFOBJ>
             </LINK>
             <LINK relation="TargetRef">
@@ -1540,21 +1508,21 @@
           <DEPENDENCIES>
             <COMP relation="FlowElement">
               <OBJECT>
-                <ID name="Machines not repaired" mc="Standard.BpmnStartEvent" uid="ecffefb4-2c72-41f5-b71d-c0ca4ae603b6"/>
+                <ID name="Machines not repaired / 1 week" mc="Standard.BpmnStartEvent" uid="ecffefb4-2c72-41f5-b71d-c0ca4ae603b6"/>
                 <ATTRIBUTES>
                   <ATT name="IsInterrupting">true</ATT>
                   <ATT name="ParallelMultiple">false</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Machines not repaired]]></ATT>
+                  <ATT name="Name"><![CDATA[Machines not repaired / 1 week]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Pet food mixture production order canceled" mc="Standard.BpmnEndEvent" uid="e8c6787f-8a4d-4a01-9b78-dce95b5e4efb"/>
+                <ID name="Pet food mixture production order cancelled" mc="Standard.BpmnEndEvent" uid="e8c6787f-8a4d-4a01-9b78-dce95b5e4efb"/>
                 <ATTRIBUTES>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Pet food mixture production order canceled]]></ATT>
+                  <ATT name="Name"><![CDATA[Pet food mixture production order cancelled]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -1604,7 +1572,7 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Machines not repaired" mc="Standard.BpmnStartEvent" uid="ecffefb4-2c72-41f5-b71d-c0ca4ae603b6"/>
+                      <ID name="Machines not repaired / 1 week" mc="Standard.BpmnStartEvent" uid="ecffefb4-2c72-41f5-b71d-c0ca4ae603b6"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
@@ -1631,7 +1599,7 @@
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Pet food mixture production order canceled" mc="Standard.BpmnEndEvent" uid="e8c6787f-8a4d-4a01-9b78-dce95b5e4efb"/>
+                      <ID name="Pet food mixture production order cancelled" mc="Standard.BpmnEndEvent" uid="e8c6787f-8a4d-4a01-9b78-dce95b5e4efb"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -1773,15 +1741,6 @@
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
-          <ID name="Pet food supply order was not completed" mc="Standard.BpmnEndEvent" uid="0cb6d8eb-4b67-41f4-b79c-02b53d94e1ca"/>
-          <ATTRIBUTES>
-            <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[Pet food supply order was not completed]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
           <ID name="f13" mc="Standard.BpmnSequenceFlow" uid="760609b8-0722-4d85-8972-aeb1d0392388"/>
@@ -2094,6 +2053,15 @@
               </REFOBJ>
             </LINK>
           </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Pet food supply order was not completed" mc="Standard.BpmnEndEvent" uid="0cb6d8eb-4b67-41f4-b79c-02b53d94e1ca"/>
+          <ATTRIBUTES>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[Pet food supply order was not completed]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
       </COMP>
       <LINK relation="Extension">
