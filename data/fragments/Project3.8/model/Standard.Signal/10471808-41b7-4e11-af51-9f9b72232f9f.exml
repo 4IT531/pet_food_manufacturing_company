@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="complaint request arrived" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="complaint request sent" version="4">
   <OBJECT>
-    <ID name="complaint request arrived" mc="Standard.Signal" uid="10471808-41b7-4e11-af51-9f9b72232f9f"/>
+    <ID name="complaint request sent" mc="Standard.Signal" uid="10471808-41b7-4e11-af51-9f9b72232f9f"/>
     <PID name="Pet food sale" mc="Standard.Package" uid="c4203ccc-f76a-47b9-8157-4ce96f556f1a"/>
     <ATTRIBUTES>
       <ATT name="IsEvent">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[complaint request arrived]]></ATT>
+      <ATT name="Name"><![CDATA[complaint request sent]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

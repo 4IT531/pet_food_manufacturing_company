@@ -20,9 +20,9 @@
           <DEPENDENCIES>
             <COMP relation="Sub">
               <OBJECT>
-                <ID name="Ingredients mixed" mc="Standard.InitialPseudoState" uid="a9b0863e-7883-49ae-a3a4-9fce2901647a"/>
+                <ID name="" mc="Standard.InitialPseudoState" uid="a9b0863e-7883-49ae-a3a4-9fce2901647a"/>
                 <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Ingredients mixed]]></ATT>
+                  <ATT name="Name"></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -31,7 +31,7 @@
                       <ID name="" mc="Standard.Transition" uid="62a2ca02-4ad1-4601-9696-e5906e8f6bad"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Mixture OK]]></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -44,14 +44,9 @@
                             <ID name="PickupPackage" mc="Standard.Operation" uid="7fa0066b-f115-4756-971d-54c5e861feb3"/>
                           </REFOBJ>
                         </LINK>
-                        <LINK relation="Trigger">
-                          <REFOBJ>
-                            <ID name="Packaging pickup" mc="Standard.Event" uid="45dac3c0-2d5f-44a9-841c-27622b82803a"/>
-                          </REFOBJ>
-                        </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Store out" mc="Standard.State" uid="d25e0fb5-ab0d-46ec-befd-65e8f4655c93"/>
+                            <ID name="Stored out" mc="Standard.State" uid="d25e0fb5-ab0d-46ec-befd-65e8f4655c93"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -60,9 +55,9 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Store out" mc="Standard.State" uid="d25e0fb5-ab0d-46ec-befd-65e8f4655c93"/>
+                <ID name="Stored out" mc="Standard.State" uid="d25e0fb5-ab0d-46ec-befd-65e8f4655c93"/>
                 <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Store out]]></ATT>
+                  <ATT name="Name"><![CDATA[Stored out]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -71,7 +66,7 @@
                       <ID name="" mc="Standard.Transition" uid="de255fbe-1e51-4543-9ec6-b07a6b44f960"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Packaging was unsuccessful]]></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -84,11 +79,6 @@
                             <ID name="MarkAsInexecutable" mc="Standard.Operation" uid="0ddd5c86-93fa-4a8f-b72b-16817a85b6b7"/>
                           </REFOBJ>
                         </LINK>
-                        <LINK relation="Trigger">
-                          <REFOBJ>
-                            <ID name="Packaging inapropriate" mc="Standard.Event" uid="4cbbbccc-6a8e-4b7f-ae84-177f52c8b671"/>
-                          </REFOBJ>
-                        </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
                             <ID name="Inexcutable" mc="Standard.FinalState" uid="4cea0fd8-1162-41af-95da-4ac13d827499"/>
@@ -97,47 +87,7 @@
                       </DEPENDENCIES>
                     </OBJECT>
                     <OBJECT>
-                      <ID name="Material available- packaging, tagging/Processed()" mc="Standard.Transition" uid="aceb5064-4b7f-48de-b154-0374676f508c"/>
-                      <ATTRIBUTES>
-                        <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"></ATT>
-                        <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"></ATT>
-                        <ATT name="PostCondition"></ATT>
-                        <ATT name="Name"><![CDATA[Material available- packaging, tagging/Processed()]]></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="Processed">
-                          <REFOBJ>
-                            <ID name="Process" mc="Standard.Operation" uid="b95f4998-0b29-45d9-81fd-b0f90b187dec"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Trigger">
-                          <REFOBJ>
-                            <ID name="Material available- packaging, tagging" mc="Standard.Event" uid="f719981d-de32-4fd8-8b05-35afaa7fdcf1"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Target">
-                          <REFOBJ>
-                            <ID name="Processed" mc="Standard.State" uid="389c2cb6-f2d6-4f04-8869-04b261f64edf"/>
-                          </REFOBJ>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                  </COMP>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="Processed" mc="Standard.State" uid="389c2cb6-f2d6-4f04-8869-04b261f64edf"/>
-                <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Processed]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <COMP relation="OutGoing">
-                    <OBJECT>
-                      <ID name="" mc="Standard.Transition" uid="6ced65be-3c93-49d5-ae9c-4ace749706c5"/>
+                      <ID name="" mc="Standard.Transition" uid="a4f2d370-41a1-45c0-aa4c-3f4229bc2dfb"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
                         <ATT name="ReceivedEvents"></ATT>
@@ -150,7 +100,7 @@
                       <DEPENDENCIES>
                         <LINK relation="Processed">
                           <REFOBJ>
-                            <ID name="MarkAsSuccesfullPackaging" mc="Standard.Operation" uid="ddbd40a6-10b9-44d6-a8cb-56e5f60ada36"/>
+                            <ID name="MarkAsCompleted" mc="Standard.Operation" uid="0acfd8bc-1f6d-437a-ba43-41f32c01ea5f"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Trigger">
@@ -160,36 +110,7 @@
                         </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Packaging Succesfull" mc="Standard.FinalState" uid="b92a6f2a-e929-47b7-9978-3cd3b43bdfa3"/>
-                          </REFOBJ>
-                        </LINK>
-                      </DEPENDENCIES>
-                    </OBJECT>
-                    <OBJECT>
-                      <ID name="" mc="Standard.Transition" uid="9ff069d4-ae4d-49e8-a9c1-608d563d95f4"/>
-                      <ATTRIBUTES>
-                        <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"></ATT>
-                        <ATT name="SentEvents"></ATT>
-                        <ATT name="Guard"></ATT>
-                        <ATT name="PostCondition"></ATT>
-                        <ATT name="Name"></ATT>
-                        <ATT name="status">1970354901745664</ATT>
-                      </ATTRIBUTES>
-                      <DEPENDENCIES>
-                        <LINK relation="Processed">
-                          <REFOBJ>
-                            <ID name="PickupPackage" mc="Standard.Operation" uid="7fa0066b-f115-4756-971d-54c5e861feb3"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Trigger">
-                          <REFOBJ>
-                            <ID name="Packaging was unsucesfull" mc="Standard.Event" uid="282a9e97-0d75-44dd-b79f-04fac02c5a2b"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Target">
-                          <REFOBJ>
-                            <ID name="Store out" mc="Standard.State" uid="d25e0fb5-ab0d-46ec-befd-65e8f4655c93"/>
+                            <ID name="Completed" mc="Standard.FinalState" uid="b92a6f2a-e929-47b7-9978-3cd3b43bdfa3"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -206,9 +127,9 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Packaging Succesfull" mc="Standard.FinalState" uid="b92a6f2a-e929-47b7-9978-3cd3b43bdfa3"/>
+                <ID name="Completed" mc="Standard.FinalState" uid="b92a6f2a-e929-47b7-9978-3cd3b43bdfa3"/>
                 <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Packaging Succesfull]]></ATT>
+                  <ATT name="Name"><![CDATA[Completed]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>

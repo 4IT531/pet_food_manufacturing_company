@@ -46,7 +46,7 @@
                         </LINK>
                         <LINK relation="Trigger">
                           <REFOBJ>
-                            <ID name="Found || Not found" mc="Standard.Event" uid="cf9792bf-b7a5-4085-8122-1c95e07039b6"/>
+                            <ID name="Pet-food mixture order arrived" mc="Standard.Event" uid="aa81dfc5-5402-49d3-80a1-5bf19ad658ab"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -217,7 +217,7 @@
                       <ID name="Transition" mc="Standard.Transition" uid="4ae73c04-4168-4010-9f82-d77066f20a7f"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Supplies not received / 1 week]]></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -228,11 +228,6 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="Mark as inaccessible" mc="Standard.Operation" uid="f34c94f2-e33e-4e8d-80b2-f4dd0b55660e"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Trigger">
-                          <REFOBJ>
-                            <ID name="Supplies not received" mc="Standard.Event" uid="d5a234b3-d8cd-4fd8-8640-c535b70fb331"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -256,7 +251,7 @@
                       <DEPENDENCIES>
                         <LINK relation="Processed">
                           <REFOBJ>
-                            <ID name="Store" mc="Standard.Operation" uid="f25591f6-61f6-4d08-a249-8c4a93fe974e"/>
+                            <ID name="Mark as available" mc="Standard.Operation" uid="bd864bd7-52f6-4896-8e59-494dba30b5a7"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Trigger">

@@ -71,7 +71,7 @@
           </DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="Discard" mc="Standard.Operation" uid="9016817d-0f9a-4b44-83f2-8d9813b9d7b3"/>
+          <ID name="Cancel" mc="Standard.Operation" uid="9016817d-0f9a-4b44-83f2-8d9813b9d7b3"/>
           <ATTRIBUTES>
             <ATT name="Concurrency">false</ATT>
             <ATT name="Final">false</ATT>
@@ -79,7 +79,7 @@
             <ATT name="Visibility">VisibilityUndefined</ATT>
             <ATT name="IsClass">false</ATT>
             <ATT name="IsAbstract">false</ATT>
-            <ATT name="Name"><![CDATA[Discard]]></ATT>
+            <ATT name="Name"><![CDATA[Cancel]]></ATT>
             <ATT name="status">1970354901745664</ATT>
           </ATTRIBUTES>
           <DEPENDENCIES>

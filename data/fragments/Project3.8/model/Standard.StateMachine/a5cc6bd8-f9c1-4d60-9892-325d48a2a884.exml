@@ -71,7 +71,7 @@
                       <ID name="Transition1" mc="Standard.Transition" uid="88c650bb-b769-4ff7-af5b-ea7c520e3846"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Supplies not received / 1 week]]></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -82,11 +82,6 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="Cancel" mc="Standard.Operation" uid="9ec1fa79-55fd-46b1-9ac7-e56905f95ad8"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Trigger">
-                          <REFOBJ>
-                            <ID name="Supplies unavailable" mc="Standard.Event" uid="162c600d-86d6-4921-bc15-077f6f6954d4"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">

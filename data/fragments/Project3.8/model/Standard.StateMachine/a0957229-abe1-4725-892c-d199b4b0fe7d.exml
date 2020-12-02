@@ -41,7 +41,7 @@
                       <DEPENDENCIES>
                         <LINK relation="Processed">
                           <REFOBJ>
-                            <ID name="Discard" mc="Standard.Operation" uid="9016817d-0f9a-4b44-83f2-8d9813b9d7b3"/>
+                            <ID name="Cancel" mc="Standard.Operation" uid="9016817d-0f9a-4b44-83f2-8d9813b9d7b3"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Trigger">
@@ -51,7 +51,7 @@
                         </LINK>
                         <LINK relation="Target">
                           <REFOBJ>
-                            <ID name="Discarded" mc="Standard.FinalState" uid="dfb0e2b8-f89f-4958-ba06-818c235f6328"/>
+                            <ID name="Cancelled" mc="Standard.FinalState" uid="dfb0e2b8-f89f-4958-ba06-818c235f6328"/>
                           </REFOBJ>
                         </LINK>
                       </DEPENDENCIES>
@@ -100,7 +100,7 @@
                       <ID name="Transition" mc="Standard.Transition" uid="ade0f18f-e3b1-4922-adaf-b8ed8152f835"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Customer data invalid or order does not comply with ordered goods]]></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -110,12 +110,7 @@
                       <DEPENDENCIES>
                         <LINK relation="Processed">
                           <REFOBJ>
-                            <ID name="Create" mc="Standard.Operation" uid="83c260d3-c264-40cb-bb9c-4c2229ca0bd0"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Trigger">
-                          <REFOBJ>
-                            <ID name="Customer data invalid" mc="Standard.Event" uid="d8daa5fa-e37b-46b8-9b1e-4924e3fe6447"/>
+                            <ID name="Send" mc="Standard.Operation" uid="2f01799b-cd9e-4252-8394-f415c10bcee0"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -137,9 +132,9 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Discarded" mc="Standard.FinalState" uid="dfb0e2b8-f89f-4958-ba06-818c235f6328"/>
+                <ID name="Cancelled" mc="Standard.FinalState" uid="dfb0e2b8-f89f-4958-ba06-818c235f6328"/>
                 <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Discarded]]></ATT>
+                  <ATT name="Name"><![CDATA[Cancelled]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -194,7 +189,7 @@
         <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
       </LINK>
       <COMP relation="Product">
-        <COMPID name="LC_Pet Food Mixture Order Revision Request" mc="Standard.StateMachineDiagram" uid="b2d0f276-2e6e-4d91-bd08-d64c41303609"/>
+        <COMPID name="Pet food mixture order revision request lifecycle diagram" mc="Standard.StateMachineDiagram" uid="b2d0f276-2e6e-4d91-bd08-d64c41303609"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

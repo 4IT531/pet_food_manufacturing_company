@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Delivery order arrived" version="4">
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Delivery order sent" version="4">
   <OBJECT>
-    <ID name="Delivery order arrived" mc="Standard.Signal" uid="ad8c6b1c-2c70-463e-8a9e-7ac7faf4173c"/>
+    <ID name="Delivery order sent" mc="Standard.Signal" uid="ad8c6b1c-2c70-463e-8a9e-7ac7faf4173c"/>
     <PID name="Pet food sale" mc="Standard.Package" uid="c4203ccc-f76a-47b9-8157-4ce96f556f1a"/>
     <ATTRIBUTES>
       <ATT name="IsEvent">false</ATT>
@@ -11,7 +11,7 @@
       <ATT name="IsLeaf">false</ATT>
       <ATT name="IsRoot">false</ATT>
       <ATT name="Visibility">Public</ATT>
-      <ATT name="Name"><![CDATA[Delivery order arrived]]></ATT>
+      <ATT name="Name"><![CDATA[Delivery order sent]]></ATT>
       <ATT name="status">1970354901745664</ATT>
     </ATTRIBUTES>
     <DEPENDENCIES>

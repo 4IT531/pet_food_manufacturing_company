@@ -60,7 +60,7 @@
         <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
       </LINK>
       <COMP relation="Product">
-        <COMPID name="LC_Machine" mc="Standard.StateMachineDiagram" uid="29cc19c5-4979-410f-9096-c97fb7679de4"/>
+        <COMPID name="Machine lifecycle diagram" mc="Standard.StateMachineDiagram" uid="29cc19c5-4979-410f-9096-c97fb7679de4"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

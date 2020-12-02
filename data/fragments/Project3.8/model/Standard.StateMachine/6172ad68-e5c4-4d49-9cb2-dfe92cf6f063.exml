@@ -20,9 +20,9 @@
           <DEPENDENCIES>
             <COMP relation="Sub">
               <OBJECT>
-                <ID name="Received" mc="Standard.State" uid="bce531d9-c407-435d-9ede-6f42c8d42cb6"/>
+                <ID name="Sent" mc="Standard.State" uid="bce531d9-c407-435d-9ede-6f42c8d42cb6"/>
                 <ATTRIBUTES>
-                  <ATT name="Name"><![CDATA[Received]]></ATT>
+                  <ATT name="Name"><![CDATA[Sent]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES>
@@ -52,7 +52,7 @@
         <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
       </LINK>
       <COMP relation="Product">
-        <COMPID name="LC_complaint_request" mc="Standard.StateMachineDiagram" uid="3575b1a7-b26e-43f8-8025-a3d8d241bff6"/>
+        <COMPID name="Complaint request lifecycle diagram" mc="Standard.StateMachineDiagram" uid="3575b1a7-b26e-43f8-8025-a3d8d241bff6"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

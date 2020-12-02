@@ -46,7 +46,7 @@
                         </LINK>
                         <LINK relation="Trigger">
                           <REFOBJ>
-                            <ID name="Revised business partner received" mc="Standard.Event" uid="0d478448-425a-4d77-8259-b3c4dbc86cc2"/>
+                            <ID name="Revised pet food mixture order  arrived" mc="Standard.Event" uid="4bec7fa2-9548-492e-91a5-d756bb3c1b36"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -300,7 +300,7 @@
         <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
       </LINK>
       <COMP relation="Product">
-        <COMPID name="LC_Business Partner" mc="Standard.StateMachineDiagram" uid="5c598135-fb61-4ee0-a09c-acb5c0c0543c"/>
+        <COMPID name="Business Partner lifecycle diagram" mc="Standard.StateMachineDiagram" uid="5c598135-fb61-4ee0-a09c-acb5c0c0543c"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

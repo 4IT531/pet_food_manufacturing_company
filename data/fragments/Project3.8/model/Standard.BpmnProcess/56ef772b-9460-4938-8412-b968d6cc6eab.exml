@@ -402,7 +402,7 @@
                       <DEPENDENCIES>
                         <LINK relation="DependsOn">
                           <REFOBJ>
-                            <ID name="Store out" mc="Standard.State" uid="d25e0fb5-ab0d-46ec-befd-65e8f4655c93"/>
+                            <ID name="Stored out" mc="Standard.State" uid="d25e0fb5-ab0d-46ec-befd-65e8f4655c93"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Extension">
@@ -447,7 +447,7 @@
                       <DEPENDENCIES>
                         <LINK relation="DependsOn">
                           <REFOBJ>
-                            <ID name="Processed" mc="Standard.State" uid="389c2cb6-f2d6-4f04-8869-04b261f64edf"/>
+                            <ID name="Completed" mc="Standard.FinalState" uid="b92a6f2a-e929-47b7-9978-3cd3b43bdfa3"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Extension">
@@ -492,7 +492,7 @@
                       <DEPENDENCIES>
                         <LINK relation="DependsOn">
                           <REFOBJ>
-                            <ID name="Store out" mc="Standard.State" uid="d25e0fb5-ab0d-46ec-befd-65e8f4655c93"/>
+                            <ID name="Inexcutable" mc="Standard.FinalState" uid="4cea0fd8-1162-41af-95da-4ac13d827499"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Extension">
@@ -589,12 +589,12 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Machines repaired" mc="Standard.BpmnStartEvent" uid="26b0f55c-d445-4e96-83a4-57a776b69246"/>
+                <ID name="Machines repaired / replaced" mc="Standard.BpmnStartEvent" uid="26b0f55c-d445-4e96-83a4-57a776b69246"/>
                 <ATTRIBUTES>
                   <ATT name="IsInterrupting">true</ATT>
                   <ATT name="ParallelMultiple">false</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Machines repaired]]></ATT>
+                  <ATT name="Name"><![CDATA[Machines repaired / replaced]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -611,7 +611,7 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Machines repaired" mc="Standard.BpmnStartEvent" uid="26b0f55c-d445-4e96-83a4-57a776b69246"/>
+                      <ID name="Machines repaired / replaced" mc="Standard.BpmnStartEvent" uid="26b0f55c-d445-4e96-83a4-57a776b69246"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
@@ -695,10 +695,10 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Machinea OK" mc="Standard.BpmnEndEvent" uid="c5cbed9e-bfda-4cce-8b5a-32a20ec15935"/>
+                <ID name="Machines OK" mc="Standard.BpmnEndEvent" uid="c5cbed9e-bfda-4cce-8b5a-32a20ec15935"/>
                 <ATTRIBUTES>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Machinea OK]]></ATT>
+                  <ATT name="Name"><![CDATA[Machines OK]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -820,7 +820,7 @@
                 <ID name="f1" mc="Standard.BpmnSequenceFlow" uid="5fcb858f-bb28-4c74-836e-a95f38218c5e"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
-                  <ATT name="ConditionExpression"><![CDATA[Machine OK]]></ATT>
+                  <ATT name="ConditionExpression"><![CDATA[Machines OK]]></ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
                   <ATT name="Name"><![CDATA[f1]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -833,7 +833,7 @@
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Machinea OK" mc="Standard.BpmnEndEvent" uid="c5cbed9e-bfda-4cce-8b5a-32a20ec15935"/>
+                      <ID name="Machines OK" mc="Standard.BpmnEndEvent" uid="c5cbed9e-bfda-4cce-8b5a-32a20ec15935"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -842,7 +842,7 @@
                 <ID name="f2" mc="Standard.BpmnSequenceFlow" uid="403f1333-6038-4d27-bc54-e51d2d08ae80"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
-                  <ATT name="ConditionExpression"><![CDATA[Machine NOK]]></ATT>
+                  <ATT name="ConditionExpression"><![CDATA[Machines NOT OK]]></ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
                   <ATT name="Name"><![CDATA[f2]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
@@ -1445,7 +1445,7 @@
           <ID name="f10" mc="Standard.BpmnSequenceFlow" uid="e67dc804-8ab2-43c0-9b5d-67b1eb8595a1"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
-            <ATT name="ConditionExpression"><![CDATA[Machines repaired]]></ATT>
+            <ATT name="ConditionExpression"><![CDATA[Machines repaired / replaced]]></ATT>
             <ATT name="TriggeredByEvent">false</ATT>
             <ATT name="Name"><![CDATA[f10]]></ATT>
             <ATT name="status">1970354901745664</ATT>
@@ -1508,21 +1508,21 @@
           <DEPENDENCIES>
             <COMP relation="FlowElement">
               <OBJECT>
-                <ID name="Machines not repaired / 1 week" mc="Standard.BpmnStartEvent" uid="ecffefb4-2c72-41f5-b71d-c0ca4ae603b6"/>
+                <ID name="(Machines not repaired / replaced) / 1 week" mc="Standard.BpmnStartEvent" uid="ecffefb4-2c72-41f5-b71d-c0ca4ae603b6"/>
                 <ATTRIBUTES>
                   <ATT name="IsInterrupting">true</ATT>
                   <ATT name="ParallelMultiple">false</ATT>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Machines not repaired / 1 week]]></ATT>
+                  <ATT name="Name"><![CDATA[(Machines not repaired / replaced) / 1 week]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="Pet food mixture production order cancelled" mc="Standard.BpmnEndEvent" uid="e8c6787f-8a4d-4a01-9b78-dce95b5e4efb"/>
+                <ID name="Pet food supply order was not completed" mc="Standard.BpmnEndEvent" uid="e8c6787f-8a4d-4a01-9b78-dce95b5e4efb"/>
                 <ATTRIBUTES>
                   <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[Pet food mixture production order cancelled]]></ATT>
+                  <ATT name="Name"><![CDATA[Pet food supply order was not completed]]></ATT>
                   <ATT name="status">1970354901745664</ATT>
                 </ATTRIBUTES>
                 <DEPENDENCIES></DEPENDENCIES>
@@ -1572,7 +1572,7 @@
                 <DEPENDENCIES>
                   <LINK relation="SourceRef">
                     <REFOBJ>
-                      <ID name="Machines not repaired / 1 week" mc="Standard.BpmnStartEvent" uid="ecffefb4-2c72-41f5-b71d-c0ca4ae603b6"/>
+                      <ID name="(Machines not repaired / replaced) / 1 week" mc="Standard.BpmnStartEvent" uid="ecffefb4-2c72-41f5-b71d-c0ca4ae603b6"/>
                     </REFOBJ>
                   </LINK>
                   <LINK relation="TargetRef">
@@ -1599,7 +1599,7 @@
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="Pet food mixture production order cancelled" mc="Standard.BpmnEndEvent" uid="e8c6787f-8a4d-4a01-9b78-dce95b5e4efb"/>
+                      <ID name="Pet food supply order was not completed" mc="Standard.BpmnEndEvent" uid="e8c6787f-8a4d-4a01-9b78-dce95b5e4efb"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
@@ -1724,7 +1724,7 @@
           <ID name="f12" mc="Standard.BpmnSequenceFlow" uid="9bb795ed-5233-49a9-8f6b-fd7f7ce520d8"/>
           <ATTRIBUTES>
             <ATT name="IsImmediate">false</ATT>
-            <ATT name="ConditionExpression"><![CDATA[Machines not repaired / 1 week]]></ATT>
+            <ATT name="ConditionExpression"><![CDATA[(Machines not repaired / replaced) / 1 week]]></ATT>
             <ATT name="TriggeredByEvent">false</ATT>
             <ATT name="Name"><![CDATA[f12]]></ATT>
             <ATT name="status">1970354901745664</ATT>

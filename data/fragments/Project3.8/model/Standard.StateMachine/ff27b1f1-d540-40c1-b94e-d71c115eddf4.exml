@@ -31,7 +31,7 @@
                       <ID name="Transition" mc="Standard.Transition" uid="0b961358-b3d4-4604-8a9f-c0ef2cc1bfeb"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Pet food mixture production order was not completed or supplies not received or 1 week passed or supplies unorderable]]></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -42,11 +42,6 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="Refuse" mc="Standard.Operation" uid="50a840e2-ca21-4063-87d6-e8bd5fbd4881"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Trigger">
-                          <REFOBJ>
-                            <ID name="Pet food mixture acquisition order refused" mc="Standard.Event" uid="a2932a09-37e2-46b6-a4ab-bdf058e53ee3"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">
@@ -60,7 +55,7 @@
                       <ID name="Transition1" mc="Standard.Transition" uid="422cdd44-9910-4a60-9e64-414a997bd48c"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Pet food mixture production order complete]]></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -71,11 +66,6 @@
                         <LINK relation="Processed">
                           <REFOBJ>
                             <ID name="Complete" mc="Standard.Operation" uid="f2dc1fab-e9cf-4a4e-a94f-108e4e69f8bd"/>
-                          </REFOBJ>
-                        </LINK>
-                        <LINK relation="Trigger">
-                          <REFOBJ>
-                            <ID name="Pet food supply order completed" mc="Standard.Event" uid="d8811b8c-d407-4263-9bd7-e6ff4a4c3cdb"/>
                           </REFOBJ>
                         </LINK>
                         <LINK relation="Target">

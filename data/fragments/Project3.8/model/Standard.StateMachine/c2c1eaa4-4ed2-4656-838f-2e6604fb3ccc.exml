@@ -224,7 +224,7 @@
                       <ID name="Transition" mc="Standard.Transition" uid="d621e8bf-015e-4e5e-9aad-3f72eb76b1d5"/>
                       <ATTRIBUTES>
                         <ATT name="Effect"></ATT>
-                        <ATT name="ReceivedEvents"><![CDATA[Machines repaired or Machines OK]]></ATT>
+                        <ATT name="ReceivedEvents"><![CDATA[Machines repaired / replaced or Machines OK]]></ATT>
                         <ATT name="SentEvents"></ATT>
                         <ATT name="Guard"></ATT>
                         <ATT name="PostCondition"></ATT>
@@ -315,7 +315,7 @@
         <FOREIGNID name="EntityLifeCycle" mc="Infrastructure.Stereotype" uid="9bd12e42-ab73-11df-9861-0014224f9977"/>
       </LINK>
       <COMP relation="Product">
-        <COMPID name="LC_Pet food mixture production order" mc="Standard.StateMachineDiagram" uid="36290cb7-0b4c-43e6-be2e-77b4caa68895"/>
+        <COMPID name="Pet food mixture production order lifecycle diagram" mc="Standard.StateMachineDiagram" uid="36290cb7-0b4c-43e6-be2e-77b4caa68895"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>
