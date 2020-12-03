@@ -3210,15 +3210,6 @@
                 <DEPENDENCIES></DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="complaint request did not arrive" mc="Standard.BpmnEndEvent" uid="28b565a7-46e7-484a-9170-270f105a26a2"/>
-                <ATTRIBUTES>
-                  <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[complaint request did not arrive]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
                 <ID name="" mc="Standard.BpmnDataObject" uid="592de08b-9504-469d-8bc3-b6d13cc94fed"/>
                 <ATTRIBUTES>
                   <ATT name="IsCollection">false</ATT>
@@ -3319,17 +3310,7 @@
                 </DEPENDENCIES>
               </OBJECT>
               <OBJECT>
-                <ID name="" mc="Standard.BpmnParallelGateway" uid="1a8a7cb9-b6a5-4440-8192-86407c6f6bf5"/>
-                <ATTRIBUTES>
-                  <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
-                  <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES></DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="f1" mc="Standard.BpmnSequenceFlow" uid="aca6d621-613d-4f1e-91de-988890e70196"/>
+                <ID name="f1" mc="Standard.BpmnSequenceFlow" uid="883451c4-9611-4f8d-ba5a-d1ae96c6d03c"/>
                 <ATTRIBUTES>
                   <ATT name="IsImmediate">false</ATT>
                   <ATT name="ConditionExpression"></ATT>
@@ -3345,51 +3326,7 @@
                   </LINK>
                   <LINK relation="TargetRef">
                     <REFOBJ>
-                      <ID name="" mc="Standard.BpmnParallelGateway" uid="1a8a7cb9-b6a5-4440-8192-86407c6f6bf5"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="f2" mc="Standard.BpmnSequenceFlow" uid="a80bc33a-5394-4401-b1a6-f9d64f473b33"/>
-                <ATTRIBUTES>
-                  <ATT name="IsImmediate">false</ATT>
-                  <ATT name="ConditionExpression"></ATT>
-                  <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[f2]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="SourceRef">
-                    <REFOBJ>
-                      <ID name="" mc="Standard.BpmnParallelGateway" uid="1a8a7cb9-b6a5-4440-8192-86407c6f6bf5"/>
-                    </REFOBJ>
-                  </LINK>
-                  <LINK relation="TargetRef">
-                    <REFOBJ>
                       <ID name="complaint request sent" mc="Standard.BpmnEndEvent" uid="d7114e1f-a034-421a-ba62-c132ea97e265"/>
-                    </REFOBJ>
-                  </LINK>
-                </DEPENDENCIES>
-              </OBJECT>
-              <OBJECT>
-                <ID name="f3" mc="Standard.BpmnSequenceFlow" uid="caa72d47-4a59-4103-81c5-82e61bf8cead"/>
-                <ATTRIBUTES>
-                  <ATT name="IsImmediate">false</ATT>
-                  <ATT name="ConditionExpression"></ATT>
-                  <ATT name="TriggeredByEvent">false</ATT>
-                  <ATT name="Name"><![CDATA[f3]]></ATT>
-                  <ATT name="status">1970354901745664</ATT>
-                </ATTRIBUTES>
-                <DEPENDENCIES>
-                  <LINK relation="SourceRef">
-                    <REFOBJ>
-                      <ID name="" mc="Standard.BpmnParallelGateway" uid="1a8a7cb9-b6a5-4440-8192-86407c6f6bf5"/>
-                    </REFOBJ>
-                  </LINK>
-                  <LINK relation="TargetRef">
-                    <REFOBJ>
-                      <ID name="complaint request did not arrive" mc="Standard.BpmnEndEvent" uid="28b565a7-46e7-484a-9170-270f105a26a2"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
