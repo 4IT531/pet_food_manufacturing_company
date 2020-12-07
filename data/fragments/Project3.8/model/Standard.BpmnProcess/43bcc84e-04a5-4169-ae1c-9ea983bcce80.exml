@@ -4053,28 +4053,6 @@
           <DEPENDENCIES></DEPENDENCIES>
         </OBJECT>
         <OBJECT>
-          <ID name="f33" mc="Standard.BpmnSequenceFlow" uid="a3a214fc-3c82-4e55-9099-a701412df84e"/>
-          <ATTRIBUTES>
-            <ATT name="IsImmediate">false</ATT>
-            <ATT name="ConditionExpression"></ATT>
-            <ATT name="TriggeredByEvent">false</ATT>
-            <ATT name="Name"><![CDATA[f33]]></ATT>
-            <ATT name="status">1970354901745664</ATT>
-          </ATTRIBUTES>
-          <DEPENDENCIES>
-            <LINK relation="SourceRef">
-              <REFOBJ>
-                <ID name="" mc="Standard.BpmnParallelGateway" uid="eb83d977-05b3-4ada-9050-99185c7a16cf"/>
-              </REFOBJ>
-            </LINK>
-            <LINK relation="TargetRef">
-              <REFOBJ>
-                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="2c2da60d-c3b2-4d01-bbbb-c13e3693098c"/>
-              </REFOBJ>
-            </LINK>
-          </DEPENDENCIES>
-        </OBJECT>
-        <OBJECT>
           <ID name="" mc="Standard.BpmnExclusiveGateway" uid="54152070-7dd6-458b-8a34-91268f4a749c"/>
           <ATTRIBUTES>
             <ATT name="GatewayDirection">UnspecifiedDirection</ATT>
@@ -5384,6 +5362,28 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="f65" mc="Standard.BpmnSequenceFlow" uid="686a3b70-59c5-4eef-872a-5353b3fdf14d"/>
+          <ATTRIBUTES>
+            <ATT name="IsImmediate">false</ATT>
+            <ATT name="ConditionExpression"></ATT>
+            <ATT name="TriggeredByEvent">false</ATT>
+            <ATT name="Name"><![CDATA[f65]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="SourceRef">
+              <REFOBJ>
+                <ID name="" mc="Standard.BpmnExclusiveGateway" uid="2c2da60d-c3b2-4d01-bbbb-c13e3693098c"/>
+              </REFOBJ>
+            </LINK>
+            <LINK relation="TargetRef">
+              <REFOBJ>
+                <ID name="" mc="Standard.BpmnParallelGateway" uid="eb83d977-05b3-4ada-9050-99185c7a16cf"/>
+              </REFOBJ>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <LINK relation="Extension">
         <FOREIGNID name="TogafProcess" mc="Infrastructure.Stereotype" uid="b9d7cee1-8fe0-45ec-98fa-ea750d4ab42f"/>
@@ -5449,6 +5449,18 @@
             </LINK>
           </DEPENDENCIES>
         </OBJECT>
+        <OBJECT>
+          <ID name="" mc="Infrastructure.Dependency" uid="01cd9114-74ec-4e4c-af42-a22d158be68c"/>
+          <ATTRIBUTES>
+            <ATT name="Name"></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="DependsOn">
+              <ID name="Complaint period in progress" mc="Standard.Signal" uid="0174ce4a-6506-40d7-b102-f59b20aef65c"/>
+            </LINK>
+          </DEPENDENCIES>
+        </OBJECT>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Pet food mixture sale" mc="Standard.BpmnProcessDesignDiagram" uid="dc38b263-15b6-46c4-bbd4-b7a6991ca4a0"/>
@@ -5477,6 +5489,36 @@
                   <LINK relation="DependsOn">
                     <REFOBJ>
                       <ID name="f36" mc="Standard.BpmnSequenceFlow" uid="7d923913-b967-412d-9c6e-00a25439188c"/>
+                    </REFOBJ>
+                  </LINK>
+                </DEPENDENCIES>
+              </OBJECT>
+            </COMP>
+          </DEPENDENCIES>
+        </OBJECT>
+        <OBJECT>
+          <ID name="Note" mc="Infrastructure.Note" uid="bc0b89ab-cbce-4001-8ce4-7d36cfa035be"/>
+          <ATTRIBUTES>
+            <ATT name="Content"><![CDATA[It is the way our business works. When complaint period expires we ask our customer if he wants to prolongate it.]]></ATT>
+            <ATT name="MimeType"><![CDATA[text/plain]]></ATT>
+            <ATT name="Name"><![CDATA[Note]]></ATT>
+            <ATT name="status">1970354901745664</ATT>
+          </ATTRIBUTES>
+          <DEPENDENCIES>
+            <LINK relation="Model">
+              <FOREIGNID name="description" mc="Infrastructure.NoteType" uid="00000000-0000-3e81-0000-000000000000"/>
+            </LINK>
+            <COMP relation="DependsOnDependency">
+              <OBJECT>
+                <ID name="" mc="Infrastructure.Dependency" uid="5b4709b4-2c3c-42e2-97a1-1563145405f5"/>
+                <ATTRIBUTES>
+                  <ATT name="Name"></ATT>
+                  <ATT name="status">1970354901745664</ATT>
+                </ATTRIBUTES>
+                <DEPENDENCIES>
+                  <LINK relation="DependsOn">
+                    <REFOBJ>
+                      <ID name="" mc="Standard.BpmnExclusiveGateway" uid="83d8e831-4682-4675-8079-7bd90cc4fd8d"/>
                     </REFOBJ>
                   </LINK>
                 </DEPENDENCIES>
