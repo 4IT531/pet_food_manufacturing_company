@@ -1,4 +1,6 @@
-#Thu Dec 03 07:29:26 CET 2020
+#Mon Dec 07 15:37:01 CET 2020
+org.modelio.diagram.editor.OpenedDiagrams22='Sub-Process' {c95d193e-8933-4f5b-848c-95f822158923} Standard.BpmnSubProcessDiagram
+org.modelio.diagram.editor.OpenedDiagrams21='Pet food mixture order lifecycle diagram' {3ee2c851-f63a-43d1-80e6-34621fadef4f} Standard.StateMachineDiagram
 org.modelio.diagram.editor.OpenedDiagrams20='Machine lifecycle diagram' {29cc19c5-4979-410f-9096-c97fb7679de4} Standard.StateMachineDiagram
 org.modelio.diagram.editor.OpenedDiagrams9='Sub-Process' {5fa18b24-0694-47a2-8201-30b87d33368a} Standard.BpmnSubProcessDiagram
 org.modelio.diagram.editor.OpenedDiagrams8='Sub-Process' {3c186708-fde3-40f3-b7b8-f4805a2894d2} Standard.BpmnSubProcessDiagram
